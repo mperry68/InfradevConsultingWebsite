@@ -11,36 +11,43 @@ export async function onRequestPost({ request, env }: { request: Request; env: a
     const subject = formData.get('subject');
     const message = formData.get('message');
 
-    // TODO: Add your email sending logic here
-    // Options:
-    // 1. Use SendGrid API
-    // 2. Use Mailgun API
-    // 3. Use Resend API
-    // 4. Use Cloudflare Email Routing (if configured)
-    
-    // Example with Resend (you'll need to install @resend/node):
-    /*
-    import { Resend } from '@resend/node';
-    const resend = new Resend(env.RESEND_API_KEY);
-    
-    await resend.emails.send({
-      from: 'contact@infradevconsulting.com',
-      to: 'info@infradevconsulting.com',
-      subject: `Contact Form: ${subject}`,
-      html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Company:</strong> ${company || 'N/A'}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
-      `,
-    });
-    */
+    // Send email using FormSubmit service (no API key needed)
+    const emailBody = `
+New Contact Form Submission from InfraDev Consulting Website
 
-    // For now, just log and return success
-    console.log('Form submission:', { name, email, company, subject, message });
+Name: ${name}
+Email: ${email}
+Company: ${company || 'N/A'}
+Subject: ${subject}
+
+Message:
+${message}
+
+---
+This email was sent from the contact form on infradevconsulting.com
+    `.trim();
+
+    const formSubmitResponse = await fetch('https://formsubmit.co/ajax/marc@infradevconsulting.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        subject: `Contact Form: ${subject}`,
+        message: emailBody,
+        _captcha: false, // Disable captcha for now
+        _template: 'box' // Simple template
+      })
+    });
+
+    if (!formSubmitResponse.ok) {
+      throw new Error('Failed to send email');
+    }
+
+    console.log('Form submission sent successfully:', { name, email, company, subject });
 
     return new Response(
       JSON.stringify({ 
