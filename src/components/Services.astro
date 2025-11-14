@@ -1,0 +1,132 @@
+---
+import Service1 from '/assets/WebsiteMarketing/Our Services/1.svg';
+import Service2 from '/assets/WebsiteMarketing/Our Services/02.svg';
+import Service3 from '/assets/WebsiteMarketing/Our Services/03.svg';
+import Service4 from '/assets/WebsiteMarketing/Our Services/04.svg';
+import Service5 from '/assets/WebsiteMarketing/Our Services/05.svg';
+---
+
+<section id="services" class="services section">
+	<div class="container">
+		<div class="section-header">
+			<h2>Our Services</h2>
+			<p>Comprehensive technology solutions tailored to your business needs</p>
+		</div>
+		<div class="services-grid">
+			<div class="service-card">
+				<div class="service-icon">
+					<img src={Service1} alt="Service 1" />
+				</div>
+				<h3>AI & ML Development</h3>
+				<p>Build intelligent solutions with cutting-edge artificial intelligence and machine learning technologies.</p>
+			</div>
+			<div class="service-card">
+				<div class="service-icon">
+					<img src={Service2} alt="Service 2" />
+				</div>
+				<h3>Software Development</h3>
+				<p>Custom software solutions designed to streamline your business processes and drive growth.</p>
+			</div>
+			<div class="service-card">
+				<div class="service-icon">
+					<img src={Service3} alt="Service 3" />
+				</div>
+				<h3>Mobile App Development</h3>
+				<p>Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+			</div>
+			<div class="service-card">
+				<div class="service-icon">
+					<img src={Service4} alt="Service 4" />
+				</div>
+				<h3>Data Engineering</h3>
+				<p>Transform your data into actionable insights with robust data pipelines and analytics platforms.</p>
+			</div>
+			<div class="service-card">
+				<div class="service-icon">
+					<img src={Service5} alt="Service 5" />
+				</div>
+				<h3>DevOps & Cloud</h3>
+				<p>Scalable cloud infrastructure and automated deployment pipelines for modern applications.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.services {
+		background: var(--color-bg);
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.service-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		text-align: center;
+	}
+
+	.service-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
+
+	.service-icon {
+		margin-bottom: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 120px;
+	}
+
+	.service-icon img {
+		max-width: 100px;
+		height: auto;
+	}
+
+	.service-card h3 {
+		font-size: 1.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.service-card p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	@media (max-width: 768px) {
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.services-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
+

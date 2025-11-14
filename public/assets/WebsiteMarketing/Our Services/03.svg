@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="154.948" height="166.818" viewBox="0 0 154.948 166.818">
+  <defs>
+    <filter id="Path_5602" x="0" y="0" width="154.948" height="166.818" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#fd8226" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_03" data-name="03" transform="translate(-163.001 -2683.367)">
+    <g transform="matrix(1, 0, 0, 1, 163, 2683.37)" filter="url(#Path_5602)">
+      <path id="Path_5602-2" data-name="Path 5602" d="M12072.013-15315.052h-17.236a11.775,11.775,0,0,1-11.775-11.775v-50.4a11.776,11.776,0,0,1,11.775-11.776h50.4a11.776,11.776,0,0,1,11.775,11.776v50.4a11.775,11.775,0,0,1-11.775,11.775h-16.186l-8.486,10.185Z" transform="translate(-12002.5 15426.5)" fill="#ff9648" stroke="#fff" stroke-width="6"/>
+    </g>
+    <text id="_03-2" data-name="03" transform="translate(238.877 2771.061)" fill="#fff" font-size="36" font-family="Exo-Bold, Exo" font-weight="700"><tspan x="-21" y="0">03</tspan></text>
+  </g>
+</svg>

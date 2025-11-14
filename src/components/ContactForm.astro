@@ -1,0 +1,89 @@
+---
+// For Cloudflare Pages, you can:
+// 1. Use a Cloudflare Worker to handle form submissions
+// 2. Use a third-party service like Formspree, FormSubmit, or EmailJS
+// 3. Update the action URL below to your form handler endpoint
+
+const formAction = "/api/contact"; // Update this to your form handler URL
+---
+
+<form class="contact-form" name="contact" method="POST" action={formAction}>
+	<input type="hidden" name="form-name" value="contact" />
+	
+	<div class="form-group">
+		<label for="name">Name *</label>
+		<input type="text" id="name" name="name" required />
+	</div>
+
+	<div class="form-group">
+		<label for="email">Email *</label>
+		<input type="email" id="email" name="email" required />
+	</div>
+
+	<div class="form-group">
+		<label for="company">Company</label>
+		<input type="text" id="company" name="company" />
+	</div>
+
+	<div class="form-group">
+		<label for="subject">Subject *</label>
+		<input type="text" id="subject" name="subject" required />
+	</div>
+
+	<div class="form-group">
+		<label for="message">Message *</label>
+		<textarea id="message" name="message" rows="6" required></textarea>
+	</div>
+
+	<button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+<style>
+	.contact-form {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.form-group {
+		margin-bottom: 1.5rem;
+	}
+
+	.form-group label {
+		display: block;
+		margin-bottom: 0.5rem;
+		color: var(--color-text);
+		font-weight: 500;
+	}
+
+	.form-group input,
+	.form-group textarea {
+		width: 100%;
+		padding: 0.875rem;
+		border: 2px solid #e0e0e0;
+		border-radius: 5px;
+		font-size: 1rem;
+		font-family: inherit;
+		transition: border-color 0.3s ease;
+	}
+
+	.form-group input:focus,
+	.form-group textarea:focus {
+		outline: none;
+		border-color: var(--color-orange);
+	}
+
+	.form-group textarea {
+		resize: vertical;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.btn {
+		width: 100%;
+		padding: 1rem;
+		font-size: 1rem;
+	}
+</style>
+

@@ -1,0 +1,124 @@
+---
+import LogoIcon from '/assets/WebsiteMarketing/Logo_Icon/Logo_Icon.svg';
+---
+
+<section class="hero">
+	<div class="container">
+		<div class="hero-content">
+			<div class="hero-icon">
+				<img src={LogoIcon} alt="InfraDev Consulting Icon" />
+			</div>
+			<h1 class="hero-title">Transform Your Business with Expert Technology Solutions</h1>
+			<p class="hero-subtitle">We consult your business with cutting-edge software development, AI/ML solutions, and cloud infrastructure services.</p>
+			<div class="hero-cta">
+				<a href="/contact" class="btn btn-primary">Get Started</a>
+				<a href="#services" class="btn btn-secondary">Our Services</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.hero {
+		background: linear-gradient(135deg, var(--color-bg-light) 0%, #fff 100%);
+		padding: 6rem 0 4rem;
+		text-align: center;
+	}
+
+	.hero-content {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.hero-icon {
+		margin-bottom: 2rem;
+		display: flex;
+		justify-content: center;
+	}
+
+	.hero-icon img {
+		width: 120px;
+		height: 120px;
+	}
+
+	.hero-title {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		line-height: 1.2;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: var(--color-text-light);
+		margin-bottom: 2.5rem;
+		line-height: 1.6;
+	}
+
+	.hero-cta {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		border: 2px solid transparent;
+	}
+
+	.btn-primary {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.btn-primary:hover {
+		background: var(--color-orange-dark);
+		color: #fff;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(255, 132, 39, 0.3);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: var(--color-orange);
+		border-color: var(--color-orange);
+	}
+
+	.btn-secondary:hover {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding: 4rem 0 3rem;
+		}
+
+		.hero-title {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.1rem;
+		}
+
+		.hero-icon img {
+			width: 100px;
+			height: 100px;
+		}
+
+		.btn {
+			padding: 0.875rem 1.5rem;
+			font-size: 0.95rem;
+		}
+	}
+</style>
+

@@ -1,0 +1,88 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "InfraDev Consulting - We consult your business. Expert nearshore software development, AI/ML solutions, and cloud infrastructure services." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" href="/assets/WebsiteMarketing/Logo/Logo.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	:root {
+		--color-orange: #ff8427;
+		--color-orange-light: #ff9648;
+		--color-orange-dark: #f77e25;
+		--color-brown: #6e2505;
+		--color-brown-light: #8b3a1a;
+		--color-text: #2c2c2c;
+		--color-text-light: #666;
+		--color-bg: #ffffff;
+		--color-bg-light: #f8f9fa;
+		--color-bg-dark: #1a1a1a;
+	}
+
+	html {
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		scroll-behavior: smooth;
+	}
+
+	body {
+		color: var(--color-text);
+		background-color: var(--color-bg);
+		line-height: 1.6;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	a {
+		color: var(--color-orange);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	a:hover {
+		color: var(--color-orange-dark);
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1.5rem;
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+
+	@media (min-width: 768px) {
+		.section {
+			padding: 6rem 0;
+		}
+	}
+</style>
+
