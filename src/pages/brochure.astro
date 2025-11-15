@@ -9,20 +9,6 @@ import Footer from '../components/Footer.astro';
 	<main>
 		<section class="brochure-section section">
 			<div class="container">
-				<div class="brochure-header">
-					<h1>SEO Brochure</h1>
-					<p>Explore our comprehensive SEO and consulting services</p>
-				</div>
-				
-				<div class="brochure-menu">
-					<h2>Navigation</h2>
-					<ul class="menu-items">
-						<li><a href="/">Home</a></li>
-						<li><a href="/contact">Contact</a></li>
-						<li><a href="/brochure">SEO Brochure</a></li>
-					</ul>
-				</div>
-
 				<div class="brochure-image">
 					<img 
 						src="/InfraDevCorpBrochure-Consult-Draft.jpg" 
@@ -42,93 +28,16 @@ import Footer from '../components/Footer.astro';
 		min-height: calc(100vh - 200px);
 	}
 
-	.brochure-header {
-		text-align: center;
-		margin-bottom: 3rem;
-	}
-
-	.brochure-header h1 {
-		font-size: 2.5rem;
-		color: var(--color-text);
-		margin-bottom: 1rem;
-		font-weight: 700;
-	}
-
-	.brochure-header p {
-		font-size: 1.2rem;
-		color: var(--color-text-light);
-	}
-
-	.brochure-menu {
-		background: var(--color-bg-light);
-		padding: 2rem;
-		border-radius: 10px;
-		margin-bottom: 3rem;
-	}
-
-	.brochure-menu h2 {
-		font-size: 1.5rem;
-		color: var(--color-text);
-		margin-bottom: 1.5rem;
-		font-weight: 600;
-	}
-
-	.menu-items {
-		list-style: none;
-		display: flex;
-		gap: 2rem;
-		flex-wrap: wrap;
-	}
-
-	.menu-items li {
-		margin: 0;
-	}
-
-	.menu-items a {
-		color: var(--color-orange);
-		font-weight: 500;
-		font-size: 1.1rem;
-		transition: color 0.3s ease;
-		text-decoration: none;
-	}
-
-	.menu-items a:hover {
-		color: var(--color-orange-dark);
-		text-decoration: underline;
-	}
-
 	.brochure-image {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		margin-bottom: 2rem;
 	}
 
 	.brochure-img {
 		max-width: 100%;
 		height: auto;
-		border-radius: 10px;
-		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-	}
-
-	@media (max-width: 768px) {
-		.brochure-header h1 {
-			font-size: 2rem;
-		}
-
-		.brochure-header p {
-			font-size: 1rem;
-		}
-
-		.brochure-menu {
-			padding: 1.5rem;
-		}
-
-		.menu-items {
-			flex-direction: column;
-			gap: 1rem;
-		}
 	}
 </style>
 
