@@ -2,20 +2,115 @@
 interface Props {
 	title: string;
 	description?: string;
+	canonical?: string;
+	image?: string;
 }
 
-const { title, description = "InfraDev Consulting - We consult your business. Expert nearshore software development, AI/ML solutions, and cloud infrastructure services." } = Astro.props;
+const { 
+	title, 
+	description = "InfraDev Consulting - We consult your business. Expert nearshore software development, AI/ML solutions, and cloud infrastructure services.",
+	canonical = Astro.url.href,
+	image = "/assets/WebsiteMarketing/Logo/Logo.png"
+} = Astro.props;
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const fullImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
+const fullCanonical = canonical.startsWith('http') ? canonical : `${siteUrl}${canonical}`;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content={description} />
+		<meta name="keywords" content="software development, AI/ML solutions, cloud infrastructure, DevOps, data engineering, technology consulting, nearshore development, InfraDev Consulting" />
+		<meta name="author" content="InfraDev Consulting" />
+		<meta name="theme-color" content="#ff8427" />
+		
+		<!-- Canonical URL -->
+		<link rel="canonical" href={fullCanonical} />
+		
+		<!-- Favicon -->
 		<link rel="icon" type="image/svg+xml" href="/assets/WebsiteMarketing/Logo_Icon.svg" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={fullCanonical} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={fullImageUrl} />
+		<meta property="og:site_name" content="InfraDev Consulting" />
+		
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:url" content={fullCanonical} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={fullImageUrl} />
+		
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		
+		<!-- Structured Data -->
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "InfraDev Consulting",
+			"url": siteUrl,
+			"logo": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`,
+			"description": description,
+			"email": "marc@infradevconsulting.com",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "4-186 Pl. Sutton",
+				"addressLocality": "Beaconsfield",
+				"addressRegion": "QC",
+				"postalCode": "H9W 5S3",
+				"addressCountry": "CA"
+			},
+			"sameAs": [],
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"email": "marc@infradevconsulting.com",
+				"contactType": "Customer Service"
+			}
+		})} />
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "InfraDev Consulting",
+			"image": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`,
+			"@id": siteUrl,
+			"url": siteUrl,
+			"telephone": "",
+			"priceRange": "$$",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "4-186 Pl. Sutton",
+				"addressLocality": "Beaconsfield",
+				"addressRegion": "QC",
+				"postalCode": "H9W 5S3",
+				"addressCountry": "CA"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 45.4334,
+				"longitude": -73.8654
+			},
+			"openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday"
+				],
+				"opens": "09:00",
+				"closes": "17:00"
+			}
+		})} />
 	</head>
 	<body>
 		<slot />
