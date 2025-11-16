@@ -28,6 +28,13 @@ const fullCanonical = canonical.startsWith('http') ? canonical : `${siteUrl}${ca
 		<meta name="author" content="InfraDev Consulting" />
 		<meta name="theme-color" content="#ff8427" />
 		
+		<!-- Security Headers -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+		<meta http-equiv="X-Frame-Options" content="DENY" />
+		<meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+		<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+		<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+		
 		<!-- Canonical URL -->
 		<link rel="canonical" href={fullCanonical} />
 		
@@ -48,8 +55,6 @@ const fullCanonical = canonical.startsWith('http') ? canonical : `${siteUrl}${ca
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={fullImageUrl} />
-		
-		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		
 		<!-- Structured Data -->
