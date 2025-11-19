@@ -148,7 +148,7 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 				<div class="cta-content">
 					<h2>Ready to Transform Your Organic Visibility?</h2>
 					<p>Let’s turn your site into the fastest, cleanest, bilingual experience in your industry.</p>
-					<a href="/contact" class="btn btn-primary">Schedule a Call</a>
+					<a href="/contact" class="btn btn-cta">Schedule a Call</a>
 				</div>
 			</div>
 		</section>
@@ -393,6 +393,27 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 	.cta p {
 		font-size: 1.2rem;
 		margin-bottom: 2rem;
+	}
+
+	.btn-cta {
+		background: var(--color-brown);
+		color: #fff;
+		border: 2px solid var(--color-brown);
+		padding: 1.25rem 2.5rem;
+		font-size: 1.1rem;
+		font-weight: 600;
+		border-radius: 5px;
+		transition: all 0.3s ease;
+		display: inline-block;
+		text-decoration: none;
+	}
+
+	.btn-cta:hover {
+		background: var(--color-brown-light);
+		border-color: var(--color-brown-light);
+		color: #fff;
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(110, 37, 5, 0.4);
 	}
 
 	@media (max-width: 768px) {
