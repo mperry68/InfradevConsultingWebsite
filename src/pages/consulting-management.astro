@@ -4,12 +4,13 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const siteUrl = Astro.site?.href || Astro.url.origin;
-const pageUrl = `${siteUrl}/eor`;
+const pageUrl = `${siteUrl}/consulting-management`;
+const lastModified = new Date().toISOString().split('T')[0];
 ---
 
 <Layout 
-	title="Employer of Record - Hire Canadian Talent | InfraDev Consulting" 
-	description="Hire Canadian talent without opening a Canadian entity. Save 10-40% on employment costs. InfraDev Consulting acts as your Employer of Record, managing payroll, taxes, benefits, and compliance."
+	title="Consulting Management - Hire Canadian Consultants | InfraDev Consulting" 
+	description="Hire Canadian consultants without opening a Canadian entity. Save 10-40% on consulting costs. InfraDev Consulting manages consultant contracts, invoicing, tax compliance, and administrative tasks for U.S. companies."
 	canonical={pageUrl}
 >
 	<Header />
@@ -22,7 +23,7 @@ const pageUrl = `${siteUrl}/eor`;
 						<meta itemprop="position" content="1" />
 					</li>
 					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-						<span itemprop="name">EOR Services</span>
+						<span itemprop="name">Consulting Management</span>
 						<meta itemprop="position" content="2" />
 					</li>
 				</ol>
@@ -32,9 +33,13 @@ const pageUrl = `${siteUrl}/eor`;
 		<section class="eor-hero section">
 			<div class="container">
 				<div class="hero-content">
-					<h1 itemprop="name">Hire Canadian Talent Without Opening a Canadian Entity</h1>
-					<p class="hero-subtitle">InfraDev Consulting acts as your Employer of Record, managing payroll, taxes, benefits, HR compliance, and labour law obligations — while you remain in full control of day-to-day work.</p>
-					<p class="hero-description">Whether you need software developers, cloud engineers, analysts, support staff, or project managers, we make cross-border hiring simple, compliant, and efficient.</p>
+					<h1 itemprop="name">Hire Canadian Consultants Without Opening a Canadian Entity</h1>
+					<p class="hero-subtitle">InfraDev Consulting manages your Canadian consultant relationships, handling contracts, invoicing, tax compliance, and administrative tasks — while you focus on the work.</p>
+					<p class="hero-description">Whether you need data engineers, software developers, cloud architects, analysts, or technical consultants, we make cross-border consulting engagements simple, compliant, and efficient.</p>
+					<div class="cost-savings-badge">
+						<span class="savings-icon">💰</span>
+						<span class="savings-text">Save 10-40% on consulting costs compared to U.S. rates</span>
+					</div>
 					<div class="hero-cta">
 						<a href="/contact" class="btn btn-primary">Book a Consultation</a>
 						<a href="#how-it-works" class="btn btn-secondary">Learn How It Works</a>
@@ -48,50 +53,50 @@ const pageUrl = `${siteUrl}/eor`;
 			<div class="container">
 				<div class="section-header">
 					<h2>What We Handle For You</h2>
-					<p>Complete Canadian employment compliance and administration</p>
+					<p>Complete Canadian consulting engagement management and administration</p>
 				</div>
 				<div class="services-grid">
 					<div class="service-card">
 						<div class="service-icon">
-							<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="Payroll" />
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="Contract Management" />
 						</div>
-						<h3>Canadian Payroll</h3>
-						<p>Full payroll processing with accurate calculations and timely payments.</p>
+						<h3>Consultant Contracts</h3>
+						<p>Legally compliant consulting agreements and service contracts tailored to your needs.</p>
 					</div>
 					<div class="service-card">
 						<div class="service-icon">
-							<img src="/assets/WebsiteMarketing/InfraDev Assets/Estimate.png" alt="Tax Remittances" />
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Estimate.png" alt="Invoicing" />
 						</div>
-						<h3>Tax Remittances</h3>
-						<p>CPP, EI, QPP, QPIP remittances and T4/T4A tax slip generation.</p>
+						<h3>Invoicing & Payments</h3>
+						<p>Professional invoicing, payment processing, and financial administration for consultant engagements.</p>
 					</div>
 					<div class="service-card">
 						<div class="service-icon">
 							<img src="/assets/WebsiteMarketing/InfraDev Assets/Architect.png" alt="Compliance" />
 						</div>
-						<h3>Labour Law Compliance</h3>
-						<p>Provincial labour law compliance and workplace safety (CNESST).</p>
+						<h3>Tax Compliance</h3>
+						<p>GST/HST handling, T4A slip generation, and Canadian tax compliance for consultant payments.</p>
 					</div>
 					<div class="service-card">
 						<div class="service-icon">
-							<img src="/assets/WebsiteMarketing/InfraDev Assets/Discover.png" alt="Contracts" />
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Discover.png" alt="Documentation" />
 						</div>
-						<h3>Employment Contracts</h3>
-						<p>Legally compliant employment contracts and HR documentation.</p>
+						<h3>Documentation</h3>
+						<p>Complete documentation management including contracts, statements of work, and engagement records.</p>
 					</div>
 					<div class="service-card">
 						<div class="service-icon">
 							<img src="/assets/WebsiteMarketing/InfraDev Assets/Launch.png" alt="Onboarding" />
 						</div>
-						<h3>Onboarding & Termination</h3>
-						<p>Complete employee onboarding, time tracking, and termination processes including ROEs.</p>
+						<h3>Onboarding & Offboarding</h3>
+						<p>Streamlined consultant onboarding, engagement management, and contract termination processes.</p>
 					</div>
 					<div class="service-card">
 						<div class="service-icon">
-							<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="Benefits" />
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="Support" />
 						</div>
-						<h3>Benefits Administration</h3>
-						<p>Optional benefits administration and HR support services.</p>
+						<h3>Administrative Support</h3>
+						<p>Ongoing administrative support and relationship management for your consultant engagements.</p>
 					</div>
 				</div>
 			</div>
@@ -102,38 +107,38 @@ const pageUrl = `${siteUrl}/eor`;
 			<div class="container">
 				<div class="section-header">
 					<h2>Why U.S. Companies Use Us</h2>
-					<p>Hiring in Canada normally requires forming a Canadian corporation, registering with the CRA, opening payroll accounts, and understanding provincial labour laws. With InfraDev, you skip all of this.</p>
+					<p>Engaging Canadian consultants normally requires understanding Canadian tax laws, GST/HST requirements, contract structures, and compliance obligations. With InfraDev, you skip all of this.</p>
 				</div>
 				<div class="benefits-grid">
 					<div class="benefit-card">
 						<div class="benefit-icon">⚡</div>
-						<h3>Hire in 48 Hours</h3>
-						<p>Fast onboarding process - get your Canadian talent working in just 2 days.</p>
+						<h3>Engage in 48 Hours</h3>
+						<p>Fast onboarding process - get your Canadian consultants working in just 2 days.</p>
 					</div>
 					<div class="benefit-card">
 						<div class="benefit-icon">🏢</div>
 						<h3>No Entity Formation</h3>
-						<p>Skip the complexity and cost of setting up a Canadian corporation.</p>
+						<p>Skip the complexity and cost of setting up a Canadian corporation or business registration.</p>
 					</div>
 					<div class="benefit-card">
 						<div class="benefit-icon">✅</div>
-						<h3>No CRA Audits</h3>
-						<p>We handle all CRA compliance, so you don't have to worry about audits.</p>
+						<h3>No Tax Complexity</h3>
+						<p>We handle all GST/HST, tax compliance, and reporting requirements, so you don't have to worry.</p>
 					</div>
-					<div class="benefit-card">
+					<div class="benefit-card benefit-card--highlight">
 						<div class="benefit-icon">💰</div>
-						<h3>Lower Employment Cost</h3>
-						<p>Access highly skilled Canadian talent at 10-40% lower cost than U.S. workers.</p>
+						<h3>Save 10-40% on Consulting Costs</h3>
+						<p>Access highly skilled Canadian consultants at 10-40% lower cost than U.S. consultants. Reduce your consulting expenses while maintaining top-tier talent quality.</p>
 					</div>
 					<div class="benefit-card">
 						<div class="benefit-icon">🛡️</div>
 						<h3>Fully Compliant</h3>
-						<p>Complete compliance with Canadian labour laws and regulations.</p>
+						<p>Complete compliance with Canadian tax laws, contract regulations, and business requirements.</p>
 					</div>
 					<div class="benefit-card">
 						<div class="benefit-icon">📊</div>
 						<h3>Transparent Billing</h3>
-						<p>One simple monthly invoice - salary + employer contributions + service fee.</p>
+						<p>One simple monthly invoice - consultant fees + applicable taxes + service fee.</p>
 					</div>
 				</div>
 			</div>
@@ -144,25 +149,25 @@ const pageUrl = `${siteUrl}/eor`;
 			<div class="container">
 				<div class="section-header">
 					<h2>How It Works</h2>
-					<p>A simple, streamlined process for cross-border hiring</p>
+					<p>A simple, streamlined process for cross-border consulting engagements</p>
 				</div>
 				<div class="process-steps">
 					<div class="process-step">
 						<div class="step-number">1</div>
 						<div class="process-icon">
-							<img src="/assets/WebsiteMarketing/InfraDev Assets/Discover.png" alt="Select Candidate" />
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Discover.png" alt="Select Consultant" />
 						</div>
-						<h3>You Select a Candidate</h3>
-						<p>You choose the person you want to hire — your employee or one we help you recruit.</p>
+						<h3>You Select a Consultant</h3>
+						<p>You choose the consultant you want to engage — your preferred consultant or one we help you find.</p>
 					</div>
 					<div class="process-arrow">→</div>
 					<div class="process-step">
 						<div class="step-number">2</div>
 						<div class="process-icon">
-							<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="We Hire" />
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="We Contract" />
 						</div>
-						<h3>We Hire Them in Canada</h3>
-						<p>The worker becomes a legal employee of InfraDev Consulting under our Canadian company.</p>
+						<h3>We Contract Them in Canada</h3>
+						<p>The consultant enters into a consulting agreement with InfraDev Consulting under our Canadian company.</p>
 					</div>
 					<div class="process-arrow">→</div>
 					<div class="process-step">
@@ -171,7 +176,7 @@ const pageUrl = `${siteUrl}/eor`;
 							<img src="/assets/WebsiteMarketing/InfraDev Assets/Launch.png" alt="You Manage" />
 						</div>
 						<h3>You Manage Their Work</h3>
-						<p>You assign tasks, evaluate performance, and integrate them into your team.</p>
+						<p>You assign projects, evaluate deliverables, and integrate them into your team as consultants.</p>
 					</div>
 					<div class="process-arrow">→</div>
 					<div class="process-step">
@@ -180,7 +185,7 @@ const pageUrl = `${siteUrl}/eor`;
 							<img src="/assets/WebsiteMarketing/InfraDev Assets/Estimate.png" alt="Simple Invoice" />
 						</div>
 						<h3>One Simple Monthly Invoice</h3>
-						<p>We take care of payroll, remittances, and compliance. You receive one clear invoice.</p>
+						<p>We handle invoicing, payments, and compliance. You receive one clear invoice for all consultant fees.</p>
 					</div>
 				</div>
 			</div>
@@ -197,15 +202,15 @@ const pageUrl = `${siteUrl}/eor`;
 					<div class="pricing-card">
 						<h3>What's Included</h3>
 						<ul class="pricing-list">
-							<li>✓ Gross salary of employee</li>
-							<li>✓ Employer contributions (CPP, EI, QPP, QPIP)</li>
-							<li>✓ Flat InfraDev EOR fee ($499/month per employee)</li>
-							<li>✓ All payroll processing</li>
-							<li>✓ Tax remittances and compliance</li>
-							<li>✓ HR support and documentation</li>
+							<li>✓ Consultant fees and compensation</li>
+							<li>✓ GST/HST handling and remittances</li>
+							<li>✓ Flat InfraDev consulting management fee ($499/month per consultant)</li>
+							<li>✓ All invoicing and payment processing</li>
+							<li>✓ Tax compliance and reporting</li>
+							<li>✓ Contract and administrative support</li>
 						</ul>
 						<div class="pricing-note">
-							<p><strong>Note:</strong> Pricing varies based on employee salary and specific requirements. Contact us for a customized quote.</p>
+							<p><strong>Note:</strong> Pricing varies based on consultant rates and specific requirements. Contact us for a customized quote.</p>
 						</div>
 					</div>
 				</div>
@@ -217,7 +222,7 @@ const pageUrl = `${siteUrl}/eor`;
 			<div class="container">
 				<div class="section-header">
 					<h2>Frequently Asked Questions</h2>
-					<p>Common questions about our Employer of Record services</p>
+					<p>Common questions about our Consulting Management services</p>
 				</div>
 				<div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
 					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -227,7 +232,7 @@ const pageUrl = `${siteUrl}/eor`;
 						</button>
 						<div class="faq-answer" id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 							<div itemprop="text">
-								<p><strong>YES</strong> — This is 100% legal and widely practiced in Canada. Canadian employment law fully permits third-party employers to hire workers on behalf of foreign companies. We hire Canadian workers on behalf of U.S. businesses, which is completely legal as long as we do not recruit or employ U.S. workers inside the United States.</p>
+								<p><strong>YES</strong> — This is 100% legal and widely practiced in Canada. Canadian business law fully permits third-party companies to manage consultant relationships on behalf of foreign companies. We contract Canadian consultants on behalf of U.S. businesses, which is completely legal and compliant.</p>
 							</div>
 						</div>
 					</div>
@@ -238,18 +243,18 @@ const pageUrl = `${siteUrl}/eor`;
 						</button>
 						<div class="faq-answer" id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 							<div itemprop="text">
-								<p><strong>NO</strong> — That's the whole point! InfraDev Consulting acts as the employer of record. You don't need to form a Canadian corporation, register with the CRA, or set up payroll accounts. We handle all of that for you.</p>
+								<p><strong>NO</strong> — That's the whole point! InfraDev Consulting acts as the contracting party. You don't need to form a Canadian corporation, register for GST/HST, or set up Canadian business accounts. We handle all of that for you.</p>
 							</div>
 						</div>
 					</div>
 					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
-							<span itemprop="name">Do you hire remote-only workers?</span>
+							<span itemprop="name">Do you work with remote consultants?</span>
 							<span class="faq-icon">+</span>
 						</button>
 						<div class="faq-answer" id="faq-answer-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 							<div itemprop="text">
-								<p><strong>YES</strong> — We specialize in remote employment. Your Canadian employees work from wherever they are located in Canada, and you manage their day-to-day work remotely.</p>
+								<p><strong>YES</strong> — We specialize in remote consulting engagements. Your Canadian consultants work from wherever they are located in Canada, and you manage their projects and deliverables remotely.</p>
 							</div>
 						</div>
 					</div>
@@ -260,40 +265,40 @@ const pageUrl = `${siteUrl}/eor`;
 						</button>
 						<div class="faq-answer" id="faq-answer-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 							<div itemprop="text">
-								<p>We do not provide immigration sponsorship (TN, H1B, etc.). We only offer Canadian-based employment for workers who are already legally authorized to work in Canada.</p>
+								<p>We do not provide immigration sponsorship (TN, H1B, etc.). We only offer Canadian-based consulting engagements for consultants who are already legally authorized to work in Canada.</p>
 							</div>
 						</div>
 					</div>
 					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
-							<span itemprop="name">Can you help us find candidates?</span>
+							<span itemprop="name">Can you help us find consultants?</span>
 							<span class="faq-icon">+</span>
 						</button>
 						<div class="faq-answer" id="faq-answer-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 							<div itemprop="text">
-								<p>We focus on the employment and compliance side. You find the candidates you want to hire, and we facilitate the legal employment process. We are not a recruitment agency.</p>
+								<p>We focus on the contracting and compliance side. You find the consultants you want to engage, and we facilitate the legal contracting process. We are not a recruitment agency.</p>
 							</div>
 						</div>
 					</div>
 					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
-							<span itemprop="name">What happens if we need to terminate an employee?</span>
+							<span itemprop="name">What happens if we need to end a consulting engagement?</span>
 							<span class="faq-icon">+</span>
 						</button>
 						<div class="faq-answer" id="faq-answer-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 							<div itemprop="text">
-								<p>We handle all termination processes including Record of Employment (ROE) generation, final pay, and compliance with provincial labour laws regarding notice periods and severance.</p>
+								<p>We handle all contract termination processes including final invoicing, payment processing, and compliance with contract terms and Canadian business requirements.</p>
 							</div>
 						</div>
 					</div>
 					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
 						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
-							<span itemprop="name">How quickly can we onboard a new employee?</span>
+							<span itemprop="name">How quickly can we onboard a new consultant?</span>
 							<span class="faq-icon">+</span>
 						</button>
 						<div class="faq-answer" id="faq-answer-7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 							<div itemprop="text">
-								<p>Typically within 24-48 hours once we have all required documentation. The exact timeline depends on the completeness of the employee's information and any specific provincial requirements.</p>
+								<p>Typically within 24-48 hours once we have all required documentation and contract terms. The exact timeline depends on the completeness of the consultant's information and any specific engagement requirements.</p>
 							</div>
 						</div>
 					</div>
@@ -304,7 +309,7 @@ const pageUrl = `${siteUrl}/eor`;
 						</button>
 						<div class="faq-answer" id="faq-answer-8" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
 							<div itemprop="text">
-								<p>We can hire employees in all Canadian provinces and territories. We ensure compliance with provincial labour laws, workers' compensation (CNESST in Quebec), and all regional requirements.</p>
+								<p>We can contract consultants in all Canadian provinces and territories. We ensure compliance with provincial tax laws, business regulations, and all regional requirements.</p>
 							</div>
 						</div>
 					</div>
@@ -317,7 +322,7 @@ const pageUrl = `${siteUrl}/eor`;
 			<div class="container">
 				<div class="disclaimer-content">
 					<h3>Legal Disclaimer</h3>
-					<p>InfraDev Consulting hires employees in Canada and provides full Canadian labour compliance. We do not provide U.S. employment, immigration sponsorship, or legal tax advice. All services are provided in accordance with Canadian federal and provincial laws.</p>
+					<p>InfraDev Consulting contracts consultants in Canada and provides full Canadian business and tax compliance. We do not provide U.S. consulting services, immigration sponsorship, or legal tax advice. All services are provided in accordance with Canadian federal and provincial laws.</p>
 				</div>
 			</div>
 		</section>
@@ -326,9 +331,9 @@ const pageUrl = `${siteUrl}/eor`;
 		<section class="cta section">
 			<div class="container">
 				<div class="cta-content">
-					<h2>Ready to Hire in Canada?</h2>
-					<p>Book a consultation and we'll guide you through everything you need to know about cross-border hiring.</p>
-					<a href="/contact" class="btn btn-primary btn-large">Book a Cross-Border Hiring Consultation</a>
+					<h2>Ready to Engage Canadian Consultants?</h2>
+					<p>Book a consultation and we'll guide you through everything you need to know about cross-border consulting engagements.</p>
+					<a href="/contact" class="btn btn-primary btn-large">Book a Consulting Management Consultation</a>
 					<p class="cta-email">Or email us at <a href="mailto:marc@infradevconsulting.com">marc@infradevconsulting.com</a></p>
 				</div>
 			</div>
@@ -340,8 +345,8 @@ const pageUrl = `${siteUrl}/eor`;
 <script type="application/ld+json" set:html={JSON.stringify({
 	"@context": "https://schema.org",
 	"@type": "Service",
-	"name": "Employer of Record Services",
-	"description": "Hire Canadian talent without opening a Canadian entity. Save 10-40% on employment costs. InfraDev Consulting acts as your Employer of Record, managing payroll, taxes, benefits, and compliance for U.S. companies.",
+	"name": "Consulting Management Services",
+	"description": "Hire Canadian consultants without opening a Canadian entity. InfraDev Consulting manages consultant contracts, invoicing, tax compliance, and administrative tasks for U.S. companies. Save 10-40% on consulting costs.",
 	"provider": {
 		"@type": "Organization",
 		"name": "InfraDev Consulting",
@@ -352,7 +357,7 @@ const pageUrl = `${siteUrl}/eor`;
 		"@type": "Country",
 		"name": "United States"
 	},
-	"serviceType": "Employer of Record",
+	"serviceType": "Consulting Management",
 	"url": pageUrl,
 	"offers": {
 		"@type": "Offer",
@@ -380,7 +385,7 @@ const pageUrl = `${siteUrl}/eor`;
 		{
 			"@type": "ListItem",
 			"position": 2,
-			"name": "EOR Services",
+			"name": "Consulting Management",
 			"item": pageUrl
 		}
 	]
@@ -395,7 +400,7 @@ const pageUrl = `${siteUrl}/eor`;
 			"name": "Is this legal?",
 			"acceptedAnswer": {
 				"@type": "Answer",
-				"text": "YES — This is 100% legal and widely practiced in Canada. Canadian employment law fully permits third-party employers to hire workers on behalf of foreign companies. We hire Canadian workers on behalf of U.S. businesses, which is completely legal as long as we do not recruit or employ U.S. workers inside the United States."
+				"text": "YES — This is 100% legal and widely practiced in Canada. Canadian business law fully permits third-party companies to manage consultant relationships on behalf of foreign companies. We contract Canadian consultants on behalf of U.S. businesses, which is completely legal and compliant."
 			}
 		},
 		{
@@ -403,15 +408,15 @@ const pageUrl = `${siteUrl}/eor`;
 			"name": "Do we need a Canadian company?",
 			"acceptedAnswer": {
 				"@type": "Answer",
-				"text": "NO — That's the whole point! InfraDev Consulting acts as the employer of record. You don't need to form a Canadian corporation, register with the CRA, or set up payroll accounts. We handle all of that for you."
+				"text": "NO — That's the whole point! InfraDev Consulting acts as the contracting party. You don't need to form a Canadian corporation, register for GST/HST, or set up Canadian business accounts. We handle all of that for you."
 			}
 		},
 		{
 			"@type": "Question",
-			"name": "Do you hire remote-only workers?",
+			"name": "Do you work with remote consultants?",
 			"acceptedAnswer": {
 				"@type": "Answer",
-				"text": "YES — We specialize in remote employment. Your Canadian employees work from wherever they are located in Canada, and you manage their day-to-day work remotely."
+				"text": "YES — We specialize in remote consulting engagements. Your Canadian consultants work from wherever they are located in Canada, and you manage their projects and deliverables remotely."
 			}
 		},
 		{
@@ -419,31 +424,31 @@ const pageUrl = `${siteUrl}/eor`;
 			"name": "What about immigration sponsorship?",
 			"acceptedAnswer": {
 				"@type": "Answer",
-				"text": "We do not provide immigration sponsorship (TN, H1B, etc.). We only offer Canadian-based employment for workers who are already legally authorized to work in Canada."
+				"text": "We do not provide immigration sponsorship (TN, H1B, etc.). We only offer Canadian-based consulting engagements for consultants who are already legally authorized to work in Canada."
 			}
 		},
 		{
 			"@type": "Question",
-			"name": "Can you help us find candidates?",
+			"name": "Can you help us find consultants?",
 			"acceptedAnswer": {
 				"@type": "Answer",
-				"text": "We focus on the employment and compliance side. You find the candidates you want to hire, and we facilitate the legal employment process. We are not a recruitment agency."
+				"text": "We focus on the contracting and compliance side. You find the consultants you want to engage, and we facilitate the legal contracting process. We are not a recruitment agency."
 			}
 		},
 		{
 			"@type": "Question",
-			"name": "What happens if we need to terminate an employee?",
+			"name": "What happens if we need to end a consulting engagement?",
 			"acceptedAnswer": {
 				"@type": "Answer",
-				"text": "We handle all termination processes including Record of Employment (ROE) generation, final pay, and compliance with provincial labour laws regarding notice periods and severance."
+				"text": "We handle all contract termination processes including final invoicing, payment processing, and compliance with contract terms and Canadian business requirements."
 			}
 		},
 		{
 			"@type": "Question",
-			"name": "How quickly can we onboard a new employee?",
+			"name": "How quickly can we onboard a new consultant?",
 			"acceptedAnswer": {
 				"@type": "Answer",
-				"text": "Typically within 24-48 hours once we have all required documentation. The exact timeline depends on the completeness of the employee's information and any specific provincial requirements."
+				"text": "Typically within 24-48 hours once we have all required documentation and contract terms. The exact timeline depends on the completeness of the consultant's information and any specific engagement requirements."
 			}
 		},
 		{
@@ -451,7 +456,7 @@ const pageUrl = `${siteUrl}/eor`;
 			"name": "What provinces do you operate in?",
 			"acceptedAnswer": {
 				"@type": "Answer",
-				"text": "We can hire employees in all Canadian provinces and territories. We ensure compliance with provincial labour laws, workers' compensation (CNESST in Quebec), and all regional requirements."
+				"text": "We can contract consultants in all Canadian provinces and territories. We ensure compliance with provincial tax laws, business regulations, and all regional requirements."
 			}
 		}
 	]
@@ -489,6 +494,40 @@ const pageUrl = `${siteUrl}/eor`;
 </script>
 
 <style>
+	.eor-hero {
+		background: rgba(139, 58, 26, 0.3);
+		padding: 6rem 0 4rem;
+		text-align: center;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.eor-hero h1 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		line-height: 1.2;
+	}
+
+	.hero-subtitle {
+		font-size: 1.3rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		line-height: 1.6;
+		font-weight: 500;
+	}
+
+	.hero-description {
+		font-size: 1.1rem;
+		color: var(--color-text-light);
+		margin-bottom: 2.5rem;
+		line-height: 1.6;
+	}
+
 	.breadcrumb {
 		background: var(--color-bg-light);
 		padding: 1rem 0;
@@ -528,45 +567,34 @@ const pageUrl = `${siteUrl}/eor`;
 		color: var(--color-text-light);
 	}
 
-	.eor-hero {
-		background: rgba(139, 58, 26, 0.3);
-		padding: 6rem 0 4rem;
-		text-align: center;
-	}
-
-	.hero-content {
-		max-width: 900px;
-		margin: 0 auto;
-	}
-
-	.eor-hero h1 {
-		font-size: 2.5rem;
-		font-weight: 700;
-		color: var(--color-text);
-		margin-bottom: 1.5rem;
-		line-height: 1.2;
-	}
-
-	.hero-subtitle {
-		font-size: 1.3rem;
-		color: var(--color-text);
-		margin-bottom: 1rem;
-		line-height: 1.6;
-		font-weight: 500;
-	}
-
-	.hero-description {
-		font-size: 1.1rem;
-		color: var(--color-text-light);
-		margin-bottom: 2.5rem;
-		line-height: 1.6;
-	}
-
 	.hero-cta {
 		display: flex;
 		gap: 1rem;
 		justify-content: center;
 		flex-wrap: wrap;
+		margin-bottom: 2rem;
+	}
+
+	.cost-savings-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.75rem;
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.15), rgba(255, 150, 72, 0.25));
+		border: 2px solid var(--color-orange);
+		border-radius: 50px;
+		padding: 1rem 2rem;
+		margin-top: 1.5rem;
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: var(--color-text);
+	}
+
+	.savings-icon {
+		font-size: 1.5rem;
+	}
+
+	.savings-text {
+		color: var(--color-text);
 	}
 
 	.btn {
@@ -711,6 +739,11 @@ const pageUrl = `${siteUrl}/eor`;
 	.benefit-card p {
 		color: var(--color-text-light);
 		line-height: 1.6;
+	}
+
+	.benefit-card--highlight {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.1), rgba(255, 150, 72, 0.15));
+		border: 2px solid rgba(255, 132, 39, 0.3);
 	}
 
 	.how-it-works {
