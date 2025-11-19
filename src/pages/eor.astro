@@ -201,38 +201,94 @@ import Footer from '../components/Footer.astro';
 					<h2>Frequently Asked Questions</h2>
 					<p>Common questions about our Employer of Record services</p>
 				</div>
-				<div class="faq-list">
-					<div class="faq-item">
-						<h3>Is this legal?</h3>
-						<p><strong>YES</strong> — This is 100% legal and widely practiced in Canada. Companies like Deel, Remote.com, OysterHR, and Shield GEO offer similar EOR services. We hire Canadian workers on behalf of U.S. businesses, which is completely legal as long as we do not recruit or employ U.S. workers inside the United States.</p>
+				<div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+							<span itemprop="name">Is this legal?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p><strong>YES</strong> — This is 100% legal and widely practiced in Canada. Companies like Deel, Remote.com, OysterHR, and Shield GEO offer similar EOR services. We hire Canadian workers on behalf of U.S. businesses, which is completely legal as long as we do not recruit or employ U.S. workers inside the United States.</p>
+							</div>
+						</div>
 					</div>
-					<div class="faq-item">
-						<h3>Do we need a Canadian company?</h3>
-						<p><strong>NO</strong> — That's the whole point! InfraDev Consulting acts as the employer of record. You don't need to form a Canadian corporation, register with the CRA, or set up payroll accounts. We handle all of that for you.</p>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+							<span itemprop="name">Do we need a Canadian company?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p><strong>NO</strong> — That's the whole point! InfraDev Consulting acts as the employer of record. You don't need to form a Canadian corporation, register with the CRA, or set up payroll accounts. We handle all of that for you.</p>
+							</div>
+						</div>
 					</div>
-					<div class="faq-item">
-						<h3>Do you hire remote-only workers?</h3>
-						<p><strong>YES</strong> — We specialize in remote employment. Your Canadian employees work from wherever they are located in Canada, and you manage their day-to-day work remotely.</p>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+							<span itemprop="name">Do you hire remote-only workers?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p><strong>YES</strong> — We specialize in remote employment. Your Canadian employees work from wherever they are located in Canada, and you manage their day-to-day work remotely.</p>
+							</div>
+						</div>
 					</div>
-					<div class="faq-item">
-						<h3>What about immigration sponsorship?</h3>
-						<p>We do not provide immigration sponsorship (TN, H1B, etc.). We only offer Canadian-based employment for workers who are already legally authorized to work in Canada.</p>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+							<span itemprop="name">What about immigration sponsorship?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p>We do not provide immigration sponsorship (TN, H1B, etc.). We only offer Canadian-based employment for workers who are already legally authorized to work in Canada.</p>
+							</div>
+						</div>
 					</div>
-					<div class="faq-item">
-						<h3>Can you help us find candidates?</h3>
-						<p>We focus on the employment and compliance side. You find the candidates you want to hire, and we facilitate the legal employment process. We are not a recruitment agency.</p>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+							<span itemprop="name">Can you help us find candidates?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p>We focus on the employment and compliance side. You find the candidates you want to hire, and we facilitate the legal employment process. We are not a recruitment agency.</p>
+							</div>
+						</div>
 					</div>
-					<div class="faq-item">
-						<h3>What happens if we need to terminate an employee?</h3>
-						<p>We handle all termination processes including Record of Employment (ROE) generation, final pay, and compliance with provincial labour laws regarding notice periods and severance.</p>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+							<span itemprop="name">What happens if we need to terminate an employee?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p>We handle all termination processes including Record of Employment (ROE) generation, final pay, and compliance with provincial labour laws regarding notice periods and severance.</p>
+							</div>
+						</div>
 					</div>
-					<div class="faq-item">
-						<h3>How quickly can we onboard a new employee?</h3>
-						<p>Typically within 24-48 hours once we have all required documentation. The exact timeline depends on the completeness of the employee's information and any specific provincial requirements.</p>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+							<span itemprop="name">How quickly can we onboard a new employee?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p>Typically within 24-48 hours once we have all required documentation. The exact timeline depends on the completeness of the employee's information and any specific provincial requirements.</p>
+							</div>
+						</div>
 					</div>
-					<div class="faq-item">
-						<h3>What provinces do you operate in?</h3>
-						<p>We can hire employees in all Canadian provinces and territories. We ensure compliance with provincial labour laws, workers' compensation (CNESST in Quebec), and all regional requirements.</p>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+							<span itemprop="name">What provinces do you operate in?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-8" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p>We can hire employees in all Canadian provinces and territories. We ensure compliance with provincial labour laws, workers' compensation (CNESST in Quebec), and all regional requirements.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -262,6 +318,108 @@ import Footer from '../components/Footer.astro';
 	</main>
 	<Footer />
 </Layout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [
+		{
+			"@type": "Question",
+			"name": "Is this legal?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "YES — This is 100% legal and widely practiced in Canada. Companies like Deel, Remote.com, OysterHR, and Shield GEO offer similar EOR services. We hire Canadian workers on behalf of U.S. businesses, which is completely legal as long as we do not recruit or employ U.S. workers inside the United States."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Do we need a Canadian company?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "NO — That's the whole point! InfraDev Consulting acts as the employer of record. You don't need to form a Canadian corporation, register with the CRA, or set up payroll accounts. We handle all of that for you."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Do you hire remote-only workers?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "YES — We specialize in remote employment. Your Canadian employees work from wherever they are located in Canada, and you manage their day-to-day work remotely."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What about immigration sponsorship?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We do not provide immigration sponsorship (TN, H1B, etc.). We only offer Canadian-based employment for workers who are already legally authorized to work in Canada."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Can you help us find candidates?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We focus on the employment and compliance side. You find the candidates you want to hire, and we facilitate the legal employment process. We are not a recruitment agency."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What happens if we need to terminate an employee?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We handle all termination processes including Record of Employment (ROE) generation, final pay, and compliance with provincial labour laws regarding notice periods and severance."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How quickly can we onboard a new employee?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Typically within 24-48 hours once we have all required documentation. The exact timeline depends on the completeness of the employee's information and any specific provincial requirements."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What provinces do you operate in?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We can hire employees in all Canadian provinces and territories. We ensure compliance with provincial labour laws, workers' compensation (CNESST in Quebec), and all regional requirements."
+			}
+		}
+	]
+})} />
+
+<script>
+	// FAQ Accordion functionality
+	document.addEventListener('DOMContentLoaded', () => {
+		const faqQuestions = document.querySelectorAll('.faq-question');
+		
+		faqQuestions.forEach(question => {
+			question.addEventListener('click', () => {
+				const answer = question.nextElementSibling;
+				const isExpanded = question.getAttribute('aria-expanded') === 'true';
+				
+				// Close all other FAQs (optional - remove if you want multiple open)
+				faqQuestions.forEach(q => {
+					if (q !== question) {
+						q.setAttribute('aria-expanded', 'false');
+						q.nextElementSibling.classList.remove('open');
+					}
+				});
+				
+				// Toggle current FAQ
+				if (isExpanded) {
+					question.setAttribute('aria-expanded', 'false');
+					answer.classList.remove('open');
+				} else {
+					question.setAttribute('aria-expanded', 'true');
+					answer.classList.add('open');
+				}
+			});
+		});
+	});
+</script>
 
 <style>
 	.eor-hero {
@@ -589,19 +747,76 @@ import Footer from '../components/Footer.astro';
 
 	.faq-item {
 		background: #fff;
-		padding: 2rem;
 		border-radius: 10px;
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 1rem;
+		overflow: hidden;
+		transition: box-shadow 0.3s ease;
 	}
 
-	.faq-item h3 {
+	.faq-item:hover {
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	}
+
+	.faq-question {
+		width: 100%;
+		background: transparent;
+		border: none;
+		padding: 1.5rem 2rem;
+		text-align: left;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		font-size: 1.3rem;
 		color: var(--color-orange);
-		margin-bottom: 0.75rem;
 		font-weight: 600;
+		transition: background-color 0.3s ease, color 0.3s ease;
+		font-family: inherit;
 	}
 
-	.faq-item p {
+	.faq-question:hover {
+		background: var(--color-bg-light);
+		color: var(--color-orange-dark);
+	}
+
+	.faq-question:focus {
+		outline: 2px solid var(--color-orange);
+		outline-offset: -2px;
+	}
+
+	.faq-question[aria-expanded="true"] {
+		background: var(--color-bg-light);
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.faq-question[aria-expanded="true"] .faq-icon {
+		transform: rotate(45deg);
+	}
+
+	.faq-icon {
+		font-size: 1.5rem;
+		font-weight: 300;
+		color: var(--color-orange);
+		transition: transform 0.3s ease;
+		flex-shrink: 0;
+		margin-left: 1rem;
+		line-height: 1;
+	}
+
+	.faq-answer {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease, padding 0.3s ease;
+		padding: 0 2rem;
+	}
+
+	.faq-answer.open {
+		max-height: 500px;
+		padding: 1.5rem 2rem 2rem;
+	}
+
+	.faq-answer p {
 		color: var(--color-text-light);
 		line-height: 1.6;
 		margin: 0;
