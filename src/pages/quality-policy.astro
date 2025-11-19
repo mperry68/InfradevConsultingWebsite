@@ -1,0 +1,367 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/quality-policy`;
+const lastModified = new Date().toISOString();
+---
+
+<Layout 
+	title="Quality Policy | ISO 9001-Aligned Quality Management | InfraDev Consulting" 
+	description="InfraDev Consulting's Quality Policy demonstrates our ISO 9001-aligned quality management system. Learn about our commitment to continuous improvement, customer satisfaction, and standardized service delivery for IT consulting and EOR services."
+	canonical={pageUrl}
+>
+	<Header />
+	<main itemscope itemtype="https://schema.org/Article">
+		<nav aria-label="Breadcrumb" class="breadcrumb">
+			<div class="container">
+				<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+						<meta itemprop="position" content="1" />
+					</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<span itemprop="name">Quality Policy</span>
+						<meta itemprop="position" content="2" />
+					</li>
+				</ol>
+			</div>
+		</nav>
+
+		<section class="policy-hero section">
+			<div class="container">
+				<h1 itemprop="headline">Quality Policy</h1>
+				<p>ISO 9001-aligned quality management processes</p>
+			</div>
+		</section>
+
+		<section class="policy-content section">
+			<div class="container">
+				<article class="policy-main" itemprop="articleBody">
+					<meta itemprop="datePublished" content="2024-01-01" />
+					<meta itemprop="dateModified" content={lastModified} />
+					<meta itemprop="author" itemscope itemtype="https://schema.org/Person" />
+					<meta itemprop="author.name" content="Marc Perry" />
+					<meta itemprop="publisher" itemscope itemtype="https://schema.org/Organization" />
+					<meta itemprop="publisher.name" content="InfraDev Consulting" />
+					
+					<div class="policy-intro">
+						<p>InfraDev Consulting implements quality management processes aligned with ISO 9001 standards. Our internal procedures follow ISO principles of continuous improvement, customer satisfaction, and standardized service delivery.</p>
+					</div>
+
+					<div class="policy-document">
+						<h2>InfraDev Consulting – Quality Policy</h2>
+						
+						<p>InfraDev Consulting is committed to delivering consistent, high-quality services that meet or exceed client expectations. Our approach is guided by the principles of ISO 9001 and focuses on:</p>
+
+						<ul class="policy-list">
+							<li>Understanding client requirements and delivering measurable value</li>
+							<li>Standardizing processes to ensure reliability and repeatability</li>
+							<li>Enhancing efficiency through ongoing process improvement</li>
+							<li>Monitoring performance to ensure accountability and transparency</li>
+							<li>Maintaining open communication with clients, partners, and employees</li>
+							<li>Ensuring compliance with applicable legal, regulatory, and ethical standards</li>
+							<li>Implementing robust information security measures to protect client data and intellectual property</li>
+							<li>Maintaining confidentiality and data protection in all service delivery</li>
+						</ul>
+
+						<p>We maintain and review our quality objectives regularly to ensure continuous improvement across all areas of our organization.</p>
+
+						<div class="policy-signature">
+							<p><strong>Signed,</strong></p>
+							<p>Marc Perry<br>Director, InfraDev Consulting</p>
+						</div>
+					</div>
+
+					<div class="quality-objectives">
+						<h2>Quality Objectives</h2>
+						<ul class="objectives-list">
+							<li>Deliver services meeting client requirements and timelines</li>
+							<li>Maintain 95%+ satisfaction across all active engagements</li>
+							<li>Respond to support inquiries within agreed SLAs</li>
+							<li>Maintain standardized internal processes</li>
+							<li>Continuously improve workflows based on feedback</li>
+						</ul>
+					</div>
+
+					<div class="quality-commitment">
+						<h2>Information Security and Quality</h2>
+						<p>As part of our quality management system, InfraDev Consulting is committed to maintaining the highest standards of information security. Our security practices include:</p>
+						<ul class="objectives-list">
+							<li>Regular security assessments and risk evaluations</li>
+							<li>Implementation of industry-standard security controls and encryption</li>
+							<li>Employee security awareness training and access management</li>
+							<li>Secure handling and storage of client data and confidential information</li>
+							<li>Incident response procedures and business continuity planning</li>
+							<li>Compliance with data protection regulations and security standards</li>
+						</ul>
+					</div>
+
+					<div class="quality-commitment">
+						<h2>Our Commitment</h2>
+						<p>InfraDev Consulting is dedicated to maintaining the highest standards of quality in all our services. We regularly review and improve our processes to ensure we continue to meet and exceed client expectations while maintaining compliance with all applicable standards and regulations, including information security requirements.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "Quality Policy - InfraDev Consulting",
+	"description": "InfraDev Consulting's Quality Policy demonstrates our ISO 9001-aligned quality management system focused on continuous improvement and customer satisfaction.",
+	"url": pageUrl,
+	"datePublished": "2024-01-01",
+	"dateModified": lastModified,
+	"author": {
+		"@type": "Person",
+		"name": "Marc Perry"
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		}
+	},
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	},
+	"keywords": "ISO 9001, quality management, quality policy, quality assurance, continuous improvement, customer satisfaction, quality objectives, ISO standards, quality management system, QMS"
+})} />
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": siteUrl
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Quality Policy",
+			"item": pageUrl
+		}
+	]
+})} />
+
+<style>
+	.policy-hero {
+		background: linear-gradient(135deg, rgba(139, 58, 26, 0.3) 0%, rgba(255, 132, 39, 0.2) 100%);
+		text-align: center;
+		padding: 4rem 0 2rem;
+	}
+
+	.policy-hero h1 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.policy-hero p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+	}
+
+	.policy-content {
+		background: var(--color-bg);
+	}
+
+	.policy-main {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.policy-intro {
+		background: var(--color-bg-light);
+		padding: 2rem;
+		border-radius: 10px;
+		margin-bottom: 3rem;
+		border-left: 4px solid var(--color-orange);
+	}
+
+	.policy-intro p {
+		font-size: 1.1rem;
+		color: var(--color-text);
+		line-height: 1.8;
+		margin: 0;
+	}
+
+	.policy-document {
+		background: #fff;
+		padding: 3rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 3rem;
+	}
+
+	.policy-document h2 {
+		font-size: 2rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 700;
+	}
+
+	.policy-document p {
+		color: var(--color-text-light);
+		line-height: 1.8;
+		margin-bottom: 1.5rem;
+		font-size: 1.05rem;
+	}
+
+	.policy-list {
+		list-style: none;
+		margin: 2rem 0;
+		padding-left: 0;
+	}
+
+	.policy-list li {
+		padding: 0.75rem 0 0.75rem 2rem;
+		color: var(--color-text);
+		line-height: 1.8;
+		position: relative;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.policy-list li:last-child {
+		border-bottom: none;
+	}
+
+	.policy-list li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+
+	.policy-signature {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 2px solid #e0e0e0;
+	}
+
+	.policy-signature p {
+		margin-bottom: 0.5rem;
+		color: var(--color-text);
+	}
+
+	.quality-objectives,
+	.quality-commitment {
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 2rem;
+	}
+
+	.quality-objectives h2,
+	.quality-commitment h2 {
+		font-size: 1.8rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+	}
+
+	.objectives-list {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.objectives-list li {
+		padding: 0.75rem 0 0.75rem 2rem;
+		color: var(--color-text-light);
+		line-height: 1.8;
+		position: relative;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.objectives-list li:last-child {
+		border-bottom: none;
+	}
+
+	.objectives-list li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+
+	.quality-commitment p {
+		color: var(--color-text-light);
+		line-height: 1.8;
+		margin: 0;
+		font-size: 1.05rem;
+	}
+
+	.breadcrumb {
+		background: var(--color-bg-light);
+		padding: 1rem 0;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+	}
+
+	.breadcrumb li {
+		display: flex;
+		align-items: center;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: var(--color-text-light);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.breadcrumb span {
+		color: var(--color-text-light);
+	}
+
+	@media (max-width: 768px) {
+		.policy-hero h1 {
+			font-size: 2rem;
+		}
+
+		.policy-document,
+		.quality-objectives,
+		.quality-commitment {
+			padding: 2rem;
+		}
+
+		.policy-document h2 {
+			font-size: 1.6rem;
+		}
+	}
+</style>
+
