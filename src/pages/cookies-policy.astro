@@ -1,0 +1,308 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/cookies-policy`;
+const lastModified = new Date().toISOString();
+const lastUpdated = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<Layout 
+	title="Cookies Policy | Cookie Usage & Privacy | InfraDev Consulting" 
+	description="InfraDev Consulting's Cookies Policy. We do not currently set first-party cookies. Learn about third-party cookies from Google Maps and how to manage your cookie preferences."
+	canonical={pageUrl}
+>
+	<Header />
+	<main itemscope itemtype="https://schema.org/Article">
+		<nav aria-label="Breadcrumb" class="breadcrumb">
+			<div class="container">
+				<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+						<meta itemprop="position" content="1" />
+					</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<span itemprop="name">Cookies Policy</span>
+						<meta itemprop="position" content="2" />
+					</li>
+				</ol>
+			</div>
+		</nav>
+
+		<section class="policy-hero section">
+			<div class="container">
+				<h1 itemprop="headline">Cookies Policy</h1>
+				<p>How we use cookies on our website</p>
+			</div>
+		</section>
+
+		<section class="policy-content section">
+			<div class="container">
+				<article class="policy-main" itemprop="articleBody">
+					<meta itemprop="datePublished" content="2024-01-01" />
+					<meta itemprop="dateModified" content={lastModified} />
+					<meta itemprop="author" itemscope itemtype="https://schema.org/Person" />
+					<meta itemprop="author.name" content="Marc Perry" />
+					<meta itemprop="publisher" itemscope itemtype="https://schema.org/Organization" />
+					<meta itemprop="publisher.name" content="InfraDev Consulting" />
+					
+					<div class="policy-document">
+						<h2>Cookies Policy</h2>
+						<p><strong>Last updated:</strong> <time datetime={lastModified}>{lastUpdated}</time></p>
+						
+						<h3>What Are Cookies</h3>
+						<p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and provide information to website owners.</p>
+
+						<h3>How We Use Cookies</h3>
+						<p>Currently, InfraDev Consulting does not set any first-party cookies on our website. Our site is a static website that does not require cookies to function.</p>
+
+						<h3>Third-Party Cookies</h3>
+						<p>We may use third-party services that set cookies:</p>
+
+						<ul class="policy-list">
+							<li><strong>Google Maps:</strong> Our contact page includes an embedded Google Maps iframe. Google may set cookies to provide map functionality and improve user experience. These cookies are subject to Google's Privacy Policy. You can view Google's cookie information at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</li>
+						</ul>
+
+						<p><strong>Future Use:</strong> If we implement analytics, preference settings, or other features that require cookies in the future, we will update this policy accordingly and provide appropriate cookie consent mechanisms where required by law.</p>
+
+						<h3>Cookie Security</h3>
+						<p>While we do not currently set first-party cookies, if we implement cookies in the future, we will implement the following security measures:</p>
+
+						<ul class="policy-list">
+							<li><strong>Secure Cookies:</strong> We will use secure cookies (HTTPS-only) to ensure that cookie data is transmitted over encrypted connections.</li>
+							<li><strong>HttpOnly Flag:</strong> We will use HttpOnly cookies where applicable to prevent client-side scripts from accessing cookie data, reducing the risk of cross-site scripting (XSS) attacks.</li>
+							<li><strong>SameSite Attribute:</strong> We will implement SameSite cookie attributes to help protect against cross-site request forgery (CSRF) attacks.</li>
+							<li><strong>Cookie Expiration:</strong> Cookies will be set with appropriate expiration dates, and we will regularly review and remove unnecessary or expired cookies.</li>
+							<li><strong>No Sensitive Data:</strong> We will never store sensitive personal information, such as passwords or credit card numbers, in cookies.</li>
+						</ul>
+
+						<h3>Managing Cookies</h3>
+						<p>Since we do not set first-party cookies, blocking cookies will not affect the core functionality of our website. However, third-party cookies from Google Maps may be blocked by your browser settings.</p>
+
+						<p>You can control and manage cookies in your browser settings. Most browsers allow you to:</p>
+
+						<ul class="policy-list">
+							<li>View and delete cookies</li>
+							<li>Block all cookies or only third-party cookies</li>
+							<li>Set preferences for specific websites</li>
+							<li>Clear cookies when you close your browser</li>
+						</ul>
+
+						<p>The help section of your browser will provide specific instructions on how to manage cookies. You can also use browser extensions or privacy tools to manage cookie preferences.</p>
+
+						<h3>Changes to This Policy</h3>
+						<p>We may update this Cookies Policy from time to time. We will notify you of any changes by posting the new Cookies Policy on this page and updating the "Last updated" date.</p>
+
+						<h3>Contact Us</h3>
+						<p>If you have any questions about our use of cookies, please contact us at <a href="mailto:marc@infradevconsulting.com">marc@infradevconsulting.com</a>.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "Cookies Policy - InfraDev Consulting",
+	"description": "InfraDev Consulting's Cookies Policy. We do not currently set first-party cookies. Learn about third-party cookies and how to manage your cookie preferences.",
+	"url": pageUrl,
+	"datePublished": "2024-01-01",
+	"dateModified": lastModified,
+	"author": {
+		"@type": "Person",
+		"name": "Marc Perry"
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		}
+	},
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	},
+	"keywords": "cookies policy, cookie usage, website cookies, privacy cookies, analytics cookies, cookie management, browser cookies, GDPR cookies"
+})} />
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": siteUrl
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Cookies Policy",
+			"item": pageUrl
+		}
+	]
+})} />
+
+<style>
+	.policy-hero {
+		background: linear-gradient(135deg, rgba(139, 58, 26, 0.3) 0%, rgba(255, 132, 39, 0.2) 100%);
+		text-align: center;
+		padding: 4rem 0 2rem;
+	}
+
+	.policy-hero h1 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.policy-hero p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+	}
+
+	.policy-content {
+		background: var(--color-bg);
+	}
+
+	.policy-main {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.policy-document {
+		background: #fff;
+		padding: 3rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.policy-document h2 {
+		font-size: 2rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.policy-document h3 {
+		font-size: 1.5rem;
+		color: var(--color-orange);
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.policy-document p {
+		color: var(--color-text-light);
+		line-height: 1.8;
+		margin-bottom: 1.5rem;
+		font-size: 1.05rem;
+	}
+
+	.policy-document a {
+		color: var(--color-orange);
+		text-decoration: underline;
+	}
+
+	.policy-document a:hover {
+		color: var(--color-orange-dark);
+	}
+
+	.policy-list {
+		list-style: none;
+		margin: 2rem 0;
+		padding-left: 0;
+	}
+
+	.policy-list li {
+		padding: 1rem 0 1rem 2rem;
+		color: var(--color-text);
+		line-height: 1.8;
+		position: relative;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.policy-list li:last-child {
+		border-bottom: none;
+	}
+
+	.policy-list li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+
+	.policy-list li strong {
+		color: var(--color-text);
+	}
+
+	.breadcrumb {
+		background: var(--color-bg-light);
+		padding: 1rem 0;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+	}
+
+	.breadcrumb li {
+		display: flex;
+		align-items: center;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: var(--color-text-light);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.breadcrumb span {
+		color: var(--color-text-light);
+	}
+
+	@media (max-width: 768px) {
+		.policy-hero h1 {
+			font-size: 2rem;
+		}
+
+		.policy-document {
+			padding: 2rem;
+		}
+
+		.policy-document h2 {
+			font-size: 1.6rem;
+		}
+
+		.policy-document h3 {
+			font-size: 1.3rem;
+		}
+	}
+</style>
+

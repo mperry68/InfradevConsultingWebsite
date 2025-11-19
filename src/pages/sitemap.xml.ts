@@ -4,8 +4,14 @@ const siteUrl = 'https://infradevconsulting.com';
 
 const pages = [
 	'',
+	'/eor',
+	'/consulting-management',
 	'/contact',
 	'/brochure',
+	'/quality-policy',
+	'/environmental-policy',
+	'/cookies-policy',
+	'/privacy-policy',
 ];
 
 export const GET: APIRoute = () => {
@@ -16,8 +22,8 @@ ${pages
 		(page) => `  <url>
     <loc>${siteUrl}${page}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>${page === '' ? 'weekly' : 'monthly'}</changefreq>
-    <priority>${page === '' ? '1.0' : '0.8'}</priority>
+    <changefreq>${page === '' ? 'weekly' : page === '/eor' || page === '/consulting-management' ? 'weekly' : 'monthly'}</changefreq>
+    <priority>${page === '' ? '1.0' : page === '/eor' || page === '/consulting-management' ? '0.9' : '0.8'}</priority>
   </url>`
 	)
 	.join('\n')}

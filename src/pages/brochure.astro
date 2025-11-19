@@ -2,19 +2,153 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBrochure-Consult-Draft.jpg';
 ---
 
-<Layout title="SEO Brochure - InfraDev Consulting">
+<Layout 
+	title="SEO Services | InfraDev Consulting"
+	description="InfraDev Consulting delivers full-service organic SEO: keyword strategy, bilingual content, technical fixes, site speed, analytics, backlinks, and transparent monthly reporting."
+>
 	<Header />
 	<main>
-		<section class="brochure-section section">
+		<section class="seo-hero section">
 			<div class="container">
-				<div class="brochure-image">
-					<img 
-						src="/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBrochure-Consult-Draft.jpg" 
-						alt="InfraDev Consulting SEO Brochure" 
-						class="brochure-img"
-					/>
+				<div class="hero-content">
+					<p class="eyebrow">Organic Search Engine Optimization</p>
+					<h1>SEO That Pairs Technical Precision with Real Content Strategy</h1>
+					<p class="hero-subtitle">
+						InfraDev Consulting manages every part of your SEO program—from focus keywords and bilingual content to technical fixes, analytics, and monthly reporting—so your site earns sustainable rankings and trust.
+					</p>
+					<div class="hero-cta">
+						<a href="/contact" class="btn btn-primary">Book an SEO Consultation</a>
+						<a href={brochureUrl} class="btn btn-secondary" download>Download SEO Brochure</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="overview section">
+			<div class="container">
+				<div class="section-header">
+					<h2>What You Get with InfraDev SEO</h2>
+					<p>We blend strategy, copywriting, development, and analytics to ensure search engines—and your customers—experience the same high-quality website.</p>
+				</div>
+				<div class="overview-grid">
+					<div class="overview-card">
+						<h3>Keyword & Content Control</h3>
+						<p>Focus keyword planning (kept between 2–3% density), professional copywriting, AI-text refinement, and French localization keep every page aligned with your brand.</p>
+					</div>
+					<div class="overview-card">
+						<h3>Technical Site Health</h3>
+						<p>Broken link removal, redirection clean-up, image compression, metadata, and mobile-first improvements keep crawlers and users confident.</p>
+					</div>
+					<div class="overview-card">
+						<h3>Performance Benchmarks</h3>
+						<p>Critical error remediation plus ongoing Core Web Vitals work to keep load times around two seconds on desktop and mobile.</p>
+					</div>
+					<div class="overview-card">
+						<h3>Transparent Reporting</h3>
+						<p>Google Analytics setup, KPI dashboards, backlink tracking, and monthly summaries (with optional mid-month check-ins).</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services section" id="seo-services">
+			<div class="container">
+				<div class="section-header">
+					<h2>SEO Services Included</h2>
+					<p>Everything below is managed by InfraDev unless noted otherwise.</p>
+				</div>
+				<div class="services-grid">
+					<div class="service-card">
+						<h3>Organic Optimization</h3>
+						<ul>
+							<li>Manage focus keywords with 2–3% density</li>
+							<li>Dedicated content writer and editor</li>
+							<li>Upgrade on-page copy to match focus topics</li>
+							<li>Reduce AI-generated text for authenticity</li>
+							<li>Adapt messaging for French-language audiences</li>
+						</ul>
+					</div>
+					<div class="service-card">
+						<h3>Technical SEO & UX</h3>
+						<ul>
+							<li>Fix broken links, remove low-quality backlinks</li>
+							<li>Resolve critical site errors & simplify redirects</li>
+							<li>Image optimization and compression</li>
+							<li>Meta titles, descriptions, Open Graph tags</li>
+							<li>Sitemap & robots.txt management</li>
+						</ul>
+					</div>
+					<div class="service-card">
+						<h3>Performance & Mobile</h3>
+						<ul>
+							<li>Site speed review with ~2 second target</li>
+							<li>Mobile friendliness improvements</li>
+							<li>Core Web Vitals & UX enhancements</li>
+							<li>Hosting/caching recommendations</li>
+							<li>Accessibility best practices</li>
+						</ul>
+					</div>
+					<div class="service-card">
+						<h3>Content & Authority</h3>
+						<ul>
+							<li>Two new blogs created every month</li>
+							<li>Optional reputable backlinks ($70 USD/link)</li>
+							<li>Editorial calendar & brief creation</li>
+							<li>Internal linking and CTA optimization</li>
+							<li>Focus keyword tracking per post</li>
+						</ul>
+					</div>
+					<div class="service-card">
+						<h3>Analytics & Reporting</h3>
+						<ul>
+							<li>Google Analytics & Search Console setup</li>
+							<li>Open Graph protocol validation</li>
+							<li>Monthly progress report (mid-month update if needed)</li>
+							<li>Goal alignment and KPI dashboards</li>
+							<li>Clear next-step recommendations</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="workflow section">
+			<div class="container">
+				<div class="section-header">
+					<h2>How Our SEO Engagement Works</h2>
+					<p>Clear milestones keep your internal team aligned with every optimization task.</p>
+				</div>
+				<div class="workflow-steps">
+					<div class="workflow-step">
+						<h3>1. Audit & Roadmap</h3>
+						<p>Full crawl, keyword mapping, and prioritization of technical fixes with projected impact.</p>
+					</div>
+					<div class="workflow-step">
+						<h3>2. Content & Technical Sprint</h3>
+						<p>Writers and engineers execute copy updates, new blogs, link clean-up, and speed improvements.</p>
+					</div>
+					<div class="workflow-step">
+						<h3>3. Measurement & Reporting</h3>
+						<p>Google Analytics dashboards, backlink tracking, and monthly summaries delivered to stakeholders.</p>
+					</div>
+				</div>
+				<div class="brochure-download">
+					<p>Prefer a one-pager overview? Download the brochure anytime.</p>
+					<a href={brochureUrl} class="btn btn-secondary" download>Download SEO Brochure</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta section">
+			<div class="container">
+				<div class="cta-content">
+					<h2>Ready to Transform Your Organic Visibility?</h2>
+					<p>Let’s turn your site into the fastest, cleanest, bilingual experience in your industry.</p>
+					<a href="/contact" class="btn btn-primary">Schedule a Call</a>
 				</div>
 			</div>
 		</section>
@@ -23,21 +157,257 @@ import Footer from '../components/Footer.astro';
 </Layout>
 
 <style>
-	.brochure-section {
-		background: var(--color-bg);
-		min-height: calc(100vh - 200px);
+	.section {
+		padding: 4rem 0;
 	}
 
-	.brochure-image {
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.4rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		color: var(--color-text-light);
+		font-size: 1.1rem;
+		max-width: 800px;
+		margin: 0 auto;
+		line-height: 1.7;
+	}
+
+	.seo-hero {
+		background: linear-gradient(135deg, rgba(139, 58, 26, 0.25), rgba(255, 132, 39, 0.2));
+		text-align: center;
+		padding: 5rem 0 4rem;
+	}
+
+	.hero-content {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		font-weight: 600;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-size: 0.9rem;
+	}
+
+	.seo-hero h1 {
+		font-size: 2.8rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+	}
+
+	.hero-subtitle {
+		color: var(--color-text-light);
+		font-size: 1.2rem;
+		line-height: 1.8;
+		margin-bottom: 2rem;
+	}
+
+	.hero-cta {
 		display: flex;
 		justify-content: center;
-		align-items: center;
-		width: 100%;
+		gap: 1rem;
+		flex-wrap: wrap;
 	}
 
-	.brochure-img {
-		max-width: 100%;
-		height: auto;
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem 2rem;
+		border-radius: 6px;
+		font-weight: 600;
+		border: 2px solid transparent;
+		transition: all 0.3s ease;
+	}
+
+	.btn-primary {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.btn-primary:hover {
+		background: var(--color-orange-dark);
+		color: #fff;
+		transform: translateY(-2px);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: var(--color-orange);
+		border-color: var(--color-orange);
+	}
+
+	.btn-secondary:hover {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.overview {
+		background: var(--color-bg);
+	}
+
+	.overview-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.overview-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+	}
+
+	.overview-card h3 {
+		color: var(--color-orange);
+		margin-bottom: 0.75rem;
+		font-size: 1.2rem;
+	}
+
+	.overview-card p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.services {
+		background: var(--color-bg-light);
+		padding: 4.5rem 0;
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2.5rem;
+	}
+
+	.service-card {
+		background: #fff;
+		padding: 2.25rem;
+		border-radius: 14px;
+		box-shadow: 0 15px 45px rgba(17, 24, 39, 0.08);
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	.service-card h3 {
+		color: var(--color-text);
+		margin: 0;
+		font-size: 1.35rem;
+	}
+
+	.service-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		color: var(--color-text-light);
+		line-height: 1.75;
+		display: flex;
+		flex-direction: column;
+		gap: 0.9rem;
+	}
+
+	.service-card li {
+		position: relative;
+		padding-left: 1.35rem;
+	}
+
+	.service-card li::before {
+		content: '•';
+		position: absolute;
+		left: 0;
+		top: 0.15rem;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+	}
+
+	.workflow {
+		background: var(--color-bg);
+	}
+
+	.workflow-steps {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.workflow-step {
+		background: #fff;
+		padding: 1.75rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+	}
+
+	.workflow-step h3 {
+		color: var(--color-orange);
+		margin-bottom: 0.5rem;
+	}
+
+	.workflow-step p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.brochure-download {
+		text-align: center;
+	}
+
+	.brochure-download p {
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.cta {
+		background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-dark) 100%);
+		color: #fff;
+		text-align: center;
+	}
+
+	.cta-content {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	.cta h2 {
+		font-size: 2.2rem;
+		margin-bottom: 1rem;
+		color: #fff;
+	}
+
+	.cta p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+	}
+
+	@media (max-width: 768px) {
+		.seo-hero h1 {
+			font-size: 2.2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.05rem;
+		}
+
+		.btn {
+			width: 100%;
+		}
 	}
 </style>
+
 

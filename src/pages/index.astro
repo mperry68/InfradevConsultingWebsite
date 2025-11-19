@@ -4,20 +4,411 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
 import Services from '../components/Services.astro';
-import About from '../components/About.astro';
-import Process from '../components/Process.astro';
 import CTA from '../components/CTA.astro';
 ---
 
-<Layout title="InfraDev Consulting - Technology Solutions & Consulting Services">
+<Layout 
+	title="Canadian Employer of Record (EOR) - Hire Canadian Talent | InfraDev Consulting" 
+	description="Hire Canadian talent without opening a Canadian entity. InfraDev Consulting provides Canadian Employer of Record (EOR) services and technical talent for U.S. companies. No Canadian subsidiary needed."
+>
 	<Header />
 	<main>
 		<Hero />
+		
+		<!-- Intro Paragraph Section -->
+		<section class="intro section">
+			<div class="container">
+				<div class="intro-content">
+					<p>InfraDev Consulting helps U.S. companies hire Canadian talent quickly, legally, and without setting up a Canadian subsidiary. We act as your Employer of Record and provide software development, AI, cloud, and DevOps support with fully compliant Canadian employees.</p>
+				</div>
+			</div>
+		</section>
+
 		<Services />
-		<About />
-		<Process />
+		
+		<!-- Why U.S. Companies Use Us Section -->
+		<section class="why-us section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Why U.S. Companies Use Us</h2>
+					<p>Hiring in Canada normally requires forming a Canadian corporation, registering with the CRA, opening payroll accounts, and understanding provincial labour laws. With InfraDev, you skip all of this.</p>
+				</div>
+				<div class="benefits-grid">
+					<div class="benefit-card">
+						<div class="benefit-icon">⚡</div>
+						<h3>Hire in 48 Hours</h3>
+						<p>Fast onboarding process - get your Canadian talent working in just 2 days.</p>
+					</div>
+					<div class="benefit-card">
+						<div class="benefit-icon">🏢</div>
+						<h3>No Entity Formation</h3>
+						<p>Skip the complexity and cost of setting up a Canadian corporation.</p>
+					</div>
+					<div class="benefit-card">
+						<div class="benefit-icon">✅</div>
+						<h3>No CRA Audits</h3>
+						<p>We handle all CRA compliance, so you don't have to worry about audits.</p>
+					</div>
+					<div class="benefit-card benefit-card--highlight">
+						<div class="benefit-icon">💰</div>
+						<h3>Save Up to 40% on Employment Costs</h3>
+						<p>Access highly skilled Canadian talent at <strong>10-40% lower cost</strong> than U.S. workers. Significant cost savings without compromising on quality.</p>
+					</div>
+					<div class="benefit-card">
+						<div class="benefit-icon">🛡️</div>
+						<h3>Fully Compliant</h3>
+						<p>Complete compliance with Canadian labour laws and regulations.</p>
+					</div>
+					<div class="benefit-card">
+						<div class="benefit-icon">📊</div>
+						<h3>Transparent Billing</h3>
+						<p>One simple monthly invoice - salary + employer contributions + service fee.</p>
+					</div>
+				</div>
+				<div class="eor-cta">
+					<a href="/eor" class="btn btn-primary">Explore EOR Services</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Trust & Social Proof Section -->
+		<section class="trust section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Trusted by U.S. Companies</h2>
+				</div>
+				<div class="trust-items">
+					<div class="trust-item">
+						<h3>ISO-Aligned Quality</h3>
+						<p>ISO-aligned quality management processes ensuring consistent, high-quality service delivery.</p>
+					</div>
+					<div class="trust-item">
+						<h3>Serving Clients Nationwide</h3>
+						<p>Supporting U.S. companies across all states with Canadian employment solutions.</p>
+					</div>
+					<div class="trust-item">
+						<h3>Full Compliance</h3>
+						<p>Complete adherence to Canadian federal and provincial labour laws and regulations.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Geographic Targeting Section -->
+		<section class="geographic section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Serving U.S. Companies Nationwide</h2>
+					<p>We support clients across the United States</p>
+				</div>
+				<div class="states-grid">
+					<div class="state-item">New York</div>
+					<div class="state-item">Texas</div>
+					<div class="state-item">California</div>
+					<div class="state-item">Florida</div>
+					<div class="state-item">Illinois</div>
+					<div class="state-item">Pennsylvania</div>
+					<div class="state-item">Ohio</div>
+					<div class="state-item">Georgia</div>
+					<div class="state-item">North Carolina</div>
+					<div class="state-item">Michigan</div>
+					<div class="state-item">New Jersey</div>
+					<div class="state-item">Virginia</div>
+					<div class="state-item">Washington</div>
+					<div class="state-item">Arizona</div>
+					<div class="state-item">Massachusetts</div>
+					<div class="state-item">Tennessee</div>
+					<div class="state-item">Indiana</div>
+					<div class="state-item">Missouri</div>
+					<div class="state-item">Maryland</div>
+					<div class="state-item">Wisconsin</div>
+					<div class="state-item">Colorado</div>
+					<div class="state-item">Minnesota</div>
+					<div class="state-item">South Carolina</div>
+					<div class="state-item">Alabama</div>
+					<div class="state-item">Louisiana</div>
+					<div class="state-item">Kentucky</div>
+					<div class="state-item">Oregon</div>
+					<div class="state-item">Oklahoma</div>
+					<div class="state-item">Connecticut</div>
+					<div class="state-item">Utah</div>
+					<div class="state-item">Iowa</div>
+					<div class="state-item">Nevada</div>
+					<div class="state-item">Arkansas</div>
+					<div class="state-item">Mississippi</div>
+					<div class="state-item">Kansas</div>
+					<div class="state-item">New Mexico</div>
+					<div class="state-item">Nebraska</div>
+					<div class="state-item">West Virginia</div>
+					<div class="state-item">Idaho</div>
+					<div class="state-item">Hawaii</div>
+					<div class="state-item">New Hampshire</div>
+					<div class="state-item">Maine</div>
+					<div class="state-item">Montana</div>
+					<div class="state-item">Rhode Island</div>
+					<div class="state-item">Delaware</div>
+					<div class="state-item">South Dakota</div>
+					<div class="state-item">North Dakota</div>
+					<div class="state-item">Alaska</div>
+					<div class="state-item">Vermont</div>
+					<div class="state-item">Wyoming</div>
+					<div class="state-item">District of Columbia</div>
+				</div>
+			</div>
+		</section>
+
 		<CTA />
 	</main>
 	<Footer />
 </Layout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	"name": "InfraDev Consulting",
+	"url": "https://infradevconsulting.com",
+	"logo": "https://infradevconsulting.com/assets/WebsiteMarketing/Logo/Logo.png",
+	"description": "Canadian Employer of Record (EOR) and technical partner for U.S. companies hiring Canadian talent. We provide EOR services, software development, AI, cloud, and DevOps support.",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "4-186 Pl. Sutton",
+		"addressLocality": "Beaconsfield",
+		"addressRegion": "QC",
+		"postalCode": "H9W 5S3",
+		"addressCountry": "CA"
+	},
+	"contactPoint": {
+		"@type": "ContactPoint",
+		"email": "marc@infradevconsulting.com",
+		"contactType": "Customer Service"
+	},
+	"sameAs": [],
+	"areaServed": {
+		"@type": "Country",
+		"name": "United States"
+	},
+	"serviceType": [
+		"Employer of Record",
+		"EOR Services",
+		"Software Development",
+		"AI Development",
+		"Cloud Services",
+		"DevOps"
+	]
+})} />
+
+<style>
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.1rem;
+		color: var(--color-text-light);
+		margin: 0 auto;
+		max-width: 800px;
+		line-height: 1.7;
+	}
+
+	.intro {
+		background: var(--color-bg-light);
+		padding: 3rem 0;
+	}
+
+	.intro-content {
+		max-width: 900px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.intro-content p {
+		font-size: 1.2rem;
+		color: var(--color-text);
+		line-height: 1.8;
+		margin: 0;
+	}
+
+	.why-us {
+		background: var(--color-bg-light);
+	}
+
+	.why-us.section {
+		padding-bottom: 3rem;
+	}
+
+	.benefits-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.benefit-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.benefit-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
+
+	.benefit-card--highlight {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));
+		border: 2px solid rgba(255, 132, 39, 0.3);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.benefit-card--highlight::before {
+		content: '';
+		position: absolute;
+		top: -50%;
+		right: -50%;
+		width: 200%;
+		height: 200%;
+		background: radial-gradient(circle, rgba(255, 132, 39, 0.1) 0%, transparent 70%);
+		pointer-events: none;
+	}
+
+	.benefit-card--highlight h3 {
+		color: var(--color-orange);
+		font-size: 1.4rem;
+		font-weight: 700;
+		position: relative;
+		z-index: 1;
+	}
+
+	.benefit-card--highlight p {
+		position: relative;
+		z-index: 1;
+	}
+
+	.benefit-card--highlight p strong {
+		color: var(--color-orange);
+		font-weight: 700;
+		font-size: 1.05em;
+	}
+
+	.benefit-card--highlight:hover {
+		border-color: var(--color-orange);
+		box-shadow: 0 8px 25px rgba(255, 132, 39, 0.25);
+		transform: translateY(-5px) scale(1.02);
+	}
+
+	.eor-cta {
+		text-align: center;
+		margin-top: 2rem;
+	}
+
+	.benefit-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.benefit-card h3 {
+		font-size: 1.3rem;
+		color: var(--color-orange);
+		margin-bottom: 0.75rem;
+		font-weight: 600;
+	}
+
+	.benefit-card p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.trust {
+		background: var(--color-bg-light);
+	}
+
+	.trust.section {
+		padding-top: 3rem;
+	}
+
+	.trust-items {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.trust-item {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+	}
+
+	.trust-item h3 {
+		font-size: 1.3rem;
+		color: var(--color-orange);
+		margin-bottom: 0.75rem;
+		font-weight: 600;
+	}
+
+	.trust-item p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.geographic {
+		background: var(--color-bg);
+	}
+
+	.states-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+		gap: 1rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.state-item {
+		background: #fff;
+		padding: 1rem;
+		border-radius: 5px;
+		text-align: center;
+		color: var(--color-text);
+		font-weight: 500;
+		box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.state-item:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+		color: var(--color-orange);
+	}
+
+	@media (max-width: 768px) {
+		.intro-content p {
+			font-size: 1.1rem;
+		}
+
+		.benefits-grid,
+		.trust-items {
+			grid-template-columns: 1fr;
+		}
+
+		.states-grid {
+			grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+		}
+	}
+</style>
 

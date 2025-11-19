@@ -1,0 +1,1109 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/consulting-management`;
+---
+
+<Layout 
+	title="Consulting Management - Hire Canadian Consultants | InfraDev Consulting" 
+	description="Hire Canadian consultants without opening a Canadian entity. Save 10-40% on consulting costs. InfraDev Consulting manages consultant contracts, invoicing, tax compliance, and administrative tasks for U.S. companies."
+	canonical={pageUrl}
+>
+	<Header />
+	<main itemscope itemtype="https://schema.org/Service">
+		<nav aria-label="Breadcrumb" class="breadcrumb">
+			<div class="container">
+				<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+						<meta itemprop="position" content="1" />
+					</li>
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<span itemprop="name">Consulting Management</span>
+						<meta itemprop="position" content="2" />
+					</li>
+				</ol>
+			</div>
+		</nav>
+		<!-- Hero Section -->
+		<section class="eor-hero section">
+			<div class="container">
+				<div class="hero-content">
+					<h1 itemprop="name">Hire Canadian Consultants Without Opening a Canadian Entity</h1>
+					<p class="hero-subtitle">InfraDev Consulting manages your Canadian consultant relationships, handling contracts, invoicing, tax compliance, and administrative tasks — while you focus on the work.</p>
+					<div class="cost-savings-badge">
+						<span class="savings-icon">💰</span>
+						<span class="savings-text">Save 10-40% on consulting costs compared to U.S. rates</span>
+					</div>
+					<p class="hero-description">Whether you need data engineers, software developers, cloud architects, analysts, or technical consultants, we make cross-border consulting engagements simple, compliant, and efficient.</p>
+					<div class="hero-cta">
+						<a href="/contact" class="btn btn-primary">Book a Consultation</a>
+						<a href="#how-it-works" class="btn btn-secondary">Learn How It Works</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- What We Do Section -->
+		<section class="what-we-do section">
+			<div class="container">
+				<div class="section-header">
+					<h2>What We Handle For You</h2>
+					<p>Complete Canadian consulting engagement management and administration</p>
+				</div>
+				<div class="services-grid">
+					<div class="service-card">
+						<div class="service-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="Contract Management" />
+						</div>
+						<h3>Consultant Contracts</h3>
+						<p>Legally compliant consulting agreements and service contracts tailored to your needs.</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Estimate.png" alt="Invoicing" />
+						</div>
+						<h3>Invoicing & Payments</h3>
+						<p>Professional invoicing, payment processing, and financial administration for consultant engagements.</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Architect.png" alt="Compliance" />
+						</div>
+						<h3>Tax Compliance</h3>
+						<p>GST/HST handling, T4A slip generation, and Canadian tax compliance for consultant payments.</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Discover.png" alt="Documentation" />
+						</div>
+						<h3>Documentation</h3>
+						<p>Complete documentation management including contracts, statements of work, and engagement records.</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Launch.png" alt="Onboarding" />
+						</div>
+						<h3>Onboarding & Offboarding</h3>
+						<p>Streamlined consultant onboarding, engagement management, and contract termination processes.</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="Support" />
+						</div>
+						<h3>Administrative Support</h3>
+						<p>Ongoing administrative support and relationship management for your consultant engagements.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Why U.S. Companies Use Us -->
+		<section class="why-us section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Why U.S. Companies Use Us</h2>
+					<p>Engaging Canadian consultants normally requires understanding Canadian tax laws, GST/HST requirements, contract structures, and compliance obligations. With InfraDev, you skip all of this.</p>
+				</div>
+				<div class="benefits-grid">
+					<div class="benefit-card">
+						<div class="benefit-icon">⚡</div>
+						<h3>Engage in 48 Hours</h3>
+						<p>Fast onboarding process - get your Canadian consultants working in just 2 days.</p>
+					</div>
+					<div class="benefit-card">
+						<div class="benefit-icon">🏢</div>
+						<h3>No Entity Formation</h3>
+						<p>Skip the complexity and cost of setting up a Canadian corporation or business registration.</p>
+					</div>
+					<div class="benefit-card">
+						<div class="benefit-icon">✅</div>
+						<h3>No Tax Complexity</h3>
+						<p>We handle all GST/HST, tax compliance, and reporting requirements, so you don't have to worry.</p>
+					</div>
+					<div class="benefit-card benefit-card--highlight">
+						<div class="benefit-icon">💰</div>
+						<h3>Save 10-40% on Consulting Costs</h3>
+						<p>Access highly skilled Canadian consultants at 10-40% lower cost than U.S. consultants. Reduce your consulting expenses while maintaining top-tier talent quality.</p>
+					</div>
+					<div class="benefit-card">
+						<div class="benefit-icon">🛡️</div>
+						<h3>Fully Compliant</h3>
+						<p>Complete compliance with Canadian tax laws, contract regulations, and business requirements.</p>
+					</div>
+					<div class="benefit-card">
+						<div class="benefit-icon">📊</div>
+						<h3>Transparent Billing</h3>
+						<p>One simple monthly invoice - consultant fees + applicable taxes + service fee.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- How It Works -->
+		<section id="how-it-works" class="how-it-works section">
+			<div class="container">
+				<div class="section-header">
+					<h2>How It Works</h2>
+					<p>A simple, streamlined process for cross-border consulting engagements</p>
+				</div>
+				<div class="process-steps">
+					<div class="process-step">
+						<div class="step-number">1</div>
+						<div class="process-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Discover.png" alt="Select Consultant" />
+						</div>
+						<h3>You Select a Consultant</h3>
+						<p>You choose the consultant you want to engage — your preferred consultant or one we help you find.</p>
+					</div>
+					<div class="process-arrow">→</div>
+					<div class="process-step">
+						<div class="step-number">2</div>
+						<div class="process-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="We Contract" />
+						</div>
+						<h3>We Contract Them in Canada</h3>
+						<p>The consultant enters into a consulting agreement with InfraDev Consulting under our Canadian company.</p>
+					</div>
+					<div class="process-arrow">→</div>
+					<div class="process-step">
+						<div class="step-number">3</div>
+						<div class="process-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Launch.png" alt="You Manage" />
+						</div>
+						<h3>You Manage Their Work</h3>
+						<p>You assign projects, evaluate deliverables, and integrate them into your team as consultants.</p>
+					</div>
+					<div class="process-arrow">→</div>
+					<div class="process-step">
+						<div class="step-number">4</div>
+						<div class="process-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Estimate.png" alt="Simple Invoice" />
+						</div>
+						<h3>One Simple Monthly Invoice</h3>
+						<p>We handle invoicing, payments, and compliance. You receive one clear invoice for all consultant fees.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing Section -->
+		<section class="pricing section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Transparent Pricing</h2>
+					<p>Simple, straightforward pricing with no hidden fees</p>
+				</div>
+				<div class="pricing-content">
+					<div class="pricing-card">
+						<h3>What's Included</h3>
+						<ul class="pricing-list">
+							<li>✓ Consultant fees and compensation</li>
+							<li>✓ GST/HST handling and remittances</li>
+							<li>✓ Flat InfraDev consulting management fee ($499/month per consultant)</li>
+							<li>✓ All invoicing and payment processing</li>
+							<li>✓ Tax compliance and reporting</li>
+							<li>✓ Contract and administrative support</li>
+						</ul>
+						<div class="pricing-note">
+							<p><strong>Note:</strong> Pricing varies based on consultant rates and specific requirements. Contact us for a customized quote.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ Section -->
+		<section class="faq section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Frequently Asked Questions</h2>
+					<p>Common questions about our Consulting Management services</p>
+				</div>
+				<div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+							<span itemprop="name">Is this legal?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p><strong>YES</strong> — This is 100% legal and widely practiced in Canada. Canadian business law fully permits third-party companies to manage consultant relationships on behalf of foreign companies. We contract Canadian consultants on behalf of U.S. businesses, which is completely legal and compliant.</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+							<span itemprop="name">Do we need a Canadian company?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p><strong>NO</strong> — That's the whole point! InfraDev Consulting acts as the contracting party. You don't need to form a Canadian corporation, register for GST/HST, or set up Canadian business accounts. We handle all of that for you.</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+							<span itemprop="name">Do you work with remote consultants?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p><strong>YES</strong> — We specialize in remote consulting engagements. Your Canadian consultants work from wherever they are located in Canada, and you manage their projects and deliverables remotely.</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+							<span itemprop="name">What about immigration sponsorship?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p>We do not provide immigration sponsorship (TN, H1B, etc.). We only offer Canadian-based consulting engagements for consultants who are already legally authorized to work in Canada.</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+							<span itemprop="name">Can you help us find consultants?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p>We focus on the contracting and compliance side. You find the consultants you want to engage, and we facilitate the legal contracting process. We are not a recruitment agency.</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+							<span itemprop="name">What happens if we need to end a consulting engagement?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p>We handle all contract termination processes including final invoicing, payment processing, and compliance with contract terms and Canadian business requirements.</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7">
+							<span itemprop="name">How quickly can we onboard a new consultant?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p>Typically within 24-48 hours once we have all required documentation and contract terms. The exact timeline depends on the completeness of the consultant's information and any specific engagement requirements.</p>
+							</div>
+						</div>
+					</div>
+					<div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8">
+							<span itemprop="name">What provinces do you operate in?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-8" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+							<div itemprop="text">
+								<p>We can contract consultants in all Canadian provinces and territories. We ensure compliance with provincial tax laws, business regulations, and all regional requirements.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Disclaimer -->
+		<section class="disclaimer section">
+			<div class="container">
+				<div class="disclaimer-content">
+					<h3>Disclaimer</h3>
+					<p>InfraDev Consulting contracts consultants in Canada and provides full Canadian business and tax compliance. We do not provide U.S. consulting services, immigration sponsorship, or legal tax advice. All services are provided in accordance with Canadian federal and provincial laws.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Call to Action -->
+		<section class="cta section">
+			<div class="container">
+				<div class="cta-content">
+					<h2>Ready to Engage Canadian Consultants?</h2>
+					<p>Book a consultation and we'll guide you through everything you need to know about cross-border consulting engagements.</p>
+					<a href="/contact" class="btn btn-primary btn-large">Book a Consulting Management Consultation</a>
+					<p class="cta-email">Or email us at <a href="mailto:marc@infradevconsulting.com">marc@infradevconsulting.com</a></p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Service",
+	"name": "Consulting Management Services",
+	"description": "Hire Canadian consultants without opening a Canadian entity. InfraDev Consulting manages consultant contracts, invoicing, tax compliance, and administrative tasks for U.S. companies. Save 10-40% on consulting costs.",
+	"provider": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"url": siteUrl,
+		"logo": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+	},
+	"areaServed": {
+		"@type": "Country",
+		"name": "United States"
+	},
+	"serviceType": "Consulting Management",
+	"url": pageUrl,
+	"offers": {
+		"@type": "Offer",
+		"priceCurrency": "USD",
+		"price": "499",
+		"priceSpecification": {
+			"@type": "UnitPriceSpecification",
+			"price": "499",
+			"priceCurrency": "USD",
+			"unitText": "MONTH"
+		}
+	}
+})} />
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": siteUrl
+		},
+		{
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Consulting Management",
+			"item": pageUrl
+		}
+	]
+})} />
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [
+		{
+			"@type": "Question",
+			"name": "Is this legal?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "YES — This is 100% legal and widely practiced in Canada. Canadian business law fully permits third-party companies to manage consultant relationships on behalf of foreign companies. We contract Canadian consultants on behalf of U.S. businesses, which is completely legal and compliant."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Do we need a Canadian company?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "NO — That's the whole point! InfraDev Consulting acts as the contracting party. You don't need to form a Canadian corporation, register for GST/HST, or set up Canadian business accounts. We handle all of that for you."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Do you work with remote consultants?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "YES — We specialize in remote consulting engagements. Your Canadian consultants work from wherever they are located in Canada, and you manage their projects and deliverables remotely."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What about immigration sponsorship?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We do not provide immigration sponsorship (TN, H1B, etc.). We only offer Canadian-based consulting engagements for consultants who are already legally authorized to work in Canada."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Can you help us find consultants?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We focus on the contracting and compliance side. You find the consultants you want to engage, and we facilitate the legal contracting process. We are not a recruitment agency."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What happens if we need to end a consulting engagement?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We handle all contract termination processes including final invoicing, payment processing, and compliance with contract terms and Canadian business requirements."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How quickly can we onboard a new consultant?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Typically within 24-48 hours once we have all required documentation and contract terms. The exact timeline depends on the completeness of the consultant's information and any specific engagement requirements."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What provinces do you operate in?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We can contract consultants in all Canadian provinces and territories. We ensure compliance with provincial tax laws, business regulations, and all regional requirements."
+			}
+		}
+	]
+})} />
+
+<script>
+	// FAQ Accordion functionality
+	document.addEventListener('DOMContentLoaded', () => {
+		const faqQuestions = document.querySelectorAll('.faq-question');
+		
+		faqQuestions.forEach(question => {
+			question.addEventListener('click', () => {
+				const answer = question.nextElementSibling;
+				const isExpanded = question.getAttribute('aria-expanded') === 'true';
+				
+				// Close all other FAQs (optional - remove if you want multiple open)
+				faqQuestions.forEach(q => {
+					if (q !== question) {
+						q.setAttribute('aria-expanded', 'false');
+						q.nextElementSibling.classList.remove('open');
+					}
+				});
+				
+				// Toggle current FAQ
+				if (isExpanded) {
+					question.setAttribute('aria-expanded', 'false');
+					answer.classList.remove('open');
+				} else {
+					question.setAttribute('aria-expanded', 'true');
+					answer.classList.add('open');
+				}
+			});
+		});
+	});
+</script>
+
+<style>
+	.eor-hero {
+		background: rgba(139, 58, 26, 0.3);
+		padding: 6rem 0 4rem;
+		text-align: center;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.eor-hero h1 {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		line-height: 1.2;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: var(--color-text);
+		margin-bottom: 2rem;
+		line-height: 1.7;
+		font-weight: 400;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.hero-description {
+		font-size: 1.05rem;
+		color: var(--color-text-light);
+		margin-bottom: 2.5rem;
+		line-height: 1.7;
+		max-width: 750px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.breadcrumb {
+		background: var(--color-bg-light);
+		padding: 1rem 0;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+	}
+
+	.breadcrumb li {
+		display: flex;
+		align-items: center;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: var(--color-text-light);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+	}
+
+	.breadcrumb a:hover {
+		text-decoration: underline;
+	}
+
+	.breadcrumb span {
+		color: var(--color-text-light);
+	}
+
+	.hero-cta {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 2.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.cost-savings-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.75rem;
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.1), rgba(255, 150, 72, 0.15));
+		border: 2px solid rgba(255, 132, 39, 0.4);
+		border-radius: 12px;
+		padding: 0.875rem 1.75rem;
+		margin: 0 auto 2rem;
+		font-size: 1rem;
+		font-weight: 600;
+		color: var(--color-text);
+		box-shadow: 0 2px 8px rgba(255, 132, 39, 0.15);
+		transition: all 0.3s ease;
+	}
+
+	.cost-savings-badge:hover {
+		border-color: var(--color-orange);
+		box-shadow: 0 4px 12px rgba(255, 132, 39, 0.25);
+		transform: translateY(-2px);
+	}
+
+	.savings-icon {
+		font-size: 1.4rem;
+		line-height: 1;
+	}
+
+	.savings-text {
+		color: var(--color-text);
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		border: 2px solid transparent;
+		text-decoration: none;
+	}
+
+	.btn-primary {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.btn-primary:hover {
+		background: var(--color-orange-dark);
+		color: #fff;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(255, 132, 39, 0.3);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: var(--color-orange);
+		border-color: var(--color-orange);
+	}
+
+	.btn-secondary:hover {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.what-we-do {
+		background: var(--color-bg);
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.services-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.service-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		text-align: center;
+	}
+
+	.service-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
+
+	.service-icon {
+		margin-bottom: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 120px;
+	}
+
+	.service-icon img {
+		max-width: 100px;
+		height: auto;
+	}
+
+	.service-card h3 {
+		font-size: 1.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.service-card p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.why-us {
+		background: var(--color-bg-light);
+	}
+
+	.benefits-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.benefit-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.benefit-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
+
+	.benefit-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.benefit-card h3 {
+		font-size: 1.3rem;
+		color: var(--color-orange);
+		margin-bottom: 0.75rem;
+		font-weight: 600;
+	}
+
+	.benefit-card p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.benefit-card--highlight {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.1), rgba(255, 150, 72, 0.15));
+		border: 2px solid rgba(255, 132, 39, 0.3);
+	}
+
+	.how-it-works {
+		background: var(--color-bg);
+	}
+
+	.process-steps {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+
+	.process-step {
+		flex: 1;
+		min-width: 200px;
+		max-width: 250px;
+		text-align: center;
+		padding: 1.5rem;
+		position: relative;
+	}
+
+	.step-number {
+		position: absolute;
+		top: -10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: var(--color-orange);
+		color: #fff;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 1.2rem;
+		box-shadow: 0 2px 8px rgba(255, 132, 39, 0.3);
+	}
+
+	.process-icon {
+		margin: 1.5rem 0 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 80px;
+	}
+
+	.process-icon img {
+		max-width: 60px;
+		height: auto;
+	}
+
+	.process-step h3 {
+		font-size: 1.2rem;
+		color: var(--color-orange);
+		margin-bottom: 0.5rem;
+		font-weight: 600;
+	}
+
+	.process-step p {
+		color: var(--color-text-light);
+		font-size: 0.95rem;
+		line-height: 1.5;
+	}
+
+	.process-arrow {
+		color: var(--color-orange);
+		font-size: 2rem;
+		font-weight: bold;
+		align-self: center;
+		margin-top: 2rem;
+	}
+
+	.pricing {
+		background: var(--color-bg-light);
+	}
+
+	.pricing-content {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.pricing-card {
+		background: #fff;
+		padding: 3rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.pricing-card h3 {
+		font-size: 1.8rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	.pricing-list {
+		list-style: none;
+		margin-bottom: 2rem;
+	}
+
+	.pricing-list li {
+		padding: 0.75rem 0;
+		color: var(--color-text);
+		font-size: 1.1rem;
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.pricing-list li:last-child {
+		border-bottom: none;
+	}
+
+	.pricing-note {
+		background: var(--color-bg-light);
+		padding: 1.5rem;
+		border-radius: 5px;
+		margin-top: 2rem;
+	}
+
+	.pricing-note p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.faq {
+		background: var(--color-bg);
+	}
+
+	.faq-list {
+		max-width: 900px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.faq-item {
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 1rem;
+		overflow: hidden;
+		transition: box-shadow 0.3s ease;
+	}
+
+	.faq-item:hover {
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	}
+
+	.faq-question {
+		width: 100%;
+		background: transparent;
+		border: none;
+		padding: 1.5rem 2rem;
+		text-align: left;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1.3rem;
+		color: var(--color-orange);
+		font-weight: 600;
+		transition: background-color 0.3s ease, color 0.3s ease;
+		font-family: inherit;
+	}
+
+	.faq-question:hover {
+		background: var(--color-bg-light);
+		color: var(--color-orange-dark);
+	}
+
+	.faq-question:focus {
+		outline: 2px solid var(--color-orange);
+		outline-offset: -2px;
+	}
+
+	.faq-question[aria-expanded="true"] {
+		background: var(--color-bg-light);
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.faq-question[aria-expanded="true"] .faq-icon {
+		transform: rotate(45deg);
+	}
+
+	.faq-icon {
+		font-size: 1.5rem;
+		font-weight: 300;
+		color: var(--color-orange);
+		transition: transform 0.3s ease;
+		flex-shrink: 0;
+		margin-left: 1rem;
+		line-height: 1;
+	}
+
+	.faq-answer {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease, padding 0.3s ease;
+		padding: 0 2rem;
+	}
+
+	.faq-answer.open {
+		max-height: 500px;
+		padding: 1.5rem 2rem 2rem;
+	}
+
+	.faq-answer p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.disclaimer {
+		background: var(--color-bg-light);
+	}
+
+	.disclaimer-content {
+		max-width: 900px;
+		margin: 0 auto;
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-left: 4px solid var(--color-orange);
+	}
+
+	.disclaimer-content h3 {
+		font-size: 1.3rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.disclaimer-content p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.cta {
+		background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-dark) 100%);
+		color: #fff;
+		text-align: center;
+	}
+
+	.cta-content {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.cta h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.cta p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+		opacity: 0.95;
+	}
+
+	.btn-large {
+		padding: 1.25rem 2.5rem;
+		font-size: 1.1rem;
+		background: #fff;
+		color: var(--color-orange);
+	}
+
+	.btn-large:hover {
+		background: var(--color-bg-light);
+		color: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.cta-email {
+		margin-top: 1.5rem;
+		font-size: 1rem;
+	}
+
+	.cta-email a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	.cta-email a:hover {
+		opacity: 0.9;
+	}
+
+	@media (max-width: 768px) {
+		.eor-hero {
+			padding: 4rem 0 3rem;
+		}
+
+		.eor-hero h1 {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1.1rem;
+		}
+
+		.hero-description {
+			font-size: 1rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.services-grid,
+		.benefits-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.process-steps {
+			flex-direction: column;
+		}
+
+		.process-arrow {
+			transform: rotate(90deg);
+			margin: 0;
+		}
+
+		.process-step {
+			max-width: 100%;
+		}
+
+		.pricing-card {
+			padding: 2rem;
+		}
+
+		.cta h2 {
+			font-size: 2rem;
+		}
+
+		.cta p {
+			font-size: 1.1rem;
+		}
+	}
+</style>
+

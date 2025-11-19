@@ -1,17 +1,18 @@
 <section id="services" class="services section">
 	<div class="container">
 		<div class="section-header">
-			<h2>Our Services</h2>
-			<p>Comprehensive technology solutions tailored to your business needs</p>
+			<h2>Our Core Services</h2>
+			<p>Comprehensive solutions for U.S. companies hiring Canadian talent</p>
 		</div>
 		<div class="services-grid">
-			<div class="service-card">
-				<div class="service-icon">
-					<img src="/assets/WebsiteMarketing/InfraDev Assets/Discover.png" alt="AI & ML Development" />
+			<a class="service-card service-card--highlight" href="/eor">
+				<div class="service-icon service-icon--highlight">
+					<img src="/assets/WebsiteMarketing/InfraDev Assets/Launch.png" alt="Employer of Record" />
 				</div>
-				<h3>AI & ML Development</h3>
-				<p>Build intelligent solutions with cutting-edge artificial intelligence and machine learning technologies.</p>
-			</div>
+				<h3>Employer of Record</h3>
+				<p>Hire Canadian talent without opening a Canadian entity.</p>
+				<span class="service-cta">Learn more →</span>
+			</a>
 			<div class="service-card">
 				<div class="service-icon">
 					<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="Software Development" />
@@ -21,24 +22,25 @@
 			</div>
 			<div class="service-card">
 				<div class="service-icon">
+					<img src="/assets/WebsiteMarketing/InfraDev Assets/Discover.png" alt="AI & ML Development" />
+				</div>
+				<h3>AI & ML Development</h3>
+				<p>Build intelligent solutions with cutting-edge artificial intelligence and machine learning technologies.</p>
+			</div>
+			<a class="service-card service-card--highlight" href="/consulting-management">
+				<div class="service-icon service-icon--highlight">
+					<img src="/assets/WebsiteMarketing/InfraDev Assets/Architect.png" alt="Consulting Management" />
+				</div>
+				<h3>Consulting Management</h3>
+				<p>Hire Canadian consultants without opening a Canadian entity.</p>
+				<span class="service-cta">Learn more →</span>
+			</a>
+			<div class="service-card">
+				<div class="service-icon">
 					<img src="/assets/WebsiteMarketing/InfraDev Assets/Estimate.png" alt="Search Engine Optimization" />
 				</div>
 				<h3>Search Engine Optimization</h3>
 				<p>Boost your online visibility with comprehensive SEO strategies and social media marketing to drive organic traffic and engagement.</p>
-			</div>
-			<div class="service-card">
-				<div class="service-icon">
-					<img src="/assets/WebsiteMarketing/InfraDev Assets/Architect.png" alt="Data Engineering" />
-				</div>
-				<h3>Data Engineering</h3>
-				<p>Transform your data into actionable insights with robust data pipelines and analytics platforms.</p>
-			</div>
-			<div class="service-card">
-				<div class="service-icon">
-					<img src="/assets/WebsiteMarketing/InfraDev Assets/Launch.png" alt="DevOps & Cloud" />
-				</div>
-				<h3>DevOps & Cloud</h3>
-				<p>Scalable cloud infrastructure and automated deployment pipelines for modern applications.</p>
 			</div>
 			<div class="service-card">
 				<div class="service-icon">
@@ -86,6 +88,67 @@
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 		text-align: center;
+	}
+
+	.services-grid a.service-card {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.service-card--highlight {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.15), rgba(255, 150, 72, 0.3));
+		border: 1px solid rgba(255, 132, 39, 0.3);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.service-card--highlight::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: -40px;
+		width: 120px;
+		height: 120px;
+		background: rgba(255, 132, 39, 0.15);
+		border-radius: 50%;
+		filter: blur(10px);
+	}
+
+	.service-card--highlight h3,
+	.service-card--highlight p,
+	.service-card--highlight .service-cta {
+		position: relative;
+		z-index: 1;
+	}
+
+	.service-card--highlight .service-cta {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.25rem;
+		margin-top: 1rem;
+		font-weight: 600;
+		color: var(--color-orange);
+	}
+
+	.service-card--highlight .service-cta::after {
+		content: '';
+		width: 12px;
+		height: 12px;
+		border-top: 2px solid currentColor;
+		border-right: 2px solid currentColor;
+		transform: rotate(45deg);
+		display: inline-block;
+		margin-left: 0.25rem;
+	}
+
+	.service-card--highlight:hover .service-cta {
+		color: var(--color-orange-dark);
+	}
+
+	.service-icon--highlight {
+		background: rgba(255, 255, 255, 0.5);
+		border-radius: 50%;
+		padding: 1rem;
 	}
 
 	.service-card:hover {

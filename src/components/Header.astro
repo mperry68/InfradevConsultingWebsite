@@ -6,7 +6,16 @@
 			</a>
 			<ul class="nav-links">
 				<li><a href="/" aria-label="Home page">Home</a></li>
-				<li><a href="/brochure" aria-label="SEO Brochure">SEO Brochure</a></li>
+				<li class="nav-dropdown">
+					<button class="nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+						Hiring Canadian <span class="dropdown-arrow">▼</span>
+					</button>
+					<ul class="nav-dropdown-menu">
+						<li><a href="/eor" aria-label="Employer of Record">Employer of Record</a></li>
+						<li><a href="/consulting-management" aria-label="Consulting Management">Consulting Management</a></li>
+					</ul>
+				</li>
+				<li><a href="/brochure" aria-label="SEO">SEO</a></li>
 				<li><a href="/contact" aria-label="Contact us">Contact</a></li>
 			</ul>
 		</nav>
@@ -15,7 +24,6 @@
 
 <style>
 	.header {
-		background: var(--color-bg);
 		border-bottom: 1px solid #e0e0e0;
 		position: sticky;
 		top: 0;
@@ -56,6 +64,83 @@
 	}
 
 	.nav-links a:hover {
+		color: var(--color-orange);
+	}
+
+	.nav-dropdown {
+		position: relative;
+	}
+
+	.nav-dropdown-toggle {
+		background: transparent;
+		border: none;
+		color: var(--color-text);
+		font-weight: 500;
+		font-size: 1rem;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+		transition: color 0.3s ease;
+		font-family: inherit;
+		padding: 0;
+	}
+
+	.nav-dropdown-toggle:hover {
+		color: var(--color-orange);
+	}
+
+	.dropdown-arrow {
+		font-size: 0.7rem;
+		transition: transform 0.3s ease;
+	}
+
+	.nav-dropdown:hover .dropdown-arrow,
+	.nav-dropdown-toggle[aria-expanded="true"] ~ .dropdown-arrow,
+	.nav-dropdown-toggle[aria-expanded="true"] + .dropdown-arrow {
+		transform: rotate(180deg);
+	}
+
+	.nav-dropdown-menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: #fff;
+		border-radius: 5px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		list-style: none;
+		padding: 0.5rem 0;
+		margin: 0.5rem 0 0 0;
+		min-width: 250px;
+		white-space: nowrap;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-10px);
+		transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+		z-index: 1000;
+	}
+
+	.nav-dropdown:hover .nav-dropdown-menu,
+	.nav-dropdown-toggle[aria-expanded="true"] ~ .nav-dropdown-menu {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+
+	.nav-dropdown-menu li {
+		margin: 0;
+	}
+
+	.nav-dropdown-menu a {
+		display: block;
+		padding: 0.75rem 1.5rem;
+		color: var(--color-text);
+		text-decoration: none;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	}
+
+	.nav-dropdown-menu a:hover {
+		background: var(--color-bg-light);
 		color: var(--color-orange);
 	}
 
