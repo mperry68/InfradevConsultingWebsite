@@ -120,10 +120,10 @@ const pageUrl = `${siteUrl}/eor`;
 						<h3>No CRA Audits</h3>
 						<p>We handle all CRA compliance, so you don't have to worry about audits.</p>
 					</div>
-					<div class="benefit-card">
+					<div class="benefit-card benefit-card--highlight">
 						<div class="benefit-icon">💰</div>
-						<h3>Lower Employment Cost</h3>
-						<p>Access highly skilled Canadian talent at 10-40% lower cost than U.S. workers.</p>
+						<h3>Save Up to 40% on Employment Costs</h3>
+						<p>Access highly skilled Canadian talent at <strong>10-40% lower cost</strong> than U.S. workers. Significant cost savings without compromising on quality.</p>
 					</div>
 					<div class="benefit-card">
 						<div class="benefit-icon">🛡️</div>
@@ -694,6 +694,49 @@ const pageUrl = `${siteUrl}/eor`;
 	.benefit-card:hover {
 		transform: translateY(-5px);
 		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
+
+	.benefit-card--highlight {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));
+		border: 2px solid rgba(255, 132, 39, 0.3);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.benefit-card--highlight::before {
+		content: '';
+		position: absolute;
+		top: -50%;
+		right: -50%;
+		width: 200%;
+		height: 200%;
+		background: radial-gradient(circle, rgba(255, 132, 39, 0.1) 0%, transparent 70%);
+		pointer-events: none;
+	}
+
+	.benefit-card--highlight h3 {
+		color: var(--color-orange);
+		font-size: 1.4rem;
+		font-weight: 700;
+		position: relative;
+		z-index: 1;
+	}
+
+	.benefit-card--highlight p {
+		position: relative;
+		z-index: 1;
+	}
+
+	.benefit-card--highlight p strong {
+		color: var(--color-orange);
+		font-weight: 700;
+		font-size: 1.05em;
+	}
+
+	.benefit-card--highlight:hover {
+		border-color: var(--color-orange);
+		box-shadow: 0 8px 25px rgba(255, 132, 39, 0.25);
+		transform: translateY(-5px) scale(1.02);
 	}
 
 	.benefit-icon {
