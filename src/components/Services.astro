@@ -1,17 +1,36 @@
 <section id="services" class="services section">
 	<div class="container">
 		<div class="section-header">
-			<h2>Our Services</h2>
-			<p>Comprehensive technology solutions tailored to your business needs</p>
+			<h2>Our Core Services</h2>
+			<p>Comprehensive solutions for U.S. companies hiring Canadian talent</p>
+		</div>
+		<div class="services-overview">
+			<div class="service-link-item">
+				<a href="/eor" class="service-link">
+					<span class="service-link-icon">→</span>
+					<span class="service-link-text">Employer of Record (EOR) Services</span>
+				</a>
+			</div>
+			<div class="service-link-item">
+				<a href="#services" class="service-link">
+					<span class="service-link-icon">→</span>
+					<span class="service-link-text">AI & Machine Learning Development</span>
+				</a>
+			</div>
+			<div class="service-link-item">
+				<a href="#services" class="service-link">
+					<span class="service-link-icon">→</span>
+					<span class="service-link-text">Custom Software Development</span>
+				</a>
+			</div>
+			<div class="service-link-item">
+				<a href="#services" class="service-link">
+					<span class="service-link-icon">→</span>
+					<span class="service-link-text">Cloud & DevOps Engineering</span>
+				</a>
+			</div>
 		</div>
 		<div class="services-grid">
-			<div class="service-card">
-				<div class="service-icon">
-					<img src="/assets/WebsiteMarketing/InfraDev Assets/Discover.png" alt="AI & ML Development" />
-				</div>
-				<h3>AI & ML Development</h3>
-				<p>Build intelligent solutions with cutting-edge artificial intelligence and machine learning technologies.</p>
-			</div>
 			<a class="service-card service-card--highlight" href="/eor">
 				<div class="service-icon service-icon--highlight">
 					<img src="/assets/WebsiteMarketing/InfraDev Assets/Launch.png" alt="Employer of Record" />
@@ -22,10 +41,17 @@
 			</a>
 			<div class="service-card">
 				<div class="service-icon">
-					<img src="/assets/WebsiteMarketing/InfraDev Assets/Estimate.png" alt="Search Engine Optimization" />
+					<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="Software Development" />
 				</div>
-				<h3>Search Engine Optimization</h3>
-				<p>Boost your online visibility with comprehensive SEO strategies and social media marketing to drive organic traffic and engagement.</p>
+				<h3>Software Development</h3>
+				<p>Custom software solutions designed to streamline your business processes and drive growth.</p>
+			</div>
+			<div class="service-card">
+				<div class="service-icon">
+					<img src="/assets/WebsiteMarketing/InfraDev Assets/Discover.png" alt="AI & ML Development" />
+				</div>
+				<h3>AI & ML Development</h3>
+				<p>Build intelligent solutions with cutting-edge artificial intelligence and machine learning technologies.</p>
 			</div>
 			<div class="service-card">
 				<div class="service-icon">
@@ -36,10 +62,10 @@
 			</div>
 			<div class="service-card">
 				<div class="service-icon">
-					<img src="/assets/WebsiteMarketing/InfraDev Assets/Build.png" alt="Software Development" />
+					<img src="/assets/WebsiteMarketing/InfraDev Assets/Estimate.png" alt="Search Engine Optimization" />
 				</div>
-				<h3>Software Development</h3>
-				<p>Custom software solutions designed to streamline your business processes and drive growth.</p>
+				<h3>Search Engine Optimization</h3>
+				<p>Boost your online visibility with comprehensive SEO strategies and social media marketing to drive organic traffic and engagement.</p>
 			</div>
 			<div class="service-card">
 				<div class="service-icon">
@@ -72,6 +98,57 @@
 	.section-header p {
 		font-size: 1.2rem;
 		color: var(--color-text-light);
+	}
+
+	.services-overview {
+		max-width: 700px;
+		margin: 0 auto 3rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.service-link-item {
+		background: #fff;
+		border-radius: 8px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+		transition: box-shadow 0.3s ease, transform 0.2s ease;
+	}
+
+	.service-link-item:hover {
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		transform: translateX(5px);
+	}
+
+	.service-link {
+		display: flex;
+		align-items: center;
+		padding: 1.25rem 1.5rem;
+		text-decoration: none;
+		color: var(--color-text);
+		gap: 1rem;
+		transition: color 0.3s ease;
+	}
+
+	.service-link:hover {
+		color: var(--color-orange);
+	}
+
+	.service-link-icon {
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: 300;
+		transition: transform 0.3s ease;
+	}
+
+	.service-link:hover .service-link-icon {
+		transform: translateX(5px);
+	}
+
+	.service-link-text {
+		font-size: 1.1rem;
+		font-weight: 500;
+		flex: 1;
 	}
 
 	.services-grid {
