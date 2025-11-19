@@ -34,11 +34,11 @@ const pageUrl = `${siteUrl}/consulting-management`;
 				<div class="hero-content">
 					<h1 itemprop="name">Hire Canadian Consultants Without Opening a Canadian Entity</h1>
 					<p class="hero-subtitle">InfraDev Consulting manages your Canadian consultant relationships, handling contracts, invoicing, tax compliance, and administrative tasks — while you focus on the work.</p>
-					<p class="hero-description">Whether you need data engineers, software developers, cloud architects, analysts, or technical consultants, we make cross-border consulting engagements simple, compliant, and efficient.</p>
 					<div class="cost-savings-badge">
 						<span class="savings-icon">💰</span>
 						<span class="savings-text">Save 10-40% on consulting costs compared to U.S. rates</span>
 					</div>
+					<p class="hero-description">Whether you need data engineers, software developers, cloud architects, analysts, or technical consultants, we make cross-border consulting engagements simple, compliant, and efficient.</p>
 					<div class="hero-cta">
 						<a href="/contact" class="btn btn-primary">Book a Consultation</a>
 						<a href="#how-it-works" class="btn btn-secondary">Learn How It Works</a>
@@ -316,11 +316,11 @@ const pageUrl = `${siteUrl}/consulting-management`;
 			</div>
 		</section>
 
-		<!-- Legal Disclaimer -->
+		<!-- Disclaimer -->
 		<section class="disclaimer section">
 			<div class="container">
 				<div class="disclaimer-content">
-					<h3>Legal Disclaimer</h3>
+					<h3>Disclaimer</h3>
 					<p>InfraDev Consulting contracts consultants in Canada and provides full Canadian business and tax compliance. We do not provide U.S. consulting services, immigration sponsorship, or legal tax advice. All services are provided in accordance with Canadian federal and provincial laws.</p>
 				</div>
 			</div>
@@ -513,18 +513,24 @@ const pageUrl = `${siteUrl}/consulting-management`;
 	}
 
 	.hero-subtitle {
-		font-size: 1.3rem;
+		font-size: 1.25rem;
 		color: var(--color-text);
-		margin-bottom: 1rem;
-		line-height: 1.6;
-		font-weight: 500;
+		margin-bottom: 2rem;
+		line-height: 1.7;
+		font-weight: 400;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.hero-description {
-		font-size: 1.1rem;
+		font-size: 1.05rem;
 		color: var(--color-text-light);
 		margin-bottom: 2.5rem;
-		line-height: 1.6;
+		line-height: 1.7;
+		max-width: 750px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.breadcrumb {
@@ -571,6 +577,7 @@ const pageUrl = `${siteUrl}/consulting-management`;
 		gap: 1rem;
 		justify-content: center;
 		flex-wrap: wrap;
+		margin-top: 2.5rem;
 		margin-bottom: 2rem;
 	}
 
@@ -578,18 +585,27 @@ const pageUrl = `${siteUrl}/consulting-management`;
 		display: inline-flex;
 		align-items: center;
 		gap: 0.75rem;
-		background: linear-gradient(135deg, rgba(255, 132, 39, 0.15), rgba(255, 150, 72, 0.25));
-		border: 2px solid var(--color-orange);
-		border-radius: 50px;
-		padding: 1rem 2rem;
-		margin-top: 1.5rem;
-		font-size: 1.1rem;
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.1), rgba(255, 150, 72, 0.15));
+		border: 2px solid rgba(255, 132, 39, 0.4);
+		border-radius: 12px;
+		padding: 0.875rem 1.75rem;
+		margin: 0 auto 2rem;
+		font-size: 1rem;
 		font-weight: 600;
 		color: var(--color-text);
+		box-shadow: 0 2px 8px rgba(255, 132, 39, 0.15);
+		transition: all 0.3s ease;
+	}
+
+	.cost-savings-badge:hover {
+		border-color: var(--color-orange);
+		box-shadow: 0 4px 12px rgba(255, 132, 39, 0.25);
+		transform: translateY(-2px);
 	}
 
 	.savings-icon {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
+		line-height: 1;
 	}
 
 	.savings-text {
