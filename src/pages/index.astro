@@ -26,38 +26,43 @@ import CTA from '../components/CTA.astro';
 
 		<Services />
 		
-		<!-- EOR Focus Section -->
-		<section class="eor-focus section">
+		<!-- Why U.S. Companies Use Us Section -->
+		<section class="why-us section">
 			<div class="container">
 				<div class="section-header">
-					<h2>Why U.S. Companies Choose Canadian EOR Services</h2>
-					<p>Hire top Canadian tech talent without the complexity of international expansion</p>
+					<h2>Why U.S. Companies Use Us</h2>
+					<p>Hiring in Canada normally requires forming a Canadian corporation, registering with the CRA, opening payroll accounts, and understanding provincial labour laws. With InfraDev, you skip all of this.</p>
 				</div>
-				<div class="eor-benefits">
-					<div class="eor-benefit">
+				<div class="benefits-grid">
+					<div class="benefit-card">
 						<div class="benefit-icon">⚡</div>
 						<h3>Hire in 48 Hours</h3>
 						<p>Fast onboarding process - get your Canadian talent working in just 2 days.</p>
 					</div>
-					<div class="eor-benefit">
+					<div class="benefit-card">
 						<div class="benefit-icon">🏢</div>
-						<h3>No CRA, No Payroll Setup</h3>
-						<p>Skip the complexity and cost of setting up a Canadian corporation and payroll accounts.</p>
+						<h3>No Entity Formation</h3>
+						<p>Skip the complexity and cost of setting up a Canadian corporation.</p>
 					</div>
-					<div class="eor-benefit">
+					<div class="benefit-card">
 						<div class="benefit-icon">✅</div>
-						<h3>Full Canadian Compliance</h3>
-						<p>We handle all CRA compliance, provincial labour laws, and regulatory requirements.</p>
+						<h3>No CRA Audits</h3>
+						<p>We handle all CRA compliance, so you don't have to worry about audits.</p>
 					</div>
-					<div class="eor-benefit">
+					<div class="benefit-card">
 						<div class="benefit-icon">💰</div>
 						<h3>Lower Employment Cost</h3>
 						<p>Access highly skilled Canadian talent at 10-40% lower cost than U.S. workers.</p>
 					</div>
-					<div class="eor-benefit">
-						<div class="benefit-icon">🎯</div>
-						<h3>Proven Tech Talent Pool</h3>
-						<p>Canada produces world-class software developers, cloud engineers, and technical professionals.</p>
+					<div class="benefit-card">
+						<div class="benefit-icon">🛡️</div>
+						<h3>Fully Compliant</h3>
+						<p>Complete compliance with Canadian labour laws and regulations.</p>
+					</div>
+					<div class="benefit-card">
+						<div class="benefit-icon">📊</div>
+						<h3>Transparent Billing</h3>
+						<p>One simple monthly invoice - salary + employer contributions + service fee.</p>
 					</div>
 				</div>
 				<div class="eor-cta">
@@ -193,6 +198,26 @@ import CTA from '../components/CTA.astro';
 })} />
 
 <style>
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.1rem;
+		color: var(--color-text-light);
+		margin: 0 auto;
+		max-width: 800px;
+		line-height: 1.7;
+	}
+
 	.intro {
 		background: var(--color-bg-light);
 		padding: 3rem 0;
@@ -211,18 +236,17 @@ import CTA from '../components/CTA.astro';
 		margin: 0;
 	}
 
-	.eor-focus {
-		background: var(--color-bg);
+	.why-us {
+		background: var(--color-bg-light);
 	}
 
-	.eor-benefits {
+	.benefits-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		gap: 2rem;
-		margin-bottom: 3rem;
 	}
 
-	.eor-benefit {
+	.benefit-card {
 		background: #fff;
 		padding: 2rem;
 		border-radius: 10px;
@@ -231,9 +255,14 @@ import CTA from '../components/CTA.astro';
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 
-	.eor-benefit:hover {
+	.benefit-card:hover {
 		transform: translateY(-5px);
 		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
+
+	.eor-cta {
+		text-align: center;
+		margin-top: 2rem;
 	}
 
 	.benefit-icon {
@@ -241,22 +270,17 @@ import CTA from '../components/CTA.astro';
 		margin-bottom: 1rem;
 	}
 
-	.eor-benefit h3 {
+	.benefit-card h3 {
 		font-size: 1.3rem;
 		color: var(--color-orange);
 		margin-bottom: 0.75rem;
 		font-weight: 600;
 	}
 
-	.eor-benefit p {
+	.benefit-card p {
 		color: var(--color-text-light);
 		line-height: 1.6;
 		margin: 0;
-	}
-
-	.eor-cta {
-		text-align: center;
-		margin-top: 2rem;
 	}
 
 	.trust {
@@ -326,7 +350,7 @@ import CTA from '../components/CTA.astro';
 			font-size: 1.1rem;
 		}
 
-		.eor-benefits,
+		.benefits-grid,
 		.trust-items {
 			grid-template-columns: 1fr;
 		}
