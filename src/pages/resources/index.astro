@@ -1,0 +1,421 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/resources`;
+
+// Resource categories and items
+const resources = [
+	{
+		category: "Guides & eBooks",
+		items: [
+			{
+				title: "Complete Guide to Hiring in Canada for U.S. Companies",
+				description: "Comprehensive 50-page guide covering entity formation, EOR services, compliance requirements, and best practices for U.S. companies hiring Canadian talent.",
+				type: "PDF Guide",
+				download: "#",
+				icon: "📘"
+			},
+			{
+				title: "Canadian Payroll Rules for U.S. Employers",
+				description: "Detailed guide to Canadian payroll deductions, tax requirements, remittance deadlines, and compliance obligations.",
+				type: "PDF Guide",
+				download: "#",
+				icon: "💰"
+			},
+			{
+				title: "EOR vs PEO vs Contractor Model Comparison",
+				description: "Side-by-side comparison of employment models, including costs, compliance, and when to use each approach.",
+				type: "PDF Guide",
+				download: "#",
+				icon: "📊"
+			}
+		]
+	},
+	{
+		category: "Checklists & Templates",
+		items: [
+			{
+				title: "Compliance Checklist for U.S. Employers Hiring Canadians",
+				description: "Step-by-step checklist ensuring you meet all Canadian employment law requirements, tax obligations, and compliance standards.",
+				type: "PDF Checklist",
+				download: "#",
+				icon: "✅"
+			},
+			{
+				title: "Canadian Employment Contract Template (Redacted)",
+				description: "Sample Canadian employment contract template with proper clauses for termination, confidentiality, and compliance with provincial standards.",
+				type: "PDF Template",
+				download: "#",
+				icon: "📄"
+			},
+			{
+				title: "Onboarding Checklist for Canadian Employees",
+				description: "Complete onboarding checklist covering documentation, payroll setup, benefits enrollment, and compliance requirements.",
+				type: "PDF Checklist",
+				download: "#",
+				icon: "📋"
+			}
+		]
+	},
+	{
+		category: "Forms & Documents",
+		items: [
+			{
+				title: "Canadian Employment Forms Collection",
+				description: "Complete collection of Canadian employment forms including TD1 (tax forms), employment agreements, and provincial-specific documents.",
+				type: "PDF Collection",
+				download: "#",
+				icon: "📑"
+			},
+			{
+				title: "T4 Tax Form Guide and Examples",
+				description: "Guide to understanding and completing T4 forms for Canadian employees, with examples and explanations of each box.",
+				type: "PDF Guide",
+				download: "#",
+				icon: "🧾"
+			}
+		]
+	},
+	{
+		category: "Process Diagrams & Visuals",
+		items: [
+			{
+				title: "EOR Process Flow Diagram",
+				description: "Visual flowchart showing the complete EOR process from initial consultation through ongoing payroll and compliance management.",
+				type: "PDF Diagram",
+				download: "#",
+				icon: "🔄"
+			},
+			{
+				title: "Canadian Hiring Timeline Comparison",
+				description: "Visual comparison of timelines for entity formation vs. EOR services, showing time-to-hire differences.",
+				type: "PDF Infographic",
+				download: "#",
+				icon: "⏱️"
+			},
+			{
+				title: "Provincial Employment Standards Comparison",
+				description: "Comparison chart of employment standards across all Canadian provinces, including minimum wage, vacation, and statutory holidays.",
+				type: "PDF Chart",
+				download: "#",
+				icon: "🗺️"
+			}
+		]
+	},
+	{
+		category: "Policies & Standards",
+		items: [
+			{
+				title: "Quality Policy (ISO-Aligned)",
+				description: "Our ISO-aligned quality management policy ensuring consistent, high-quality service delivery for all clients.",
+				type: "PDF Policy",
+				download: "/quality-policy",
+				icon: "⭐"
+			},
+			{
+				title: "Security & Privacy Policy (ISO-Aligned)",
+				description: "Comprehensive security and privacy policy aligned with ISO standards, PIPEDA, and Canadian data protection requirements.",
+				type: "PDF Policy",
+				download: "/privacy-policy",
+				icon: "🔒"
+			},
+			{
+				title: "Environmental Policy",
+				description: "Our commitment to environmental sustainability and responsible business practices.",
+				type: "PDF Policy",
+				download: "/environmental-policy",
+				icon: "🌱"
+			}
+		]
+	},
+	{
+		category: "Calculators & Tools",
+		items: [
+			{
+				title: "Canadian Payroll Calculator",
+				description: "Interactive calculator to estimate Canadian payroll costs including taxes, EI, CPP, and employer contributions.",
+				type: "Web Tool",
+				download: "#",
+				icon: "🧮"
+			},
+			{
+				title: "Cost Savings Calculator: U.S. vs. Canadian Developers",
+				description: "Calculate potential cost savings when hiring Canadian developers compared to U.S. equivalents, including total cost of employment.",
+				type: "Web Tool",
+				download: "#",
+				icon: "💵"
+			}
+		]
+	}
+];
+---
+
+<Layout 
+	title="Resource Hub - Guides, Checklists & Tools for Hiring in Canada | InfraDev Consulting" 
+	description="Download free resources including hiring guides, compliance checklists, employment forms, process diagrams, and calculators for U.S. companies hiring Canadian talent."
+	canonical={pageUrl}
+>
+	<Header />
+	<main>
+		<section class="resources-hero section">
+			<div class="container">
+				<div class="resources-hero-content">
+					<h1>Resource Hub</h1>
+					<p class="resources-hero-subtitle">Expert resources, guides, and tools to help U.S. companies successfully hire and manage Canadian talent. Download free guides, checklists, templates, and more.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="resources-list section">
+			<div class="container">
+				{resources.map((category) => (
+					<div class="resource-category">
+						<h2 class="category-title">{category.category}</h2>
+						<div class="resources-grid">
+							{category.items.map((resource) => (
+								<div class="resource-card">
+									<div class="resource-icon">{resource.icon}</div>
+									<div class="resource-content">
+										<div class="resource-type">{resource.type}</div>
+										<h3 class="resource-title">{resource.title}</h3>
+										<p class="resource-description">{resource.description}</p>
+										<a href={resource.download} class="resource-download">
+											{resource.download === "#" ? "Coming Soon" : "Download →"}
+										</a>
+									</div>
+								</div>
+							))}
+						</div>
+					</div>
+				))}
+			</div>
+		</section>
+
+		<section class="resources-cta section">
+			<div class="container">
+				<div class="cta-content">
+					<h2>Need Help with Your Canadian Hiring Strategy?</h2>
+					<p>Our team of experts can help you navigate Canadian employment law, set up compliant payroll, and ensure full compliance with all regulations.</p>
+					<div class="cta-buttons">
+						<a href="/contact" class="btn btn-primary">Schedule a Consultation</a>
+						<a href="/eor" class="btn btn-secondary">Learn About EOR Services</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.resources-hero {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));
+		padding: 4rem 0;
+	}
+
+	.resources-hero-content {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.resources-hero h1 {
+		font-size: 3rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.resources-hero-subtitle {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.resources-list {
+		background: var(--color-bg);
+	}
+
+	.resource-category {
+		margin-bottom: 4rem;
+	}
+
+	.category-title {
+		font-size: 2rem;
+		color: var(--color-text);
+		margin-bottom: 2rem;
+		font-weight: 600;
+		border-bottom: 2px solid var(--color-orange);
+		padding-bottom: 0.5rem;
+	}
+
+	.resources-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		gap: 2rem;
+	}
+
+	.resource-card {
+		background: #fff;
+		border-radius: 10px;
+		padding: 2rem;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		display: flex;
+		gap: 1.5rem;
+	}
+
+	.resource-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
+
+	.resource-icon {
+		font-size: 3rem;
+		flex-shrink: 0;
+	}
+
+	.resource-content {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.resource-type {
+		font-size: 0.85rem;
+		color: var(--color-orange);
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+		margin-bottom: 0.5rem;
+	}
+
+	.resource-title {
+		font-size: 1.3rem;
+		color: var(--color-text);
+		margin-bottom: 0.75rem;
+		font-weight: 600;
+		line-height: 1.3;
+	}
+
+	.resource-description {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin-bottom: 1rem;
+		flex: 1;
+	}
+
+	.resource-download {
+		color: var(--color-orange);
+		font-weight: 500;
+		text-decoration: none;
+		transition: color 0.3s ease;
+		margin-top: auto;
+	}
+
+	.resource-download:hover {
+		color: var(--color-orange-dark);
+	}
+
+	.resources-cta {
+		background: var(--color-bg-light);
+	}
+
+	.cta-content {
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.cta-content h2 {
+		font-size: 2rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.cta-content p {
+		font-size: 1.1rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+		margin-bottom: 2rem;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 0.875rem 2rem;
+		border-radius: 5px;
+		font-weight: 500;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		font-size: 1rem;
+	}
+
+	.btn-primary {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.btn-primary:hover {
+		background: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(255, 132, 39, 0.3);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: var(--color-orange);
+		border: 2px solid var(--color-orange);
+	}
+
+	.btn-secondary:hover {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	@media (max-width: 768px) {
+		.resources-hero h1 {
+			font-size: 2rem;
+		}
+
+		.resources-hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.category-title {
+			font-size: 1.5rem;
+		}
+
+		.resources-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.resource-card {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.cta-content h2 {
+			font-size: 1.5rem;
+		}
+
+		.cta-buttons {
+			flex-direction: column;
+		}
+
+		.btn {
+			width: 100%;
+		}
+	}
+</style>
+
