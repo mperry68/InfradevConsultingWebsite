@@ -12,9 +12,9 @@ Hiring Canadian developers offers U.S. companies significant cost savings while 
 
 ## Executive Summary: The Cost Advantage
 
-U.S. companies hiring Canadian developers typically save **10-40% on total employment costs** compared to hiring equivalent U.S. talent. These savings come from:
+U.S. companies hiring Canadian developers typically save **30-50% on total employment costs** compared to hiring equivalent U.S. talent. These savings come from:
 
-- Lower base salaries (15-30% lower)
+- Lower base salaries (30-50% lower in CAD)
 - Lower employment taxes (slightly lower)
 - Favorable exchange rates (USD to CAD)
 - Lower benefits costs (in some cases)
@@ -30,35 +30,35 @@ U.S. companies hiring Canadian developers typically save **10-40% on total emplo
 - **Senior Developer**: $130,000-$180,000 USD
 - **Lead/Principal Developer**: $180,000-$250,000+ USD
 
-**Canada** (2024 data, converted to USD):
-- **Junior Developer**: $50,000-$70,000 USD ($67,000-$94,000 CAD)
-- **Mid-Level Developer**: $70,000-$100,000 USD ($94,000-$134,000 CAD)
-- **Senior Developer**: $100,000-$140,000 USD ($134,000-$188,000 CAD)
-- **Lead/Principal Developer**: $140,000-$200,000 USD ($188,000-$268,000 CAD)
+**Canada** (2024 data, in CAD):
+- **Junior Developer**: $50,000-$70,000 CAD
+- **Mid-Level Developer**: $70,000-$95,000 CAD
+- **Senior Developer**: $95,000-$120,000 CAD (without track record)
+- **Lead/Principal Developer**: $120,000-$180,000+ CAD (with proven track record)
 
-**Savings**: 20-30% on base salaries
+**Savings**: 30-50% on base salaries (depending on U.S. market and exchange rate)
 
 ### Specialized Roles
 
 **DevOps Engineers**:
 - **U.S.**: $120,000-$180,000 USD
-- **Canada**: $90,000-$130,000 USD
-- **Savings**: 25-30%
+- **Canada**: $95,000-$120,000 CAD (~$70,000-$89,000 USD)
+- **Savings**: 40-50%
 
 **Cloud Engineers**:
 - **U.S.**: $130,000-$200,000 USD
-- **Canada**: $100,000-$150,000 USD
-- **Savings**: 23-25%
+- **Canada**: $95,000-$120,000 CAD (~$70,000-$89,000 USD)
+- **Savings**: 45-55%
 
 **Data Engineers**:
 - **U.S.**: $110,000-$170,000 USD
-- **Canada**: $85,000-$125,000 USD
-- **Savings**: 23-26%
+- **Canada**: $90,000-$115,000 CAD (~$67,000-$85,000 USD)
+- **Savings**: 40-50%
 
 **AI/ML Engineers**:
 - **U.S.**: $140,000-$220,000 USD
-- **Canada**: $110,000-$160,000 USD
-- **Savings**: 21-27%
+- **Canada**: $100,000-$120,000 CAD (~$74,000-$89,000 USD)
+- **Savings**: 45-60%
 
 ## Total Cost of Employment Analysis
 
@@ -83,28 +83,28 @@ U.S. companies hiring Canadian developers typically save **10-40% on total emplo
 
 ### Canadian Employee Total Cost
 
-**Example: Mid-Level Developer, $95,000 CAD ($71,000 USD equivalent)**
+**Example: Mid-Level Developer, $85,000 CAD (~$63,000 USD equivalent)**
 
 | Component | Annual Cost (USD) |
 |-----------|------------------|
-| Base Salary | $71,000 |
-| Employment Insurance (2.21% employer) | $1,569 |
-| Canada Pension Plan (5.95% employer) | $4,225 |
-| Workers' Compensation (~1.5%) | $1,065 |
+| Base Salary | $63,000 |
+| Employment Insurance (2.21% employer) | $1,392 |
+| Canada Pension Plan (5.95% employer) | $3,749 |
+| Workers' Compensation (~1.5%) | $945 |
 | Health Benefits (employer portion, ~$2,000) | $2,000 |
-| RRSP Match (3% of salary) | $2,130 |
-| Paid Time Off (15 days) | $4,096 |
+| RRSP Match (3% of salary) | $1,890 |
+| Paid Time Off (15 days) | $3,635 |
 | EOR Service Fee ($600/month) | $7,200 |
-| **Total Cost** | **$93,285** |
+| **Total Cost** | **$83,811** |
 
-**Employer Cost Multiplier**: ~1.31x base salary (including EOR fee)
+**Employer Cost Multiplier**: ~1.33x base salary (including EOR fee)
 
 ### Cost Savings Calculation
 
 **U.S. Total Cost**: $138,331
-**Canadian Total Cost**: $93,285
-**Annual Savings**: $45,046 (32.5% savings)
-**Monthly Savings**: $3,754
+**Canadian Total Cost**: $83,811
+**Annual Savings**: $54,520 (39.4% savings)
+**Monthly Savings**: $4,543
 
 ## Regional Cost Variations
 
@@ -112,25 +112,25 @@ U.S. companies hiring Canadian developers typically save **10-40% on total emplo
 
 **San Francisco Bay Area**:
 - Senior Developer: $180,000-$250,000 USD
-- Equivalent Canadian: $140,000-$200,000 USD
-- **Savings**: 22-20%
+- Equivalent Canadian: $95,000-$120,000 CAD (~$70,000-$89,000 USD)
+- **Savings**: 50-60%
 
 **New York City**:
 - Senior Developer: $160,000-$220,000 USD
-- Equivalent Canadian: $130,000-$180,000 USD
-- **Savings**: 19-18%
+- Equivalent Canadian: $95,000-$120,000 CAD (~$70,000-$89,000 USD)
+- **Savings**: 45-55%
 
 **Seattle**:
 - Senior Developer: $150,000-$200,000 USD
-- Equivalent Canadian: $120,000-$170,000 USD
-- **Savings**: 20-15%
+- Equivalent Canadian: $95,000-$120,000 CAD (~$70,000-$89,000 USD)
+- **Savings**: 40-50%
 
 **Canadian Tech Hubs**:
-- **Toronto**: Highest Canadian salaries, still 20-25% below U.S. equivalents
-- **Vancouver**: Similar to Toronto, 20-25% savings
-- **Montreal**: 25-30% savings (lower cost of living)
-- **Ottawa**: 25-30% savings
-- **Calgary/Edmonton**: 30-35% savings
+- **Toronto**: Highest Canadian salaries, $95,000-$120,000 CAD for seniors
+- **Vancouver**: Similar to Toronto, $90,000-$115,000 CAD for seniors
+- **Montreal**: $85,000-$110,000 CAD for seniors (lower cost of living)
+- **Ottawa**: $85,000-$110,000 CAD for seniors
+- **Calgary/Edmonton**: $80,000-$105,000 CAD for seniors
 
 ## Quality Considerations
 
@@ -226,9 +226,9 @@ Typical EOR service fees:
 - Total Cost (1.26x): $693,000
 
 **Canadian Option**:
-- 5 Mid-Level Developers @ $95,000 CAD ($71,000 USD) = $355,000
-- Total Cost (1.31x including EOR): $465,000
-- **Annual Savings**: $228,000 (33% savings)
+- 5 Mid-Level Developers @ $85,000 CAD (~$63,000 USD) = $315,000
+- Total Cost (1.33x including EOR): $419,000
+- **Annual Savings**: $274,000 (39.5% savings)
 
 ### Example 2: Enterprise Hiring 20 Developers
 
@@ -237,9 +237,9 @@ Typical EOR service fees:
 - Total Cost (1.26x): $3,780,000
 
 **Canadian Option**:
-- 20 Senior Developers @ $130,000 CAD ($96,000 USD) = $1,920,000
-- Total Cost (1.31x including EOR): $2,515,000
-- **Annual Savings**: $1,265,000 (33% savings)
+- 20 Senior Developers @ $110,000 CAD (~$81,000 USD) = $1,620,000
+- Total Cost (1.33x including EOR): $2,155,000
+- **Annual Savings**: $1,625,000 (43% savings)
 
 ### Example 3: Small Team of 3 Specialists
 
@@ -251,12 +251,12 @@ Typical EOR service fees:
 - Total Cost (1.26x): $567,000
 
 **Canadian Option**:
-- 1 Senior DevOps @ $120,000 CAD ($89,000 USD)
-- 1 Senior Cloud Engineer @ $130,000 CAD ($96,000 USD)
-- 1 Senior Data Engineer @ $110,000 CAD ($81,000 USD)
-- Total: $266,000
-- Total Cost (1.31x including EOR): $348,000
-- **Annual Savings**: $219,000 (39% savings)
+- 1 Senior DevOps @ $110,000 CAD (~$81,000 USD)
+- 1 Senior Cloud Engineer @ $110,000 CAD (~$81,000 USD)
+- 1 Senior Data Engineer @ $110,000 CAD (~$81,000 USD)
+- Total: $243,000
+- Total Cost (1.33x including EOR): $323,000
+- **Annual Savings**: $244,000 (43% savings)
 
 ## Factors Affecting Savings
 
@@ -269,17 +269,17 @@ Typical EOR service fees:
 
 ### Role Seniority
 
-- **Junior Roles**: 25-35% savings (smaller absolute dollar amounts)
-- **Mid-Level Roles**: 30-40% savings (optimal savings range)
-- **Senior Roles**: 25-35% savings (higher absolute dollar savings)
-- **Lead/Principal Roles**: 20-30% savings (still significant in absolute terms)
+- **Junior Roles**: 30-40% savings (smaller absolute dollar amounts)
+- **Mid-Level Roles**: 35-45% savings (optimal savings range)
+- **Senior Roles**: 40-50% savings (higher absolute dollar savings)
+- **Lead/Principal Roles**: 35-45% savings (still significant in absolute terms, with proven track record)
 
 ### Location
 
-- **High-Cost U.S. Markets**: 25-35% savings
-- **Mid-Cost U.S. Markets**: 30-40% savings
-- **Low-Cost U.S. Markets**: 20-30% savings
-- **Canadian Tech Hubs**: Varies by city (Toronto/Vancouver vs. Montreal/Ottawa)
+- **High-Cost U.S. Markets**: 40-60% savings (San Francisco, NYC, Seattle)
+- **Mid-Cost U.S. Markets**: 35-50% savings
+- **Low-Cost U.S. Markets**: 30-40% savings
+- **Canadian Tech Hubs**: Varies by city (Toronto/Vancouver: $95k-$120k CAD for seniors; Montreal/Ottawa: $85k-$110k CAD for seniors)
 
 ## ROI Calculation
 
@@ -290,7 +290,7 @@ Typical EOR service fees:
 
 **Break-Even**: Immediate (EOR) vs. 3-6 months (entity formation)
 
-**Annual Savings**: $45,000+ per mid-level developer
+**Annual Savings**: $50,000+ per mid-level developer
 
 **ROI**: 300-500% in first year (compared to entity formation)
 
