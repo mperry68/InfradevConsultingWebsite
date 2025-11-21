@@ -236,9 +236,13 @@ const resources = [
 										<div class="resource-type">{resource.type}</div>
 										<h3 class="resource-title">{resource.title}</h3>
 										<p class="resource-description">{resource.description}</p>
-										<a href={resource.download} class="resource-download">
-											{resource.download === "#" ? "Coming Soon" : "Download →"}
-										</a>
+										{resource.download === "#" ? (
+											<span class="resource-download">Coming Soon</span>
+										) : (
+											<a href={resource.download} class="resource-download" target="_blank" rel="noopener noreferrer">
+												Download →
+											</a>
+										)}
 									</div>
 								</div>
 							))}
