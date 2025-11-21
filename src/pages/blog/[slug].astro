@@ -30,18 +30,15 @@ const seoDescription = post.data.seoDescription || post.data.description;
 >
 	<Header />
 	<main>
-		<nav aria-label="Breadcrumb" class="breadcrumb">
-			<div class="container">
-				<ol>
-					<li><a href="/">Home</a></li>
-					<li><a href="/blog">Blog</a></li>
-					<li>{post.data.title}</li>
-				</ol>
-			</div>
-		</nav>
-
 		<article class="blog-post section">
 			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol>
+						<li><a href="/">Home</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li>{post.data.title}</li>
+					</ol>
+				</nav>
 				<div class="blog-post-header">
 					<div class="blog-post-meta">
 						<time datetime={post.data.pubDate.toISOString()}>
@@ -86,10 +83,13 @@ const seoDescription = post.data.seoDescription || post.data.description;
 </Layout>
 
 <style>
+	.blog-post {
+		background: var(--color-bg);
+	}
+
 	.breadcrumb {
-		background: var(--color-bg-light);
-		padding: 1rem 0;
-		border-bottom: 1px solid #e0e0e0;
+		margin-bottom: 2rem;
+		text-align: left;
 	}
 
 	.breadcrumb ol {
@@ -98,6 +98,7 @@ const seoDescription = post.data.seoDescription || post.data.description;
 		gap: 0.5rem;
 		align-items: center;
 		font-size: 0.9rem;
+		justify-content: flex-start;
 	}
 
 	.breadcrumb li:not(:last-child)::after {
@@ -109,6 +110,7 @@ const seoDescription = post.data.seoDescription || post.data.description;
 	.breadcrumb a {
 		color: var(--color-text-light);
 		text-decoration: none;
+		transition: color 0.3s ease;
 	}
 
 	.breadcrumb a:hover {
@@ -118,10 +120,6 @@ const seoDescription = post.data.seoDescription || post.data.description;
 	.breadcrumb li:last-child {
 		color: var(--color-text);
 		font-weight: 500;
-	}
-
-	.blog-post {
-		background: var(--color-bg);
 	}
 
 	.blog-post-header {

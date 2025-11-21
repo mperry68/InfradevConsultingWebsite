@@ -16,23 +16,20 @@ const lastUpdated = new Date().toLocaleDateString('en-US', { year: 'numeric', mo
 >
 	<Header />
 	<main itemscope itemtype="https://schema.org/Article">
-		<nav aria-label="Breadcrumb" class="breadcrumb">
-			<div class="container">
-				<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-						<a itemprop="item" href="/"><span itemprop="name">Home</span></a>
-						<meta itemprop="position" content="1" />
-					</li>
-					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-						<span itemprop="name">Cookies Policy</span>
-						<meta itemprop="position" content="2" />
-					</li>
-				</ol>
-			</div>
-		</nav>
-
 		<section class="policy-hero section">
 			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+							<meta itemprop="position" content="1" />
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<span itemprop="name">Cookies Policy</span>
+							<meta itemprop="position" content="2" />
+						</li>
+					</ol>
+				</nav>
 				<h1 itemprop="headline">Cookies Policy</h1>
 				<p>How we use cookies on our website</p>
 			</div>
@@ -249,9 +246,8 @@ const lastUpdated = new Date().toLocaleDateString('en-US', { year: 'numeric', mo
 	}
 
 	.breadcrumb {
-		background: var(--color-bg-light);
-		padding: 1rem 0;
-		border-bottom: 1px solid #e0e0e0;
+		margin-bottom: 2rem;
+		text-align: left;
 	}
 
 	.breadcrumb ol {
@@ -261,6 +257,7 @@ const lastUpdated = new Date().toLocaleDateString('en-US', { year: 'numeric', mo
 		margin: 0;
 		padding: 0;
 		font-size: 0.9rem;
+		justify-content: flex-start;
 	}
 
 	.breadcrumb li {
@@ -271,20 +268,22 @@ const lastUpdated = new Date().toLocaleDateString('en-US', { year: 'numeric', mo
 	.breadcrumb li:not(:last-child)::after {
 		content: "/";
 		margin-left: 0.5rem;
-		color: var(--color-text-light);
+		color: rgba(44, 44, 44, 0.6);
 	}
 
 	.breadcrumb a {
 		color: var(--color-orange);
 		text-decoration: none;
+		transition: color 0.3s ease;
 	}
 
 	.breadcrumb a:hover {
+		color: var(--color-orange-dark);
 		text-decoration: underline;
 	}
 
 	.breadcrumb span {
-		color: var(--color-text-light);
+		color: var(--color-text);
 	}
 
 	@media (max-width: 768px) {

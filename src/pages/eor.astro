@@ -14,23 +14,21 @@ const pageUrl = `${siteUrl}/eor`;
 >
 	<Header />
 	<main itemscope itemtype="https://schema.org/Service">
-		<nav aria-label="Breadcrumb" class="breadcrumb">
-			<div class="container">
-				<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-						<a itemprop="item" href="/"><span itemprop="name">Home</span></a>
-						<meta itemprop="position" content="1" />
-					</li>
-					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-						<span itemprop="name">EOR Services</span>
-						<meta itemprop="position" content="2" />
-					</li>
-				</ol>
-			</div>
-		</nav>
 		<!-- Hero Section -->
 		<section class="eor-hero section">
 			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+							<meta itemprop="position" content="1" />
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<span itemprop="name">EOR Services</span>
+							<meta itemprop="position" content="2" />
+						</li>
+					</ol>
+				</nav>
 				<div class="hero-content">
 					<h1 itemprop="name">Employer of Record Services for U.S. Companies Hiring in Canada</h1>
 					<p class="hero-subtitle">We handle all Canadian employment compliance, payroll processing, tax remittances, and HR administration. You maintain full control over day-to-day work while we ensure complete legal compliance.</p>
@@ -490,10 +488,15 @@ const pageUrl = `${siteUrl}/eor`;
 </script>
 
 <style>
+	.eor-hero {
+		background: rgba(139, 58, 26, 0.3);
+		padding: 6rem 0 4rem;
+		text-align: center;
+	}
+
 	.breadcrumb {
-		background: var(--color-bg-light);
-		padding: 1rem 0;
-		border-bottom: 1px solid #e0e0e0;
+		margin-bottom: 2rem;
+		text-align: left;
 	}
 
 	.breadcrumb ol {
@@ -503,6 +506,7 @@ const pageUrl = `${siteUrl}/eor`;
 		margin: 0;
 		padding: 0;
 		font-size: 0.9rem;
+		justify-content: flex-start;
 	}
 
 	.breadcrumb li {
@@ -513,26 +517,22 @@ const pageUrl = `${siteUrl}/eor`;
 	.breadcrumb li:not(:last-child)::after {
 		content: "/";
 		margin-left: 0.5rem;
-		color: var(--color-text-light);
+		color: rgba(255, 255, 255, 0.7);
 	}
 
 	.breadcrumb a {
-		color: var(--color-orange);
+		color: rgba(255, 255, 255, 0.9);
 		text-decoration: none;
+		transition: color 0.3s ease;
 	}
 
 	.breadcrumb a:hover {
+		color: #fff;
 		text-decoration: underline;
 	}
 
 	.breadcrumb span {
-		color: var(--color-text-light);
-	}
-
-	.eor-hero {
-		background: rgba(139, 58, 26, 0.3);
-		padding: 6rem 0 4rem;
-		text-align: center;
+		color: rgba(255, 255, 255, 0.9);
 	}
 
 	.hero-content {

@@ -14,23 +14,21 @@ const pageUrl = `${siteUrl}/consulting-management`;
 >
 	<Header />
 	<main itemscope itemtype="https://schema.org/Service">
-		<nav aria-label="Breadcrumb" class="breadcrumb">
-			<div class="container">
-				<ol itemscope itemtype="https://schema.org/BreadcrumbList">
-					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-						<a itemprop="item" href="/"><span itemprop="name">Home</span></a>
-						<meta itemprop="position" content="1" />
-					</li>
-					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-						<span itemprop="name">Consulting Management</span>
-						<meta itemprop="position" content="2" />
-					</li>
-				</ol>
-			</div>
-		</nav>
 		<!-- Hero Section -->
 		<section class="eor-hero section">
 			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+							<meta itemprop="position" content="1" />
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<span itemprop="name">Consulting Management</span>
+							<meta itemprop="position" content="2" />
+						</li>
+					</ol>
+				</nav>
 				<div class="hero-content">
 					<h1 itemprop="name">Consulting Management Services for U.S. Companies</h1>
 					<p class="hero-subtitle">Engage Canadian consultants seamlessly with our full-service consulting management. We handle contracts, invoicing, GST/HST remittances, and all administrative tasks so you can focus on project delivery.</p>
@@ -518,9 +516,8 @@ const pageUrl = `${siteUrl}/consulting-management`;
 	}
 
 	.breadcrumb {
-		background: var(--color-bg-light);
-		padding: 1rem 0;
-		border-bottom: 1px solid #e0e0e0;
+		margin-bottom: 2rem;
+		text-align: left;
 	}
 
 	.breadcrumb ol {
@@ -530,6 +527,7 @@ const pageUrl = `${siteUrl}/consulting-management`;
 		margin: 0;
 		padding: 0;
 		font-size: 0.9rem;
+		justify-content: flex-start;
 	}
 
 	.breadcrumb li {
@@ -540,20 +538,22 @@ const pageUrl = `${siteUrl}/consulting-management`;
 	.breadcrumb li:not(:last-child)::after {
 		content: "/";
 		margin-left: 0.5rem;
-		color: var(--color-text-light);
+		color: rgba(255, 255, 255, 0.7);
 	}
 
 	.breadcrumb a {
-		color: var(--color-orange);
+		color: rgba(255, 255, 255, 0.9);
 		text-decoration: none;
+		transition: color 0.3s ease;
 	}
 
 	.breadcrumb a:hover {
+		color: #fff;
 		text-decoration: underline;
 	}
 
 	.breadcrumb span {
-		color: var(--color-text-light);
+		color: rgba(255, 255, 255, 0.9);
 	}
 
 	.hero-cta {
