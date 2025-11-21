@@ -9,6 +9,8 @@ const pages = [
 	'/consulting-management',
 	'/contact',
 	'/brochure',
+	'/aeo',
+	'/geo',
 	'/blog',
 	'/resources',
 	'/quality-policy',
@@ -27,8 +29,8 @@ export const GET: APIRoute = async () => {
 			(page) => `  <url>
     <loc>${siteUrl}${page}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>${page === '' ? 'weekly' : page === '/eor' || page === '/consulting-management' || page === '/blog' ? 'weekly' : 'monthly'}</changefreq>
-    <priority>${page === '' ? '1.0' : page === '/eor' || page === '/consulting-management' ? '0.9' : page === '/blog' || page === '/resources' ? '0.85' : '0.8'}</priority>
+    <changefreq>${page === '' ? 'weekly' : page === '/eor' || page === '/consulting-management' || page === '/blog' || page === '/brochure' || page === '/aeo' || page === '/geo' ? 'weekly' : 'monthly'}</changefreq>
+    <priority>${page === '' ? '1.0' : page === '/eor' || page === '/consulting-management' ? '0.9' : page === '/blog' || page === '/resources' || page === '/brochure' || page === '/aeo' || page === '/geo' ? '0.85' : '0.8'}</priority>
   </url>`
 		)
 		.join('\n');
