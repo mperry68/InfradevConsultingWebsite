@@ -100,12 +100,19 @@ const {
 		// Detect country from browser language
 		function detectFromLanguage() {
 			const lang = navigator.language || navigator.userLanguage || 'en-US';
-			// Check for Canadian locales (en-CA, fr-CA)
-			if (lang.toLowerCase().includes('ca') || lang.toLowerCase().startsWith('fr')) {
-				// French language often indicates Canada (though could be France/Belgium)
-				// But combined with other signals, it's a good indicator
+			const langLower = lang.toLowerCase();
+			
+			// Only check for explicit Canadian locales (en-CA, fr-CA)
+			// Don't assume French means Canada (could be France, Belgium, etc.)
+			if (langLower.includes('-ca') || langLower === 'en-ca' || langLower === 'fr-ca') {
 				return 'CA';
 			}
+			
+			// Check for US locales
+			if (langLower.includes('-us') || langLower === 'en-us') {
+				return 'US';
+			}
+			
 			return null;
 		}
 		
@@ -136,14 +143,15 @@ const {
 			const apis = [
 				{ url: 'https://ipapi.co/json/', field: 'country_code' },
 				{ url: 'https://ip-api.com/json/?fields=countryCode', field: 'countryCode' },
-				{ url: 'https://api.country.is/', field: 'country' }
+				{ url: 'https://api.country.is/', field: 'country' },
+				{ url: 'https://ipapi.co/country/', field: null, textResponse: true }
 			];
 			
 			for (const api of apis) {
 				try {
 					// Create timeout controller for browser compatibility
 					const controller = new AbortController();
-					const timeoutId = setTimeout(() => controller.abort(), 3000);
+					const timeoutId = setTimeout(() => controller.abort(), 5000); // Increased timeout
 					
 					const response = await fetch(api.url, {
 						method: 'GET',
@@ -154,19 +162,34 @@ const {
 					clearTimeout(timeoutId);
 					
 					if (response.ok) {
-						const data = await response.json();
-						const country = data[api.field];
+						let country;
+						
+						if (api.textResponse) {
+							// Handle text response (ipapi.co/country/ returns just "US" or "CA")
+							country = (await response.text()).trim();
+						} else {
+							const data = await response.json();
+							country = data[api.field];
+						}
+						
+						// Normalize country code
+						country = country?.toUpperCase();
 						
 						if (country === 'CA' || country === 'US') {
+							console.log('[GeoPricing] IP detection successful:', country, 'from', api.url);
 							return country;
 						}
+					} else {
+						console.warn('[GeoPricing] API response not OK:', api.url, response.status);
 					}
 				} catch (error) {
+					console.warn('[GeoPricing] API error for', api.url, ':', error.message);
 					// Try next API
 					continue;
 				}
 			}
 			
+			console.warn('[GeoPricing] All IP detection APIs failed');
 			return null;
 		}
 		
@@ -175,28 +198,36 @@ const {
 			// Method 1: Check localStorage preference (user override)
 			const savedCurrency = localStorage.getItem('preferredCurrency');
 			if (savedCurrency === 'USD' || savedCurrency === 'CAD') {
+				console.log('[GeoPricing] Using saved preference:', savedCurrency);
 				return savedCurrency === 'CAD' ? 'CA' : 'US';
 			}
 			
-			// Method 2: IP geolocation (most reliable)
+			// Method 2: IP geolocation (most reliable - prioritize this)
+			console.log('[GeoPricing] Attempting IP geolocation...');
 			const ipCountry = await detectFromIP();
 			if (ipCountry) {
+				console.log('[GeoPricing] Using IP detection result:', ipCountry);
 				return ipCountry;
 			}
 			
-			// Method 3: Timezone detection
+			// Method 3: Timezone detection (only if IP fails)
+			console.log('[GeoPricing] IP detection failed, trying timezone...');
 			const tzCountry = detectFromTimezone();
 			if (tzCountry) {
+				console.log('[GeoPricing] Using timezone detection:', tzCountry);
 				return tzCountry;
 			}
 			
-			// Method 4: Browser language
+			// Method 4: Browser language (only if IP and timezone fail)
+			console.log('[GeoPricing] Timezone detection failed, trying language...');
 			const langCountry = detectFromLanguage();
 			if (langCountry) {
+				console.log('[GeoPricing] Using language detection:', langCountry);
 				return langCountry;
 			}
 			
 			// Default to US if all methods fail
+			console.log('[GeoPricing] All detection methods failed, defaulting to US');
 			return 'US';
 		}
 		
@@ -214,12 +245,20 @@ const {
 		});
 		
 		// Initialize pricing on page load
+		console.log('[GeoPricing] Initializing currency detection...');
 		detectLocation().then(country => {
 			const currency = country === 'CA' ? 'CAD' : 'USD';
+			console.log('[GeoPricing] Final currency selected:', currency, 'for country:', country);
 			applyCurrency(currency);
+			
+			// Helpful debug message
+			const savedPref = localStorage.getItem('preferredCurrency');
+			if (savedPref) {
+				console.log('[GeoPricing] Note: A saved preference exists. Clear with: localStorage.removeItem("preferredCurrency")');
+			}
 		}).catch(error => {
 			// Fallback to USD on any error
-			console.warn('Currency detection failed, defaulting to USD:', error);
+			console.warn('[GeoPricing] Currency detection failed, defaulting to USD:', error);
 			applyCurrency('USD');
 		});
 		}
