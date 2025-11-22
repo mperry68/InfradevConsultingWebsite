@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import GeoPricing from '../components/GeoPricing.astro';
 
 const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBrochure-Consult-Draft.jpg';
 ---
@@ -160,7 +161,7 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 					<div class="pricing-card">
 						<h3>Search Engine Optimization (SEO)</h3>
 						<div class="pricing-amount">
-							<GeoPricing usdPrice={899} cadPrice={1099} />
+							<GeoPricing usdPrice={899} cadPrice={1099} showCurrencyToggle={false} />
 							<span class="pricing-period">/month</span>
 						</div>
 						<ul class="pricing-features">
@@ -176,7 +177,7 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 							<h4>Complete Search Optimization Bundle</h4>
 							<p>Get all three services (SEO + AEO + GEO) for maximum visibility:</p>
 							<div class="bundle-price">
-								<GeoPricing usdPrice={2500} cadPrice={3000} />
+								<GeoPricing usdPrice={2500} cadPrice={3000} showCurrencyToggle={false} />
 								<span class="pricing-period">/month</span>
 							</div>
 							<p class="bundle-savings">Save <span class="geo-price-inline" data-usd-price="697" data-cad-price="897">$697</span>/month compared to individual services</p>
@@ -820,6 +821,148 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 		box-shadow: 0 6px 20px rgba(110, 37, 5, 0.4);
 	}
 
+	.pricing {
+		background: var(--color-bg-light);
+	}
+
+	.pricing-content {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.pricing-card {
+		background: #fff;
+		border-radius: 12px;
+		padding: 3rem;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+		text-align: center;
+	}
+
+	.pricing-card h3 {
+		font-size: 1.8rem;
+		color: var(--color-text);
+		margin-bottom: 2rem;
+		font-weight: 700;
+	}
+
+	.pricing-amount {
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+		gap: 0.5rem;
+		margin-bottom: 2rem;
+		flex-wrap: wrap;
+	}
+
+	.pricing-amount .geo-pricing {
+		display: inline-flex;
+		flex-direction: row;
+		align-items: baseline;
+		gap: 0.5rem;
+	}
+
+	.pricing-amount .geo-pricing .currency-toggle,
+	.pricing-amount .geo-pricing .pricing-note {
+		display: none;
+	}
+
+	.pricing-amount .price-amount {
+		font-size: 3rem;
+		font-weight: 700;
+		color: var(--color-orange);
+	}
+
+	.pricing-period {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+	}
+
+	.pricing-features {
+		list-style: none;
+		padding: 0;
+		margin: 2rem 0;
+		text-align: left;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.pricing-features li {
+		padding: 0.75rem 0;
+		color: var(--color-text);
+		font-size: 1.05rem;
+		border-bottom: 1px solid #f0f0f0;
+	}
+
+	.pricing-features li:last-child {
+		border-bottom: none;
+	}
+
+	.bundle-offer {
+		margin-top: 3rem;
+		padding-top: 3rem;
+		border-top: 2px solid var(--color-orange);
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.05), rgba(255, 150, 72, 0.08));
+		padding: 2rem;
+		border-radius: 10px;
+	}
+
+	.bundle-offer h4 {
+		font-size: 1.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.bundle-offer > p {
+		color: var(--color-text-light);
+		margin-bottom: 1.5rem;
+		font-size: 1.05rem;
+	}
+
+	.bundle-price {
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+		gap: 0.5rem;
+		margin: 1.5rem 0;
+		flex-wrap: wrap;
+	}
+
+	.bundle-price .geo-pricing {
+		display: inline-flex;
+		flex-direction: row;
+		align-items: baseline;
+		gap: 0.5rem;
+	}
+
+	.bundle-price .geo-pricing .currency-toggle,
+	.bundle-price .geo-pricing .pricing-note {
+		display: none;
+	}
+
+	.bundle-price .price-amount {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--color-orange);
+	}
+
+	.bundle-savings {
+		color: var(--color-text);
+		font-size: 1.1rem;
+		margin: 1rem 0 1.5rem;
+		font-weight: 500;
+	}
+
+	.bundle-savings .geo-price-inline {
+		color: var(--color-orange);
+		font-weight: 700;
+	}
+
+	.bundle-offer .btn {
+		margin-top: 1rem;
+	}
+
 	@media (max-width: 768px) {
 		.seo-hero h1 {
 			font-size: 2.2rem;
@@ -839,6 +982,18 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 
 		.faq-question {
 			font-size: 1.1rem;
+		}
+
+		.pricing-card {
+			padding: 2rem 1.5rem;
+		}
+
+		.pricing-amount .price-amount {
+			font-size: 2.5rem;
+		}
+
+		.bundle-price .price-amount {
+			font-size: 2rem;
 		}
 	}
 </style>
