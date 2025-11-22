@@ -216,5 +216,12 @@ const fullCanonical = canonical.startsWith('http') ? canonical : `${siteUrl}${ca
 			padding: 4rem 0;
 		}
 	}
+
+	/* Hide breadcrumbs on mobile and tablet */
+	@media (max-width: 768px) {
+		.breadcrumb {
+			display: none;
+		}
+	}
 </style>
 
