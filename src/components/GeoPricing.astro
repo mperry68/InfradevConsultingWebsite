@@ -1,0 +1,268 @@
+---
+// GeoPricing Component - Displays pricing based on visitor location
+// Automatically detects US vs Canada and shows appropriate currency
+
+interface Props {
+	usdPrice: number;
+	cadPrice: number;
+	usdLabel?: string;
+	cadLabel?: string;
+	showCurrencyToggle?: boolean;
+}
+
+const { 
+	usdPrice, 
+	cadPrice, 
+	usdLabel = "USD", 
+	cadLabel = "CAD",
+	showCurrencyToggle = true 
+} = Astro.props;
+---
+
+<div class="geo-pricing" data-usd-price={usdPrice} data-cad-price={cadPrice}>
+	<div class="pricing-display">
+		<span class="price-amount">{usdPrice}</span>
+		<span class="price-currency">{usdLabel}</span>
+	</div>
+	{showCurrencyToggle && (
+		<div class="currency-toggle">
+			<button class="currency-btn active" data-currency="USD" aria-label="Show price in USD">
+				USD
+			</button>
+			<button class="currency-btn" data-currency="CAD" aria-label="Show price in CAD">
+				CAD
+			</button>
+		</div>
+	)}
+	<div class="pricing-note">
+		<p class="location-note">Price shown in <span class="detected-location">USD</span> based on your location</p>
+	</div>
+</div>
+
+<script>
+	// Geo-location detection and pricing update
+	(function() {
+		const pricingElements = document.querySelectorAll('.geo-pricing');
+		
+		// Function to update pricing display
+		function updatePricing(element, currency) {
+			const usdPrice = parseFloat(element.getAttribute('data-usd-price') || '0');
+			const cadPrice = parseFloat(element.getAttribute('data-cad-price') || '0');
+			const priceAmount = element.querySelector('.price-amount');
+			const priceCurrency = element.querySelector('.price-currency');
+			const locationNote = element.querySelector('.detected-location');
+			const currencyButtons = element.querySelectorAll('.currency-btn');
+			
+			if (currency === 'CAD') {
+				if (priceAmount) priceAmount.textContent = cadPrice.toLocaleString('en-CA');
+				if (priceCurrency) priceCurrency.textContent = 'CAD';
+				if (locationNote) locationNote.textContent = 'CAD';
+			} else {
+				if (priceAmount) priceAmount.textContent = usdPrice.toLocaleString('en-US');
+				if (priceCurrency) priceCurrency.textContent = 'USD';
+				if (locationNote) locationNote.textContent = 'USD';
+			}
+			
+			// Update button states
+			currencyButtons.forEach(btn => {
+				if (btn.getAttribute('data-currency') === currency) {
+					btn.classList.add('active');
+				} else {
+					btn.classList.remove('active');
+				}
+			});
+		}
+		
+		// Detect location using IP geolocation
+		async function detectLocation() {
+			try {
+				// Using ipapi.co free tier (no API key required for basic country detection)
+				// Alternative: ip-api.com (free, 45 requests/minute)
+				const response = await fetch('https://ipapi.co/json/', {
+					method: 'GET',
+					headers: {
+						'Accept': 'application/json'
+					}
+				});
+				
+				if (response.ok) {
+					const data = await response.json();
+					const country = data.country_code;
+					const currency = country === 'CA' ? 'CAD' : 'USD';
+					
+					// Update all pricing elements
+					pricingElements.forEach(element => {
+						updatePricing(element, currency);
+					});
+					
+					// Update inline prices
+					updateInlinePrices(currency);
+					
+					return country;
+				}
+			} catch (error) {
+				console.log('Location detection failed, defaulting to USD');
+			}
+			
+			// Default to USD if detection fails
+			pricingElements.forEach(element => {
+				updatePricing(element, 'USD');
+			});
+			updateInlinePrices('USD');
+			
+			return 'US';
+		}
+		
+		// Update inline price spans
+		function updateInlinePrices(currency) {
+			const inlinePrices = document.querySelectorAll('.geo-price-inline');
+			inlinePrices.forEach(span => {
+				const usdPrice = parseFloat(span.getAttribute('data-usd-price') || '0');
+				const cadPrice = parseFloat(span.getAttribute('data-cad-price') || '0');
+				if (currency === 'CAD') {
+					span.textContent = '$' + cadPrice.toLocaleString('en-CA');
+				} else {
+					span.textContent = '$' + usdPrice.toLocaleString('en-US');
+				}
+			});
+		}
+		
+		// Manual currency toggle
+		pricingElements.forEach(element => {
+			const buttons = element.querySelectorAll('.currency-btn');
+			buttons.forEach(btn => {
+				btn.addEventListener('click', () => {
+					const currency = btn.getAttribute('data-currency');
+					updatePricing(element, currency);
+					// Store preference in localStorage
+					localStorage.setItem('preferredCurrency', currency);
+				});
+			});
+		});
+		
+		// Check for saved preference first
+		const savedCurrency = localStorage.getItem('preferredCurrency');
+		if (savedCurrency === 'USD' || savedCurrency === 'CAD') {
+			pricingElements.forEach(element => {
+				updatePricing(element, savedCurrency);
+			});
+			// Also update inline prices
+			updateInlinePrices(savedCurrency);
+		} else {
+			// Auto-detect location
+			detectLocation().then(country => {
+				const currency = country === 'CA' ? 'CAD' : 'USD';
+				updateInlinePrices(currency);
+			});
+		}
+		
+		// Update inline price spans
+		function updateInlinePrices(currency) {
+			const inlinePrices = document.querySelectorAll('.geo-price-inline');
+			inlinePrices.forEach(span => {
+				const usdPrice = parseFloat(span.getAttribute('data-usd-price') || '0');
+				const cadPrice = parseFloat(span.getAttribute('data-cad-price') || '0');
+				if (currency === 'CAD') {
+					span.textContent = '$' + cadPrice.toLocaleString('en-CA');
+				} else {
+					span.textContent = '$' + usdPrice.toLocaleString('en-US');
+				}
+			});
+		}
+		
+		// Update inline prices when currency is manually changed
+		pricingElements.forEach(element => {
+			const buttons = element.querySelectorAll('.currency-btn');
+			buttons.forEach(btn => {
+				btn.addEventListener('click', () => {
+					const currency = btn.getAttribute('data-currency');
+					updateInlinePrices(currency);
+				});
+			});
+		});
+	})();
+</script>
+
+<style>
+	.geo-pricing {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.pricing-display {
+		display: flex;
+		align-items: baseline;
+		gap: 0.5rem;
+	}
+
+	.price-amount {
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--color-orange);
+	}
+
+	.price-currency {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		font-weight: 500;
+	}
+
+	.currency-toggle {
+		display: flex;
+		gap: 0.5rem;
+		background: var(--color-bg-light);
+		padding: 0.25rem;
+		border-radius: 5px;
+	}
+
+	.currency-btn {
+		padding: 0.5rem 1rem;
+		border: none;
+		background: transparent;
+		color: var(--color-text-light);
+		font-weight: 500;
+		cursor: pointer;
+		border-radius: 3px;
+		transition: all 0.3s ease;
+		font-family: inherit;
+	}
+
+	.currency-btn:hover {
+		background: rgba(255, 132, 39, 0.1);
+		color: var(--color-orange);
+	}
+
+	.currency-btn.active {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.pricing-note {
+		font-size: 0.9rem;
+		color: var(--color-text-light);
+		text-align: center;
+	}
+
+	.location-note {
+		margin: 0;
+	}
+
+	.detected-location {
+		font-weight: 600;
+		color: var(--color-orange);
+	}
+
+	@media (max-width: 768px) {
+		.price-amount {
+			font-size: 1.5rem;
+		}
+
+		.currency-btn {
+			padding: 0.4rem 0.8rem;
+			font-size: 0.9rem;
+		}
+	}
+</style>
+

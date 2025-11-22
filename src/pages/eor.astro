@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import GeoPricing from '../components/GeoPricing.astro';
 
 const siteUrl = Astro.site?.href || Astro.url.origin;
 const pageUrl = `${siteUrl}/eor`;
@@ -197,12 +198,15 @@ const pageUrl = `${siteUrl}/eor`;
 						<ul class="pricing-list">
 							<li>✓ Gross salary of employee</li>
 							<li>✓ Employer contributions (CPP, EI, QPP, QPIP)</li>
-							<li>✓ Starting from $499/month per employee</li>
-							<li>✓ $29/month per employee - Payroll fee</li>
+							<li>✓ Starting from <span class="geo-price-inline" data-usd-price="499" data-cad-price="675">$499</span>/month per employee - EOR service fee</li>
+							<li>✓ <span class="geo-price-inline" data-usd-price="29" data-cad-price="39">$29</span>/month per employee - Payroll processing fee</li>
 							<li>✓ All payroll processing</li>
 							<li>✓ Tax remittances and compliance</li>
 							<li>✓ HR support and documentation</li>
 						</ul>
+						<div class="currency-selector">
+							<GeoPricing usdPrice={499} cadPrice={675} showCurrencyToggle={true} />
+						</div>
 						<div class="pricing-note">
 							<p><strong>Note:</strong> Pricing varies based on employee salary and specific requirements. Contact us for a customized quote.</p>
 						</div>
@@ -1061,6 +1065,19 @@ const pageUrl = `${siteUrl}/eor`;
 
 	.pricing-list li:last-child {
 		border-bottom: none;
+	}
+
+	.currency-selector {
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid #e0e0e0;
+		display: flex;
+		justify-content: center;
+	}
+
+	.geo-price-inline {
+		font-weight: 600;
+		color: var(--color-orange);
 	}
 
 	.pricing-note {

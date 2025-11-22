@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import GeoPricing from '../components/GeoPricing.astro';
 
 const siteUrl = Astro.site?.href || Astro.url.origin;
 const pageUrl = `${siteUrl}/consulting-management`;
@@ -185,11 +186,14 @@ const pageUrl = `${siteUrl}/consulting-management`;
 						<ul class="pricing-list">
 							<li>✓ Consultant fees and compensation</li>
 							<li>✓ GST/HST handling and remittances</li>
-							<li>✓ Starting from $499/month per consultant - InfraDev consulting management fee</li>
+							<li>✓ Starting from <span class="geo-price-inline" data-usd-price="499" data-cad-price="675">$499</span>/month per consultant - InfraDev consulting management fee</li>
 							<li>✓ All invoicing and payment processing</li>
 							<li>✓ Tax compliance and reporting</li>
 							<li>✓ Contract and administrative support</li>
 						</ul>
+						<div class="currency-selector">
+							<GeoPricing usdPrice={499} cadPrice={675} showCurrencyToggle={true} />
+						</div>
 						<div class="pricing-note">
 							<p><strong>Note:</strong> Pricing varies based on consultant rates and specific requirements. Contact us for a customized quote.</p>
 						</div>
@@ -945,6 +949,19 @@ const pageUrl = `${siteUrl}/consulting-management`;
 
 	.pricing-list li:last-child {
 		border-bottom: none;
+	}
+
+	.currency-selector {
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid #e0e0e0;
+		display: flex;
+		justify-content: center;
+	}
+
+	.geo-price-inline {
+		font-weight: 600;
+		color: var(--color-orange);
 	}
 
 	.pricing-note {

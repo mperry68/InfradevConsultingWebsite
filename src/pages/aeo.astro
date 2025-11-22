@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import GeoPricing from '../components/GeoPricing.astro';
 
 const siteUrl = Astro.site?.href || Astro.url.origin;
 const pageUrl = `${siteUrl}/aeo`;
@@ -233,6 +234,44 @@ const pageUrl = `${siteUrl}/aeo`;
 						<div class="step-number">4</div>
 						<h3>Monitoring & Optimization</h3>
 						<p>Continuously monitor AI answer engine visibility, track citations, and optimize based on performance data and emerging AI search trends.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing Section -->
+		<section class="pricing section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Transparent Pricing</h2>
+					<p>Simple, straightforward pricing with no hidden fees</p>
+				</div>
+				<div class="pricing-content">
+					<div class="pricing-card">
+						<h3>Answer Engine Optimization (AEO)</h3>
+						<div class="pricing-amount">
+							<GeoPricing usdPrice={899} cadPrice={1099} />
+							<span class="pricing-period">/month</span>
+						</div>
+						<ul class="pricing-features">
+							<li>✓ Content optimization for AI understanding</li>
+							<li>✓ Featured snippet optimization</li>
+							<li>✓ Voice search optimization</li>
+							<li>✓ Structured data implementation</li>
+							<li>✓ E-E-A-T signal building</li>
+							<li>✓ AI answer engine monitoring</li>
+							<li>✓ Comprehensive reporting</li>
+						</ul>
+						<div class="bundle-offer">
+							<h4>Complete Search Optimization Bundle</h4>
+							<p>Get all three services (SEO + AEO + GEO) for maximum visibility:</p>
+							<div class="bundle-price">
+								<GeoPricing usdPrice={2500} cadPrice={3000} />
+								<span class="pricing-period">/month</span>
+							</div>
+							<p class="bundle-savings">Save <span class="geo-price-inline" data-usd-price="697" data-cad-price="897">$697</span>/month compared to individual services</p>
+							<a href="/contact" class="btn btn-primary">Get Complete Bundle</a>
+						</div>
 					</div>
 				</div>
 			</div>
