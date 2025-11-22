@@ -195,19 +195,23 @@ const {
 		
 		// Main detection function with multiple fallbacks
 		async function detectLocation() {
-			// Method 1: Check localStorage preference (user override)
-			const savedCurrency = localStorage.getItem('preferredCurrency');
-			if (savedCurrency === 'USD' || savedCurrency === 'CAD') {
-				console.log('[GeoPricing] Using saved preference:', savedCurrency);
-				return savedCurrency === 'CAD' ? 'CA' : 'US';
-			}
-			
-			// Method 2: IP geolocation (most reliable - prioritize this)
+			// Method 1: IP geolocation (most reliable - prioritize this)
+			// Check IP first, as it reflects current location (including VPN)
 			console.log('[GeoPricing] Attempting IP geolocation...');
 			const ipCountry = await detectFromIP();
 			if (ipCountry) {
 				console.log('[GeoPricing] Using IP detection result:', ipCountry);
+				// Update saved preference to match current IP location
+				const currency = ipCountry === 'CA' ? 'CAD' : 'USD';
+				localStorage.setItem('preferredCurrency', currency);
 				return ipCountry;
+			}
+			
+			// Method 2: Check localStorage preference (only if IP detection failed)
+			const savedCurrency = localStorage.getItem('preferredCurrency');
+			if (savedCurrency === 'USD' || savedCurrency === 'CAD') {
+				console.log('[GeoPricing] IP detection failed, using saved preference:', savedCurrency);
+				return savedCurrency === 'CAD' ? 'CA' : 'US';
 			}
 			
 			// Method 3: Timezone detection (only if IP fails)
