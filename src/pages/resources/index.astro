@@ -268,6 +268,27 @@ const resources = [
 	<Footer />
 </Layout>
 
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "ItemList",
+	"name": "Resources - InfraDev Consulting",
+	"description": "Free resources, guides, and downloadable materials for hiring Canadian talent, EOR services, and search optimization",
+	"url": pageUrl,
+	"numberOfItems": resources.reduce((total, category) => total + category.items.length, 0),
+	"itemListElement": resources.flatMap((category, categoryIndex) => 
+		category.items.map((resource, itemIndex) => ({
+			"@type": "ListItem",
+			"position": resources.slice(0, categoryIndex).reduce((sum, cat) => sum + cat.items.length, 0) + itemIndex + 1,
+			"item": {
+				"@type": resource.download !== "#" && resource.download.startsWith("/") ? "DigitalDocument" : "Thing",
+				"name": resource.title,
+				"description": resource.description,
+				"url": resource.download !== "#" ? `${siteUrl}${resource.download}` : pageUrl
+			}
+		}))
+	)
+})} />
+
 <style>
 	.resources-hero {
 		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));

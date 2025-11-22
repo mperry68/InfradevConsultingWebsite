@@ -82,6 +82,35 @@ const seoDescription = post.data.seoDescription || post.data.description;
 	<Footer />
 </Layout>
 
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": post.data.title,
+	"description": seoDescription,
+	"image": post.data.image ? `${siteUrl}${post.data.image}` : `${siteUrl}/assets/WebsiteMarketing/Logo.png`,
+	"datePublished": post.data.pubDate.toISOString(),
+	"dateModified": (post.data.updatedDate || post.data.pubDate).toISOString(),
+	"author": {
+		"@type": "Organization",
+		"name": post.data.author,
+		"url": siteUrl
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"url": siteUrl,
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo.png`
+		}
+	},
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	},
+	"keywords": post.data.tags.join(", ")
+})} />
+
 <style>
 	.blog-post {
 		background: var(--color-bg);
