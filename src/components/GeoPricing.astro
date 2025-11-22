@@ -21,8 +21,7 @@ const {
 
 <div class="geo-pricing" data-usd-price={usdPrice} data-cad-price={cadPrice}>
 	<div class="pricing-display">
-		<span class="price-amount">{usdPrice}</span>
-		<span class="price-currency">{usdLabel}</span>
+		<span class="price-formatted">${usdPrice.toFixed(2)} {usdLabel} per month</span>
 	</div>
 	{showCurrencyToggle && (
 		<div class="currency-toggle">
@@ -34,84 +33,47 @@ const {
 			</button>
 		</div>
 	)}
-	<div class="pricing-note">
-		<p class="location-note">Price shown in <span class="detected-location">USD</span> based on your location</p>
-	</div>
 </div>
 
 <script>
 	// Geo-location detection and pricing update
 	(function() {
-		const pricingElements = document.querySelectorAll('.geo-pricing');
-		
-		// Function to update pricing display
-		function updatePricing(element, currency) {
-			const usdPrice = parseFloat(element.getAttribute('data-usd-price') || '0');
-			const cadPrice = parseFloat(element.getAttribute('data-cad-price') || '0');
-			const priceAmount = element.querySelector('.price-amount');
-			const priceCurrency = element.querySelector('.price-currency');
-			const locationNote = element.querySelector('.detected-location');
-			const currencyButtons = element.querySelectorAll('.currency-btn');
+		// Wait for DOM to be ready
+		function init() {
+			const pricingElements = document.querySelectorAll('.geo-pricing');
 			
-			if (currency === 'CAD') {
-				if (priceAmount) priceAmount.textContent = cadPrice.toLocaleString('en-CA');
-				if (priceCurrency) priceCurrency.textContent = 'CAD';
-				if (locationNote) locationNote.textContent = 'CAD';
-			} else {
-				if (priceAmount) priceAmount.textContent = usdPrice.toLocaleString('en-US');
-				if (priceCurrency) priceCurrency.textContent = 'USD';
-				if (locationNote) locationNote.textContent = 'USD';
+			if (pricingElements.length === 0) {
+				// Elements not found yet, try again after a short delay
+				setTimeout(init, 100);
+				return;
 			}
 			
-			// Update button states
-			currencyButtons.forEach(btn => {
-				if (btn.getAttribute('data-currency') === currency) {
-					btn.classList.add('active');
+			// Function to update pricing display
+			function updatePricing(element, currency) {
+				const usdPrice = parseFloat(element.getAttribute('data-usd-price') || '0');
+				const cadPrice = parseFloat(element.getAttribute('data-cad-price') || '0');
+				const priceFormatted = element.querySelector('.price-formatted');
+				const currencyButtons = element.querySelectorAll('.currency-btn');
+				
+				if (currency === 'CAD') {
+					if (priceFormatted) {
+						priceFormatted.textContent = `$${cadPrice.toFixed(2)} CAD per month`;
+					}
 				} else {
-					btn.classList.remove('active');
+					if (priceFormatted) {
+						priceFormatted.textContent = `$${usdPrice.toFixed(2)} USD per month`;
+					}
 				}
-			});
-		}
-		
-		// Detect location using IP geolocation
-		async function detectLocation() {
-			try {
-				// Using ipapi.co free tier (no API key required for basic country detection)
-				// Alternative: ip-api.com (free, 45 requests/minute)
-				const response = await fetch('https://ipapi.co/json/', {
-					method: 'GET',
-					headers: {
-						'Accept': 'application/json'
+				
+				// Update button states
+				currencyButtons.forEach(btn => {
+					if (btn.getAttribute('data-currency') === currency) {
+						btn.classList.add('active');
+					} else {
+						btn.classList.remove('active');
 					}
 				});
-				
-				if (response.ok) {
-					const data = await response.json();
-					const country = data.country_code;
-					const currency = country === 'CA' ? 'CAD' : 'USD';
-					
-					// Update all pricing elements
-					pricingElements.forEach(element => {
-						updatePricing(element, currency);
-					});
-					
-					// Update inline prices
-					updateInlinePrices(currency);
-					
-					return country;
-				}
-			} catch (error) {
-				console.log('Location detection failed, defaulting to USD');
 			}
-			
-			// Default to USD if detection fails
-			pricingElements.forEach(element => {
-				updatePricing(element, 'USD');
-			});
-			updateInlinePrices('USD');
-			
-			return 'US';
-		}
 		
 		// Update inline price spans
 		function updateInlinePrices(currency) {
@@ -125,6 +87,117 @@ const {
 					span.textContent = '$' + usdPrice.toLocaleString('en-US');
 				}
 			});
+		}
+		
+		// Apply currency to all elements
+		function applyCurrency(currency) {
+			pricingElements.forEach(element => {
+				updatePricing(element, currency);
+			});
+			updateInlinePrices(currency);
+		}
+		
+		// Detect country from browser language
+		function detectFromLanguage() {
+			const lang = navigator.language || navigator.userLanguage || 'en-US';
+			// Check for Canadian locales (en-CA, fr-CA)
+			if (lang.toLowerCase().includes('ca') || lang.toLowerCase().startsWith('fr')) {
+				// French language often indicates Canada (though could be France/Belgium)
+				// But combined with other signals, it's a good indicator
+				return 'CA';
+			}
+			return null;
+		}
+		
+		// Detect country from timezone
+		function detectFromTimezone() {
+			try {
+				const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+				// Canadian timezones
+				const canadianTimezones = [
+					'America/Toronto', 'America/Vancouver', 'America/Edmonton',
+					'America/Winnipeg', 'America/Halifax', 'America/St_Johns',
+					'America/Montreal', 'America/Regina', 'America/Yellowknife',
+					'America/Whitehorse', 'America/Dawson', 'America/Inuvik',
+					'America/Glace_Bay', 'America/Moncton', 'America/Thunder_Bay',
+					'America/Iqaluit', 'America/Rankin_Inlet', 'America/Resolute'
+				];
+				if (canadianTimezones.includes(timezone)) {
+					return 'CA';
+				}
+			} catch (e) {
+				// Timezone detection failed
+			}
+			return null;
+		}
+		
+		// Detect location using IP geolocation (multiple APIs as fallback)
+		async function detectFromIP() {
+			const apis = [
+				{ url: 'https://ipapi.co/json/', field: 'country_code' },
+				{ url: 'https://ip-api.com/json/?fields=countryCode', field: 'countryCode' },
+				{ url: 'https://api.country.is/', field: 'country' }
+			];
+			
+			for (const api of apis) {
+				try {
+					// Create timeout controller for browser compatibility
+					const controller = new AbortController();
+					const timeoutId = setTimeout(() => controller.abort(), 3000);
+					
+					const response = await fetch(api.url, {
+						method: 'GET',
+						headers: { 'Accept': 'application/json' },
+						signal: controller.signal
+					});
+					
+					clearTimeout(timeoutId);
+					
+					if (response.ok) {
+						const data = await response.json();
+						const country = data[api.field];
+						
+						if (country === 'CA' || country === 'US') {
+							return country;
+						}
+					}
+				} catch (error) {
+					// Try next API
+					continue;
+				}
+			}
+			
+			return null;
+		}
+		
+		// Main detection function with multiple fallbacks
+		async function detectLocation() {
+			// Method 1: Check localStorage preference (user override)
+			const savedCurrency = localStorage.getItem('preferredCurrency');
+			if (savedCurrency === 'USD' || savedCurrency === 'CAD') {
+				return savedCurrency === 'CAD' ? 'CA' : 'US';
+			}
+			
+			// Method 2: IP geolocation (most reliable)
+			const ipCountry = await detectFromIP();
+			if (ipCountry) {
+				return ipCountry;
+			}
+			
+			// Method 3: Timezone detection
+			const tzCountry = detectFromTimezone();
+			if (tzCountry) {
+				return tzCountry;
+			}
+			
+			// Method 4: Browser language
+			const langCountry = detectFromLanguage();
+			if (langCountry) {
+				return langCountry;
+			}
+			
+			// Default to US if all methods fail
+			return 'US';
 		}
 		
 		// Manual currency toggle
@@ -133,53 +206,30 @@ const {
 			buttons.forEach(btn => {
 				btn.addEventListener('click', () => {
 					const currency = btn.getAttribute('data-currency');
-					updatePricing(element, currency);
+					applyCurrency(currency);
 					// Store preference in localStorage
 					localStorage.setItem('preferredCurrency', currency);
 				});
 			});
 		});
 		
-		// Check for saved preference first
-		const savedCurrency = localStorage.getItem('preferredCurrency');
-		if (savedCurrency === 'USD' || savedCurrency === 'CAD') {
-			pricingElements.forEach(element => {
-				updatePricing(element, savedCurrency);
-			});
-			// Also update inline prices
-			updateInlinePrices(savedCurrency);
-		} else {
-			// Auto-detect location
-			detectLocation().then(country => {
-				const currency = country === 'CA' ? 'CAD' : 'USD';
-				updateInlinePrices(currency);
-			});
-		}
-		
-		// Update inline price spans
-		function updateInlinePrices(currency) {
-			const inlinePrices = document.querySelectorAll('.geo-price-inline');
-			inlinePrices.forEach(span => {
-				const usdPrice = parseFloat(span.getAttribute('data-usd-price') || '0');
-				const cadPrice = parseFloat(span.getAttribute('data-cad-price') || '0');
-				if (currency === 'CAD') {
-					span.textContent = '$' + cadPrice.toLocaleString('en-CA');
-				} else {
-					span.textContent = '$' + usdPrice.toLocaleString('en-US');
-				}
-			});
-		}
-		
-		// Update inline prices when currency is manually changed
-		pricingElements.forEach(element => {
-			const buttons = element.querySelectorAll('.currency-btn');
-			buttons.forEach(btn => {
-				btn.addEventListener('click', () => {
-					const currency = btn.getAttribute('data-currency');
-					updateInlinePrices(currency);
-				});
-			});
+		// Initialize pricing on page load
+		detectLocation().then(country => {
+			const currency = country === 'CA' ? 'CAD' : 'USD';
+			applyCurrency(currency);
+		}).catch(error => {
+			// Fallback to USD on any error
+			console.warn('Currency detection failed, defaulting to USD:', error);
+			applyCurrency('USD');
 		});
+		}
+		
+		// Start initialization
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', init);
+		} else {
+			init();
+		}
 	})();
 </script>
 
@@ -197,16 +247,11 @@ const {
 		gap: 0.5rem;
 	}
 
-	.price-amount {
+	.price-formatted {
 		font-size: 2rem;
 		font-weight: 700;
 		color: var(--color-orange);
-	}
-
-	.price-currency {
-		font-size: 1.2rem;
-		color: var(--color-text-light);
-		font-weight: 500;
+		white-space: nowrap;
 	}
 
 	.currency-toggle {
@@ -239,23 +284,8 @@ const {
 		color: #fff;
 	}
 
-	.pricing-note {
-		font-size: 0.9rem;
-		color: var(--color-text-light);
-		text-align: center;
-	}
-
-	.location-note {
-		margin: 0;
-	}
-
-	.detected-location {
-		font-weight: 600;
-		color: var(--color-orange);
-	}
-
 	@media (max-width: 768px) {
-		.price-amount {
+		.price-formatted {
 			font-size: 1.5rem;
 		}
 

@@ -162,14 +162,12 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 						<h3>Search Engine Optimization (SEO)</h3>
 						<div class="pricing-amount">
 							<GeoPricing usdPrice={899} cadPrice={1099} showCurrencyToggle={false} />
-							<span class="pricing-period">/month</span>
 						</div>
 						<div class="bundle-offer">
 							<h4>Complete Search Optimization Bundle</h4>
 							<p>Get all three services (SEO + AEO + GEO) for maximum visibility:</p>
 							<div class="bundle-price">
 								<GeoPricing usdPrice={2500} cadPrice={3000} showCurrencyToggle={false} />
-								<span class="pricing-period">/month</span>
 							</div>
 							<p class="bundle-savings">Save <span class="geo-price-inline" data-usd-price="697" data-cad-price="897">$697</span>/month compared to individual services</p>
 							<a href="/contact" class="btn btn-primary">Get Complete Bundle</a>
@@ -852,20 +850,14 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 		gap: 0.5rem;
 	}
 
-	.pricing-amount .geo-pricing .currency-toggle,
-	.pricing-amount .geo-pricing .pricing-note {
+	.pricing-amount .geo-pricing .currency-toggle {
 		display: none;
 	}
 
-	.pricing-amount .price-amount {
+	.pricing-amount .price-formatted {
 		font-size: 3rem;
 		font-weight: 700;
 		color: var(--color-orange);
-	}
-
-	.pricing-period {
-		font-size: 1.2rem;
-		color: var(--color-text-light);
 	}
 
 	.bundle-offer {
@@ -911,7 +903,7 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 		display: none;
 	}
 
-	.bundle-price .price-amount {
+	.bundle-price .price-formatted {
 		font-size: 2.5rem;
 		font-weight: 700;
 		color: var(--color-orange);
@@ -958,11 +950,11 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 			padding: 2rem 1.5rem;
 		}
 
-		.pricing-amount .price-amount {
+		.pricing-amount .price-formatted {
 			font-size: 2.5rem;
 		}
 
-		.bundle-price .price-amount {
+		.bundle-price .price-formatted {
 			font-size: 2rem;
 		}
 	}
