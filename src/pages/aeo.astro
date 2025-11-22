@@ -238,6 +238,57 @@ const pageUrl = `${siteUrl}/aeo`;
 			</div>
 		</section>
 
+		<section class="faq section" id="faq">
+			<div class="container">
+				<div class="section-header">
+					<h2>Frequently Asked Questions</h2>
+					<p>Common questions about Answer Engine Optimization</p>
+				</div>
+				<div class="faq-list">
+					<div class="faq-item">
+						<h3>What is Answer Engine Optimization (AEO)?</h3>
+						<p>Answer Engine Optimization (AEO) is the practice of optimizing your content to be selected, understood, and cited by AI-powered answer engines and voice assistants. Unlike traditional SEO which focuses on ranking in search results, AEO focuses on being selected as the source for AI-generated answers in systems like Google AI Overviews, Perplexity, ChatGPT, and voice assistants.</p>
+					</div>
+					<div class="faq-item">
+						<h3>How is AEO different from SEO?</h3>
+						<p>SEO optimizes for search engine algorithms and human readers, focusing on ranking high in search results pages. AEO optimizes for AI systems that need to understand context, extract facts, and synthesize information to provide direct answers. AEO requires structured data, clear semantic meaning, and content that answers questions directly and comprehensively.</p>
+					</div>
+					<div class="faq-item">
+						<h3>Why do I need AEO if I already have SEO?</h3>
+						<p>Over 40% of searches now trigger AI-generated answers. Users increasingly get direct answers from AI systems without clicking through to websites. AEO ensures your business appears in these AI-generated answers, capturing visibility even when users don't visit your site. SEO and AEO work together—SEO gets you clicks, AEO gets you visibility in the age of AI search.</p>
+					</div>
+					<div class="faq-item">
+						<h3>What platforms does AEO optimize for?</h3>
+						<p>AEO optimizes for AI-powered answer engines including Google AI Overviews, Perplexity, ChatGPT (with web search), Microsoft Copilot, and voice assistants like Siri, Alexa, and Google Assistant. The goal is to ensure your content is selected and cited when these systems generate answers to user queries.</p>
+					</div>
+					<div class="faq-item">
+						<h3>How long does it take to see AEO results?</h3>
+						<p>AEO results can appear faster than traditional SEO because AI systems continuously crawl and evaluate content. You may start seeing your content appear in AI-generated answers within 1-3 months, though this varies based on your industry, competition, and the quality of your optimization efforts.</p>
+					</div>
+					<div class="faq-item">
+						<h3>What content works best for AEO?</h3>
+						<p>Content optimized for AEO should directly answer common questions, be structured with clear Q&A formats, provide concise direct answers (40-60 words), use semantic markup, and demonstrate authority through E-E-A-T signals (Experience, Expertise, Authoritativeness, Trustworthiness). Featured snippets and voice search optimization are also crucial.</p>
+					</div>
+					<div class="faq-item">
+						<h3>Do I need to replace my SEO strategy with AEO?</h3>
+						<p>No, AEO should complement your SEO strategy, not replace it. A comprehensive search strategy includes both SEO (for traditional rankings) and AEO (for AI-powered answer engines). Together, they ensure your business captures visibility across all evolving search interfaces.</p>
+					</div>
+					<div class="faq-item">
+						<h3>How do you measure AEO success?</h3>
+						<p>We measure AEO success through tracking when your content appears in AI-generated answers, monitoring featured snippet appearances, tracking voice search visibility, measuring zero-click brand visibility, and analyzing citation frequency in AI responses. We also track traditional SEO metrics to ensure overall search visibility improvement.</p>
+					</div>
+					<div class="faq-item">
+						<h3>Can AEO work for any industry?</h3>
+						<p>Yes, AEO can work for any industry. Any business that wants to appear in AI-generated answers can benefit from AEO. However, industries with high informational search intent (like healthcare, legal, finance, education, and technology) often see particularly strong results from AEO optimization.</p>
+					</div>
+					<div class="faq-item">
+						<h3>What's included in your AEO services?</h3>
+						<p>Our AEO services include content optimization for AI understanding, featured snippet optimization, voice search optimization, structured data implementation (schema markup), semantic content enhancement, E-E-A-T signal building, AI answer engine monitoring, and comprehensive reporting on AI visibility metrics.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section class="cta section">
 			<div class="container">
 				<div class="cta-content">
@@ -595,6 +646,44 @@ const pageUrl = `${siteUrl}/aeo`;
 		margin-top: 2rem;
 	}
 
+	.faq {
+		background: var(--color-bg-light);
+	}
+
+	.faq-list {
+		max-width: 900px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.faq-item {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+		transition: box-shadow 0.3s ease;
+	}
+
+	.faq-item:hover {
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+	}
+
+	.faq-item h3 {
+		color: var(--color-text);
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+		font-weight: 600;
+		line-height: 1.4;
+	}
+
+	.faq-item p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		margin: 0;
+	}
+
 	.cta {
 		background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-dark) 100%);
 		color: #fff;
@@ -667,6 +756,14 @@ const pageUrl = `${siteUrl}/aeo`;
 		.cta h2 {
 			font-size: 2rem;
 		}
+
+		.faq-item {
+			padding: 1.5rem;
+		}
+
+		.faq-item h3 {
+			font-size: 1.1rem;
+		}
 	}
 </style>
 
@@ -691,7 +788,44 @@ const pageUrl = `${siteUrl}/aeo`;
 		"@type": "Offer",
 		"priceCurrency": "USD",
 		"availability": "https://schema.org/InStock"
-	}
+	},
+	"whatServiceDoes": "Answer Engine Optimization (AEO) optimizes your content to be selected, understood, and cited by AI-powered answer engines and voice assistants. As AI assistants and answer engines become the primary way people search, AEO ensures your business appears in AI-generated answers, voice assistant responses, and conversational search results. Services include content structure optimization (question-answer formats), semantic markup and schema implementation (FAQ, HowTo, QAPage, Article), fact-based content creation, voice search optimization, featured snippet optimization, AI answer engine monitoring, E-E-A-T optimization, and conversational content strategy.",
+	"targetAudience": "This service is for businesses that want to capture visibility in AI-powered search results. Ideal for companies looking to: appear in Google AI Overviews, get cited by Perplexity and ChatGPT, capture voice search queries, establish authority in AI-generated answers, future-proof their search strategy, and gain competitive advantage in the age of AI search. Suitable for businesses in any industry, particularly those with high informational search intent like healthcare, legal, finance, education, and technology.",
+	"uniqueValueProposition": "What makes InfraDev AEO unique is our comprehensive approach that optimizes for all major AI-powered answer engines simultaneously. Unlike traditional SEO that focuses only on search rankings, AEO ensures your content is selected as the source for AI-generated answers. We optimize for Google AI Overviews, Perplexity, ChatGPT, Bing Chat, voice assistants (Siri, Alexa, Google Assistant), and AI agents. Our approach combines content optimization, semantic markup, voice search optimization, and continuous monitoring to ensure maximum visibility across all AI search platforms. We help businesses capture the 40%+ of searches that now trigger AI-generated answers.",
+	"serviceSteps": [
+		{
+			"@type": "HowToStep",
+			"position": 1,
+			"name": "Audit & Analysis",
+			"text": "Analyze your current content for AI-readability, identify optimization opportunities, and assess how well your content answers common questions in your industry."
+		},
+		{
+			"@type": "HowToStep",
+			"position": 2,
+			"name": "Content Restructuring",
+			"text": "Restructure existing content and create new content optimized for AI understanding. Implement question-answer formats, clear hierarchies, and semantic markup."
+		},
+		{
+			"@type": "HowToStep",
+			"position": 3,
+			"name": "Schema Implementation",
+			"text": "Implement comprehensive schema markup to help AI systems understand your content's meaning, structure, and context."
+		},
+		{
+			"@type": "HowToStep",
+			"position": 4,
+			"name": "Monitoring & Optimization",
+			"text": "Continuously monitor AI answer engine visibility, track citations, and optimize based on performance data and emerging AI search trends."
+		}
+	],
+	"keyBenefits": [
+		"Capture AI-Driven Traffic: Be visible in the 40%+ of searches that generate AI answers. Even without clicks, appearing in AI responses builds brand awareness and authority",
+		"Future-Proof Your SEO Strategy: As AI search continues to grow, AEO ensures your content remains discoverable. Traditional SEO alone won't be enough as search evolves",
+		"Voice Assistant Visibility: Optimize for the growing number of voice searches through smart speakers, mobile assistants, and in-car systems. AEO makes your content voice-assistant friendly",
+		"Higher Authority Signals: Being cited by AI systems signals authority to both users and search engines. This can improve your overall search rankings and domain authority",
+		"Competitive Advantage: Most businesses haven't optimized for AI search yet. Early AEO adoption gives you a significant advantage in capturing AI-driven visibility",
+		"Better User Experience: AEO-optimized content is clearer, more structured, and easier to understand—benefiting both AI systems and human readers"
+	]
 })} />
 
 <script type="application/ld+json" set:html={JSON.stringify({
@@ -715,6 +849,93 @@ const pageUrl = `${siteUrl}/aeo`;
 			"position": 3,
 			"name": "Answer Engine Optimization",
 			"item": pageUrl
+		}
+	]
+})} />
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [
+		{
+			"@type": "Question",
+			"name": "What is Answer Engine Optimization (AEO)?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Answer Engine Optimization (AEO) is the practice of optimizing your content to be selected, understood, and cited by AI-powered answer engines and voice assistants. Unlike traditional SEO which focuses on ranking in search results, AEO focuses on being selected as the source for AI-generated answers in systems like Google AI Overviews, Perplexity, ChatGPT, and voice assistants."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How is AEO different from SEO?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "SEO optimizes for search engine algorithms and human readers, focusing on ranking high in search results pages. AEO optimizes for AI systems that need to understand context, extract facts, and synthesize information to provide direct answers. AEO requires structured data, clear semantic meaning, and content that answers questions directly and comprehensively."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Why do I need AEO if I already have SEO?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Over 40% of searches now trigger AI-generated answers. Users increasingly get direct answers from AI systems without clicking through to websites. AEO ensures your business appears in these AI-generated answers, capturing visibility even when users don't visit your site. SEO and AEO work together—SEO gets you clicks, AEO gets you visibility in the age of AI search."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What platforms does AEO optimize for?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "AEO optimizes for AI-powered answer engines including Google AI Overviews, Perplexity, ChatGPT (with web search), Microsoft Copilot, and voice assistants like Siri, Alexa, and Google Assistant. The goal is to ensure your content is selected and cited when these systems generate answers to user queries."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How long does it take to see AEO results?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "AEO results can appear faster than traditional SEO because AI systems continuously crawl and evaluate content. You may start seeing your content appear in AI-generated answers within 1-3 months, though this varies based on your industry, competition, and the quality of your optimization efforts."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What content works best for AEO?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Content optimized for AEO should directly answer common questions, be structured with clear Q&A formats, provide concise direct answers (40-60 words), use semantic markup, and demonstrate authority through E-E-A-T signals (Experience, Expertise, Authoritativeness, Trustworthiness). Featured snippets and voice search optimization are also crucial."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Do I need to replace my SEO strategy with AEO?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "No, AEO should complement your SEO strategy, not replace it. A comprehensive search strategy includes both SEO (for traditional rankings) and AEO (for AI-powered answer engines). Together, they ensure your business captures visibility across all evolving search interfaces."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How do you measure AEO success?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We measure AEO success through tracking when your content appears in AI-generated answers, monitoring featured snippet appearances, tracking voice search visibility, measuring zero-click brand visibility, and analyzing citation frequency in AI responses. We also track traditional SEO metrics to ensure overall search visibility improvement."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Can AEO work for any industry?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes, AEO can work for any industry. Any business that wants to appear in AI-generated answers can benefit from AEO. However, industries with high informational search intent (like healthcare, legal, finance, education, and technology) often see particularly strong results from AEO optimization."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What's included in your AEO services?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Our AEO services include content optimization for AI understanding, featured snippet optimization, voice search optimization, structured data implementation (schema markup), semantic content enhancement, E-E-A-T signal building, AI answer engine monitoring, and comprehensive reporting on AI visibility metrics."
+			}
 		}
 	]
 })} />

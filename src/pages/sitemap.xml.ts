@@ -13,6 +13,7 @@ const pages = [
 	'/geo',
 	'/blog',
 	'/resources',
+	'/compliance',
 	'/quality-policy',
 	'/environmental-policy',
 	'/cookies-policy',

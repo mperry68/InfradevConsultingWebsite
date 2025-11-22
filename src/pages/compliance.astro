@@ -1,0 +1,649 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/compliance`;
+---
+
+<Layout 
+	title="Compliance Information - Canadian Employment Law & Tax Compliance | InfraDev Consulting" 
+	description="Comprehensive compliance information for U.S. companies hiring in Canada. Learn about Canadian employment law, tax requirements, provincial regulations, and our ISO-aligned compliance policies."
+	canonical={pageUrl}
+>
+	<Header />
+	<main>
+		<section class="compliance-hero section">
+			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol>
+						<li><a href="/">Home</a></li>
+						<li>Compliance</li>
+					</ol>
+				</nav>
+				<div class="hero-content">
+					<h1>Compliance & Legal Information</h1>
+					<p class="hero-subtitle">Comprehensive compliance documentation for Canadian employment law, tax requirements, and regulatory obligations. All information is sourced from official government resources and aligned with ISO standards.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="compliance-overview section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Our Compliance Commitment</h2>
+					<p>InfraDev Consulting maintains full compliance with all Canadian federal and provincial employment laws, tax regulations, and workplace safety requirements. Our policies are aligned with international standards including ISO 9001 (Quality Management) and ISO 27001 (Information Security Management).</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="government-resources section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Official Government Resources</h2>
+					<p>All compliance information is based on official Canadian government sources</p>
+				</div>
+				<div class="resources-grid">
+					<div class="resource-card">
+						<h3>Federal Government Resources</h3>
+						<ul>
+							<li><a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency (CRA)</a> - Tax, payroll, and remittance requirements</li>
+							<li><a href="https://www.canada.ca/en/services/benefits/ei.html" target="_blank" rel="noopener noreferrer">Service Canada - Employment Insurance</a> - EI contribution rates and requirements</li>
+							<li><a href="https://www.canada.ca/en/services/benefits/publicpensions/cpp.html" target="_blank" rel="noopener noreferrer">Canada Pension Plan (CPP)</a> - CPP contribution rates and maximums</li>
+							<li><a href="https://www.canada.ca/en/employment-social-development/programs/employment-standards.html" target="_blank" rel="noopener noreferrer">Federal Employment Standards</a> - Federal labour law requirements</li>
+							<li><a href="https://www.canada.ca/en/employment-social-development/programs/labour-standards.html" target="_blank" rel="noopener noreferrer">Labour Standards</a> - Federal labour standards and regulations</li>
+						</ul>
+					</div>
+					<div class="resource-card">
+						<h3>Provincial Employment Standards</h3>
+						<ul>
+							<li><a href="https://www.ontario.ca/page/employment-standards-act" target="_blank" rel="noopener noreferrer">Ontario Employment Standards Act</a> - Ontario labour laws and requirements</li>
+							<li><a href="https://www.legisquebec.gouv.qc.ca/en/document/cs/N-1.1" target="_blank" rel="noopener noreferrer">Quebec Labour Standards Act</a> - Quebec employment regulations</li>
+							<li><a href="https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice" target="_blank" rel="noopener noreferrer">British Columbia Employment Standards</a> - BC labour requirements</li>
+							<li><a href="https://www.alberta.ca/employment-standards" target="_blank" rel="noopener noreferrer">Alberta Employment Standards</a> - Alberta labour laws</li>
+							<li><a href="https://www.gov.mb.ca/labour/standards/" target="_blank" rel="noopener noreferrer">Manitoba Employment Standards</a> - Manitoba employment regulations</li>
+						</ul>
+					</div>
+					<div class="resource-card">
+						<h3>U.S. Government Resources</h3>
+						<ul>
+							<li><a href="https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined" target="_blank" rel="noopener noreferrer">U.S. IRS - Independent Contractor Defined</a> - U.S. contractor classification rules</li>
+							<li><a href="https://www.irs.gov/businesses/small-businesses-self-employed/employee-vs-independent-contractor" target="_blank" rel="noopener noreferrer">IRS - Employee vs. Independent Contractor</a> - Classification guidelines</li>
+							<li><a href="https://www.dol.gov/agencies/whd/flsa" target="_blank" rel="noopener noreferrer">U.S. Department of Labor - FLSA</a> - Fair Labor Standards Act information</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="compliance-details section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Key Compliance Requirements</h2>
+					<p>Essential compliance information for hiring in Canada</p>
+				</div>
+				<div class="details-grid">
+					<div class="detail-card">
+						<h3>Tax & Payroll Compliance</h3>
+						<ul>
+							<li><strong>CPP Contributions:</strong> 5.95% of earnings up to $66,600 (2024 maximum), employer matches employee contributions</li>
+							<li><strong>EI Contributions:</strong> 2.21% of earnings up to $60,300 (2024 maximum), employer pays 1.4x employee rate</li>
+							<li><strong>Income Tax:</strong> Federal rates range from 15-33%, plus provincial rates (varies by province)</li>
+							<li><strong>T4 Slips:</strong> Required annually for all employees, must be issued by February 28</li>
+							<li><strong>Remittance Deadlines:</strong> Monthly, quarterly, or annually depending on payroll size</li>
+						</ul>
+						<p class="source">Source: <a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency</a></p>
+					</div>
+					<div class="detail-card">
+						<h3>Employment Standards</h3>
+						<ul>
+							<li><strong>Minimum Wage:</strong> Varies by province ($14-$16.55 CAD per hour in 2024)</li>
+							<li><strong>Vacation Entitlement:</strong> Minimum 2 weeks federally, provincial variations apply</li>
+							<li><strong>Statutory Holidays:</strong> 9-10 paid holidays depending on province</li>
+							<li><strong>Overtime:</strong> Generally 1.5x regular rate after 8 hours/day or 40 hours/week (varies by province)</li>
+							<li><strong>Termination Notice:</strong> Varies by province and length of service</li>
+						</ul>
+						<p class="source">Source: <a href="https://www.canada.ca/en/employment-social-development/programs/employment-standards.html" target="_blank" rel="noopener noreferrer">Federal Employment Standards</a></p>
+					</div>
+					<div class="detail-card">
+						<h3>Workplace Safety</h3>
+						<ul>
+							<li><strong>Workers' Compensation:</strong> Required in all provinces, rates vary by industry and province</li>
+							<li><strong>CNESST (Quebec):</strong> Commission des normes, de l'équité, de la santé et de la sécurité du travail</li>
+							<li><strong>WSIB (Ontario):</strong> Workplace Safety and Insurance Board coverage required</li>
+							<li><strong>WorkSafeBC:</strong> British Columbia workers' compensation requirements</li>
+							<li><strong>Safety Training:</strong> Province-specific safety training and certification requirements</li>
+						</ul>
+						<p class="source">Source: Provincial workers' compensation boards</p>
+					</div>
+					<div class="detail-card">
+						<h3>Provincial Variations</h3>
+						<ul>
+							<li><strong>Ontario:</strong> 2 weeks vacation, 9 statutory holidays, 3 weeks after 5 years</li>
+							<li><strong>Quebec:</strong> 2 weeks vacation, 8 statutory holidays, QPP and QPIP contributions</li>
+							<li><strong>British Columbia:</strong> 2 weeks vacation, 10 statutory holidays</li>
+							<li><strong>Alberta:</strong> 2 weeks vacation, 9 statutory holidays</li>
+							<li><strong>Other Provinces:</strong> Each province has specific employment standards requirements</li>
+						</ul>
+						<p class="source">Source: Provincial employment standards legislation</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="iso-policies section">
+			<div class="container">
+				<div class="section-header">
+					<h2>ISO-Aligned Policies</h2>
+					<p>Our policies are aligned with international standards for quality and security</p>
+				</div>
+				<div class="policies-grid">
+					<div class="policy-card">
+						<h3>Quality Policy</h3>
+						<p>Our ISO-aligned quality management policy ensures consistent, high-quality service delivery for all clients. We maintain rigorous quality standards in all aspects of our EOR and consulting management services.</p>
+						<a href="/quality-policy" class="policy-link">View Quality Policy →</a>
+					</div>
+					<div class="policy-card">
+						<h3>Security & Privacy Policy</h3>
+						<p>Comprehensive security and privacy policy aligned with ISO 27001 standards, PIPEDA (Personal Information Protection and Electronic Documents Act), and Canadian data protection requirements.</p>
+						<a href="/privacy-policy" class="policy-link">View Privacy Policy →</a>
+					</div>
+					<div class="policy-card">
+						<h3>Environmental Policy</h3>
+						<p>Our commitment to environmental sustainability and responsible business practices, aligned with ISO 14001 environmental management standards.</p>
+						<a href="/environmental-policy" class="policy-link">View Environmental Policy →</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="statistics section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Key Statistics & Data</h2>
+					<p>Verified statistics on Canadian employment and hiring</p>
+				</div>
+				<div class="stats-grid">
+					<div class="stat-card">
+						<h3>Salary Differences</h3>
+						<p>Canadian developers earn <strong>10-40% less</strong> than U.S. equivalents while maintaining comparable skill levels and education standards.</p>
+						<p class="stat-note">Based on 2024 salary surveys and market data</p>
+					</div>
+					<div class="stat-card">
+						<h3>Tax Rates</h3>
+						<p>Combined federal and provincial tax rates range from <strong>20-50%</strong> depending on province and income level. Effective rates are typically lower due to deductions and credits.</p>
+						<p class="stat-note">Source: <a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency</a></p>
+					</div>
+					<div class="stat-card">
+						<h3>Hiring Timelines</h3>
+						<p>Traditional entity formation takes <strong>3-6 months</strong>. EOR services enable hiring in <strong>24-48 hours</strong>, providing significant time-to-market advantages.</p>
+						<p class="stat-note">Based on typical business registration and setup processes</p>
+					</div>
+					<div class="stat-card">
+						<h3>Cost Savings</h3>
+						<p>U.S. companies save an average of <strong>$20,000-$50,000 annually</strong> per employee when hiring in Canada, including salary differences and reduced overhead costs.</p>
+						<p class="stat-note">Based on comparative employment cost analysis</p>
+					</div>
+					<div class="stat-card">
+						<h3>Employer Contributions</h3>
+						<p>CPP: <strong>5.95%</strong> up to $66,600 (2024). EI: <strong>2.21%</strong> up to $60,300 (2024). Plus provincial variations including QPP/QPIP in Quebec.</p>
+						<p class="stat-note">Source: <a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency</a></p>
+					</div>
+					<div class="stat-card">
+						<h3>Vacation Entitlements</h3>
+						<p>Minimum <strong>2 weeks</strong> federally, with provincial variations. Some provinces require <strong>3 weeks</strong> after 5 years of service.</p>
+						<p class="stat-note">Source: Provincial employment standards legislation</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="compliance-cta section">
+			<div class="container">
+				<div class="cta-content">
+					<h2>Questions About Compliance?</h2>
+					<p>Our team is well-versed in Canadian employment law and tax requirements. Contact us for specific compliance questions or to discuss your hiring needs.</p>
+					<a href="/contact" class="btn btn-primary btn-large">Contact Us for Compliance Questions</a>
+					<p class="cta-email">Or email us at <a href="mailto:marc@infradevconsulting.com">marc@infradevconsulting.com</a></p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.compliance-hero {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+		justify-content: flex-start;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: rgba(44, 44, 44, 0.6);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.breadcrumb a:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.compliance-hero h1 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.hero-subtitle {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 800px;
+		margin: 0 auto;
+		line-height: 1.7;
+	}
+
+	.compliance-overview {
+		background: var(--color-bg);
+	}
+
+	.government-resources {
+		background: var(--color-bg-light);
+	}
+
+	.resources-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.resource-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-left: 4px solid var(--color-orange);
+	}
+
+	.resource-card h3 {
+		font-size: 1.4rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+	}
+
+	.resource-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.resource-card li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.resource-card li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.resource-card a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 500;
+		transition: color 0.3s ease;
+	}
+
+	.resource-card a:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.compliance-details {
+		background: var(--color-bg);
+	}
+
+	.details-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.detail-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.detail-card h3 {
+		font-size: 1.4rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+	}
+
+	.detail-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 1.5rem 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.detail-card li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.detail-card li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.detail-card li strong {
+		color: var(--color-text);
+		font-weight: 600;
+	}
+
+	.source {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid #e0e0e0;
+		font-size: 0.9rem;
+		color: var(--color-text-light);
+	}
+
+	.source a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.source a:hover {
+		text-decoration: underline;
+	}
+
+	.iso-policies {
+		background: var(--color-bg-light);
+	}
+
+	.policies-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.policy-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-direction: column;
+	}
+
+	.policy-card h3 {
+		font-size: 1.4rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.policy-card p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+		flex: 1;
+	}
+
+	.policy-link {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 600;
+		transition: color 0.3s ease;
+		margin-top: auto;
+	}
+
+	.policy-link:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.statistics {
+		background: var(--color-bg);
+	}
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.stat-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.stat-card h3 {
+		font-size: 1.4rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.stat-card p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		margin-bottom: 1rem;
+	}
+
+	.stat-card p strong {
+		color: var(--color-orange);
+		font-weight: 700;
+	}
+
+	.stat-note {
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid #e0e0e0;
+		font-size: 0.9rem;
+		color: var(--color-text-light);
+	}
+
+	.stat-note a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.stat-note a:hover {
+		text-decoration: underline;
+	}
+
+	.compliance-cta {
+		background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-dark) 100%);
+		color: #fff;
+		text-align: center;
+	}
+
+	.cta-content {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.cta-content h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	.cta-content p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+		opacity: 0.95;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		text-decoration: none;
+		border: 2px solid transparent;
+	}
+
+	.btn-primary {
+		background: #fff;
+		color: var(--color-orange);
+	}
+
+	.btn-primary:hover {
+		background: var(--color-bg-light);
+		color: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-large {
+		padding: 1.25rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.cta-email {
+		margin-top: 1.5rem;
+		font-size: 1rem;
+	}
+
+	.cta-email a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	.cta-email a:hover {
+		opacity: 0.9;
+	}
+
+	@media (max-width: 768px) {
+		.compliance-hero h1 {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.resources-grid,
+		.details-grid,
+		.policies-grid,
+		.stats-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+	}
+</style>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	"name": "Compliance Information - Canadian Employment Law & Tax Compliance",
+	"description": "Comprehensive compliance information for U.S. companies hiring in Canada. Learn about Canadian employment law, tax requirements, provincial regulations, and our ISO-aligned compliance policies.",
+	"url": pageUrl,
+	"mainEntity": {
+		"@type": "Article",
+		"headline": "Compliance Information for Hiring in Canada",
+		"author": {
+			"@type": "Organization",
+			"name": "InfraDev Consulting"
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": "InfraDev Consulting",
+			"logo": {
+				"@type": "ImageObject",
+				"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+			}
+		}
+	}
+})} />
+
