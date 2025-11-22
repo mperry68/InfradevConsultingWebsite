@@ -19,7 +19,7 @@ import CTA from '../components/CTA.astro';
 		<section class="intro section">
 			<div class="container">
 				<div class="intro-content">
-					<p>InfraDev Consulting helps U.S. companies hire Canadian talent quickly, legally, and without setting up a Canadian subsidiary. We act as your Employer of Record and provide software development, AI, cloud, and DevOps support with fully compliant Canadian employees.</p>
+					<p>InfraDev Consulting helps U.S. companies hire Canadian talent quickly, legally, and without setting up a Canadian subsidiary. We provide <a href="/eor" class="intro-link">Canadian Employer of Record services</a> and <a href="/consulting-management" class="intro-link">Canadian Consulting Management services</a> for U.S. companies, along with software development, AI, cloud, and DevOps support with fully compliant Canadian employees.</p>
 				</div>
 			</div>
 		</section>
@@ -66,7 +66,7 @@ import CTA from '../components/CTA.astro';
 					</div>
 				</div>
 				<div class="eor-cta">
-					<a href="/eor" class="btn btn-primary">Explore EOR Services</a>
+					<a href="/eor" class="btn btn-primary">Learn About Canadian Employer of Record Services</a>
 				</div>
 			</div>
 		</section>
@@ -168,7 +168,7 @@ import CTA from '../components/CTA.astro';
 	"name": "InfraDev Consulting",
 	"url": "https://infradevconsulting.com",
 	"logo": "https://infradevconsulting.com/assets/WebsiteMarketing/Logo/Logo.png",
-	"description": "Canadian Employer of Record (EOR) and technical partner for U.S. companies hiring Canadian talent. We provide EOR services, software development, AI, cloud, and DevOps support.",
+	"description": "Canadian Employer of Record (EOR) and technical partner for U.S. companies hiring Canadian talent. We provide Canadian EOR services, consulting management, SEO, AEO, GEO, and technical solutions.",
 	"address": {
 		"@type": "PostalAddress",
 		"streetAddress": "4-186 Pl. Sutton",
@@ -180,7 +180,9 @@ import CTA from '../components/CTA.astro';
 	"contactPoint": {
 		"@type": "ContactPoint",
 		"email": "marc@infradevconsulting.com",
-		"contactType": "Customer Service"
+		"contactType": "Customer Service",
+		"areaServed": "US",
+		"availableLanguage": ["en", "fr"]
 	},
 	"sameAs": [],
 	"areaServed": {
@@ -189,12 +191,34 @@ import CTA from '../components/CTA.astro';
 	},
 	"serviceType": [
 		"Employer of Record",
-		"EOR Services",
-		"Software Development",
-		"AI Development",
-		"Cloud Services",
-		"DevOps"
-	]
+		"Canadian EOR Services",
+		"Consulting Management",
+		"Search Engine Optimization",
+		"Answer Engine Optimization",
+		"Generative Engine Optimization"
+	],
+	"hasOfferCatalog": {
+		"@type": "OfferCatalog",
+		"name": "InfraDev Consulting Services",
+		"itemListElement": [
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Canadian Employer of Record Services",
+					"url": "https://infradevconsulting.com/eor"
+				}
+			},
+			{
+				"@type": "Offer",
+				"itemOffered": {
+					"@type": "Service",
+					"name": "Canadian Consulting Management Services",
+					"url": "https://infradevconsulting.com/consulting-management"
+				}
+			}
+		]
+	}
 })} />
 
 <style>
@@ -234,6 +258,18 @@ import CTA from '../components/CTA.astro';
 		color: var(--color-text);
 		line-height: 1.8;
 		margin: 0;
+	}
+
+	.intro-link {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 600;
+		transition: color 0.3s ease, text-decoration 0.3s ease;
+	}
+
+	.intro-link:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
 	}
 
 	.why-us {

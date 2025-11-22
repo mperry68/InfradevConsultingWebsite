@@ -1,0 +1,574 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/how-us-companies-hire-canada/canadian-payroll-guide`;
+---
+
+<Layout 
+	title="Full Guide to Canadian Payroll for Foreign Companies | InfraDev Consulting" 
+	description="Complete guide to Canadian payroll for U.S. and foreign companies. Learn about CPP, EI, tax deductions, remittances, T4 slips, and payroll compliance requirements."
+	canonical={pageUrl}
+>
+	<Header />
+	<main>
+		<section class="hero section">
+			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol>
+						<li><a href="/">Home</a></li>
+						<li><a href="/eor">Canadian EOR Services</a></li>
+						<li><a href="/how-us-companies-hire-canada">How U.S. Companies Hire in Canada</a></li>
+						<li>Canadian Payroll Guide</li>
+					</ol>
+				</nav>
+				<div class="hero-content">
+					<h1>Full Guide to Canadian Payroll for Foreign Companies</h1>
+					<p class="hero-subtitle">Complete guide to understanding and managing Canadian payroll for U.S. and foreign companies. Learn about deductions, remittances, tax slips, and compliance requirements.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="intro section">
+			<div class="container">
+				<div class="intro-content">
+					<p>Canadian payroll involves several mandatory deductions and remittances that differ from U.S. payroll. Understanding these requirements is essential for any foreign company hiring Canadian employees.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="deductions section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Mandatory Payroll Deductions</h2>
+					<p>What must be deducted from Canadian employee paychecks</p>
+				</div>
+				<div class="deductions-grid">
+					<div class="deduction-card">
+						<h3>Income Tax</h3>
+						<p>Federal and provincial income tax based on employee's province of residence and income level. Rates vary by province.</p>
+						<p class="source">Source: <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll.html" target="_blank" rel="noopener noreferrer">CRA</a></p>
+					</div>
+					<div class="deduction-card">
+						<h3>Canada Pension Plan (CPP)</h3>
+						<p>5.95% of earnings up to $66,600 (2024). Both employer and employee contribute. Self-employed pay both portions.</p>
+						<p class="source">Source: <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-rates-maximums-exemptions.html" target="_blank" rel="noopener noreferrer">CRA CPP Information</a></p>
+					</div>
+					<div class="deduction-card">
+						<h3>Employment Insurance (EI)</h3>
+						<p>2.21% of earnings up to $60,300 (2024). Employer pays 1.4x the employee rate. Maximum annual contribution applies.</p>
+						<p class="source">Source: <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html" target="_blank" rel="noopener noreferrer">CRA EI Information</a></p>
+					</div>
+					<div class="deduction-card">
+						<h3>Quebec-Specific Deductions</h3>
+						<p>Quebec Pension Plan (QPP): 6.4% up to $66,600. Quebec Parental Insurance Plan (QPIP): 0.494% up to $91,000.</p>
+						<p class="source">Source: <a href="https://www.revenuquebec.ca/en/businesses/source-deductions-and-employer-contributions/" target="_blank" rel="noopener noreferrer">Revenu Québec</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="remittances section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Remittance Requirements</h2>
+					<p>When and how to remit payroll deductions to the CRA</p>
+				</div>
+				<div class="remittance-content">
+					<h3>Remittance Frequency</h3>
+					<p>Remittance frequency depends on your average monthly withholding amount:</p>
+					<ul>
+						<li><strong>Monthly:</strong> Less than $25,000 average monthly remittances</li>
+						<li><strong>Quarterly:</strong> Less than $3,000 average monthly remittances (if approved)</li>
+						<li><strong>Accelerated:</strong> More than $25,000 average monthly remittances</li>
+					</ul>
+					<p>Most employers remit monthly, with deadlines typically on the 15th of the following month.</p>
+					
+					<h3>What Must Be Remitted</h3>
+					<ul>
+						<li>Employee income tax deductions</li>
+						<li>CPP contributions (employer + employee portions)</li>
+						<li>EI premiums (employer + employee portions)</li>
+						<li>Provincial variations (QPP, QPIP in Quebec)</li>
+					</ul>
+
+					<h3>Penalties for Late Remittances</h3>
+					<p>Late remittances result in penalties and interest charges. The CRA can also require more frequent remittances for repeat offenders.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="tax-slips section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Tax Slip Requirements</h2>
+					<p>Annual reporting obligations for Canadian employers</p>
+				</div>
+				<div class="tax-slips-content">
+					<h3>T4 Slip (Statement of Remuneration Paid)</h3>
+					<p>Employers must issue T4 slips to all employees by the last day of February following the tax year. T4 slips report:</p>
+					<ul>
+						<li>Total earnings</li>
+						<li>Income tax deducted</li>
+						<li>CPP contributions</li>
+						<li>EI premiums</li>
+						<li>Other deductions and benefits</li>
+					</ul>
+					<p>Employers must also file a T4 Summary with the CRA by the same deadline.</p>
+
+					<h3>T4A Slip (Statement of Pension, Retirement, Annuity, and Other Income)</h3>
+					<p>Used for contractors and consultants. Required for payments over $500 in a calendar year.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="provincial section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Provincial Variations</h2>
+					<p>Important differences across Canadian provinces</p>
+				</div>
+				<div class="provincial-content">
+					<h3>Quebec</h3>
+					<p>Quebec has additional requirements:</p>
+					<ul>
+						<li>Quebec Pension Plan (QPP) instead of CPP</li>
+						<li>Quebec Parental Insurance Plan (QPIP)</li>
+						<li>Separate remittances to Revenu Québec</li>
+						<li>RL-1 slips (Quebec equivalent of T4)</li>
+					</ul>
+
+					<h3>Other Provinces</h3>
+					<p>While most provinces follow federal CPP/EI rules, provincial income tax rates vary significantly. Ensure you're using the correct provincial tax tables for each employee's province of residence.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="ease section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Simplify Payroll with EOR Services</h2>
+					<p>Let us handle all payroll complexity for you</p>
+				</div>
+				<div class="ease-content">
+					<p>Managing Canadian payroll requires understanding complex rules, maintaining accurate records, and ensuring timely remittances. Our <a href="/eor">Canadian Employer of Record services</a> handle all of this for you:</p>
+					<ul>
+						<li>Accurate calculation of all deductions</li>
+						<li>Timely remittances to CRA and provincial authorities</li>
+						<li>T4 and RL-1 slip generation and filing</li>
+						<li>Compliance with all provincial variations</li>
+						<li>Ongoing support and expertise</li>
+					</ul>
+					<div class="cta-box">
+						<a href="/eor" class="btn btn-primary">Learn About Our EOR Services</a>
+						<a href="/contact" class="btn btn-secondary">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="related section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Related Resources</h2>
+				</div>
+				<div class="related-links">
+					<a href="/eor" class="related-link">Canadian EOR Services</a>
+					<a href="/how-us-companies-hire-canada" class="related-link">How U.S. Companies Hire in Canada</a>
+					<a href="/how-us-companies-hire-canada/cra-requirements" class="related-link">CRA Requirements</a>
+					<a href="/how-us-companies-hire-canada/employment-law-basics" class="related-link">Employment Law Basics</a>
+					<a href="/compliance" class="related-link">Compliance Information</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.hero {
+		background: linear-gradient(135deg, rgba(139, 58, 26, 0.08), rgba(160, 70, 30, 0.12));
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: rgba(44, 44, 44, 0.6);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.breadcrumb a:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.hero h1 {
+		font-size: 2.8rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 700;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.intro {
+		background: var(--color-bg-light);
+		padding: 3rem 0;
+	}
+
+	.intro-content {
+		max-width: 900px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.intro-content p {
+		font-size: 1.2rem;
+		color: var(--color-text);
+		line-height: 1.8;
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.deductions {
+		background: var(--color-bg);
+	}
+
+	.deductions-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.deduction-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.deduction-card h3 {
+		font-size: 1.4rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.deduction-card p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin-bottom: 0.5rem;
+	}
+
+	.source {
+		font-size: 0.9rem;
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid #e0e0e0;
+	}
+
+	.source a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.source a:hover {
+		text-decoration: underline;
+	}
+
+	.remittances,
+	.tax-slips,
+	.provincial {
+		background: var(--color-bg-light);
+	}
+
+	.remittance-content,
+	.tax-slips-content,
+	.provincial-content {
+		max-width: 900px;
+		margin: 0 auto;
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.remittance-content h3,
+	.tax-slips-content h3,
+	.provincial-content h3 {
+		font-size: 1.5rem;
+		color: var(--color-orange);
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.remittance-content h3:first-child,
+	.tax-slips-content h3:first-child,
+	.provincial-content h3:first-child {
+		margin-top: 0;
+	}
+
+	.remittance-content p,
+	.tax-slips-content p,
+	.provincial-content p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		margin-bottom: 1rem;
+	}
+
+	.remittance-content ul,
+	.tax-slips-content ul,
+	.provincial-content ul {
+		list-style: none;
+		padding: 0;
+		margin: 1rem 0;
+	}
+
+	.remittance-content li,
+	.tax-slips-content li,
+	.provincial-content li {
+		padding-left: 1.5rem;
+		position: relative;
+		margin-bottom: 0.75rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.remittance-content li::before,
+	.tax-slips-content li::before,
+	.provincial-content li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.ease {
+		background: var(--color-bg);
+	}
+
+	.ease-content {
+		max-width: 900px;
+		margin: 0 auto;
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.ease-content p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+		font-size: 1.1rem;
+	}
+
+	.ease-content a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.ease-content a:hover {
+		text-decoration: underline;
+	}
+
+	.ease-content ul {
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0;
+	}
+
+	.ease-content li {
+		padding-left: 1.5rem;
+		position: relative;
+		margin-bottom: 0.75rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.ease-content li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+	}
+
+	.cta-box {
+		margin-top: 2rem;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.btn-primary {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.btn-primary:hover {
+		background: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(255, 132, 39, 0.3);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: var(--color-orange);
+		border: 2px solid var(--color-orange);
+	}
+
+	.btn-secondary:hover {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.related {
+		background: var(--color-bg-light);
+	}
+
+	.related-links {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1.5rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.related-link {
+		background: #fff;
+		padding: 1.5rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		color: var(--color-text);
+		text-decoration: none;
+		font-weight: 500;
+		transition: all 0.3s ease;
+		display: block;
+		text-align: center;
+	}
+
+	.related-link:hover {
+		color: var(--color-orange);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	@media (max-width: 768px) {
+		.hero h1 {
+			font-size: 2.2rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.deductions-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.remittance-content,
+		.tax-slips-content,
+		.provincial-content,
+		.ease-content {
+			padding: 1.5rem;
+		}
+	}
+</style>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "Full Guide to Canadian Payroll for Foreign Companies",
+	"description": "Complete guide to Canadian payroll for U.S. and foreign companies. Learn about CPP, EI, tax deductions, remittances, T4 slips, and payroll compliance requirements.",
+	"author": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"url": siteUrl
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		}
+	},
+	"datePublished": "2024-01-01",
+	"dateModified": new Date().toISOString().split('T')[0],
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	}
+})} />
+

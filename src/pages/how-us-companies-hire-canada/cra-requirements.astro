@@ -1,0 +1,600 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/how-us-companies-hire-canada/cra-requirements`;
+---
+
+<Layout 
+	title="CRA Requirements for U.S. Employers Hiring Canadians | InfraDev Consulting" 
+	description="Complete guide to Canada Revenue Agency (CRA) requirements for U.S. employers hiring Canadian employees. Learn about registration, payroll accounts, remittances, and tax compliance."
+	canonical={pageUrl}
+>
+	<Header />
+	<main>
+		<section class="hero section">
+			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol>
+						<li><a href="/">Home</a></li>
+						<li><a href="/eor">Canadian EOR Services</a></li>
+						<li><a href="/how-us-companies-hire-canada">How U.S. Companies Hire in Canada</a></li>
+						<li>CRA Requirements</li>
+					</ol>
+				</nav>
+				<div class="hero-content">
+					<h1>CRA Requirements for U.S. Employers Hiring Canadians</h1>
+					<p class="hero-subtitle">Complete guide to Canada Revenue Agency requirements for foreign employers. Learn about registration, payroll accounts, remittances, and compliance obligations.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="intro section">
+			<div class="container">
+				<div class="intro-content">
+					<p>When hiring Canadian employees, U.S. companies must comply with Canada Revenue Agency (CRA) requirements for payroll, tax deductions, and remittances. Understanding these requirements is essential for legal compliance.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="registration section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Registration Requirements</h2>
+					<p>What you need to register with the CRA</p>
+				</div>
+				<div class="registration-content">
+					<h3>Business Number (BN)</h3>
+					<p>All employers in Canada must have a Business Number (BN) from the CRA. This is a 9-digit identifier used for all CRA program accounts.</p>
+					
+					<h3>Payroll Account</h3>
+					<p>You must register for a payroll program account (RP account) to remit payroll deductions. This account is used for:</p>
+					<ul>
+						<li>Income tax deductions</li>
+						<li>CPP contributions</li>
+						<li>EI premiums</li>
+						<li>Provincial variations (QPP, QPIP in Quebec)</li>
+					</ul>
+
+					<h3>GST/HST Registration</h3>
+					<p>If your business activities in Canada exceed $30,000 CAD in annual revenue, you must register for GST/HST. This is separate from payroll registration.</p>
+
+					<p class="note"><strong>Note:</strong> With <a href="/eor">EOR services</a>, we handle all CRA registration and compliance on your behalf. You don't need to register directly with the CRA.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="deductions section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Mandatory Deductions</h2>
+					<p>What must be deducted and remitted to the CRA</p>
+				</div>
+				<div class="deductions-grid">
+					<div class="deduction-card">
+						<h3>Income Tax</h3>
+						<p>Federal and provincial income tax based on employee's TD1 form and province of residence. Rates vary by province and income level.</p>
+						<p class="source">Source: <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll.html" target="_blank" rel="noopener noreferrer">CRA Payroll Information</a></p>
+					</div>
+					<div class="deduction-card">
+						<h3>CPP Contributions</h3>
+						<p>5.95% of earnings up to $66,600 (2024). Both employer and employee contribute equal amounts. Maximum annual contribution applies.</p>
+						<p class="source">Source: <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-rates-maximums-exemptions.html" target="_blank" rel="noopener noreferrer">CRA CPP Rates</a></p>
+					</div>
+					<div class="deduction-card">
+						<h3>EI Premiums</h3>
+						<p>2.21% of earnings up to $60,300 (2024). Employer pays 1.4x the employee rate. Maximum annual premium applies.</p>
+						<p class="source">Source: <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html" target="_blank" rel="noopener noreferrer">CRA EI Rates</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="remittances section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Remittance Requirements</h2>
+					<p>When and how to remit deductions to the CRA</p>
+				</div>
+				<div class="remittance-content">
+					<h3>Remittance Frequency</h3>
+					<p>The CRA determines your remittance frequency based on your average monthly withholding amount:</p>
+					<ul>
+						<li><strong>Monthly:</strong> Average monthly remittances less than $25,000</li>
+						<li><strong>Quarterly:</strong> Average monthly remittances less than $3,000 (requires CRA approval)</li>
+						<li><strong>Accelerated:</strong> Average monthly remittances $25,000 or more</li>
+					</ul>
+
+					<h3>Remittance Deadlines</h3>
+					<p>Deadlines vary by frequency:</p>
+					<ul>
+						<li><strong>Monthly:</strong> 15th of the following month</li>
+						<li><strong>Quarterly:</strong> 15th of the month following the quarter end</li>
+						<li><strong>Accelerated:</strong> Varies (3-4 times per month)</li>
+					</ul>
+
+					<h3>Penalties for Late Remittances</h3>
+					<p>Late remittances result in:</p>
+					<ul>
+						<li>Penalty charges (3% for first occurrence, 5% for repeat)</li>
+						<li>Interest charges on overdue amounts</li>
+						<li>Potential requirement for more frequent remittances</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="reporting section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Annual Reporting Requirements</h2>
+					<p>Year-end reporting obligations</p>
+				</div>
+				<div class="reporting-content">
+					<h3>T4 Information Return</h3>
+					<p>Employers must file a T4 Summary and issue T4 slips to employees by the last day of February following the tax year. This reports:</p>
+					<ul>
+						<li>Total earnings for the year</li>
+						<li>Income tax deducted</li>
+						<li>CPP contributions</li>
+						<li>EI premiums</li>
+						<li>Other deductions and taxable benefits</li>
+					</ul>
+
+					<h3>Record Keeping</h3>
+					<p>The CRA requires employers to maintain detailed payroll records for 6 years, including:</p>
+					<ul>
+						<li>Payroll registers</li>
+						<li>Employee information</li>
+						<li>Deduction calculations</li>
+						<li>Remittance records</li>
+						<li>T4 slips and summaries</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="ease section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Avoid CRA Complexity with EOR Services</h2>
+					<p>We handle all CRA requirements for you</p>
+				</div>
+				<div class="ease-content">
+					<p>Managing CRA requirements involves complex registration, ongoing remittances, and annual reporting. Our <a href="/eor">Canadian Employer of Record services</a> handle everything:</p>
+					<ul>
+						<li>CRA registration and account management</li>
+						<li>Accurate deduction calculations</li>
+						<li>Timely remittances to CRA</li>
+						<li>T4 slip generation and filing</li>
+						<li>Record keeping and compliance</li>
+						<li>Ongoing support and expertise</li>
+					</ul>
+					<div class="cta-box">
+						<a href="/eor" class="btn btn-primary">Learn About EOR Services</a>
+						<a href="/contact" class="btn btn-secondary">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="related section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Related Resources</h2>
+				</div>
+				<div class="related-links">
+					<a href="/eor" class="related-link">Canadian EOR Services</a>
+					<a href="/how-us-companies-hire-canada" class="related-link">How U.S. Companies Hire in Canada</a>
+					<a href="/how-us-companies-hire-canada/canadian-payroll-guide" class="related-link">Canadian Payroll Guide</a>
+					<a href="/how-us-companies-hire-canada/employment-law-basics" class="related-link">Employment Law Basics</a>
+					<a href="/compliance" class="related-link">Compliance Information</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.hero {
+		background: linear-gradient(135deg, rgba(139, 58, 26, 0.08), rgba(160, 70, 30, 0.12));
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: rgba(44, 44, 44, 0.6);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.breadcrumb a:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.hero h1 {
+		font-size: 2.8rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 700;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.intro {
+		background: var(--color-bg-light);
+		padding: 3rem 0;
+	}
+
+	.intro-content {
+		max-width: 900px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.intro-content p {
+		font-size: 1.2rem;
+		color: var(--color-text);
+		line-height: 1.8;
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.registration,
+	.deductions,
+	.remittances,
+	.reporting {
+		background: var(--color-bg-light);
+	}
+
+	.registration-content,
+	.remittance-content,
+	.reporting-content {
+		max-width: 900px;
+		margin: 0 auto;
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.registration-content h3,
+	.remittance-content h3,
+	.reporting-content h3 {
+		font-size: 1.5rem;
+		color: var(--color-orange);
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.registration-content h3:first-child,
+	.remittance-content h3:first-child,
+	.reporting-content h3:first-child {
+		margin-top: 0;
+	}
+
+	.registration-content p,
+	.remittance-content p,
+	.reporting-content p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		margin-bottom: 1rem;
+	}
+
+	.registration-content ul,
+	.remittance-content ul,
+	.reporting-content ul {
+		list-style: none;
+		padding: 0;
+		margin: 1rem 0;
+	}
+
+	.registration-content li,
+	.remittance-content li,
+	.reporting-content li {
+		padding-left: 1.5rem;
+		position: relative;
+		margin-bottom: 0.75rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.registration-content li::before,
+	.remittance-content li::before,
+	.reporting-content li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.note {
+		background: rgba(255, 132, 39, 0.1);
+		border-left: 4px solid var(--color-orange);
+		padding: 1rem 1.5rem;
+		margin-top: 1.5rem;
+		border-radius: 5px;
+	}
+
+	.note a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.note a:hover {
+		text-decoration: underline;
+	}
+
+	.deductions-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.deduction-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.deduction-card h3 {
+		font-size: 1.4rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.deduction-card p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin-bottom: 0.5rem;
+	}
+
+	.source {
+		font-size: 0.9rem;
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid #e0e0e0;
+	}
+
+	.source a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.source a:hover {
+		text-decoration: underline;
+	}
+
+	.ease {
+		background: var(--color-bg);
+	}
+
+	.ease-content {
+		max-width: 900px;
+		margin: 0 auto;
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.ease-content p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+		font-size: 1.1rem;
+	}
+
+	.ease-content a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.ease-content a:hover {
+		text-decoration: underline;
+	}
+
+	.ease-content ul {
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0;
+	}
+
+	.ease-content li {
+		padding-left: 1.5rem;
+		position: relative;
+		margin-bottom: 0.75rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.ease-content li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+	}
+
+	.cta-box {
+		margin-top: 2rem;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.btn-primary {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.btn-primary:hover {
+		background: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(255, 132, 39, 0.3);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: var(--color-orange);
+		border: 2px solid var(--color-orange);
+	}
+
+	.btn-secondary:hover {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.related {
+		background: var(--color-bg-light);
+	}
+
+	.related-links {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1.5rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.related-link {
+		background: #fff;
+		padding: 1.5rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		color: var(--color-text);
+		text-decoration: none;
+		font-weight: 500;
+		transition: all 0.3s ease;
+		display: block;
+		text-align: center;
+	}
+
+	.related-link:hover {
+		color: var(--color-orange);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	@media (max-width: 768px) {
+		.hero h1 {
+			font-size: 2.2rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.deductions-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.registration-content,
+		.remittance-content,
+		.reporting-content,
+		.ease-content {
+			padding: 1.5rem;
+		}
+	}
+</style>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "CRA Requirements for U.S. Employers Hiring Canadians",
+	"description": "Complete guide to Canada Revenue Agency (CRA) requirements for U.S. employers hiring Canadian employees. Learn about registration, payroll accounts, remittances, and tax compliance.",
+	"author": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"url": siteUrl
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		}
+	},
+	"datePublished": "2024-01-01",
+	"dateModified": new Date().toISOString().split('T')[0],
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	}
+})} />
+

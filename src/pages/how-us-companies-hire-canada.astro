@@ -1,0 +1,647 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/how-us-companies-hire-canada`;
+---
+
+<Layout 
+	title="How U.S. Companies Hire in Canada - Complete Guide | InfraDev Consulting" 
+	description="Complete guide on how U.S. companies can hire Canadian employees. Learn about EOR services, entity formation, compliance requirements, and the best approach for your business."
+	canonical={pageUrl}
+>
+	<Header />
+	<main>
+		<section class="hero section">
+			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol>
+						<li><a href="/">Home</a></li>
+						<li><a href="/eor">Canadian EOR Services</a></li>
+						<li>How U.S. Companies Hire in Canada</li>
+					</ol>
+				</nav>
+				<div class="hero-content">
+					<h1>How U.S. Companies Hire in Canada</h1>
+					<p class="hero-subtitle">A comprehensive guide to hiring Canadian talent for U.S. businesses. Learn about your options, compliance requirements, and the most efficient approach to cross-border hiring.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="intro section">
+			<div class="container">
+				<div class="intro-content">
+					<p>U.S. companies looking to tap into Canada's skilled workforce have several options, each with different requirements, costs, and timelines. Understanding these options helps you choose the best approach for your business needs.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="options section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Three Main Approaches to Hiring in Canada</h2>
+					<p>Choose the method that best fits your business needs and timeline</p>
+				</div>
+				<div class="options-grid">
+					<div class="option-card">
+						<h3>1. Employer of Record (EOR)</h3>
+						<p><strong>Best for:</strong> Most U.S. companies, especially those hiring 1-50 employees</p>
+						<ul>
+							<li>No Canadian entity required</li>
+							<li>Fast onboarding (24-48 hours)</li>
+							<li>Full compliance handled</li>
+							<li>Lower upfront costs</li>
+							<li>Easy to scale up or down</li>
+						</ul>
+						<a href="/eor" class="btn-link">Learn About EOR Services →</a>
+					</div>
+					<div class="option-card">
+						<h3>2. Form a Canadian Entity</h3>
+						<p><strong>Best for:</strong> Large companies with 50+ employees and long-term strategic presence</p>
+						<ul>
+							<li>Requires Canadian corporation</li>
+							<li>3-6 months setup time</li>
+							<li>Higher upfront costs ($5,000-$15,000+)</li>
+							<li>Internal compliance management</li>
+							<li>Full control and ownership</li>
+						</ul>
+						<a href="/comparisons/eor-vs-canadian-entity" class="btn-link">Compare EOR vs Entity →</a>
+					</div>
+					<div class="option-card">
+						<h3>3. Independent Contractors</h3>
+						<p><strong>Best for:</strong> Short-term projects and specialized tasks</p>
+						<ul>
+							<li>No entity required</li>
+							<li>Fast engagement</li>
+							<li>Lower compliance burden</li>
+							<li>Less control over work</li>
+							<li>Higher misclassification risk</li>
+						</ul>
+						<a href="/comparisons/eor-vs-contractor" class="btn-link">Compare EOR vs Contractor →</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="process section">
+			<div class="container">
+				<div class="section-header">
+					<h2>The Hiring Process: Step-by-Step</h2>
+					<p>What to expect when hiring Canadian talent</p>
+				</div>
+				<div class="process-steps">
+					<div class="process-step">
+						<div class="step-number">1</div>
+						<h3>Choose Your Approach</h3>
+						<p>Decide between EOR, entity formation, or contractor model based on your needs, timeline, and budget.</p>
+					</div>
+					<div class="process-step">
+						<div class="step-number">2</div>
+						<h3>Set Up Compliance</h3>
+						<p>With EOR, we handle all setup. With entity formation, you'll need to register with CRA and provincial authorities.</p>
+						<p><a href="/compliance">Learn about compliance requirements →</a></p>
+					</div>
+					<div class="process-step">
+						<div class="step-number">3</div>
+						<h3>Onboard Your Team</h3>
+						<p>Complete employment contracts, collect documentation, and set up payroll. EOR typically takes 24-48 hours.</p>
+					</div>
+					<div class="process-step">
+						<div class="step-number">4</div>
+						<h3>Manage Ongoing Operations</h3>
+						<p>Handle payroll, tax remittances, and compliance. With EOR, this is all managed for you.</p>
+						<p><a href="/how-us-companies-hire-canada/canadian-payroll-guide">Canadian Payroll Guide →</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="requirements section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Key Requirements for Hiring in Canada</h2>
+					<p>What you need to know about Canadian employment requirements</p>
+				</div>
+				<div class="requirements-grid">
+					<div class="requirement-card">
+						<h3>Tax & Payroll</h3>
+						<p>Canadian employers must deduct and remit:</p>
+						<ul>
+							<li>Federal and provincial income tax</li>
+							<li>Canada Pension Plan (CPP) contributions</li>
+							<li>Employment Insurance (EI) premiums</li>
+							<li>Provincial variations (QPP, QPIP in Quebec)</li>
+						</ul>
+						<p><a href="/how-us-companies-hire-canada/canadian-payroll-guide">Full Payroll Guide →</a></p>
+					</div>
+					<div class="requirement-card">
+						<h3>Employment Law</h3>
+						<p>Compliance with provincial employment standards:</p>
+						<ul>
+							<li>Minimum wage requirements</li>
+							<li>Vacation and statutory holidays</li>
+							<li>Termination notice and severance</li>
+							<li>Workplace safety (WSIB, CNESST)</li>
+						</ul>
+						<p><a href="/how-us-companies-hire-canada/employment-law-basics">Employment Law Basics →</a></p>
+					</div>
+					<div class="requirement-card">
+						<h3>CRA Registration</h3>
+						<p>If forming an entity, you'll need:</p>
+						<ul>
+							<li>Business Number (BN) registration</li>
+							<li>Payroll account setup</li>
+							<li>GST/HST registration (if applicable)</li>
+							<li>Ongoing remittance compliance</li>
+						</ul>
+						<p><a href="/how-us-companies-hire-canada/cra-requirements">CRA Requirements →</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="why-eor section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Why Most U.S. Companies Choose EOR</h2>
+					<p>The Employer of Record model offers the best balance of speed, cost, and compliance</p>
+				</div>
+				<div class="benefits-grid">
+					<div class="benefit-item">
+						<h3>Speed</h3>
+						<p>Hire in 24-48 hours vs. 3-6 months for entity formation</p>
+					</div>
+					<div class="benefit-item">
+						<h3>Cost</h3>
+						<p>Lower upfront costs and predictable monthly fees</p>
+					</div>
+					<div class="benefit-item">
+						<h3>Compliance</h3>
+						<p>Full compliance handled by experts, reducing your risk</p>
+					</div>
+					<div class="benefit-item">
+						<h3>Flexibility</h3>
+						<p>Easy to scale up or down as your needs change</p>
+					</div>
+				</div>
+				<div class="cta-box">
+					<h3>Ready to Start Hiring in Canada?</h3>
+					<p>Our <a href="/eor">Canadian Employer of Record services</a> make it simple, fast, and fully compliant.</p>
+					<a href="/contact" class="btn btn-primary">Book a Consultation</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="related section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Related Resources</h2>
+					<p>Learn more about hiring in Canada</p>
+				</div>
+				<div class="related-links">
+					<a href="/eor" class="related-link">Canadian Employer of Record Services</a>
+					<a href="/how-us-companies-hire-canada/canadian-payroll-guide" class="related-link">Canadian Payroll Guide</a>
+					<a href="/how-us-companies-hire-canada/cra-requirements" class="related-link">CRA Requirements</a>
+					<a href="/how-us-companies-hire-canada/employment-law-basics" class="related-link">Employment Law Basics</a>
+					<a href="/comparisons/canada-vs-us-hiring-costs" class="related-link">Cost Comparison: Canada vs U.S.</a>
+					<a href="/comparisons/eor-vs-contractor" class="related-link">Contractor vs Employee</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.hero {
+		background: linear-gradient(135deg, rgba(139, 58, 26, 0.08), rgba(160, 70, 30, 0.12));
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+		justify-content: flex-start;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: rgba(44, 44, 44, 0.6);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.breadcrumb a:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.hero h1 {
+		font-size: 2.8rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 700;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.intro {
+		background: var(--color-bg-light);
+		padding: 3rem 0;
+	}
+
+	.intro-content {
+		max-width: 900px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.intro-content p {
+		font-size: 1.2rem;
+		color: var(--color-text);
+		line-height: 1.8;
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.options {
+		background: var(--color-bg);
+	}
+
+	.options-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.option-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.option-card h3 {
+		font-size: 1.5rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.option-card p {
+		color: var(--color-text-light);
+		margin-bottom: 1rem;
+		line-height: 1.6;
+	}
+
+	.option-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0;
+	}
+
+	.option-card li {
+		padding-left: 1.5rem;
+		position: relative;
+		margin-bottom: 0.5rem;
+		color: var(--color-text-light);
+	}
+
+	.option-card li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+	}
+
+	.btn-link {
+		display: inline-block;
+		margin-top: 1rem;
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 600;
+		transition: color 0.3s ease;
+	}
+
+	.btn-link:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.process {
+		background: var(--color-bg-light);
+	}
+
+	.process-steps {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.process-step {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		position: relative;
+	}
+
+	.step-number {
+		width: 60px;
+		height: 60px;
+		background: var(--color-orange);
+		color: #fff;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0 auto 1rem;
+	}
+
+	.process-step h3 {
+		font-size: 1.3rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.process-step p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin-bottom: 0.5rem;
+	}
+
+	.process-step a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.process-step a:hover {
+		text-decoration: underline;
+	}
+
+	.requirements {
+		background: var(--color-bg);
+	}
+
+	.requirements-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.requirement-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.requirement-card h3 {
+		font-size: 1.4rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.requirement-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 1rem 0;
+	}
+
+	.requirement-card li {
+		padding-left: 1.5rem;
+		position: relative;
+		margin-bottom: 0.5rem;
+		color: var(--color-text-light);
+	}
+
+	.requirement-card li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.requirement-card a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.requirement-card a:hover {
+		text-decoration: underline;
+	}
+
+	.why-eor {
+		background: var(--color-bg-light);
+	}
+
+	.benefits-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	.benefit-item {
+		background: #fff;
+		padding: 1.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+	}
+
+	.benefit-item h3 {
+		font-size: 1.3rem;
+		color: var(--color-orange);
+		margin-bottom: 0.5rem;
+		font-weight: 600;
+	}
+
+	.benefit-item p {
+		color: var(--color-text-light);
+		margin: 0;
+	}
+
+	.cta-box {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.1), rgba(255, 150, 72, 0.15));
+		border: 2px solid var(--color-orange);
+		padding: 2.5rem;
+		border-radius: 10px;
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.cta-box h3 {
+		font-size: 1.8rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.cta-box p {
+		color: var(--color-text-light);
+		margin-bottom: 1.5rem;
+		line-height: 1.6;
+	}
+
+	.cta-box a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.cta-box .btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		background: var(--color-orange);
+		color: #fff;
+		border-radius: 5px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.cta-box .btn:hover {
+		background: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(255, 132, 39, 0.3);
+	}
+
+	.related {
+		background: var(--color-bg);
+	}
+
+	.related-links {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.related-link {
+		background: #fff;
+		padding: 1.5rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		color: var(--color-text);
+		text-decoration: none;
+		font-weight: 500;
+		transition: all 0.3s ease;
+		display: block;
+		text-align: center;
+	}
+
+	.related-link:hover {
+		color: var(--color-orange);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	@media (max-width: 768px) {
+		.hero h1 {
+			font-size: 2.2rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.options-grid,
+		.requirements-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "How U.S. Companies Hire in Canada - Complete Guide",
+	"description": "Complete guide on how U.S. companies can hire Canadian employees. Learn about EOR services, entity formation, compliance requirements, and the best approach for your business.",
+	"author": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"url": siteUrl
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		}
+	},
+	"datePublished": "2024-01-01",
+	"dateModified": new Date().toISOString().split('T')[0],
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	},
+	"about": {
+		"@type": "Thing",
+		"name": "Hiring in Canada",
+		"description": "Guide for U.S. companies hiring Canadian employees"
+	}
+})} />
+

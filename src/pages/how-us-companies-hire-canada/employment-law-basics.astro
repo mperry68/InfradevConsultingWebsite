@@ -1,0 +1,594 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/how-us-companies-hire-canada/employment-law-basics`;
+---
+
+<Layout 
+	title="Canadian Employment Law Basics for U.S. Employers | InfraDev Consulting" 
+	description="Essential guide to Canadian employment law for U.S. employers. Learn about minimum wage, vacation, termination, workplace safety, and provincial employment standards."
+	canonical={pageUrl}
+>
+	<Header />
+	<main>
+		<section class="hero section">
+			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol>
+						<li><a href="/">Home</a></li>
+						<li><a href="/eor">Canadian EOR Services</a></li>
+						<li><a href="/how-us-companies-hire-canada">How U.S. Companies Hire in Canada</a></li>
+						<li>Employment Law Basics</li>
+					</ol>
+				</nav>
+				<div class="hero-content">
+					<h1>Canadian Employment Law Basics for U.S. Employers</h1>
+					<p class="hero-subtitle">Essential guide to understanding Canadian employment law requirements. Learn about minimum wage, vacation entitlements, termination rules, and provincial variations.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="intro section">
+			<div class="container">
+				<div class="intro-content">
+					<p>Canadian employment law differs significantly from U.S. employment law. Understanding these differences is crucial for U.S. companies hiring Canadian employees to ensure compliance and avoid legal issues.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="basics section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Key Employment Standards</h2>
+					<p>Fundamental requirements that apply across Canada</p>
+				</div>
+				<div class="basics-grid">
+					<div class="basic-card">
+						<h3>Minimum Wage</h3>
+						<p>Each province sets its own minimum wage, which varies by province and can change annually. Current rates range from approximately $14-$16 CAD per hour.</p>
+						<p class="source">Source: Provincial employment standards</p>
+					</div>
+					<div class="basic-card">
+						<h3>Vacation Entitlement</h3>
+						<p>Most provinces require a minimum of 2 weeks (10 days) paid vacation per year. After several years of service, this typically increases to 3 weeks.</p>
+						<p class="source">Source: Provincial employment standards</p>
+					</div>
+					<div class="basic-card">
+						<h3>Statutory Holidays</h3>
+						<p>Employees are entitled to paid time off for statutory holidays. The number and specific holidays vary by province, typically 8-10 paid holidays per year.</p>
+						<p class="source">Source: Provincial employment standards</p>
+					</div>
+					<div class="basic-card">
+						<h3>Overtime Pay</h3>
+						<p>Overtime rates (typically 1.5x regular rate) apply after 8 hours per day or 40-44 hours per week, depending on the province.</p>
+						<p class="source">Source: Provincial employment standards</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="termination section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Termination Requirements</h2>
+					<p>Rules for ending employment in Canada</p>
+				</div>
+				<div class="termination-content">
+					<h3>Notice Period</h3>
+					<p>Employers must provide advance notice or pay in lieu of notice when terminating employees. The required notice period depends on:</p>
+					<ul>
+						<li>Length of service</li>
+						<li>Provincial employment standards</li>
+						<li>Employment contract terms</li>
+						<li>Common law requirements (may exceed statutory minimums)</li>
+					</ul>
+
+					<h3>Severance Pay</h3>
+					<p>Some provinces require severance pay for employees with long service, typically after 5+ years. Severance is separate from notice pay.</p>
+
+					<h3>Record of Employment (ROE)</h3>
+					<p>Employers must issue a Record of Employment (ROE) when an employee stops working. This is required for Employment Insurance (EI) claims.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="provincial section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Provincial Variations</h2>
+					<p>Each province has its own Employment Standards Act</p>
+				</div>
+				<div class="provincial-content">
+					<p>Employment standards vary significantly by province. Key differences include:</p>
+					<ul>
+						<li><strong>Minimum Wage:</strong> Varies by province (e.g., Ontario $16.55, Quebec $15.25, BC $16.75)</li>
+						<li><strong>Vacation:</strong> Most require 2 weeks minimum, some provinces have additional requirements</li>
+						<li><strong>Statutory Holidays:</strong> Number and specific holidays vary</li>
+						<li><strong>Termination:</strong> Notice requirements vary by province and length of service</li>
+						<li><strong>Workplace Safety:</strong> Each province has its own workers' compensation board (WSIB, CNESST, WorkSafeBC, etc.)</li>
+					</ul>
+					<p>It's essential to comply with the specific province where your employee works.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="workplace-safety section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Workplace Safety Requirements</h2>
+					<p>Provincial workplace safety and insurance</p>
+				</div>
+				<div class="safety-content">
+					<p>Employers must register with and contribute to provincial workers' compensation programs:</p>
+					<ul>
+						<li><strong>Ontario:</strong> Workplace Safety and Insurance Board (WSIB)</li>
+						<li><strong>Quebec:</strong> Commission des normes, de l'équité, de la santé et de la sécurité du travail (CNESST)</li>
+						<li><strong>British Columbia:</strong> WorkSafeBC</li>
+						<li><strong>Alberta:</strong> Workers' Compensation Board (WCB)</li>
+						<li>Other provinces have similar programs</li>
+					</ul>
+					<p>These programs provide insurance coverage for workplace injuries and illnesses. Premiums are based on industry classification and payroll.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="contractor section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Employee vs. Contractor Classification</h2>
+					<p>Understanding the difference is critical</p>
+				</div>
+				<div class="contractor-content">
+					<p>The CRA has strict rules for classifying workers as employees vs. independent contractors. Misclassification can result in:</p>
+					<ul>
+						<li>Penalties and interest charges</li>
+						<li>Back payment of CPP, EI, and income tax</li>
+						<li>Legal liability for employment standards violations</li>
+					</ul>
+					<p>Key factors the CRA considers include control over work, ownership of tools, financial risk, and integration into the business.</p>
+					<p><a href="/comparisons/eor-vs-contractor">Learn more about contractor vs. employee classification →</a></p>
+				</div>
+			</div>
+		</section>
+
+		<section class="ease section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Ensure Compliance with EOR Services</h2>
+					<p>We handle all employment law compliance for you</p>
+				</div>
+				<div class="ease-content">
+					<p>Navigating Canadian employment law requires understanding complex provincial variations and ongoing compliance. Our <a href="/eor">Canadian Employer of Record services</a> ensure full compliance:</p>
+					<ul>
+						<li>Provincial employment standards compliance</li>
+						<li>Proper employee classification</li>
+						<li>Termination and severance compliance</li>
+						<li>Workplace safety registration and compliance</li>
+						<li>Employment contract compliance</li>
+						<li>Ongoing legal updates and compliance</li>
+					</ul>
+					<div class="cta-box">
+						<a href="/eor" class="btn btn-primary">Learn About EOR Services</a>
+						<a href="/contact" class="btn btn-secondary">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="related section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Related Resources</h2>
+				</div>
+				<div class="related-links">
+					<a href="/eor" class="related-link">Canadian EOR Services</a>
+					<a href="/how-us-companies-hire-canada" class="related-link">How U.S. Companies Hire in Canada</a>
+					<a href="/how-us-companies-hire-canada/canadian-payroll-guide" class="related-link">Canadian Payroll Guide</a>
+					<a href="/how-us-companies-hire-canada/cra-requirements" class="related-link">CRA Requirements</a>
+					<a href="/comparisons/eor-vs-contractor" class="related-link">Contractor vs Employee</a>
+					<a href="/compliance" class="related-link">Compliance Information</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.hero {
+		background: linear-gradient(135deg, rgba(139, 58, 26, 0.08), rgba(160, 70, 30, 0.12));
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: rgba(44, 44, 44, 0.6);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.breadcrumb a:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.hero h1 {
+		font-size: 2.8rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 700;
+	}
+
+	.hero-subtitle {
+		font-size: 1.25rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.intro {
+		background: var(--color-bg-light);
+		padding: 3rem 0;
+	}
+
+	.intro-content {
+		max-width: 900px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.intro-content p {
+		font-size: 1.2rem;
+		color: var(--color-text);
+		line-height: 1.8;
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.basics {
+		background: var(--color-bg);
+	}
+
+	.basics-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.basic-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.basic-card h3 {
+		font-size: 1.4rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.basic-card p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin-bottom: 0.5rem;
+	}
+
+	.source {
+		font-size: 0.9rem;
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid #e0e0e0;
+		color: var(--color-text-light);
+	}
+
+	.termination,
+	.provincial,
+	.workplace-safety,
+	.contractor {
+		background: var(--color-bg-light);
+	}
+
+	.termination-content,
+	.provincial-content,
+	.safety-content,
+	.contractor-content {
+		max-width: 900px;
+		margin: 0 auto;
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.termination-content h3,
+	.provincial-content h3,
+	.safety-content h3,
+	.contractor-content h3 {
+		font-size: 1.5rem;
+		color: var(--color-orange);
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.termination-content h3:first-child,
+	.provincial-content h3:first-child,
+	.safety-content h3:first-child,
+	.contractor-content h3:first-child {
+		margin-top: 0;
+	}
+
+	.termination-content p,
+	.provincial-content p,
+	.safety-content p,
+	.contractor-content p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		margin-bottom: 1rem;
+	}
+
+	.termination-content ul,
+	.provincial-content ul,
+	.safety-content ul,
+	.contractor-content ul {
+		list-style: none;
+		padding: 0;
+		margin: 1rem 0;
+	}
+
+	.termination-content li,
+	.provincial-content li,
+	.safety-content li,
+	.contractor-content li {
+		padding-left: 1.5rem;
+		position: relative;
+		margin-bottom: 0.75rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.termination-content li::before,
+	.provincial-content li::before,
+	.safety-content li::before,
+	.contractor-content li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.contractor-content a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.contractor-content a:hover {
+		text-decoration: underline;
+	}
+
+	.ease {
+		background: var(--color-bg);
+	}
+
+	.ease-content {
+		max-width: 900px;
+		margin: 0 auto;
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.ease-content p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+		font-size: 1.1rem;
+	}
+
+	.ease-content a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	.ease-content a:hover {
+		text-decoration: underline;
+	}
+
+	.ease-content ul {
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0;
+	}
+
+	.ease-content li {
+		padding-left: 1.5rem;
+		position: relative;
+		margin-bottom: 0.75rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.ease-content li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+	}
+
+	.cta-box {
+		margin-top: 2rem;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.btn-primary {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.btn-primary:hover {
+		background: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(255, 132, 39, 0.3);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: var(--color-orange);
+		border: 2px solid var(--color-orange);
+	}
+
+	.btn-secondary:hover {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.related {
+		background: var(--color-bg-light);
+	}
+
+	.related-links {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 1.5rem;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.related-link {
+		background: #fff;
+		padding: 1.5rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		color: var(--color-text);
+		text-decoration: none;
+		font-weight: 500;
+		transition: all 0.3s ease;
+		display: block;
+		text-align: center;
+	}
+
+	.related-link:hover {
+		color: var(--color-orange);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	@media (max-width: 768px) {
+		.hero h1 {
+			font-size: 2.2rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.basics-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.termination-content,
+		.provincial-content,
+		.safety-content,
+		.contractor-content,
+		.ease-content {
+			padding: 1.5rem;
+		}
+	}
+</style>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "Canadian Employment Law Basics for U.S. Employers",
+	"description": "Essential guide to Canadian employment law for U.S. employers. Learn about minimum wage, vacation, termination, workplace safety, and provincial employment standards.",
+	"author": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"url": siteUrl
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		}
+	},
+	"datePublished": "2024-01-01",
+	"dateModified": new Date().toISOString().split('T')[0],
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	}
+})} />
+

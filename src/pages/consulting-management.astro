@@ -373,13 +373,26 @@ const pageUrl = `${siteUrl}/consulting-management`;
 <script type="application/ld+json" set:html={JSON.stringify({
 	"@context": "https://schema.org",
 	"@type": "Service",
-	"name": "Consulting Management Services",
+	"name": "Canadian Consulting Management Services",
 	"description": "Complete consulting management services for U.S. companies engaging Canadian consultants. We handle contracts, invoicing, GST/HST, tax compliance, and administrative tasks. Starting from $499/month. No Canadian entity required.",
 	"provider": {
 		"@type": "Organization",
 		"name": "InfraDev Consulting",
 		"url": siteUrl,
-		"logo": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		"logo": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`,
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "4-186 Pl. Sutton",
+			"addressLocality": "Beaconsfield",
+			"addressRegion": "QC",
+			"postalCode": "H9W 5S3",
+			"addressCountry": "CA"
+		},
+		"contactPoint": {
+			"@type": "ContactPoint",
+			"email": "marc@infradevconsulting.com",
+			"contactType": "Customer Service"
+		}
 	},
 	"areaServed": {
 		"@type": "Country",
@@ -396,8 +409,49 @@ const pageUrl = `${siteUrl}/consulting-management`;
 			"price": "499",
 			"priceCurrency": "USD",
 			"unitText": "MONTH"
+		},
+		"availability": "https://schema.org/InStock"
+	},
+	"whatServiceDoes": [
+		"Contract creation and management for Canadian consultants",
+		"Invoicing and payment processing",
+		"GST/HST registration and remittance",
+		"T4A slip generation and filing",
+		"Tax compliance and reporting",
+		"Administrative task management",
+		"Complete compliance with Canadian business and tax regulations"
+	],
+	"targetAudience": {
+		"@type": "Audience",
+		"name": "U.S. Companies Engaging Canadian Consultants",
+		"description": "U.S. businesses looking to engage Canadian consultants without forming a Canadian entity. Ideal for companies seeking compliant, efficient consulting engagement management."
+	},
+	"uniqueValueProposition": "InfraDev Consulting provides complete Canadian Consulting Management services that eliminate the need for U.S. companies to form a Canadian entity or manage complex tax and compliance requirements when engaging Canadian consultants. We handle all administrative, tax, and compliance tasks, allowing U.S. companies to focus on their projects while we ensure full legal compliance.",
+	"serviceSteps": [
+		{
+			"@type": "HowToStep",
+			"name": "Initial Consultation",
+			"text": "Discuss your consulting engagement needs, understand requirements, and determine the best approach for your situation."
+		},
+		{
+			"@type": "HowToStep",
+			"name": "Contract Setup",
+			"text": "Create compliant consulting contracts, set up invoicing, and establish tax compliance. Typically completed in 24-48 hours."
+		},
+		{
+			"@type": "HowToStep",
+			"name": "Ongoing Management",
+			"text": "We handle all invoicing, payment processing, GST/HST remittances, tax compliance, and administrative tasks. You receive clear monthly reporting."
 		}
-	}
+	],
+	"keyBenefits": [
+		"Engage consultants in 24-48 hours without forming a Canadian entity",
+		"Full compliance with Canadian tax and business regulations",
+		"Complete administrative and tax management handled for you",
+		"Transparent billing with clear monthly reporting",
+		"Easy to scale up or down as your needs change",
+		"Expert knowledge of Canadian consulting and tax requirements"
+	]
 })} />
 
 <script type="application/ld+json" set:html={JSON.stringify({

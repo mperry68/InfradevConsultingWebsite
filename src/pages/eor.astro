@@ -8,7 +8,7 @@ const pageUrl = `${siteUrl}/eor`;
 ---
 
 <Layout 
-	title="Employer of Record Services - Canadian EOR for U.S. Companies | InfraDev Consulting" 
+	title="Canadian Employer of Record (EOR) Services for U.S. Companies | InfraDev Consulting" 
 	description="Complete Employer of Record (EOR) services for U.S. companies hiring Canadian employees. We handle payroll, taxes, benefits, HR compliance, and labour law obligations. Starting from $499/month. No Canadian entity required."
 	canonical={pageUrl}
 >
@@ -372,6 +372,58 @@ const pageUrl = `${siteUrl}/eor`;
 			</div>
 		</section>
 
+		<!-- Learn More / Supporting Resources Section -->
+		<section class="learn-more section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Learn More About Hiring in Canada</h2>
+					<p>Comprehensive guides and resources to help you understand Canadian employment</p>
+				</div>
+				<div class="resources-grid">
+					<a href="/how-us-companies-hire-canada" class="resource-card">
+						<h3>How U.S. Companies Hire in Canada</h3>
+						<p>Complete guide to your options for hiring Canadian talent, including EOR, entity formation, and contractor models.</p>
+						<span class="resource-link">Read Guide →</span>
+					</a>
+					<a href="/how-us-companies-hire-canada/canadian-payroll-guide" class="resource-card">
+						<h3>Canadian Payroll Guide</h3>
+						<p>Full guide to Canadian payroll deductions, remittances, tax slips, and compliance requirements for foreign companies.</p>
+						<span class="resource-link">Read Guide →</span>
+					</a>
+					<a href="/how-us-companies-hire-canada/cra-requirements" class="resource-card">
+						<h3>CRA Requirements</h3>
+						<p>Complete guide to Canada Revenue Agency requirements including registration, payroll accounts, and remittances.</p>
+						<span class="resource-link">Read Guide →</span>
+					</a>
+					<a href="/how-us-companies-hire-canada/employment-law-basics" class="resource-card">
+						<h3>Employment Law Basics</h3>
+						<p>Essential guide to Canadian employment law including minimum wage, vacation, termination, and provincial standards.</p>
+						<span class="resource-link">Read Guide →</span>
+					</a>
+					<a href="/comparisons/canada-vs-us-hiring-costs" class="resource-card">
+						<h3>Cost Comparison: Canada vs U.S.</h3>
+						<p>Detailed cost analysis comparing hiring developers in Canada vs. United States with real-world examples.</p>
+						<span class="resource-link">View Comparison →</span>
+					</a>
+					<a href="/comparisons/eor-vs-contractor" class="resource-card">
+						<h3>Contractor vs Employee</h3>
+						<p>Understand the differences between hiring employees vs. contractors in Canada and the legal implications.</p>
+						<span class="resource-link">View Comparison →</span>
+					</a>
+					<a href="/how-us-companies-hire-canada/why-canada-tech-talent" class="resource-card">
+						<h3>Why Canada Tech Talent</h3>
+						<p>Discover why Canadian tech professionals offer exceptional value with quality, cost savings, and cultural alignment.</p>
+						<span class="resource-link">Learn More →</span>
+					</a>
+					<a href="/comparisons/eor-vs-canadian-entity" class="resource-card">
+						<h3>EOR vs Canadian Entity</h3>
+						<p>Compare Employer of Record services with setting up your own Canadian entity to find the best fit.</p>
+						<span class="resource-link">View Comparison →</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
 		<!-- Call to Action -->
 		<section class="cta section">
 			<div class="container">
@@ -390,13 +442,26 @@ const pageUrl = `${siteUrl}/eor`;
 <script type="application/ld+json" set:html={JSON.stringify({
 	"@context": "https://schema.org",
 	"@type": "Service",
-	"name": "Employer of Record Services",
+	"name": "Canadian Employer of Record (EOR) Services",
 	"description": "Complete Employer of Record (EOR) services for U.S. companies hiring Canadian employees. We handle payroll, taxes, benefits, HR compliance, and labour law obligations. Starting from $499/month. No Canadian entity required.",
 	"provider": {
 		"@type": "Organization",
 		"name": "InfraDev Consulting",
 		"url": siteUrl,
-		"logo": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		"logo": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`,
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "4-186 Pl. Sutton",
+			"addressLocality": "Beaconsfield",
+			"addressRegion": "QC",
+			"postalCode": "H9W 5S3",
+			"addressCountry": "CA"
+		},
+		"contactPoint": {
+			"@type": "ContactPoint",
+			"email": "marc@infradevconsulting.com",
+			"contactType": "Customer Service"
+		}
 	},
 	"areaServed": {
 		"@type": "Country",
@@ -413,8 +478,85 @@ const pageUrl = `${siteUrl}/eor`;
 			"price": "499",
 			"priceCurrency": "USD",
 			"unitText": "MONTH"
+		},
+		"availability": "https://schema.org/InStock"
+	},
+	"whatServiceDoes": [
+		"Canadian payroll processing with accurate calculations and timely payments",
+		"Tax remittances including CPP, EI, QPP, QPIP, and income tax to CRA",
+		"T4 and RL-1 tax slip generation and filing",
+		"Provincial labour law compliance and workplace safety (WSIB, CNESST)",
+		"Employment contract creation and HR documentation",
+		"Employee onboarding, time tracking, and termination processes including ROEs",
+		"Optional benefits administration and HR support services",
+		"Complete compliance with Canadian federal and provincial employment laws"
+	],
+	"targetAudience": {
+		"@type": "Audience",
+		"name": "U.S. Companies Hiring in Canada",
+		"description": "U.S. businesses looking to hire Canadian employees without forming a Canadian entity. Ideal for companies seeking fast, compliant, and cost-effective access to Canadian talent."
+	},
+	"uniqueValueProposition": "InfraDev Consulting provides complete Canadian Employer of Record services that eliminate the need for U.S. companies to form a Canadian entity, register with the CRA, or manage complex payroll and compliance requirements. We enable fast hiring (24-48 hours) with full legal compliance, allowing U.S. companies to focus on their core business while we handle all Canadian employment obligations.",
+	"serviceSteps": [
+		{
+			"@type": "HowToStep",
+			"name": "Initial Consultation",
+			"text": "Discuss your hiring needs, understand requirements, and determine the best approach for your situation."
+		},
+		{
+			"@type": "HowToStep",
+			"name": "Employee Onboarding",
+			"text": "Complete employment contracts, collect required documentation, and set up payroll. Typically completed in 24-48 hours."
+		},
+		{
+			"@type": "HowToStep",
+			"name": "Ongoing Management",
+			"text": "We handle all payroll processing, tax remittances, compliance, and HR administration. You receive one monthly invoice."
 		}
-	}
+	],
+	"keyBenefits": [
+		"Hire in 24-48 hours without forming a Canadian entity",
+		"Full compliance with Canadian employment laws and tax requirements",
+		"Cost savings of 10-40% compared to U.S. equivalent positions",
+		"Complete payroll, tax, and HR administration handled for you",
+		"Easy to scale up or down as your needs change",
+		"Transparent billing with one simple monthly invoice"
+	]
+})} />
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Organization",
+	"name": "InfraDev Consulting",
+	"url": siteUrl,
+	"logo": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`,
+	"description": "Canadian Employer of Record (EOR) and technical partner for U.S. companies hiring Canadian talent. We provide EOR services, consulting management, and technical solutions.",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "4-186 Pl. Sutton",
+		"addressLocality": "Beaconsfield",
+		"addressRegion": "QC",
+		"postalCode": "H9W 5S3",
+		"addressCountry": "CA"
+	},
+	"contactPoint": {
+		"@type": "ContactPoint",
+		"email": "marc@infradevconsulting.com",
+		"contactType": "Customer Service",
+		"areaServed": "US",
+		"availableLanguage": ["en", "fr"]
+	},
+	"areaServed": {
+		"@type": "Country",
+		"name": "United States"
+	},
+	"serviceType": [
+		"Employer of Record",
+		"EOR Services",
+		"Canadian Payroll",
+		"HR Compliance",
+		"Consulting Management"
+	]
 })} />
 
 <script type="application/ld+json" set:html={JSON.stringify({
@@ -1140,8 +1282,62 @@ const pageUrl = `${siteUrl}/eor`;
 		margin: 0;
 	}
 
-	.disclaimer {
+	.learn-more {
 		background: var(--color-bg-light);
+	}
+
+	.resources-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.resource-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-decoration: none;
+		color: inherit;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.resource-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	}
+
+	.resource-card h3 {
+		font-size: 1.3rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.resource-card p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin-bottom: 1rem;
+		flex-grow: 1;
+	}
+
+	.resource-link {
+		color: var(--color-orange);
+		font-weight: 600;
+		margin-top: auto;
+		display: inline-block;
+	}
+
+	.resource-card:hover .resource-link {
+		text-decoration: underline;
+	}
+
+	.disclaimer {
+		background: var(--color-bg);
 	}
 
 	.disclaimer-content {
