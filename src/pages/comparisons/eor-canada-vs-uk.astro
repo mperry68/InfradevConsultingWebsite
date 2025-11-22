@@ -1,0 +1,790 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/comparisons/eor-canada-vs-uk`;
+---
+
+<Layout 
+	title="EOR Canada vs EOR UK - Complete Comparison | InfraDev Consulting" 
+	description="Compare Employer of Record services in Canada vs. United Kingdom. Compare costs, talent quality, time zones, compliance, tax implications, and cultural factors for U.S. companies."
+	canonical={pageUrl}
+>
+	<Header />
+	<main>
+		<section class="comparison-hero section">
+			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol>
+						<li><a href="/">Home</a></li>
+						<li><a href="/eor">EOR Services</a></li>
+						<li>EOR Canada vs UK</li>
+					</ol>
+				</nav>
+				<div class="hero-content">
+					<h1>EOR Canada vs EOR UK: Complete Comparison</h1>
+					<p class="hero-subtitle">Compare Employer of Record services in Canada vs. United Kingdom. Evaluate costs, talent quality, time zones, compliance complexity, and cultural alignment to choose the best option for your business.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="quick-comparison section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Quick Comparison</h2>
+					<p>Key differences at a glance</p>
+				</div>
+				<div class="comparison-table-wrapper">
+					<table class="comparison-table">
+						<thead>
+							<tr>
+								<th>Factor</th>
+								<th>EOR Canada</th>
+								<th>EOR UK</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>Cost Savings</strong></td>
+								<td>10-40% vs. U.S.</td>
+								<td>20-50% vs. U.S.</td>
+							</tr>
+							<tr>
+								<td><strong>Time Zone</strong></td>
+								<td>Same or 1-3 hours</td>
+								<td>5-8 hours difference</td>
+							</tr>
+							<tr>
+								<td><strong>Language</strong></td>
+								<td>English & French</td>
+								<td>English</td>
+							</tr>
+							<tr>
+								<td><strong>Talent Quality</strong></td>
+								<td>Very High</td>
+								<td>Very High</td>
+							</tr>
+							<tr>
+								<td><strong>Compliance Complexity</strong></td>
+								<td>Moderate</td>
+								<td>Moderate-High</td>
+							</tr>
+							<tr>
+								<td><strong>Cultural Alignment</strong></td>
+								<td>Very High</td>
+								<td>High</td>
+							</tr>
+							<tr>
+								<td><strong>Legal System</strong></td>
+								<td>Common law (similar to U.S.)</td>
+								<td>Common law (similar to U.S.)</td>
+							</tr>
+							<tr>
+								<td><strong>Best For</strong></td>
+								<td>Time zone, proximity</td>
+								<td>European market access</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section class="detailed-comparison section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Detailed Comparison</h2>
+					<p>In-depth analysis of each option</p>
+				</div>
+				<div class="comparison-grid">
+					<div class="comparison-card">
+						<h3>Cost Comparison</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li><strong>Salary Savings:</strong> 10-40% vs. U.S. equivalents</li>
+								<li><strong>Junior Developer:</strong> $50,000-$70,000 USD</li>
+								<li><strong>Senior Developer:</strong> $70,000-$120,000 USD</li>
+								<li><strong>EOR Service Fee:</strong> $499-$1,500/month</li>
+								<li><strong>Currency:</strong> CAD (favorable exchange)</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR UK</h4>
+							<ul>
+								<li><strong>Salary Savings:</strong> 20-50% vs. U.S. equivalents</li>
+								<li><strong>Junior Developer:</strong> £30,000-£50,000 GBP</li>
+								<li><strong>Senior Developer:</strong> £60,000-£90,000 GBP</li>
+								<li><strong>EOR Service Fee:</strong> Similar range</li>
+								<li><strong>Currency:</strong> GBP (exchange rate dependent)</li>
+							</ul>
+						</div>
+						<p class="cost-note"><strong>Cost Factor:</strong> Both offer significant savings. UK may offer slightly better savings, but Canada provides better time zone alignment and proximity.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Time Zone & Collaboration</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li>Same time zones as most U.S. states</li>
+								<li>Maximum 3-hour difference</li>
+								<li>Easy real-time collaboration</li>
+								<li>Overlapping work hours</li>
+								<li>No significant scheduling challenges</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR UK</h4>
+							<ul>
+								<li>5-8 hours ahead of U.S. time zones</li>
+								<li>Limited overlapping work hours</li>
+								<li>Requires scheduling coordination</li>
+								<li>UK morning = U.S. late night/early morning</li>
+								<li>More challenging for real-time collaboration</li>
+							</ul>
+						</div>
+						<p class="timezone-note"><strong>Time Zone Impact:</strong> Canada offers significantly better time zone alignment, making collaboration much easier for U.S. companies.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Talent Quality & Education</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li>Highly educated workforce</li>
+								<li>Strong university system</li>
+								<li>Excellent English proficiency</li>
+								<li>Proven track record in tech</li>
+								<li>High-quality code standards</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR UK</h4>
+							<ul>
+								<li>Highly educated workforce</li>
+								<li>World-class universities</li>
+								<li>Native English proficiency</li>
+								<li>Strong tech sector</li>
+								<li>Excellent technical skills</li>
+							</ul>
+						</div>
+						<p class="talent-note"><strong>Quality Factor:</strong> Both countries offer very high talent quality. The choice often comes down to time zones and market access needs.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Compliance & Tax</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li>Common law system (familiar)</li>
+								<li>CPP/EI contributions</li>
+								<li>Provincial variations</li>
+								<li>Moderate complexity</li>
+								<li>Well-established EOR market</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR UK</h4>
+							<ul>
+								<li>Common law system (familiar)</li>
+								<li>National Insurance contributions</li>
+								<li>UK tax system</li>
+								<li>Moderate-high complexity</li>
+								<li>Established EOR market</li>
+							</ul>
+						</div>
+						<p class="compliance-note"><strong>Compliance Factor:</strong> Both use common law systems. Canada may be slightly simpler due to proximity and familiarity, but both are manageable with proper EOR support.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Cultural Alignment</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li>Very similar business culture</li>
+								<li>Similar work styles</li>
+								<li>Strong cultural alignment</li>
+								<li>Easy team integration</li>
+								<li>Minimal cultural barriers</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR UK</h4>
+							<ul>
+								<li>Similar business culture</li>
+								<li>Some cultural differences</li>
+								<li>Good cultural alignment</li>
+								<li>Generally easy integration</li>
+								<li>Minor cultural differences</li>
+							</ul>
+						</div>
+						<p class="cultural-note"><strong>Cultural Factor:</strong> Both offer good cultural alignment. Canada may have slightly stronger alignment due to geographic and cultural proximity to the U.S.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Market Access & Strategic Value</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li>North American market focus</li>
+								<li>NAFTA/USMCA benefits</li>
+								<li>Close to U.S. market</li>
+								<li>Similar business environment</li>
+								<li>Easy travel and collaboration</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR UK</h4>
+							<ul>
+								<li>European market access</li>
+								<li>UK/EU market entry point</li>
+								<li>Different time zone advantage</li>
+								<li>Global business hub</li>
+								<li>International market presence</li>
+							</ul>
+						</div>
+						<p class="market-note"><strong>Strategic Factor:</strong> Canada offers better North American integration, while UK offers European market access and global presence.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="when-to-choose section">
+			<div class="container">
+				<div class="section-header">
+					<h2>When to Choose Each Option</h2>
+					<p>Decision factors to consider</p>
+				</div>
+				<div class="choice-grid">
+					<div class="choice-card">
+						<h3>Choose EOR Canada If:</h3>
+						<ul>
+							<li>Time zone alignment is critical</li>
+							<li>You need real-time collaboration</li>
+							<li>You want maximum proximity to U.S.</li>
+							<li>You're focused on North American market</li>
+							<li>You want easiest cultural integration</li>
+							<li>You prefer minimal time zone challenges</li>
+							<li>You value geographic proximity</li>
+							<li>You want similar business hours</li>
+						</ul>
+					</div>
+					<div class="choice-card">
+						<h3>Choose EOR UK If:</h3>
+						<ul>
+							<li>You need European market access</li>
+							<li>You want global/international presence</li>
+							<li>Time zone difference is acceptable</li>
+							<li>You can work with async collaboration</li>
+							<li>You want UK/EU market entry</li>
+							<li>You value international business hub</li>
+							<li>You need 24-hour coverage</li>
+							<li>You're expanding globally</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="statistics section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Key Statistics</h2>
+					<p>Data-driven insights</p>
+				</div>
+				<div class="stats-grid">
+					<div class="stat-card">
+						<h3>Cost Savings</h3>
+						<p class="stat-number">10-40%</p>
+						<p class="stat-label">Canada</p>
+						<p class="stat-compare">vs. 20-50% in UK</p>
+					</div>
+					<div class="stat-card">
+						<h3>Time Zone</h3>
+						<p class="stat-number">Same/1-3hr</p>
+						<p class="stat-label">Canada</p>
+						<p class="stat-compare">vs. 5-8hr in UK</p>
+					</div>
+					<div class="stat-card">
+						<h3>Cultural Alignment</h3>
+						<p class="stat-number">Very High</p>
+						<p class="stat-label">Canada</p>
+						<p class="stat-compare">vs. High in UK</p>
+					</div>
+					<div class="stat-card">
+						<h3>Market Access</h3>
+						<p class="stat-number">North America</p>
+						<p class="stat-label">Canada</p>
+						<p class="stat-compare">vs. Europe in UK</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta section">
+			<div class="container">
+				<div class="cta-content">
+					<h2>Need Help Deciding?</h2>
+					<p>Our team specializes in Canadian EOR services and can help you evaluate whether Canada or UK is the better fit for your specific needs and strategic goals.</p>
+					<a href="/contact" class="btn btn-primary btn-large">Get a Free Consultation</a>
+					<p class="cta-email">Or email us at <a href="mailto:marc@infradevconsulting.com">marc@infradevconsulting.com</a></p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.comparison-hero {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+		justify-content: flex-start;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: rgba(44, 44, 44, 0.6);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.breadcrumb a:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.comparison-hero h1 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.hero-subtitle {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 800px;
+		margin: 0 auto;
+		line-height: 1.7;
+	}
+
+	.quick-comparison {
+		background: var(--color-bg);
+	}
+
+	.comparison-table-wrapper {
+		overflow-x: auto;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.comparison-table {
+		width: 100%;
+		border-collapse: collapse;
+		background: #fff;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	.comparison-table thead {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.comparison-table th {
+		padding: 1.5rem;
+		text-align: left;
+		font-weight: 600;
+		font-size: 1.1rem;
+	}
+
+	.comparison-table td {
+		padding: 1.25rem 1.5rem;
+		border-bottom: 1px solid #e0e0e0;
+		color: var(--color-text-light);
+	}
+
+	.comparison-table tbody tr:last-child td {
+		border-bottom: none;
+	}
+
+	.comparison-table tbody tr:nth-child(even) {
+		background: var(--color-bg-light);
+	}
+
+	.comparison-table td:first-child {
+		font-weight: 600;
+		color: var(--color-text);
+	}
+
+	.detailed-comparison {
+		background: var(--color-bg-light);
+	}
+
+	.comparison-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		gap: 2rem;
+	}
+
+	.comparison-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.comparison-card h3 {
+		font-size: 1.6rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+		border-bottom: 2px solid var(--color-orange);
+		padding-bottom: 0.5rem;
+	}
+
+	.comparison-item {
+		margin-bottom: 2rem;
+	}
+
+	.comparison-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.comparison-item h4 {
+		font-size: 1.2rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.comparison-item ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.comparison-item li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.comparison-item li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.comparison-item li strong {
+		color: var(--color-text);
+		font-weight: 600;
+	}
+
+	.cost-note,
+	.timezone-note,
+	.talent-note,
+	.compliance-note,
+	.cultural-note,
+	.market-note {
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid #e0e0e0;
+		font-size: 0.95rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.cost-note strong,
+	.timezone-note strong,
+	.talent-note strong,
+	.compliance-note strong,
+	.cultural-note strong,
+	.market-note strong {
+		color: var(--color-text);
+	}
+
+	.when-to-choose {
+		background: var(--color-bg);
+	}
+
+	.choice-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.choice-card {
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-top: 4px solid var(--color-orange);
+	}
+
+	.choice-card h3 {
+		font-size: 1.5rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+	}
+
+	.choice-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.choice-card li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.choice-card li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+	}
+
+	.statistics {
+		background: var(--color-bg-light);
+	}
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.stat-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+	}
+
+	.stat-card h3 {
+		font-size: 1.2rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.stat-number {
+		font-size: 2.5rem;
+		color: var(--color-orange);
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		color: var(--color-text-light);
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-compare {
+		color: var(--color-text-light);
+		font-size: 0.9rem;
+		font-style: italic;
+	}
+
+	.cta {
+		background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-dark) 100%);
+		color: #fff;
+		text-align: center;
+	}
+
+	.cta-content {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.cta-content h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	.cta-content p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+		opacity: 0.95;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		text-decoration: none;
+		border: 2px solid transparent;
+	}
+
+	.btn-primary {
+		background: #fff;
+		color: var(--color-orange);
+	}
+
+	.btn-primary:hover {
+		background: var(--color-bg-light);
+		color: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-large {
+		padding: 1.25rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.cta-email {
+		margin-top: 1.5rem;
+		font-size: 1rem;
+	}
+
+	.cta-email a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	.cta-email a:hover {
+		opacity: 0.9;
+	}
+
+	@media (max-width: 768px) {
+		.comparison-hero h1 {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.comparison-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.choice-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.comparison-table {
+			font-size: 0.9rem;
+		}
+
+		.comparison-table th,
+		.comparison-table td {
+			padding: 1rem;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+	}
+</style>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "EOR Canada vs EOR UK: Complete Comparison",
+	"description": "Compare Employer of Record services in Canada vs. United Kingdom. Compare costs, talent quality, time zones, compliance, tax implications, and cultural factors for U.S. companies.",
+	"author": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"url": siteUrl
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		}
+	},
+	"datePublished": "2024-01-01",
+	"dateModified": new Date().toISOString().split('T')[0],
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	}
+})} />
+

@@ -1,0 +1,801 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/comparisons/eor-vs-contractor`;
+---
+
+<Layout 
+	title="EOR vs Contractor Model - Complete Comparison | InfraDev Consulting" 
+	description="Compare Employer of Record (EOR) services vs. independent contractor model for hiring in Canada. Understand legal differences, tax implications, compliance requirements, and risk factors."
+	canonical={pageUrl}
+>
+	<Header />
+	<main>
+		<section class="comparison-hero section">
+			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol>
+						<li><a href="/">Home</a></li>
+						<li><a href="/eor">EOR Services</a></li>
+						<li>EOR vs Contractor</li>
+					</ol>
+				</nav>
+				<div class="hero-content">
+					<h1>EOR vs Contractor Model: Complete Comparison</h1>
+					<p class="hero-subtitle">Should you hire Canadian workers as employees through an EOR or as independent contractors? This comparison covers legal, tax, and compliance differences to help you make the right choice.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="quick-comparison section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Quick Comparison</h2>
+					<p>Key differences at a glance</p>
+				</div>
+				<div class="comparison-table-wrapper">
+					<table class="comparison-table">
+						<thead>
+							<tr>
+								<th>Factor</th>
+								<th>EOR (Employee)</th>
+								<th>Independent Contractor</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>Legal Relationship</strong></td>
+								<td>Employee-employer</td>
+								<td>Client-contractor</td>
+							</tr>
+							<tr>
+								<td><strong>Tax Withholding</strong></td>
+								<td>Automatic (T4)</td>
+								<td>Contractor responsible (T4A)</td>
+							</tr>
+							<tr>
+								<td><strong>CPP/EI Contributions</strong></td>
+								<td>Required (employer matches)</td>
+								<td>Contractor pays own CPP</td>
+							</tr>
+							<tr>
+								<td><strong>Benefits</strong></td>
+								<td>Can provide benefits</td>
+								<td>Contractor provides own</td>
+							</tr>
+							<tr>
+								<td><strong>Control & Direction</strong></td>
+								<td>You control work</td>
+								<td>Contractor controls work</td>
+							</tr>
+							<tr>
+								<td><strong>Compliance Risk</strong></td>
+								<td>Low (EOR handles)</td>
+								<td>High (misclassification risk)</td>
+							</tr>
+							<tr>
+								<td><strong>Termination</strong></td>
+								<td>Notice/severance required</td>
+								<td>Contract terms apply</td>
+							</tr>
+							<tr>
+								<td><strong>Best For</strong></td>
+								<td>Ongoing work, team integration</td>
+								<td>Project-based, specialized skills</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section class="detailed-comparison section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Detailed Comparison</h2>
+					<p>In-depth analysis of each approach</p>
+				</div>
+				<div class="comparison-grid">
+					<div class="comparison-card">
+						<h3>Legal Classification</h3>
+						<div class="comparison-item">
+							<h4>EOR (Employee)</h4>
+							<ul>
+								<li>Clear employee-employer relationship</li>
+								<li>Legally compliant classification</li>
+								<li>No misclassification risk</li>
+								<li>Protected by employment standards</li>
+								<li>Entitled to statutory benefits</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Independent Contractor</h4>
+							<ul>
+								<li>Business-to-business relationship</li>
+								<li>Must meet strict criteria</li>
+								<li>High misclassification risk</li>
+								<li>Not protected by employment standards</li>
+								<li>No statutory benefits entitlement</li>
+							</ul>
+						</div>
+						<p class="legal-note"><strong>Warning:</strong> Misclassifying an employee as a contractor can result in significant penalties, back taxes, and legal issues. Source: <a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency</a></p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Tax Implications</h3>
+						<div class="comparison-item">
+							<h4>EOR (Employee)</h4>
+							<ul>
+								<li>Automatic tax withholding</li>
+								<li>T4 slip issued annually</li>
+								<li>CPP contributions (employer matches)</li>
+								<li>EI contributions (employer pays 1.4x)</li>
+								<li>No tax surprises for worker</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Independent Contractor</h4>
+							<ul>
+								<li>No tax withholding (T4A if over $500)</li>
+								<li>Contractor files own taxes</li>
+								<li>Contractor pays own CPP</li>
+								<li>No EI contributions</li>
+								<li>Contractor responsible for GST/HST</li>
+							</ul>
+						</div>
+						<p class="tax-note">Source: <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll.html" target="_blank" rel="noopener noreferrer">CRA Payroll Information</a></p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Control & Work Relationship</h3>
+						<div class="comparison-item">
+							<h4>EOR (Employee)</h4>
+							<ul>
+								<li>You control when, where, how work is done</li>
+								<li>Can set work hours and schedule</li>
+								<li>Can provide equipment and tools</li>
+								<li>Can require specific work methods</li>
+								<li>Full integration into your team</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Independent Contractor</h4>
+							<ul>
+								<li>Contractor controls work methods</li>
+								<li>Contractor sets own schedule</li>
+								<li>Contractor provides own equipment</li>
+								<li>Limited control over how work is done</li>
+								<li>Less team integration</li>
+							</ul>
+						</div>
+						<p class="control-note"><strong>Key Factor:</strong> The level of control you exercise is a primary factor in determining employee vs. contractor status. Too much control can trigger reclassification.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Compliance & Risk</h3>
+						<div class="comparison-item">
+							<h4>EOR (Employee)</h4>
+							<ul>
+								<li>EOR handles all compliance</li>
+								<li>No misclassification risk</li>
+								<li>EOR assumes compliance liability</li>
+								<li>Automatic compliance with laws</li>
+								<li>Protected from penalties</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Independent Contractor</h4>
+							<ul>
+								<li>You must ensure proper classification</li>
+								<li>High misclassification risk</li>
+								<li>You assume all liability</li>
+								<li>Must verify contractor status</li>
+								<li>Penalties for misclassification</li>
+							</ul>
+						</div>
+						<p class="risk-note"><strong>Penalties:</strong> Misclassification can result in back taxes, penalties, interest charges, and legal fees. CRA can audit and reclassify workers retroactively.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Cost Comparison</h3>
+						<div class="comparison-item">
+							<h4>EOR (Employee)</h4>
+							<ul>
+								<li>Salary + employer contributions</li>
+								<li>CPP: 5.95% up to $66,600</li>
+								<li>EI: 2.21% up to $60,300 (employer pays 1.4x)</li>
+								<li>EOR service fee: $499-$1,500/month</li>
+								<li>Benefits (optional)</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Independent Contractor</h4>
+							<ul>
+								<li>Contractor rate (typically higher)</li>
+								<li>No employer contributions</li>
+								<li>No CPP/EI contributions</li>
+								<li>No service fees</li>
+								<li>May charge GST/HST</li>
+							</ul>
+						</div>
+						<p class="cost-note"><strong>Note:</strong> While contractors may appear cheaper initially, misclassification risks and lack of control can result in higher long-term costs.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Termination & Severance</h3>
+						<div class="comparison-item">
+							<h4>EOR (Employee)</h4>
+							<ul>
+								<li>Notice period required (varies by province)</li>
+								<li>Severance pay may be required</li>
+								<li>Record of Employment (ROE) issued</li>
+								<li>Protected by employment standards</li>
+								<li>EOR handles termination compliance</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Independent Contractor</h4>
+							<ul>
+								<li>Contract terms govern termination</li>
+								<li>No severance required</li>
+								<li>No ROE required</li>
+								<li>Not protected by employment standards</li>
+								<li>You handle contract termination</li>
+							</ul>
+						</div>
+						<p class="termination-note">Source: <a href="https://www.canada.ca/en/employment-social-development/programs/employment-standards.html" target="_blank" rel="noopener noreferrer">Federal Employment Standards</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="when-to-choose section">
+			<div class="container">
+				<div class="section-header">
+					<h2>When to Choose Each Option</h2>
+					<p>Decision factors to consider</p>
+				</div>
+				<div class="choice-grid">
+					<div class="choice-card">
+						<h3>Choose EOR (Employee) If:</h3>
+						<ul>
+							<li>You need ongoing, regular work</li>
+							<li>You want to control how work is done</li>
+							<li>You need team integration and collaboration</li>
+							<li>You want to minimize compliance risk</li>
+							<li>You need workers to use your equipment/tools</li>
+							<li>You want to set work schedules and hours</li>
+							<li>You need long-term commitment</li>
+							<li>You want to provide benefits</li>
+						</ul>
+					</div>
+					<div class="choice-card">
+						<h3>Choose Contractor If:</h3>
+						<ul>
+							<li>Work is project-based or temporary</li>
+							<li>Contractor has specialized expertise</li>
+							<li>Contractor works for multiple clients</li>
+							<li>Contractor provides own equipment</li>
+							<li>Contractor sets own schedule</li>
+							<li>Work is clearly defined and deliverable-based</li>
+							<li>Contractor has own business structure</li>
+							<li>You want minimal ongoing commitment</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="statistics section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Key Statistics</h2>
+					<p>Data-driven insights</p>
+				</div>
+				<div class="stats-grid">
+					<div class="stat-card">
+						<h3>Misclassification Risk</h3>
+						<p class="stat-number">High</p>
+						<p class="stat-label">Contractor Model</p>
+						<p class="stat-compare">vs. Zero risk with EOR</p>
+					</div>
+					<div class="stat-card">
+						<h3>Employer Contributions</h3>
+						<p class="stat-number">Required</p>
+						<p class="stat-label">EOR (Employee)</p>
+						<p class="stat-compare">vs. None for contractors</p>
+					</div>
+					<div class="stat-card">
+						<h3>Control Level</h3>
+						<p class="stat-number">Full Control</p>
+						<p class="stat-label">EOR (Employee)</p>
+						<p class="stat-compare">vs. Limited for contractors</p>
+					</div>
+					<div class="stat-card">
+						<h3>Compliance Burden</h3>
+						<p class="stat-number">EOR Handles</p>
+						<p class="stat-label">Low Risk</p>
+						<p class="stat-compare">vs. You handle for contractors</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta section">
+			<div class="container">
+				<div class="cta-content">
+					<h2>Need Help Deciding?</h2>
+					<p>Our team can help you determine the best employment model for your specific situation and ensure compliance with Canadian employment law.</p>
+					<a href="/contact" class="btn btn-primary btn-large">Get a Free Consultation</a>
+					<p class="cta-email">Or email us at <a href="mailto:marc@infradevconsulting.com">marc@infradevconsulting.com</a></p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.comparison-hero {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+		justify-content: flex-start;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: rgba(44, 44, 44, 0.6);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.breadcrumb a:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.comparison-hero h1 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.hero-subtitle {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 800px;
+		margin: 0 auto;
+		line-height: 1.7;
+	}
+
+	.quick-comparison {
+		background: var(--color-bg);
+	}
+
+	.comparison-table-wrapper {
+		overflow-x: auto;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.comparison-table {
+		width: 100%;
+		border-collapse: collapse;
+		background: #fff;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	.comparison-table thead {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.comparison-table th {
+		padding: 1.5rem;
+		text-align: left;
+		font-weight: 600;
+		font-size: 1.1rem;
+	}
+
+	.comparison-table td {
+		padding: 1.25rem 1.5rem;
+		border-bottom: 1px solid #e0e0e0;
+		color: var(--color-text-light);
+	}
+
+	.comparison-table tbody tr:last-child td {
+		border-bottom: none;
+	}
+
+	.comparison-table tbody tr:nth-child(even) {
+		background: var(--color-bg-light);
+	}
+
+	.comparison-table td:first-child {
+		font-weight: 600;
+		color: var(--color-text);
+	}
+
+	.detailed-comparison {
+		background: var(--color-bg-light);
+	}
+
+	.comparison-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		gap: 2rem;
+	}
+
+	.comparison-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.comparison-card h3 {
+		font-size: 1.6rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+		border-bottom: 2px solid var(--color-orange);
+		padding-bottom: 0.5rem;
+	}
+
+	.comparison-item {
+		margin-bottom: 2rem;
+	}
+
+	.comparison-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.comparison-item h4 {
+		font-size: 1.2rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.comparison-item ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.comparison-item li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.comparison-item li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.comparison-item li strong {
+		color: var(--color-text);
+		font-weight: 600;
+	}
+
+	.legal-note,
+	.tax-note,
+	.control-note,
+	.risk-note,
+	.cost-note,
+	.termination-note {
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid #e0e0e0;
+		font-size: 0.95rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.legal-note strong,
+	.risk-note strong,
+	.cost-note strong {
+		color: var(--color-text);
+	}
+
+	.legal-note a,
+	.tax-note a,
+	.termination-note a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.legal-note a:hover,
+	.tax-note a:hover,
+	.termination-note a:hover {
+		text-decoration: underline;
+	}
+
+	.when-to-choose {
+		background: var(--color-bg);
+	}
+
+	.choice-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.choice-card {
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-top: 4px solid var(--color-orange);
+	}
+
+	.choice-card h3 {
+		font-size: 1.5rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+	}
+
+	.choice-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.choice-card li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.choice-card li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+	}
+
+	.statistics {
+		background: var(--color-bg-light);
+	}
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.stat-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+	}
+
+	.stat-card h3 {
+		font-size: 1.2rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.stat-number {
+		font-size: 2.5rem;
+		color: var(--color-orange);
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		color: var(--color-text-light);
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-compare {
+		color: var(--color-text-light);
+		font-size: 0.9rem;
+		font-style: italic;
+	}
+
+	.cta {
+		background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-dark) 100%);
+		color: #fff;
+		text-align: center;
+	}
+
+	.cta-content {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.cta-content h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	.cta-content p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+		opacity: 0.95;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		text-decoration: none;
+		border: 2px solid transparent;
+	}
+
+	.btn-primary {
+		background: #fff;
+		color: var(--color-orange);
+	}
+
+	.btn-primary:hover {
+		background: var(--color-bg-light);
+		color: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-large {
+		padding: 1.25rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.cta-email {
+		margin-top: 1.5rem;
+		font-size: 1rem;
+	}
+
+	.cta-email a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	.cta-email a:hover {
+		opacity: 0.9;
+	}
+
+	@media (max-width: 768px) {
+		.comparison-hero h1 {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.comparison-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.choice-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.comparison-table {
+			font-size: 0.9rem;
+		}
+
+		.comparison-table th,
+		.comparison-table td {
+			padding: 1rem;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+	}
+</style>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "EOR vs Contractor Model: Complete Comparison",
+	"description": "Compare Employer of Record (EOR) services vs. independent contractor model for hiring in Canada. Understand legal differences, tax implications, compliance requirements, and risk factors.",
+	"author": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"url": siteUrl
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		}
+	},
+	"datePublished": "2024-01-01",
+	"dateModified": new Date().toISOString().split('T')[0],
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	}
+})} />
+

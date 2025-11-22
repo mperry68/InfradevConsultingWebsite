@@ -1,0 +1,806 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/comparisons/eor-vs-canadian-entity`;
+---
+
+<Layout 
+	title="EOR vs Setting Up a Canadian Entity - Complete Comparison | InfraDev Consulting" 
+	description="Comprehensive comparison of Employer of Record (EOR) services vs. setting up a Canadian entity. Compare costs, timelines, compliance requirements, and complexity. Make an informed decision for your cross-border hiring strategy."
+	canonical={pageUrl}
+>
+	<Header />
+	<main>
+		<section class="comparison-hero section">
+			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol>
+						<li><a href="/">Home</a></li>
+						<li><a href="/eor">EOR Services</a></li>
+						<li>EOR vs Canadian Entity</li>
+					</ol>
+				</nav>
+				<div class="hero-content">
+					<h1>EOR vs Setting Up a Canadian Entity: Complete Comparison</h1>
+					<p class="hero-subtitle">Should you use an Employer of Record (EOR) service or set up your own Canadian corporation? This comprehensive comparison helps you make the right decision for your business.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="quick-comparison section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Quick Comparison</h2>
+					<p>Key differences at a glance</p>
+				</div>
+				<div class="comparison-table-wrapper">
+					<table class="comparison-table">
+						<thead>
+							<tr>
+								<th>Factor</th>
+								<th>EOR Service</th>
+								<th>Canadian Entity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>Setup Time</strong></td>
+								<td>24-48 hours</td>
+								<td>3-6 months</td>
+							</tr>
+							<tr>
+								<td><strong>Initial Costs</strong></td>
+								<td>$0 setup fees</td>
+								<td>$5,000-$15,000 (legal + accounting)</td>
+							</tr>
+							<tr>
+								<td><strong>Monthly Costs</strong></td>
+								<td>$499-$1,500 per employee</td>
+								<td>$3,000-$8,000 annually (compliance)</td>
+							</tr>
+							<tr>
+								<td><strong>Compliance Management</strong></td>
+								<td>Fully handled by EOR</td>
+								<td>Your responsibility</td>
+							</tr>
+							<tr>
+								<td><strong>CRA Registration</strong></td>
+								<td>Not required</td>
+								<td>Required (payroll accounts)</td>
+							</tr>
+							<tr>
+								<td><strong>Provincial Compliance</strong></td>
+								<td>Handled by EOR</td>
+								<td>Your responsibility</td>
+							</tr>
+							<tr>
+								<td><strong>Risk & Liability</strong></td>
+								<td>EOR assumes compliance risk</td>
+								<td>You assume all risk</td>
+							</tr>
+							<tr>
+								<td><strong>Scalability</strong></td>
+								<td>Easy to scale up/down</td>
+								<td>Fixed costs regardless of headcount</td>
+							</tr>
+							<tr>
+								<td><strong>Best For</strong></td>
+								<td>1-50 employees, testing market, fast hiring</td>
+								<td>50+ employees, permanent presence, large investments</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section class="detailed-comparison section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Detailed Comparison</h2>
+					<p>In-depth analysis of each approach</p>
+				</div>
+				<div class="comparison-grid">
+					<div class="comparison-card">
+						<h3>Setup Time & Process</h3>
+						<div class="comparison-item">
+							<h4>EOR Service</h4>
+							<ul>
+								<li>Onboarding in 24-48 hours</li>
+								<li>No legal entity formation required</li>
+								<li>No CRA registration needed</li>
+								<li>Simple service agreement</li>
+								<li>Immediate hiring capability</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Canadian Entity</h4>
+							<ul>
+								<li>3-6 months for complete setup</li>
+								<li>Legal entity incorporation ($500-$2,000)</li>
+								<li>CRA business number registration</li>
+								<li>Payroll account setup</li>
+								<li>Provincial business registration</li>
+								<li>Workers' compensation registration</li>
+								<li>Bank account setup in Canada</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Cost Analysis</h3>
+						<div class="comparison-item">
+							<h4>EOR Service</h4>
+							<ul>
+								<li><strong>Setup:</strong> $0</li>
+								<li><strong>Monthly:</strong> $499-$1,500 per employee</li>
+								<li><strong>Annual (10 employees):</strong> ~$60,000-$180,000</li>
+								<li>No hidden fees</li>
+								<li>Transparent pricing</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Canadian Entity</h4>
+							<ul>
+								<li><strong>Setup:</strong> $5,000-$15,000 (one-time)</li>
+								<li><strong>Legal fees:</strong> $3,000-$8,000</li>
+								<li><strong>Accounting setup:</strong> $2,000-$5,000</li>
+								<li><strong>Annual compliance:</strong> $3,000-$8,000</li>
+								<li><strong>Annual (10 employees):</strong> ~$8,000-$16,000 + salaries</li>
+								<li>Additional costs for HR staff/software</li>
+							</ul>
+						</div>
+						<p class="cost-note"><strong>Break-even point:</strong> EOR is typically more cost-effective for companies with fewer than 50 employees. For larger operations, a Canadian entity may be more economical.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Compliance & Risk</h3>
+						<div class="comparison-item">
+							<h4>EOR Service</h4>
+							<ul>
+								<li>EOR handles all compliance</li>
+								<li>EOR assumes compliance risk</li>
+								<li>Automatic updates for law changes</li>
+								<li>No CRA audit exposure for you</li>
+								<li>Expert compliance team</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Canadian Entity</h4>
+							<ul>
+								<li>You handle all compliance</li>
+								<li>You assume all risk</li>
+								<li>Must stay current with law changes</li>
+								<li>Direct CRA audit exposure</li>
+								<li>Need internal expertise or consultants</li>
+								<li>Penalties for non-compliance</li>
+							</ul>
+						</div>
+						<p class="compliance-note">Source: <a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency</a> - Non-compliance can result in penalties, interest charges, and legal issues.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Operational Complexity</h3>
+						<div class="comparison-item">
+							<h4>EOR Service</h4>
+							<ul>
+								<li>Minimal administrative burden</li>
+								<li>Single monthly invoice</li>
+								<li>No Canadian bank account needed</li>
+								<li>No Canadian accounting required</li>
+								<li>Focus on business, not compliance</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Canadian Entity</h4>
+							<ul>
+								<li>Significant administrative burden</li>
+								<li>Payroll processing required</li>
+								<li>Canadian bank account needed</li>
+								<li>Canadian accounting required</li>
+								<li>Ongoing compliance management</li>
+								<li>HR administration</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Scalability & Flexibility</h3>
+						<div class="comparison-item">
+							<h4>EOR Service</h4>
+							<ul>
+								<li>Easy to scale up or down</li>
+								<li>No fixed costs</li>
+								<li>Pay only for active employees</li>
+								<li>Quick to add/remove employees</li>
+								<li>Ideal for testing markets</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Canadian Entity</h4>
+							<ul>
+								<li>Fixed costs regardless of headcount</li>
+								<li>Compliance costs remain constant</li>
+								<li>More cost-effective at scale (50+ employees)</li>
+								<li>Commitment to Canadian market</li>
+								<li>Less flexible for market testing</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Legal & Regulatory Requirements</h3>
+						<div class="comparison-item">
+							<h4>EOR Service</h4>
+							<ul>
+								<li>No Canadian entity required</li>
+								<li>No CRA registration needed</li>
+								<li>No provincial business registration</li>
+								<li>EOR handles all registrations</li>
+								<li>Simple service agreement</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Canadian Entity</h4>
+							<ul>
+								<li>Canadian corporation required</li>
+								<li>CRA business number registration</li>
+								<li>Payroll account registration</li>
+								<li>Provincial business registration</li>
+								<li>Workers' compensation registration</li>
+								<li>GST/HST registration (if applicable)</li>
+							</ul>
+						</div>
+						<p class="legal-note">Sources: <a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency</a>, <a href="https://www.ic.gc.ca/app/scr/cc/CorporationsCanada/fdrlCrpSrch.html" target="_blank" rel="noopener noreferrer">Corporations Canada</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="when-to-choose section">
+			<div class="container">
+				<div class="section-header">
+					<h2>When to Choose Each Option</h2>
+					<p>Decision factors to consider</p>
+				</div>
+				<div class="choice-grid">
+					<div class="choice-card">
+						<h3>Choose EOR Service If:</h3>
+						<ul>
+							<li>You're hiring 1-50 employees in Canada</li>
+							<li>You need to hire quickly (within days/weeks)</li>
+							<li>You want to test the Canadian market before committing</li>
+							<li>You prefer to focus on business, not compliance</li>
+							<li>You want predictable, transparent costs</li>
+							<li>You need flexibility to scale up or down</li>
+							<li>You want to minimize risk and liability</li>
+							<li>You don't want to manage Canadian payroll and taxes</li>
+						</ul>
+					</div>
+					<div class="choice-card">
+						<h3>Choose Canadian Entity If:</h3>
+						<ul>
+							<li>You're hiring 50+ employees in Canada</li>
+							<li>You're making significant capital investments in Canada</li>
+							<li>You need a permanent Canadian business presence</li>
+							<li>You have specific tax structure requirements</li>
+							<li>You plan to operate in Canada long-term (5+ years)</li>
+							<li>You have internal resources to manage compliance</li>
+							<li>You need specific business arrangements or structures</li>
+							<li>You want direct control over all employment matters</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="statistics section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Key Statistics</h2>
+					<p>Data-driven insights to inform your decision</p>
+				</div>
+				<div class="stats-grid">
+					<div class="stat-card">
+						<h3>Time to First Hire</h3>
+						<p class="stat-number">24-48 hours</p>
+						<p class="stat-label">EOR Service</p>
+						<p class="stat-compare">vs. 3-6 months for entity setup</p>
+					</div>
+					<div class="stat-card">
+						<h3>Initial Setup Cost</h3>
+						<p class="stat-number">$0</p>
+						<p class="stat-label">EOR Service</p>
+						<p class="stat-compare">vs. $5,000-$15,000 for entity</p>
+					</div>
+					<div class="stat-card">
+						<h3>Cost-Effective Range</h3>
+						<p class="stat-number">1-50 employees</p>
+						<p class="stat-label">EOR typically better</p>
+						<p class="stat-compare">Entity better at 50+ employees</p>
+					</div>
+					<div class="stat-card">
+						<h3>Compliance Risk</h3>
+						<p class="stat-number">EOR assumes</p>
+						<p class="stat-label">Risk transfer</p>
+						<p class="stat-compare">vs. You assume all risk with entity</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta section">
+			<div class="container">
+				<div class="cta-content">
+					<h2>Still Not Sure Which Option Is Right?</h2>
+					<p>Our team can help you evaluate your specific situation and recommend the best approach for your business needs.</p>
+					<a href="/contact" class="btn btn-primary btn-large">Get a Free Consultation</a>
+					<p class="cta-email">Or email us at <a href="mailto:marc@infradevconsulting.com">marc@infradevconsulting.com</a></p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.comparison-hero {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+		justify-content: flex-start;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: rgba(44, 44, 44, 0.6);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.breadcrumb a:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.comparison-hero h1 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.hero-subtitle {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 800px;
+		margin: 0 auto;
+		line-height: 1.7;
+	}
+
+	.quick-comparison {
+		background: var(--color-bg);
+	}
+
+	.comparison-table-wrapper {
+		overflow-x: auto;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.comparison-table {
+		width: 100%;
+		border-collapse: collapse;
+		background: #fff;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	.comparison-table thead {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.comparison-table th {
+		padding: 1.5rem;
+		text-align: left;
+		font-weight: 600;
+		font-size: 1.1rem;
+	}
+
+	.comparison-table td {
+		padding: 1.25rem 1.5rem;
+		border-bottom: 1px solid #e0e0e0;
+		color: var(--color-text-light);
+	}
+
+	.comparison-table tbody tr:last-child td {
+		border-bottom: none;
+	}
+
+	.comparison-table tbody tr:nth-child(even) {
+		background: var(--color-bg-light);
+	}
+
+	.comparison-table td:first-child {
+		font-weight: 600;
+		color: var(--color-text);
+	}
+
+	.detailed-comparison {
+		background: var(--color-bg-light);
+	}
+
+	.comparison-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		gap: 2rem;
+	}
+
+	.comparison-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.comparison-card h3 {
+		font-size: 1.6rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+		border-bottom: 2px solid var(--color-orange);
+		padding-bottom: 0.5rem;
+	}
+
+	.comparison-item {
+		margin-bottom: 2rem;
+	}
+
+	.comparison-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.comparison-item h4 {
+		font-size: 1.2rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.comparison-item ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.comparison-item li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.comparison-item li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.comparison-item li strong {
+		color: var(--color-text);
+		font-weight: 600;
+	}
+
+	.cost-note,
+	.compliance-note,
+	.legal-note {
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid #e0e0e0;
+		font-size: 0.95rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.cost-note strong {
+		color: var(--color-text);
+	}
+
+	.compliance-note a,
+	.legal-note a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.compliance-note a:hover,
+	.legal-note a:hover {
+		text-decoration: underline;
+	}
+
+	.when-to-choose {
+		background: var(--color-bg);
+	}
+
+	.choice-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.choice-card {
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-top: 4px solid var(--color-orange);
+	}
+
+	.choice-card h3 {
+		font-size: 1.5rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+	}
+
+	.choice-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.choice-card li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.choice-card li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+	}
+
+	.statistics {
+		background: var(--color-bg-light);
+	}
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.stat-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+	}
+
+	.stat-card h3 {
+		font-size: 1.2rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.stat-number {
+		font-size: 2.5rem;
+		color: var(--color-orange);
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		color: var(--color-text-light);
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-compare {
+		color: var(--color-text-light);
+		font-size: 0.9rem;
+		font-style: italic;
+	}
+
+	.cta {
+		background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-dark) 100%);
+		color: #fff;
+		text-align: center;
+	}
+
+	.cta-content {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.cta-content h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	.cta-content p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+		opacity: 0.95;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		text-decoration: none;
+		border: 2px solid transparent;
+	}
+
+	.btn-primary {
+		background: #fff;
+		color: var(--color-orange);
+	}
+
+	.btn-primary:hover {
+		background: var(--color-bg-light);
+		color: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-large {
+		padding: 1.25rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.cta-email {
+		margin-top: 1.5rem;
+		font-size: 1rem;
+	}
+
+	.cta-email a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	.cta-email a:hover {
+		opacity: 0.9;
+	}
+
+	@media (max-width: 768px) {
+		.comparison-hero h1 {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.comparison-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.choice-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.comparison-table {
+			font-size: 0.9rem;
+		}
+
+		.comparison-table th,
+		.comparison-table td {
+			padding: 1rem;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+	}
+</style>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "EOR vs Setting Up a Canadian Entity: Complete Comparison",
+	"description": "Comprehensive comparison of Employer of Record (EOR) services vs. setting up a Canadian entity. Compare costs, timelines, compliance requirements, and complexity.",
+	"author": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"url": siteUrl
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		}
+	},
+	"datePublished": "2024-01-01",
+	"dateModified": new Date().toISOString().split('T')[0],
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	},
+	"about": {
+		"@type": "Thing",
+		"name": "Employer of Record vs Canadian Entity Setup"
+	}
+})} />
+

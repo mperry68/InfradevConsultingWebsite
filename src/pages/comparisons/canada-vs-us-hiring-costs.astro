@@ -1,0 +1,881 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/comparisons/canada-vs-us-hiring-costs`;
+---
+
+<Layout 
+	title="Canada vs U.S. Hiring Cost Comparison - Complete Analysis | InfraDev Consulting" 
+	description="Comprehensive cost comparison of hiring developers in Canada vs. United States. Compare salaries, taxes, benefits, employer contributions, and total cost of employment with detailed breakdowns."
+	canonical={pageUrl}
+>
+	<Header />
+	<main>
+		<section class="comparison-hero section">
+			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol>
+						<li><a href="/">Home</a></li>
+						<li><a href="/eor">EOR Services</a></li>
+						<li>Canada vs U.S. Costs</li>
+					</ol>
+				</nav>
+				<div class="hero-content">
+					<h1>Canada vs U.S. Hiring Cost Comparison</h1>
+					<p class="hero-subtitle">Complete cost analysis comparing hiring software developers in Canada vs. United States. Includes salaries, taxes, benefits, employer contributions, and total cost of employment with real-world examples.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="quick-comparison section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Quick Cost Comparison</h2>
+					<p>Total cost of employment at a glance</p>
+				</div>
+				<div class="comparison-table-wrapper">
+					<table class="comparison-table">
+						<thead>
+							<tr>
+								<th>Position</th>
+								<th>U.S. Total Cost</th>
+								<th>Canada Total Cost</th>
+								<th>Savings</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>Junior Developer</strong></td>
+								<td>$85,000-$100,000</td>
+								<td>$60,000-$75,000</td>
+								<td>$25,000-$30,000 (30-35%)</td>
+							</tr>
+							<tr>
+								<td><strong>Mid-Level Developer</strong></td>
+								<td>$120,000-$150,000</td>
+								<td>$85,000-$110,000</td>
+								<td>$35,000-$40,000 (25-30%)</td>
+							</tr>
+							<tr>
+								<td><strong>Senior Developer</strong></td>
+								<td>$160,000-$200,000</td>
+								<td>$110,000-$140,000</td>
+								<td>$50,000-$60,000 (30-35%)</td>
+							</tr>
+							<tr>
+								<td><strong>Lead/Principal Developer</strong></td>
+								<td>$200,000-$250,000</td>
+								<td>$140,000-$180,000</td>
+								<td>$60,000-$70,000 (30-35%)</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="table-note"><strong>Note:</strong> Costs include base salary, employer contributions (CPP/EI in Canada, Social Security/Medicare in U.S.), and typical benefits. Actual savings vary based on location, experience, and specific benefits packages.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="detailed-comparison section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Detailed Cost Breakdown</h2>
+					<p>Complete analysis of all cost components</p>
+				</div>
+				<div class="comparison-grid">
+					<div class="comparison-card">
+						<h3>Base Salary Comparison</h3>
+						<div class="comparison-item">
+							<h4>United States</h4>
+							<ul>
+								<li><strong>Junior Developer:</strong> $70,000-$85,000</li>
+								<li><strong>Mid-Level Developer:</strong> $100,000-$130,000</li>
+								<li><strong>Senior Developer:</strong> $140,000-$180,000</li>
+								<li><strong>Lead/Principal:</strong> $180,000-$220,000</li>
+								<li>Higher salaries in tech hubs (SF, NYC, Seattle)</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Canada</h4>
+							<ul>
+								<li><strong>Junior Developer:</strong> $50,000-$70,000 USD</li>
+								<li><strong>Mid-Level Developer:</strong> $70,000-$100,000 USD</li>
+								<li><strong>Senior Developer:</strong> $100,000-$120,000 USD</li>
+								<li><strong>Lead/Principal:</strong> $120,000-$160,000 USD</li>
+								<li>Salaries consistent across major cities</li>
+							</ul>
+						</div>
+						<p class="salary-note"><strong>Salary Factor:</strong> Canadian developers earn 10-40% less than U.S. equivalents while maintaining comparable skill levels and education. Source: 2024 salary surveys and market data.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Employer Contributions</h3>
+						<div class="comparison-item">
+							<h4>United States</h4>
+							<ul>
+								<li><strong>Social Security:</strong> 6.2% up to $168,600 (2024)</li>
+								<li><strong>Medicare:</strong> 1.45% (no cap)</li>
+								<li><strong>Unemployment Insurance:</strong> 0.6-6% (varies by state)</li>
+								<li><strong>Workers' Compensation:</strong> 0.5-2% (varies by state)</li>
+								<li><strong>Total:</strong> ~8-10% of salary</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Canada</h4>
+							<ul>
+								<li><strong>CPP:</strong> 5.95% up to $66,600 (2024)</li>
+								<li><strong>EI:</strong> 2.21% up to $60,300 (employer pays 1.4x)</li>
+								<li><strong>Workers' Compensation:</strong> 0.5-3% (varies by province)</li>
+								<li><strong>Provincial Variations:</strong> QPP/QPIP in Quebec</li>
+								<li><strong>Total:</strong> ~8-12% of salary</li>
+							</ul>
+						</div>
+						<p class="contribution-note">Source: <a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency</a>, <a href="https://www.irs.gov" target="_blank" rel="noopener noreferrer">U.S. Internal Revenue Service</a></p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Benefits Costs</h3>
+						<div class="comparison-item">
+							<h4>United States</h4>
+							<ul>
+								<li><strong>Health Insurance:</strong> $6,000-$12,000 per employee</li>
+								<li><strong>Dental/Vision:</strong> $1,000-$2,000 per employee</li>
+								<li><strong>401(k) Match:</strong> 3-6% of salary (typical)</li>
+								<li><strong>PTO/Vacation:</strong> 10-15 days typical</li>
+								<li><strong>Total Benefits:</strong> $10,000-$20,000+ per employee</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Canada</h4>
+							<ul>
+								<li><strong>Health Insurance:</strong> Lower (public system exists)</li>
+								<li><strong>Extended Health:</strong> $1,500-$3,000 per employee</li>
+								<li><strong>RRSP Match:</strong> 3-5% of salary (typical)</li>
+								<li><strong>Vacation:</strong> 2-3 weeks minimum (statutory)</li>
+								<li><strong>Total Benefits:</strong> $5,000-$10,000 per employee</li>
+							</ul>
+						</div>
+						<p class="benefits-note"><strong>Benefits Factor:</strong> Canada's public healthcare system reduces employer health insurance costs significantly compared to the U.S.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Real-World Example: Senior Developer</h3>
+						<div class="example-breakdown">
+							<div class="example-item">
+								<h4>U.S. Senior Developer</h4>
+								<ul class="cost-list">
+									<li>Base Salary: $160,000</li>
+									<li>Social Security (6.2%): $9,920</li>
+									<li>Medicare (1.45%): $2,320</li>
+									<li>Unemployment (1%): $1,600</li>
+									<li>Health Insurance: $10,000</li>
+									<li>401(k) Match (4%): $6,400</li>
+									<li><strong>Total Annual Cost: $190,240</strong></li>
+								</ul>
+							</div>
+							<div class="example-item">
+								<h4>Canada Senior Developer</h4>
+								<ul class="cost-list">
+									<li>Base Salary: $120,000</li>
+									<li>CPP (5.95%): $3,963</li>
+									<li>EI (2.21% x 1.4): $3,710</li>
+									<li>Workers' Comp (1%): $1,200</li>
+									<li>Extended Health: $2,500</li>
+									<li>RRSP Match (4%): $4,800</li>
+									<li><strong>Total Annual Cost: $136,173</strong></li>
+								</ul>
+							</div>
+							<div class="savings-highlight">
+								<h4>Annual Savings: $54,067 (28.4%)</h4>
+								<p>Over 5 years: $270,335 in savings</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Additional Cost Factors</h3>
+						<div class="comparison-item">
+							<h4>United States</h4>
+							<ul>
+								<li>Higher office space costs (in major cities)</li>
+								<li>Higher cost of living adjustments</li>
+								<li>More expensive benefits packages</li>
+								<li>Higher recruitment costs</li>
+								<li>More competitive market</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Canada</h4>
+							<ul>
+								<li>Lower office space costs</li>
+								<li>Lower cost of living</li>
+								<li>More affordable benefits</li>
+								<li>Lower recruitment costs</li>
+								<li>Less competitive market</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Hidden Costs & Considerations</h3>
+						<div class="comparison-item">
+							<h4>United States</h4>
+							<ul>
+								<li>Higher turnover rates in competitive markets</li>
+								<li>More expensive recruitment</li>
+								<li>Higher training costs</li>
+								<li>More complex benefits administration</li>
+								<li>Higher legal/compliance costs</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>Canada</h4>
+							<ul>
+								<li>Lower turnover rates</li>
+								<li>More affordable recruitment</li>
+								<li>Lower training costs</li>
+								<li>Simpler benefits administration</li>
+								<li>EOR handles compliance (lower risk)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="statistics section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Key Statistics</h2>
+					<p>Data-driven cost insights</p>
+				</div>
+				<div class="stats-grid">
+					<div class="stat-card">
+						<h3>Average Cost Savings</h3>
+						<p class="stat-number">10-40%</p>
+						<p class="stat-label">Per Employee</p>
+						<p class="stat-compare">vs. U.S. equivalent positions</p>
+					</div>
+					<div class="stat-card">
+						<h3>Annual Savings (10 Employees)</h3>
+						<p class="stat-number">$250K-$500K</p>
+						<p class="stat-label">Total Savings</p>
+						<p class="stat-compare">Based on mid-level developers</p>
+					</div>
+					<div class="stat-card">
+						<h3>5-Year Savings (10 Employees)</h3>
+						<p class="stat-number">$1.25M-$2.5M</p>
+						<p class="stat-label">Cumulative</p>
+						<p class="stat-compare">Significant long-term savings</p>
+					</div>
+					<div class="stat-card">
+						<h3>Benefits Cost Reduction</h3>
+						<p class="stat-number">40-50%</p>
+						<p class="stat-label">Lower Benefits</p>
+						<p class="stat-compare">Due to public healthcare</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="when-to-choose section">
+			<div class="container">
+				<div class="section-header">
+					<h2>When Canada Makes Financial Sense</h2>
+					<p>Scenarios where Canadian hiring provides the best value</p>
+				</div>
+				<div class="choice-grid">
+					<div class="choice-card">
+						<h3>Choose Canada If:</h3>
+						<ul>
+							<li>You want 10-40% cost savings without quality compromise</li>
+							<li>You need to scale your development team cost-effectively</li>
+							<li>You want to reduce benefits costs (public healthcare)</li>
+							<li>You're building a remote or distributed team</li>
+							<li>You want to maximize budget efficiency</li>
+							<li>You need high-quality talent at competitive rates</li>
+							<li>You want to reduce total cost of employment</li>
+							<li>You're looking for long-term cost savings</li>
+						</ul>
+					</div>
+					<div class="choice-card">
+						<h3>Consider U.S. If:</h3>
+						<ul>
+							<li>You need on-site presence in specific U.S. locations</li>
+							<li>You require U.S.-specific certifications or clearances</li>
+							<li>You need to hire in specific U.S. tech hubs</li>
+							<li>You have U.S.-only contracts or requirements</li>
+							<li>You need immediate local market access</li>
+							<li>You require U.S. tax structures</li>
+							<li>You have specific U.S. regulatory requirements</li>
+							<li>You need U.S.-based IP protection</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta section">
+			<div class="container">
+				<div class="cta-content">
+					<h2>Calculate Your Potential Savings</h2>
+					<p>Our team can help you calculate the exact cost savings for your specific hiring needs and provide a detailed cost comparison for your situation.</p>
+					<a href="/contact" class="btn btn-primary btn-large">Get a Free Cost Analysis</a>
+					<p class="cta-email">Or email us at <a href="mailto:marc@infradevconsulting.com">marc@infradevconsulting.com</a></p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.comparison-hero {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+		justify-content: flex-start;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: rgba(44, 44, 44, 0.6);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.breadcrumb a:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.comparison-hero h1 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.hero-subtitle {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 800px;
+		margin: 0 auto;
+		line-height: 1.7;
+	}
+
+	.quick-comparison {
+		background: var(--color-bg);
+	}
+
+	.comparison-table-wrapper {
+		overflow-x: auto;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.comparison-table {
+		width: 100%;
+		border-collapse: collapse;
+		background: #fff;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	.comparison-table thead {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.comparison-table th {
+		padding: 1.5rem;
+		text-align: left;
+		font-weight: 600;
+		font-size: 1.1rem;
+	}
+
+	.comparison-table td {
+		padding: 1.25rem 1.5rem;
+		border-bottom: 1px solid #e0e0e0;
+		color: var(--color-text-light);
+	}
+
+	.comparison-table tbody tr:last-child td {
+		border-bottom: none;
+	}
+
+	.comparison-table tbody tr:nth-child(even) {
+		background: var(--color-bg-light);
+	}
+
+	.comparison-table td:first-child {
+		font-weight: 600;
+		color: var(--color-text);
+	}
+
+	.comparison-table td:last-child {
+		color: var(--color-orange);
+		font-weight: 600;
+	}
+
+	.table-note {
+		margin-top: 1.5rem;
+		font-size: 0.95rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.table-note strong {
+		color: var(--color-text);
+	}
+
+	.detailed-comparison {
+		background: var(--color-bg-light);
+	}
+
+	.comparison-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		gap: 2rem;
+	}
+
+	.comparison-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.comparison-card h3 {
+		font-size: 1.6rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+		border-bottom: 2px solid var(--color-orange);
+		padding-bottom: 0.5rem;
+	}
+
+	.comparison-item {
+		margin-bottom: 2rem;
+	}
+
+	.comparison-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.comparison-item h4 {
+		font-size: 1.2rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.comparison-item ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.comparison-item li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.comparison-item li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.comparison-item li strong {
+		color: var(--color-text);
+		font-weight: 600;
+	}
+
+	.example-breakdown {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.example-item {
+		background: var(--color-bg-light);
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+
+	.example-item h4 {
+		font-size: 1.2rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.cost-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.cost-list li {
+		color: var(--color-text-light);
+		font-size: 0.95rem;
+		padding-left: 1rem;
+		position: relative;
+	}
+
+	.cost-list li::before {
+		content: "→";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+	}
+
+	.cost-list li strong {
+		color: var(--color-text);
+		font-weight: 700;
+		font-size: 1.1rem;
+	}
+
+	.savings-highlight {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.1), rgba(255, 150, 72, 0.15));
+		border: 2px solid var(--color-orange);
+		padding: 1.5rem;
+		border-radius: 8px;
+		text-align: center;
+		grid-column: 1 / -1;
+	}
+
+	.savings-highlight h4 {
+		font-size: 1.5rem;
+		color: var(--color-orange);
+		margin-bottom: 0.5rem;
+		font-weight: 700;
+	}
+
+	.savings-highlight p {
+		color: var(--color-text);
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin: 0;
+	}
+
+	.salary-note,
+	.contribution-note,
+	.benefits-note {
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid #e0e0e0;
+		font-size: 0.95rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.salary-note strong,
+	.benefits-note strong {
+		color: var(--color-text);
+	}
+
+	.contribution-note a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	.contribution-note a:hover {
+		text-decoration: underline;
+	}
+
+	.when-to-choose {
+		background: var(--color-bg);
+	}
+
+	.choice-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.choice-card {
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-top: 4px solid var(--color-orange);
+	}
+
+	.choice-card h3 {
+		font-size: 1.5rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+	}
+
+	.choice-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.choice-card li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.choice-card li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+	}
+
+	.statistics {
+		background: var(--color-bg-light);
+	}
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.stat-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+	}
+
+	.stat-card h3 {
+		font-size: 1.2rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.stat-number {
+		font-size: 2.5rem;
+		color: var(--color-orange);
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		color: var(--color-text-light);
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-compare {
+		color: var(--color-text-light);
+		font-size: 0.9rem;
+		font-style: italic;
+	}
+
+	.cta {
+		background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-dark) 100%);
+		color: #fff;
+		text-align: center;
+	}
+
+	.cta-content {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.cta-content h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	.cta-content p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+		opacity: 0.95;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		text-decoration: none;
+		border: 2px solid transparent;
+	}
+
+	.btn-primary {
+		background: #fff;
+		color: var(--color-orange);
+	}
+
+	.btn-primary:hover {
+		background: var(--color-bg-light);
+		color: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-large {
+		padding: 1.25rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.cta-email {
+		margin-top: 1.5rem;
+		font-size: 1rem;
+	}
+
+	.cta-email a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	.cta-email a:hover {
+		opacity: 0.9;
+	}
+
+	@media (max-width: 768px) {
+		.comparison-hero h1 {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.comparison-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.choice-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.example-breakdown {
+			grid-template-columns: 1fr;
+		}
+
+		.comparison-table {
+			font-size: 0.9rem;
+		}
+
+		.comparison-table th,
+		.comparison-table td {
+			padding: 1rem;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+	}
+</style>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "Canada vs U.S. Hiring Cost Comparison: Complete Analysis",
+	"description": "Comprehensive cost comparison of hiring developers in Canada vs. United States. Compare salaries, taxes, benefits, employer contributions, and total cost of employment with detailed breakdowns.",
+	"author": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"url": siteUrl
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		}
+	},
+	"datePublished": "2024-01-01",
+	"dateModified": new Date().toISOString().split('T')[0],
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	}
+})} />
+

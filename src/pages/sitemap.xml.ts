@@ -18,6 +18,11 @@ const pages = [
 	'/environmental-policy',
 	'/cookies-policy',
 	'/privacy-policy',
+	'/comparisons/eor-vs-canadian-entity',
+	'/comparisons/eor-vs-contractor',
+	'/comparisons/eor-canada-vs-uk',
+	'/comparisons/canada-vs-us-hiring-costs',
+	'/comparisons/canada-vs-india-outsourcing-quality',
 ];
 
 export const GET: APIRoute = async () => {

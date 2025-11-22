@@ -1,0 +1,794 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const siteUrl = Astro.site?.href || Astro.url.origin;
+const pageUrl = `${siteUrl}/comparisons/eor-canada-vs-mexico`;
+---
+
+<Layout 
+	title="EOR Canada vs EOR Mexico - Complete Comparison | InfraDev Consulting" 
+	description="Compare Employer of Record services in Canada vs. Mexico. Compare costs, talent quality, time zones, language, compliance complexity, and cultural alignment for U.S. companies."
+	canonical={pageUrl}
+>
+	<Header />
+	<main>
+		<section class="comparison-hero section">
+			<div class="container">
+				<nav aria-label="Breadcrumb" class="breadcrumb">
+					<ol>
+						<li><a href="/">Home</a></li>
+						<li><a href="/eor">EOR Services</a></li>
+						<li>EOR Canada vs Mexico</li>
+					</ol>
+				</nav>
+				<div class="hero-content">
+					<h1>EOR Canada vs EOR Mexico: Complete Comparison</h1>
+					<p class="hero-subtitle">Should you use an Employer of Record service in Canada or Mexico? Compare costs, talent quality, time zones, compliance, and cultural factors to make the best decision for your business.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="quick-comparison section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Quick Comparison</h2>
+					<p>Key differences at a glance</p>
+				</div>
+				<div class="comparison-table-wrapper">
+					<table class="comparison-table">
+						<thead>
+							<tr>
+								<th>Factor</th>
+								<th>EOR Canada</th>
+								<th>EOR Mexico</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>Cost Savings</strong></td>
+								<td>10-40% vs. U.S.</td>
+								<td>50-70% vs. U.S.</td>
+							</tr>
+							<tr>
+								<td><strong>Time Zone</strong></td>
+								<td>Same or 1-3 hours</td>
+								<td>1-3 hours difference</td>
+							</tr>
+							<tr>
+								<td><strong>Language</strong></td>
+								<td>English & French</td>
+								<td>Spanish (English in tech)</td>
+							</tr>
+							<tr>
+								<td><strong>Talent Quality</strong></td>
+								<td>Very High</td>
+								<td>High (growing)</td>
+							</tr>
+							<tr>
+								<td><strong>Compliance Complexity</strong></td>
+								<td>Moderate</td>
+								<td>High</td>
+							</tr>
+							<tr>
+								<td><strong>Cultural Alignment</strong></td>
+								<td>Very High</td>
+								<td>Moderate</td>
+							</tr>
+							<tr>
+								<td><strong>Legal System</strong></td>
+								<td>Common law (similar to U.S.)</td>
+								<td>Civil law (different)</td>
+							</tr>
+							<tr>
+								<td><strong>Best For</strong></td>
+								<td>Quality, alignment, ease</td>
+								<td>Maximum cost savings</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<section class="detailed-comparison section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Detailed Comparison</h2>
+					<p>In-depth analysis of each option</p>
+				</div>
+				<div class="comparison-grid">
+					<div class="comparison-card">
+						<h3>Cost Comparison</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li><strong>Salary Savings:</strong> 10-40% vs. U.S. equivalents</li>
+								<li><strong>Junior Developer:</strong> $50,000-$70,000 USD</li>
+								<li><strong>Senior Developer:</strong> $70,000-$120,000 USD</li>
+								<li><strong>EOR Service Fee:</strong> $499-$1,500/month</li>
+								<li><strong>Total Cost:</strong> Moderate savings with high quality</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR Mexico</h4>
+							<ul>
+								<li><strong>Salary Savings:</strong> 50-70% vs. U.S. equivalents</li>
+								<li><strong>Junior Developer:</strong> $20,000-$35,000 USD</li>
+								<li><strong>Senior Developer:</strong> $40,000-$70,000 USD</li>
+								<li><strong>EOR Service Fee:</strong> Similar range</li>
+								<li><strong>Total Cost:</strong> Maximum savings</li>
+							</ul>
+						</div>
+						<p class="cost-note"><strong>Break-even consideration:</strong> While Mexico offers greater cost savings, Canada provides better cultural alignment, time zone overlap, and legal system familiarity.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Talent Quality & Education</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li>Highly educated workforce</li>
+								<li>Strong university system</li>
+								<li>Excellent English proficiency</li>
+								<li>Proven track record in tech</li>
+								<li>High-quality code standards</li>
+								<li>Strong problem-solving skills</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR Mexico</h4>
+							<ul>
+								<li>Growing tech talent pool</li>
+								<li>Strong engineering programs</li>
+								<li>English proficiency varies</li>
+								<li>Rapidly improving tech sector</li>
+								<li>Good technical skills</li>
+								<li>Cost-effective talent</li>
+							</ul>
+						</div>
+						<p class="talent-note"><strong>Quality Factor:</strong> Canada generally offers more consistent quality and experience, while Mexico offers excellent value for the cost.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Time Zone & Collaboration</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li>Same time zones as most U.S. states</li>
+								<li>Maximum 3-hour difference</li>
+								<li>Easy real-time collaboration</li>
+								<li>Overlapping work hours</li>
+								<li>No significant time zone challenges</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR Mexico</h4>
+							<ul>
+								<li>1-3 hours difference from U.S.</li>
+								<li>Good overlap for most U.S. time zones</li>
+								<li>Reasonable collaboration windows</li>
+								<li>Some scheduling coordination needed</li>
+								<li>Generally manageable</li>
+							</ul>
+						</div>
+						<p class="timezone-note"><strong>Collaboration Impact:</strong> Canada offers better time zone alignment, making real-time collaboration easier and more natural.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Language & Communication</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li>English as primary language</li>
+								<li>French available (bilingual advantage)</li>
+								<li>Native-level English proficiency</li>
+								<li>No language barriers</li>
+								<li>Seamless communication</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR Mexico</h4>
+							<ul>
+								<li>Spanish as primary language</li>
+								<li>English common in tech sector</li>
+								<li>English proficiency varies</li>
+								<li>Some language barriers possible</li>
+								<li>Communication may require translation</li>
+							</ul>
+						</div>
+						<p class="language-note"><strong>Communication Factor:</strong> Canada offers native-level English communication, eliminating language barriers entirely.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Compliance & Legal Complexity</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li>Common law system (similar to U.S.)</li>
+								<li>Familiar legal framework</li>
+								<li>Moderate compliance complexity</li>
+								<li>Well-established EOR market</li>
+								<li>Clear employment standards</li>
+								<li>Predictable compliance requirements</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR Mexico</h4>
+							<ul>
+								<li>Civil law system (different from U.S.)</li>
+								<li>Less familiar legal framework</li>
+								<li>Higher compliance complexity</li>
+								<li>Evolving EOR market</li>
+								<li>Complex labor laws</li>
+								<li>More compliance variables</li>
+							</ul>
+						</div>
+						<p class="compliance-note"><strong>Compliance Factor:</strong> Canada's legal system is more similar to the U.S., making compliance more straightforward and predictable.</p>
+					</div>
+
+					<div class="comparison-card">
+						<h3>Cultural Alignment</h3>
+						<div class="comparison-item">
+							<h4>EOR Canada</h4>
+							<ul>
+								<li>Very similar business culture</li>
+								<li>Similar work styles and expectations</li>
+								<li>Strong cultural alignment</li>
+								<li>Easy team integration</li>
+								<li>Minimal cultural barriers</li>
+							</ul>
+						</div>
+						<div class="comparison-item">
+							<h4>EOR Mexico</h4>
+							<ul>
+								<li>Different business culture</li>
+								<li>Different work styles</li>
+								<li>Moderate cultural alignment</li>
+								<li>Some cultural adaptation needed</li>
+								<li>Cultural differences to navigate</li>
+							</ul>
+						</div>
+						<p class="cultural-note"><strong>Cultural Factor:</strong> Canada offers stronger cultural alignment, making team integration and collaboration more seamless.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="when-to-choose section">
+			<div class="container">
+				<div class="section-header">
+					<h2>When to Choose Each Option</h2>
+					<p>Decision factors to consider</p>
+				</div>
+				<div class="choice-grid">
+					<div class="choice-card">
+						<h3>Choose EOR Canada If:</h3>
+						<ul>
+							<li>Quality and cultural alignment are priorities</li>
+							<li>You need seamless communication (English)</li>
+							<li>You want maximum time zone overlap</li>
+							<li>You prefer familiar legal systems</li>
+							<li>You want easier team integration</li>
+							<li>You value predictability and stability</li>
+							<li>10-40% cost savings is sufficient</li>
+							<li>You want to minimize cultural barriers</li>
+						</ul>
+					</div>
+					<div class="choice-card">
+						<h3>Choose EOR Mexico If:</h3>
+						<ul>
+							<li>Maximum cost savings is the priority</li>
+							<li>50-70% cost reduction is needed</li>
+							<li>You can manage language differences</li>
+							<li>You're comfortable with different legal systems</li>
+							<li>You can adapt to cultural differences</li>
+							<li>You have experience with Latin American markets</li>
+							<li>You need to maximize budget efficiency</li>
+							<li>You can invest in cultural integration</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="statistics section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Key Statistics</h2>
+					<p>Data-driven insights</p>
+				</div>
+				<div class="stats-grid">
+					<div class="stat-card">
+						<h3>Cost Savings</h3>
+						<p class="stat-number">10-40%</p>
+						<p class="stat-label">Canada</p>
+						<p class="stat-compare">vs. 50-70% in Mexico</p>
+					</div>
+					<div class="stat-card">
+						<h3>Time Zone Overlap</h3>
+						<p class="stat-number">Same/1-3hr</p>
+						<p class="stat-label">Canada</p>
+						<p class="stat-compare">vs. 1-3hr in Mexico</p>
+					</div>
+					<div class="stat-card">
+						<h3>Language Barrier</h3>
+						<p class="stat-number">None</p>
+						<p class="stat-label">Canada</p>
+						<p class="stat-compare">vs. Some in Mexico</p>
+					</div>
+					<div class="stat-card">
+						<h3>Cultural Alignment</h3>
+						<p class="stat-number">Very High</p>
+						<p class="stat-label">Canada</p>
+						<p class="stat-compare">vs. Moderate in Mexico</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta section">
+			<div class="container">
+				<div class="cta-content">
+					<h2>Need Help Deciding?</h2>
+					<p>Our team specializes in Canadian EOR services and can help you evaluate whether Canada or Mexico is the better fit for your specific needs.</p>
+					<a href="/contact" class="btn btn-primary btn-large">Get a Free Consultation</a>
+					<p class="cta-email">Or email us at <a href="mailto:marc@infradevconsulting.com">marc@infradevconsulting.com</a></p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.comparison-hero {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));
+		padding: 4rem 0;
+		text-align: center;
+	}
+
+	.breadcrumb {
+		margin-bottom: 2rem;
+		text-align: left;
+	}
+
+	.breadcrumb ol {
+		display: flex;
+		list-style: none;
+		gap: 0.5rem;
+		margin: 0;
+		padding: 0;
+		font-size: 0.9rem;
+		justify-content: flex-start;
+	}
+
+	.breadcrumb li:not(:last-child)::after {
+		content: "/";
+		margin-left: 0.5rem;
+		color: rgba(44, 44, 44, 0.6);
+	}
+
+	.breadcrumb a {
+		color: var(--color-orange);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.breadcrumb a:hover {
+		color: var(--color-orange-dark);
+		text-decoration: underline;
+	}
+
+	.hero-content {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.comparison-hero h1 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.hero-subtitle {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.section {
+		padding: 4rem 0;
+	}
+
+	.section-header {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	.section-header p {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 800px;
+		margin: 0 auto;
+		line-height: 1.7;
+	}
+
+	.quick-comparison {
+		background: var(--color-bg);
+	}
+
+	.comparison-table-wrapper {
+		overflow-x: auto;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.comparison-table {
+		width: 100%;
+		border-collapse: collapse;
+		background: #fff;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	.comparison-table thead {
+		background: var(--color-orange);
+		color: #fff;
+	}
+
+	.comparison-table th {
+		padding: 1.5rem;
+		text-align: left;
+		font-weight: 600;
+		font-size: 1.1rem;
+	}
+
+	.comparison-table td {
+		padding: 1.25rem 1.5rem;
+		border-bottom: 1px solid #e0e0e0;
+		color: var(--color-text-light);
+	}
+
+	.comparison-table tbody tr:last-child td {
+		border-bottom: none;
+	}
+
+	.comparison-table tbody tr:nth-child(even) {
+		background: var(--color-bg-light);
+	}
+
+	.comparison-table td:first-child {
+		font-weight: 600;
+		color: var(--color-text);
+	}
+
+	.detailed-comparison {
+		background: var(--color-bg-light);
+	}
+
+	.comparison-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		gap: 2rem;
+	}
+
+	.comparison-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.comparison-card h3 {
+		font-size: 1.6rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+		border-bottom: 2px solid var(--color-orange);
+		padding-bottom: 0.5rem;
+	}
+
+	.comparison-item {
+		margin-bottom: 2rem;
+	}
+
+	.comparison-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.comparison-item h4 {
+		font-size: 1.2rem;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.comparison-item ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.comparison-item li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.comparison-item li::before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.comparison-item li strong {
+		color: var(--color-text);
+		font-weight: 600;
+	}
+
+	.cost-note,
+	.talent-note,
+	.timezone-note,
+	.language-note,
+	.compliance-note,
+	.cultural-note {
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid #e0e0e0;
+		font-size: 0.95rem;
+		color: var(--color-text-light);
+		line-height: 1.6;
+	}
+
+	.cost-note strong,
+	.talent-note strong,
+	.timezone-note strong,
+	.language-note strong,
+	.compliance-note strong,
+	.cultural-note strong {
+		color: var(--color-text);
+	}
+
+	.when-to-choose {
+		background: var(--color-bg);
+	}
+
+	.choice-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.choice-card {
+		background: #fff;
+		padding: 2.5rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		border-top: 4px solid var(--color-orange);
+	}
+
+	.choice-card h3 {
+		font-size: 1.5rem;
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		font-weight: 600;
+	}
+
+	.choice-card ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.choice-card li {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	.choice-card li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+		font-weight: bold;
+	}
+
+	.statistics {
+		background: var(--color-bg-light);
+	}
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.stat-card {
+		background: #fff;
+		padding: 2rem;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		text-align: center;
+	}
+
+	.stat-card h3 {
+		font-size: 1.2rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.stat-number {
+		font-size: 2.5rem;
+		color: var(--color-orange);
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		color: var(--color-text-light);
+		font-size: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-compare {
+		color: var(--color-text-light);
+		font-size: 0.9rem;
+		font-style: italic;
+	}
+
+	.cta {
+		background: linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-dark) 100%);
+		color: #fff;
+		text-align: center;
+	}
+
+	.cta-content {
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.cta-content h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	.cta-content p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+		opacity: 0.95;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+		font-weight: 600;
+		font-size: 1rem;
+		transition: all 0.3s ease;
+		text-decoration: none;
+		border: 2px solid transparent;
+	}
+
+	.btn-primary {
+		background: #fff;
+		color: var(--color-orange);
+	}
+
+	.btn-primary:hover {
+		background: var(--color-bg-light);
+		color: var(--color-orange-dark);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+	}
+
+	.btn-large {
+		padding: 1.25rem 2.5rem;
+		font-size: 1.1rem;
+	}
+
+	.cta-email {
+		margin-top: 1.5rem;
+		font-size: 1rem;
+	}
+
+	.cta-email a {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+	.cta-email a:hover {
+		opacity: 0.9;
+	}
+
+	@media (max-width: 768px) {
+		.comparison-hero h1 {
+			font-size: 2rem;
+		}
+
+		.hero-subtitle {
+			font-size: 1rem;
+		}
+
+		.section-header h2 {
+			font-size: 2rem;
+		}
+
+		.comparison-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.choice-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.comparison-table {
+			font-size: 0.9rem;
+		}
+
+		.comparison-table th,
+		.comparison-table td {
+			padding: 1rem;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+	}
+</style>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"headline": "EOR Canada vs EOR Mexico: Complete Comparison",
+	"description": "Compare Employer of Record services in Canada vs. Mexico. Compare costs, talent quality, time zones, language, compliance complexity, and cultural alignment for U.S. companies.",
+	"author": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"url": siteUrl
+	},
+	"publisher": {
+		"@type": "Organization",
+		"name": "InfraDev Consulting",
+		"logo": {
+			"@type": "ImageObject",
+			"url": `${siteUrl}/assets/WebsiteMarketing/Logo/Logo.png`
+		}
+	},
+	"datePublished": "2024-01-01",
+	"dateModified": new Date().toISOString().split('T')[0],
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": pageUrl
+	}
+})} />
+
