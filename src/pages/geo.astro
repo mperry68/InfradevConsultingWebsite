@@ -708,56 +708,69 @@ const pageUrl = `${siteUrl}/geo`;
 		align-items: flex-start;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 1.5rem;
+		gap: 2rem;
+		max-width: 1000px;
+		margin: 0 auto;
+		position: relative;
 	}
 
 	.process-step {
 		flex: 1;
-		min-width: 200px;
-		max-width: 250px;
-		text-align: center;
-		padding: 1.5rem;
+		min-width: 220px;
+		max-width: 280px;
+		background: #fff;
+		border-radius: 12px;
+		padding: 2rem 1.5rem;
+		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 		position: relative;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		text-align: left;
+	}
+
+	.process-step:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 	}
 
 	.step-number {
-		position: absolute;
-		top: -10px;
-		left: 50%;
-		transform: translateX(-50%);
-		background: var(--color-orange);
-		color: #fff;
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		justify-content: center;
+		background: var(--color-orange);
+		color: #fff;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
 		font-weight: 700;
-		font-size: 1.2rem;
-		box-shadow: 0 2px 8px rgba(255, 132, 39, 0.3);
+		font-size: 1.4rem;
+		box-shadow: 0 4px 12px rgba(255, 132, 39, 0.3);
+		margin-bottom: 1.5rem;
+		flex-shrink: 0;
 	}
 
 	.process-step h3 {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		color: var(--color-orange);
-		margin-top: 2rem;
-		margin-bottom: 0.5rem;
-		font-weight: 600;
+		margin-bottom: 1rem;
+		font-weight: 700;
+		line-height: 1.3;
 	}
 
 	.process-step p {
 		color: var(--color-text-light);
-		font-size: 0.95rem;
-		line-height: 1.5;
+		font-size: 1rem;
+		line-height: 1.7;
+		margin: 0;
 	}
 
 	.process-arrow {
 		color: var(--color-orange);
-		font-size: 2rem;
+		font-size: 1.8rem;
 		font-weight: bold;
 		align-self: center;
-		margin-top: 2rem;
+		margin: 0 0.5rem;
+		opacity: 0.6;
+		flex-shrink: 0;
 	}
 
 	.comparison-grid {
@@ -1059,11 +1072,20 @@ const pageUrl = `${siteUrl}/geo`;
 
 		.process-steps {
 			flex-direction: column;
+			align-items: stretch;
+			gap: 1.5rem;
+		}
+
+		.process-step {
+			min-width: 100%;
+			max-width: 100%;
+			text-align: left;
 		}
 
 		.process-arrow {
 			transform: rotate(90deg);
-			margin: 0;
+			margin: 0.5rem 0;
+			align-self: center;
 		}
 
 		.cta h2 {
