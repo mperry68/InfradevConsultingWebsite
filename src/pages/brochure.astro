@@ -165,11 +165,11 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 						</div>
 						<div class="bundle-offer">
 							<h4>Complete Search Optimization Bundle</h4>
-							<p>Get all three services (SEO + AEO + GEO) for maximum visibility:</p>
+							<p>Get all three services SEO + AEO + GEO for maximum visibility:</p>
 							<div class="bundle-price">
 								<GeoPricing usdPrice={2500} cadPrice={3000} showCurrencyToggle={false} />
 							</div>
-							<p class="bundle-savings">Save <span class="geo-price-inline" data-usd-price="697" data-cad-price="297">$697</span>/month compared to individual services</p>
+							<p class="bundle-savings">Save <span class="geo-percentage-inline" data-usd-percent="7" data-cad-percent="9">7%</span> compared to individual services</p>
 							<a href="/contact" class="btn btn-primary">Get Complete Bundle</a>
 						</div>
 					</div>
@@ -916,7 +916,8 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 		font-weight: 500;
 	}
 
-	.bundle-savings .geo-price-inline {
+	.bundle-savings .geo-price-inline,
+	.bundle-savings .geo-percentage-inline {
 		color: var(--color-orange);
 		font-weight: 700;
 	}

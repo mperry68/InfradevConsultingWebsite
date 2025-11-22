@@ -177,10 +177,29 @@ const fullCanonical = canonical.startsWith('http') ? canonical : `${siteUrl}${ca
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 0 1.5rem;
+		width: 100%;
+		box-sizing: border-box;
 	}
 
 	.section {
 		padding: 4rem 0;
+	}
+
+	/* Prevent horizontal overflow */
+	html, body {
+		overflow-x: hidden;
+		max-width: 100%;
+	}
+
+	/* Mobile container padding */
+	@media (max-width: 480px) {
+		.container {
+			padding: 0 1rem;
+		}
+
+		.section {
+			padding: 3rem 0;
+		}
 	}
 
 	@media (min-width: 768px) {

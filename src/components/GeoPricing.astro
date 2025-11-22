@@ -88,6 +88,20 @@ const {
 				}
 			});
 		}
+
+		// Update inline percentage spans
+		function updateInlinePercentages(currency) {
+			const inlinePercentages = document.querySelectorAll('.geo-percentage-inline');
+			inlinePercentages.forEach(span => {
+				const usdPercent = span.getAttribute('data-usd-percent') || '0';
+				const cadPercent = span.getAttribute('data-cad-percent') || '0';
+				if (currency === 'CAD') {
+					span.textContent = cadPercent + '%';
+				} else {
+					span.textContent = usdPercent + '%';
+				}
+			});
+		}
 		
 		// Apply currency to all elements
 		function applyCurrency(currency) {
@@ -95,6 +109,7 @@ const {
 				updatePricing(element, currency);
 			});
 			updateInlinePrices(currency);
+			updateInlinePercentages(currency);
 		}
 		
 		// Detect country from browser language
@@ -244,6 +259,8 @@ const {
 					applyCurrency(currency);
 					// Store preference in localStorage
 					localStorage.setItem('preferredCurrency', currency);
+					// Update percentages when manually toggled
+					updateInlinePercentages(currency);
 				});
 			});
 		});

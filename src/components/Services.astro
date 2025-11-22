@@ -189,8 +189,39 @@
 			font-size: 2rem;
 		}
 
+		.section-header p {
+			font-size: 1rem;
+		}
+
 		.services-grid {
 			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+
+		.service-card {
+			padding: 1.5rem;
+		}
+
+		.service-card h3 {
+			font-size: 1.3rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.service-card {
+			padding: 1.25rem;
+		}
+
+		.service-card h3 {
+			font-size: 1.2rem;
+		}
+
+		.service-icon {
+			height: 100px;
+		}
+
+		.service-icon img {
+			max-width: 80px;
 		}
 	}
 </style>
