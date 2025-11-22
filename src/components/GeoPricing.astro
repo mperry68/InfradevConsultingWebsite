@@ -191,20 +191,15 @@ const {
 						country = country?.toUpperCase();
 						
 						if (country === 'CA' || country === 'US') {
-							console.log('[GeoPricing] IP detection successful:', country, 'from', api.url);
 							return country;
 						}
-					} else {
-						console.warn('[GeoPricing] API response not OK:', api.url, response.status);
 					}
 				} catch (error) {
-					console.warn('[GeoPricing] API error for', api.url, ':', error.message);
 					// Try next API
 					continue;
 				}
 			}
 			
-			console.warn('[GeoPricing] All IP detection APIs failed');
 			return null;
 		}
 		
@@ -212,10 +207,8 @@ const {
 		async function detectLocation() {
 			// Method 1: IP geolocation (most reliable - prioritize this)
 			// Check IP first, as it reflects current location (including VPN)
-			console.log('[GeoPricing] Attempting IP geolocation...');
 			const ipCountry = await detectFromIP();
 			if (ipCountry) {
-				console.log('[GeoPricing] Using IP detection result:', ipCountry);
 				// Update saved preference to match current IP location
 				const currency = ipCountry === 'CA' ? 'CAD' : 'USD';
 				localStorage.setItem('preferredCurrency', currency);
@@ -225,28 +218,22 @@ const {
 			// Method 2: Check localStorage preference (only if IP detection failed)
 			const savedCurrency = localStorage.getItem('preferredCurrency');
 			if (savedCurrency === 'USD' || savedCurrency === 'CAD') {
-				console.log('[GeoPricing] IP detection failed, using saved preference:', savedCurrency);
 				return savedCurrency === 'CAD' ? 'CA' : 'US';
 			}
 			
 			// Method 3: Timezone detection (only if IP fails)
-			console.log('[GeoPricing] IP detection failed, trying timezone...');
 			const tzCountry = detectFromTimezone();
 			if (tzCountry) {
-				console.log('[GeoPricing] Using timezone detection:', tzCountry);
 				return tzCountry;
 			}
 			
 			// Method 4: Browser language (only if IP and timezone fail)
-			console.log('[GeoPricing] Timezone detection failed, trying language...');
 			const langCountry = detectFromLanguage();
 			if (langCountry) {
-				console.log('[GeoPricing] Using language detection:', langCountry);
 				return langCountry;
 			}
 			
 			// Default to US if all methods fail
-			console.log('[GeoPricing] All detection methods failed, defaulting to US');
 			return 'US';
 		}
 		
@@ -266,20 +253,12 @@ const {
 		});
 		
 		// Initialize pricing on page load
-		console.log('[GeoPricing] Initializing currency detection...');
 		detectLocation().then(country => {
 			const currency = country === 'CA' ? 'CAD' : 'USD';
-			console.log('[GeoPricing] Final currency selected:', currency, 'for country:', country);
 			applyCurrency(currency);
-			
-			// Helpful debug message
-			const savedPref = localStorage.getItem('preferredCurrency');
-			if (savedPref) {
-				console.log('[GeoPricing] Note: A saved preference exists. Clear with: localStorage.removeItem("preferredCurrency")');
-			}
 		}).catch(error => {
 			// Fallback to USD on any error
-			console.warn('[GeoPricing] Currency detection failed, defaulting to USD:', error);
+			console.warn('[GeoPricing] Currency detection failed, defaulting to USD');
 			applyCurrency('USD');
 		});
 		}
