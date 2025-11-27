@@ -2,29 +2,37 @@
 	<div class="container">
 		<div class="footer-content">
 			<div class="footer-section footer-brand">
-				<img src="/assets/WebsiteMarketing/Logo/Logo.png" alt="InfraDev Consulting" class="footer-logo" />
+				<img src="/assets/WebsiteMarketing/Logo_Icon.svg" alt="InfraDev Consulting" class="footer-logo" />
+				<p class="footer-mission">
+					Integrity, transparency, and disciplined excellence in every engagement. Guided by clear communication, reliability, and a commitment to innovation. ISO-aligned practices across our processes ensure consistency, quality, and security—safeguarding client data and strengthening every solution we deliver.
+				</p>
+			</div>
+			<div class="footer-section footer-contact-block">
+				<h3>Contact</h3>
 				<div class="footer-contact">
 					<p class="contact-label">Email</p>
 					<a href="mailto:marc@infradevconsulting.com">marc@infradevconsulting.com</a>
 					<p class="contact-label">Address</p>
 					<p>4-186 Pl. Sutton<br />Beaconsfield, QC H9W 5S3</p>
 				</div>
-				<a 
-					class="footer-linkedin" 
-					href="https://www.linkedin.com/company/infra-dev-consulting" 
-					target="_blank" 
-					rel="noopener noreferrer"
-					aria-label="InfraDev LinkedIn"
-				>
-					<img 
-						src="/assets/WebsiteMarketing/linkedin-icon-vector-png-linkedin-icon-image-31474-linkedin-png-1218-3390189153.png" 
-						alt="LinkedIn" 
-						class="footer-linkedin-icon"
-						width="42"
-						height="42"
-						loading="lazy"
-					/>
-				</a>
+				<div class="footer-social">
+					<a 
+						class="footer-linkedin" 
+						href="https://www.linkedin.com/company/infra-dev-consulting" 
+						target="_blank" 
+						rel="noopener noreferrer"
+						aria-label="InfraDev LinkedIn"
+					>
+						<img 
+							src="/assets/WebsiteMarketing/linkedin-icon-vector-png-linkedin-icon-image-31474-linkedin-png-1218-3390189153.png" 
+							alt="LinkedIn" 
+							class="footer-linkedin-icon"
+							width="42"
+							height="42"
+							loading="lazy"
+						/>
+					</a>
+				</div>
 			</div>
 			<div class="footer-section">
 				<h3>Services</h3>
@@ -94,6 +102,18 @@
 		width: auto;
 	}
 
+	.footer-mission {
+		color: #ccc;
+		font-size: 0.95rem;
+		line-height: 1.7;
+	}
+
+	.footer-contact-block {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
 	.footer-contact {
 		color: #ccc;
 		font-size: 0.95rem;
@@ -133,6 +153,10 @@
 	.footer-linkedin:hover {
 		background: rgba(255, 255, 255, 0.12);
 		transform: translateY(-2px);
+	}
+
+	.footer-social {
+		margin-top: 0.5rem;
 	}
 
 	.footer-linkedin-icon {
