@@ -645,3 +645,46 @@ const pageUrl = `${siteUrl}/how-us-companies-hire-canada`;
 	}
 })} />
 
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "HowTo",
+	"name": "How to Hire Canadian Employees for U.S. Companies",
+	"description": "Step-by-step guide for U.S. companies to hire Canadian talent, including choosing the right approach, setting up compliance, onboarding, and managing ongoing operations.",
+	"step": [
+		{
+			"@type": "HowToStep",
+			"position": 1,
+			"name": "Choose Your Approach",
+			"text": "Decide between Employer of Record (EOR), entity formation, or contractor model based on your needs, timeline, and budget. EOR is best for most companies hiring 1-50 employees, entity formation for large companies with 50+ employees, and contractors for short-term projects.",
+			"url": pageUrl + "#options"
+		},
+		{
+			"@type": "HowToStep",
+			"position": 2,
+			"name": "Set Up Compliance",
+			"text": "With EOR, we handle all setup including CRA registration, payroll accounts, and provincial compliance. With entity formation, you'll need to register with CRA and provincial authorities, which typically takes 3-6 months.",
+			"url": pageUrl + "#requirements"
+		},
+		{
+			"@type": "HowToStep",
+			"position": 3,
+			"name": "Onboard Your Team",
+			"text": "Complete employment contracts, collect required documentation (SIN, banking information, tax forms), and set up payroll. With EOR, this typically takes 24-48 hours. With entity formation, the process is longer and requires internal HR setup.",
+			"url": pageUrl + "#process"
+		},
+		{
+			"@type": "HowToStep",
+			"position": 4,
+			"name": "Manage Ongoing Operations",
+			"text": "Handle payroll processing, tax remittances (CPP, EI, income tax), benefits administration, and compliance with Canadian employment laws. With EOR, all of this is managed for you with one simple monthly invoice.",
+			"url": pageUrl + "#requirements"
+		}
+	],
+	"totalTime": "PT24H",
+	"estimatedCost": {
+		"@type": "MonetaryAmount",
+		"currency": "USD",
+		"value": "499"
+	}
+})} />
+

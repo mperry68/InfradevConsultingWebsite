@@ -157,6 +157,71 @@ import CTA from '../components/CTA.astro';
 			</div>
 		</section>
 
+		<section class="faq section" id="faq">
+			<div class="container">
+				<div class="section-header">
+					<h2>Frequently Asked Questions</h2>
+					<p>Common questions about hiring Canadian talent and our services</p>
+				</div>
+				<div class="faq-list">
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+							<span>How quickly can I hire a Canadian employee through InfraDev?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-1">
+							<p>You can hire a Canadian employee in as little as 24-48 hours. We handle all employment contracts, payroll setup, and compliance requirements, allowing you to onboard Canadian talent quickly without forming a Canadian entity.</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+							<span>Do I need to form a Canadian company to hire Canadian workers?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-2">
+							<p>No, you don't need to form a Canadian company. InfraDev Consulting acts as the Employer of Record, handling all Canadian employment compliance, payroll, taxes, and HR administration on your behalf. This eliminates the need for Canadian entity formation, CRA registration, and complex compliance management.</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+							<span>How much can I save by hiring Canadian talent?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-3">
+							<p>U.S. companies typically save 10-40% on employment costs when hiring Canadian talent compared to equivalent U.S. positions. This includes salary differences, lower benefit costs, and reduced overhead, while still accessing highly skilled professionals.</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+							<span>What types of roles can I hire through InfraDev?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-4">
+							<p>You can hire various Canadian professionals including software developers, cloud engineers, data analysts, DevOps specialists, project managers, support staff, and other technical or professional roles. We specialize in remote employment across all provinces in Canada.</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5">
+							<span>Is this service legal for U.S. companies?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-5">
+							<p>Yes, this is 100% legal and widely practiced in Canada. Canadian employment law fully permits third-party employers to hire workers on behalf of foreign companies. We hire Canadian workers on behalf of U.S. businesses, which is completely legal as long as we do not recruit or employ U.S. workers inside the United States.</p>
+						</div>
+					</div>
+					<div class="faq-item">
+						<button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6">
+							<span>What SEO and digital optimization services do you offer?</span>
+							<span class="faq-icon">+</span>
+						</button>
+						<div class="faq-answer" id="faq-answer-6">
+							<p>We offer comprehensive Search Engine Optimization (SEO), Answer Engine Optimization (AEO) for AI-powered search engines like Google AI Overviews and Perplexity, and Generative Engine Optimization (GEO) for ChatGPT, Claude, and other generative AI platforms. Our services include content optimization, technical SEO, schema markup implementation, and AI search visibility monitoring.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<CTA />
 	</main>
 	<Footer />
@@ -483,5 +548,180 @@ import CTA from '../components/CTA.astro';
 			font-size: 1.2rem;
 		}
 	}
+
+	.faq {
+		background: var(--color-bg-light);
+	}
+
+	.faq-list {
+		max-width: 900px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.faq-item {
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 1rem;
+		overflow: hidden;
+		transition: box-shadow 0.3s ease;
+	}
+
+	.faq-item:hover {
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	}
+
+	.faq-question {
+		width: 100%;
+		background: transparent;
+		border: none;
+		padding: 1.5rem 2rem;
+		text-align: left;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 1.2rem;
+		color: var(--color-orange);
+		font-weight: 600;
+		transition: background-color 0.3s ease, color 0.3s ease;
+		font-family: inherit;
+	}
+
+	.faq-question:hover {
+		background: var(--color-bg-light);
+		color: var(--color-orange-dark);
+	}
+
+	.faq-question:focus {
+		outline: 2px solid var(--color-orange);
+		outline-offset: -2px;
+	}
+
+	.faq-question[aria-expanded="true"] {
+		background: var(--color-bg-light);
+		border-bottom: 1px solid #e0e0e0;
+	}
+
+	.faq-question[aria-expanded="true"] .faq-icon {
+		transform: rotate(45deg);
+	}
+
+	.faq-icon {
+		font-size: 1.5rem;
+		font-weight: 300;
+		color: var(--color-orange);
+		transition: transform 0.3s ease;
+		flex-shrink: 0;
+		margin-left: 1rem;
+		line-height: 1;
+	}
+
+	.faq-answer {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease, padding 0.3s ease;
+		padding: 0 2rem;
+	}
+
+	.faq-answer.open {
+		max-height: 500px;
+		padding: 1.5rem 2rem 2rem;
+	}
+
+	.faq-answer p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+		margin: 0;
+	}
 </style>
+
+<script>
+	// FAQ Accordion functionality
+	document.addEventListener('DOMContentLoaded', () => {
+		const faqQuestions = document.querySelectorAll('.faq-question');
+		
+		faqQuestions.forEach(question => {
+			question.addEventListener('click', () => {
+				const answer = question.nextElementSibling;
+				const isExpanded = question.getAttribute('aria-expanded') === 'true';
+				
+				// Close all other FAQs
+				faqQuestions.forEach(q => {
+					if (q !== question) {
+						q.setAttribute('aria-expanded', 'false');
+						q.nextElementSibling.classList.remove('open');
+					}
+				});
+				
+				// Toggle current FAQ
+				if (isExpanded) {
+					question.setAttribute('aria-expanded', 'false');
+					answer.classList.remove('open');
+				} else {
+					question.setAttribute('aria-expanded', 'true');
+					answer.classList.add('open');
+				}
+			});
+		});
+	});
+</script>
+
+<script type="application/ld+json" set:html={JSON.stringify({
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [
+		{
+			"@type": "Question",
+			"name": "How quickly can I hire a Canadian employee through InfraDev?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "You can hire a Canadian employee in as little as 24-48 hours. We handle all employment contracts, payroll setup, and compliance requirements, allowing you to onboard Canadian talent quickly without forming a Canadian entity."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Do I need to form a Canadian company to hire Canadian workers?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "No, you don't need to form a Canadian company. InfraDev Consulting acts as the Employer of Record, handling all Canadian employment compliance, payroll, taxes, and HR administration on your behalf. This eliminates the need for Canadian entity formation, CRA registration, and complex compliance management."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "How much can I save by hiring Canadian talent?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "U.S. companies typically save 10-40% on employment costs when hiring Canadian talent compared to equivalent U.S. positions. This includes salary differences, lower benefit costs, and reduced overhead, while still accessing highly skilled professionals."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What types of roles can I hire through InfraDev?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "You can hire various Canadian professionals including software developers, cloud engineers, data analysts, DevOps specialists, project managers, support staff, and other technical or professional roles. We specialize in remote employment across all provinces in Canada."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Is this service legal for U.S. companies?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Yes, this is 100% legal and widely practiced in Canada. Canadian employment law fully permits third-party employers to hire workers on behalf of foreign companies. We hire Canadian workers on behalf of U.S. businesses, which is completely legal as long as we do not recruit or employ U.S. workers inside the United States."
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "What SEO and digital optimization services do you offer?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "We offer comprehensive Search Engine Optimization (SEO), Answer Engine Optimization (AEO) for AI-powered search engines like Google AI Overviews and Perplexity, and Generative Engine Optimization (GEO) for ChatGPT, Claude, and other generative AI platforms. Our services include content optimization, technical SEO, schema markup implementation, and AI search visibility monitoring."
+			}
+		}
+	]
+})} />
 

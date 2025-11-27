@@ -29,6 +29,8 @@ const pages = [
 	'/comparisons/eor-canada-vs-uk',
 	'/comparisons/canada-vs-us-hiring-costs',
 	'/comparisons/canada-vs-india-outsourcing-quality',
+	'/resources/why-outsource-to-canada',
+	'/resources/how-does-hiring-model-work',
 ];
 
 export const GET: APIRoute = async () => {
