@@ -31,6 +31,8 @@ const pages = [
 	'/comparisons/canada-vs-india-outsourcing-quality',
 	'/resources/why-outsource-to-canada',
 	'/resources/how-does-hiring-model-work',
+	'/resources/what-is-aeo',
+	'/resources/seo-aeo-geo-complete-strategy',
 ];
 
 export const GET: APIRoute = async () => {

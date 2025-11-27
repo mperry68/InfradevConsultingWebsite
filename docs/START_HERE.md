@@ -35,7 +35,7 @@
 
 **✅ If both show version numbers, you're ready for Step 2!**
 
-**❌ If you get errors, see `INSTALL_NODEJS.md` for detailed troubleshooting**
+**❌ If you get errors, see the troubleshooting section below**
 
 ---
 
@@ -126,9 +126,9 @@ npm run dev
 
 ## 📚 More Help
 
-- **Detailed Node.js installation**: See `INSTALL_NODEJS.md`
 - **Testing guide**: See `LOCAL_TESTING.md`
 - **Deployment guide**: See `DEPLOYMENT.md`
+- **Quick start**: See `QUICK_START.md`
 
 ---
 

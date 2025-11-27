@@ -8,7 +8,7 @@
 3. **Restart PowerShell** after installation
 4. Verify: `node --version` and `npm --version` should show numbers
 
-**See `START_HERE.md` or `INSTALL_NODEJS.md` for detailed instructions.**
+**See `START_HERE.md` for detailed instructions.**
 
 ---
 
