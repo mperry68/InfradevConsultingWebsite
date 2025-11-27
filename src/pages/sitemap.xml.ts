@@ -32,7 +32,10 @@ const pages = [
 	'/resources/why-outsource-to-canada',
 	'/resources/how-does-hiring-model-work',
 	'/resources/what-is-aeo',
+	'/resources/what-is-geo',
 	'/resources/seo-aeo-geo-complete-strategy',
+	'/case-study',
+	'/portfolio',
 ];
 
 export const GET: APIRoute = async () => {

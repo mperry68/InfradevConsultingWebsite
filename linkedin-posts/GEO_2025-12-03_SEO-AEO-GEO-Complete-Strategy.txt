@@ -36,7 +36,7 @@ Are you optimizing for:
 
 If not, you're leaving visibility on the table.
 
-Learn how to implement a complete search optimization strategy: https://infradevconsulting.com/geo
+Learn how to implement a complete search optimization strategy: https://infradevconsulting.com/resources/seo-aeo-geo-complete-strategy
 
 #GEO #AEO #SEO #SearchOptimization #DigitalMarketing #AISearch
 

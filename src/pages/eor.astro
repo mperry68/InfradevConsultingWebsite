@@ -135,6 +135,9 @@ const pageUrl = `${siteUrl}/eor`;
 						<p>One simple monthly invoice - salary + employer contributions + service fee.</p>
 					</div>
 				</div>
+				<div class="resource-link-box">
+					<p><strong>Want to learn more about hiring Canadian talent?</strong> Read our guides: <a href="/resources/why-outsource-to-canada">Why Outsource to Canada?</a> | <a href="/resources/how-does-hiring-model-work">How Does the Hiring Model Work?</a></p>
+				</div>
 			</div>
 		</section>
 
@@ -923,6 +926,32 @@ const pageUrl = `${siteUrl}/eor`;
 	.benefit-card--highlight p {
 		position: relative;
 		z-index: 1;
+	}
+
+	.resource-link-box {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));
+		border-left: 4px solid var(--color-orange);
+		padding: 1.5rem 2rem;
+		margin-top: 2rem;
+		border-radius: 8px;
+		text-align: center;
+	}
+
+	.resource-link-box p {
+		margin: 0;
+		color: var(--color-text);
+		font-size: 1rem;
+	}
+
+	.resource-link-box a {
+		color: var(--color-orange);
+		text-decoration: none;
+		font-weight: 600;
+		margin: 0 0.5rem;
+	}
+
+	.resource-link-box a:hover {
+		text-decoration: underline;
 	}
 
 	.benefit-card--highlight p strong {
