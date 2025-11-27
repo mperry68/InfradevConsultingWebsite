@@ -8,46 +8,44 @@ const pageUrl = `${siteUrl}/portfolio`;
 
 const portfolioItems = [
 	{
-		title: "Website 1",
-		description: "A modern, high-performance website built with cutting-edge technology. We provide ongoing SEO, AEO, and GEO optimization services to ensure maximum visibility across all search platforms.",
-		url: "#",
+		title: "STI Institute",
+		description: "Professional educational institution website built with modern web technologies. We provide comprehensive SEO, AEO, and GEO optimization services to ensure maximum visibility for educational programs and courses.",
+		url: "https://stiinstitute-com.pages.dev",
 		services: ["Web Development", "SEO", "AEO", "GEO"],
-		image: "/assets/WebsiteMarketing/Logo/Logo.png"
+		image: "/assets/portfolio/stiinstitute-preview.png",
+		github: "mperry68/stiinstitute.com"
 	},
 	{
-		title: "Website 2",
-		description: "Comprehensive digital presence with full-stack development and complete search optimization strategy. Our services include technical SEO, AI-powered answer engine optimization, and generative AI optimization.",
-		url: "#",
+		title: "Massotherapie West",
+		description: "Therapy and wellness center website designed for optimal user experience and search visibility. Ongoing SEO, AEO, and GEO services help potential clients discover services through traditional search and AI-powered platforms.",
+		url: "https://massotherapiewest-com.pages.dev",
 		services: ["Web Development", "SEO", "AEO", "GEO"],
-		image: "/assets/WebsiteMarketing/Logo/Logo.png"
+		image: "/assets/portfolio/massotherapiewest-preview.png",
+		github: "mperry68/massotherapiewest.com"
 	},
 	{
-		title: "Website 3",
-		description: "Enterprise-level website with advanced features and comprehensive search optimization. We handle all aspects of SEO, AEO, and GEO to maximize organic visibility and AI-driven traffic.",
-		url: "#",
+		title: "Prime GRC Security Staff",
+		description: "Security services company website with comprehensive search optimization. Our team manages SEO for organic rankings, AEO for AI answer engines, and GEO for generative AI visibility to maximize lead generation.",
+		url: "https://prime-grcsecuritystaff-com.pages.dev",
 		services: ["Web Development", "SEO", "AEO", "GEO"],
-		image: "/assets/WebsiteMarketing/Logo/Logo.png"
+		image: "/assets/portfolio/prime-grcsecuritystaff-preview.png",
+		github: "mperry68/prime-grcsecuritystaff.com"
 	},
 	{
-		title: "Website 4",
-		description: "E-commerce platform with optimized search visibility across traditional search, AI answer engines, and generative AI systems. Full-service SEO, AEO, and GEO management.",
-		url: "#",
+		title: "Mango Spa",
+		description: "Luxury spa and wellness website built with focus on user experience and search optimization. We provide ongoing SEO, AEO, and GEO services to ensure maximum visibility across all search platforms and AI systems.",
+		url: "https://mangospawebsite.pages.dev",
 		services: ["Web Development", "SEO", "AEO", "GEO"],
-		image: "/assets/WebsiteMarketing/Logo/Logo.png"
+		image: "/assets/portfolio/mangospa-preview.png",
+		github: "mperry68/mangospawebsite"
 	},
 	{
-		title: "Website 5",
-		description: "B2B SaaS platform with comprehensive search optimization strategy. Our team manages SEO for organic rankings, AEO for AI answer engines, and GEO for generative AI visibility.",
-		url: "#",
+		title: "Garderie Saint Bruno",
+		description: "Daycare and early childhood education website optimized for local search and parent discovery. Comprehensive SEO, AEO, and GEO strategies ensure visibility in traditional search results and AI-powered answer engines.",
+		url: "https://garderiesaintbrunowebsite.pages.dev",
 		services: ["Web Development", "SEO", "AEO", "GEO"],
-		image: "/assets/WebsiteMarketing/Logo/Logo.png"
-	},
-	{
-		title: "Website 6",
-		description: "Modern web application with full search optimization coverage. We provide ongoing SEO, AEO, and GEO services to ensure maximum visibility across all search platforms and AI systems.",
-		url: "#",
-		services: ["Web Development", "SEO", "AEO", "GEO"],
-		image: "/assets/WebsiteMarketing/Logo/Logo.png"
+		image: "/assets/portfolio/garderiesaintbruno-preview.png",
+		github: "mperry68/GarderieSaintBrunoWebsite"
 	}
 ];
 ---
@@ -97,7 +95,12 @@ const portfolioItems = [
 					{portfolioItems.map((item, index) => (
 						<div class="portfolio-item">
 							<div class="portfolio-image">
-								<img src={item.image} alt={item.title} />
+								<img 
+									src={item.image} 
+									alt={`${item.title} website preview`}
+									loading="lazy"
+									onerror="this.onerror=null; this.src='/assets/WebsiteMarketing/Logo/Logo.png'; this.style.objectFit='contain'; this.style.padding='2rem';"
+								/>
 							</div>
 							<div class="portfolio-content">
 								<h3>{item.title}</h3>
@@ -110,11 +113,18 @@ const portfolioItems = [
 										))}
 									</div>
 								</div>
-								{item.url !== "#" && (
-									<a href={item.url} target="_blank" rel="noopener noreferrer" class="portfolio-link">
-										Visit Website →
-									</a>
-								)}
+								<div class="portfolio-links">
+									{item.url && item.url !== "#" && (
+										<a href={item.url} target="_blank" rel="noopener noreferrer" class="portfolio-link">
+											Visit Website →
+										</a>
+									)}
+									{item.github && (
+										<a href={`https://github.com/${item.github}`} target="_blank" rel="noopener noreferrer" class="portfolio-link portfolio-link-github">
+											View on GitHub →
+										</a>
+									)}
+								</div>
 							</div>
 						</div>
 					))}
@@ -276,13 +286,29 @@ const portfolioItems = [
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		position: relative;
 	}
 
 	.portfolio-image img {
-		max-width: 100%;
-		max-height: 100%;
-		object-fit: contain;
-		padding: 1rem;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.3s ease;
+	}
+
+	.portfolio-item:hover .portfolio-image img {
+		transform: scale(1.05);
+	}
+
+	.portfolio-image::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+		pointer-events: none;
 	}
 
 	.portfolio-content {
@@ -335,17 +361,33 @@ const portfolioItems = [
 		font-weight: 500;
 	}
 
+	.portfolio-links {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		margin-top: 1rem;
+	}
+
 	.portfolio-link {
 		color: var(--color-orange);
 		text-decoration: none;
 		font-weight: 600;
 		display: inline-block;
 		transition: transform 0.3s ease;
-		margin-top: 0.5rem;
+		font-size: 0.95rem;
 	}
 
 	.portfolio-link:hover {
 		transform: translateX(5px);
+	}
+
+	.portfolio-link-github {
+		color: var(--color-text-light);
+		font-weight: 500;
+	}
+
+	.portfolio-link-github:hover {
+		color: var(--color-orange);
 	}
 
 	.services-overview {
