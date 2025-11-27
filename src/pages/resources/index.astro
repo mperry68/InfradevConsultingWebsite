@@ -6,29 +6,72 @@ import Footer from '../../components/Footer.astro';
 const siteUrl = Astro.site?.href || Astro.url.origin;
 const pageUrl = `${siteUrl}/resources`;
 
-// Resource categories and items
+// Resource categories and items - Organized into two main areas
 const resources = [
 	{
 		category: "Search Optimization Resources",
+		description: "Comprehensive guides, strategies, and best practices for SEO, AEO, and GEO optimization",
 		items: [
 			{
 				title: "What is Answer Engine Optimization (AEO)?",
-				description: "An introductory guide explaining Answer Engine Optimization. Learn what AEO is, how it differs from SEO, why it matters, and how AI-powered answer engines work. Perfect for understanding the fundamentals of AEO.",
-				type: "PDF Guide",
-				download: "/resources/what-is-aeo.pdf",
-				icon: "📖"
+				description: "Complete guide to Answer Engine Optimization. Learn what AEO is, how it differs from SEO, why it matters for AI-powered search, and how to get started with AEO strategies.",
+				type: "Comprehensive Guide",
+				download: "/resources/what-is-aeo",
+				icon: "🔍"
+			},
+			{
+				title: "Why AEO Matters Now: The AI Search Revolution",
+				description: "Discover why Answer Engine Optimization is critical in 2025. Learn about the shift to AI-powered search, zero-click visibility, and how AEO gives you competitive advantage.",
+				type: "Strategy Guide",
+				download: "/resources/why-aeo-matters-now",
+				icon: "⚡"
+			},
+			{
+				title: "The Zero-Click Search Problem and Opportunity",
+				description: "Understand the zero-click search phenomenon and how to turn it into an opportunity. Learn how AEO helps you capture brand visibility even when users don't click through.",
+				type: "Strategy Guide",
+				download: "/resources/zero-click-search-opportunity",
+				icon: "🎯"
+			},
+			{
+				title: "Voice Search Optimization: Complete Guide",
+				description: "Master voice search optimization for AI assistants. Learn how to structure content for voice queries, conversational keywords, and voice-first search strategies.",
+				type: "Technical Guide",
+				download: "/resources/voice-search-optimization",
+				icon: "🎤"
 			},
 			{
 				title: "What is Generative Engine Optimization (GEO)?",
-				description: "An introductory guide explaining Generative Engine Optimization. Learn what GEO is, how it differs from SEO and AEO, why it matters for generative AI systems, and how to get started. Perfect for understanding the fundamentals of GEO.",
-				type: "PDF Guide",
-				download: "/resources/what-is-geo.pdf",
-				icon: "📚"
+				description: "Comprehensive guide to Generative Engine Optimization. Learn how GEO optimizes for ChatGPT, Claude, Gemini, and AI agents. Understand the future of AI-powered search.",
+				type: "Comprehensive Guide",
+				download: "/resources/what-is-geo",
+				icon: "🤖"
+			},
+			{
+				title: "Future-Proof Your Content with GEO",
+				description: "Learn how Generative Engine Optimization prepares your content for the future of search. Discover strategies for AI knowledge bases, semantic richness, and long-term authority building.",
+				type: "Strategy Guide",
+				download: "/resources/future-proof-content-geo",
+				icon: "🚀"
+			},
+			{
+				title: "Building Authority in the Age of Generative AI",
+				description: "Discover how to build authority when AI systems are the primary research tool. Learn GEO strategies for establishing expertise that AI systems recognize and cite.",
+				type: "Authority Guide",
+				download: "/resources/building-authority-ai-era",
+				icon: "⭐"
+			},
+			{
+				title: "SEO vs AEO vs GEO: Complete Strategy Guide",
+				description: "Comprehensive comparison and integration guide for SEO, AEO, and GEO. Learn when to use each approach, how they work together, and how to build a complete search optimization strategy.",
+				type: "Strategy Guide",
+				download: "/resources/seo-aeo-geo-complete-strategy",
+				icon: "📊"
 			},
 			{
 				title: "AEO Optimization Checklist",
 				description: "Complete checklist for optimizing your content for AI-powered answer engines. Includes content structure, schema markup, voice search, and technical optimization.",
-				type: "PDF Guide",
+				type: "PDF Checklist",
 				download: "/resources/aeo-optimization-checklist.pdf",
 				icon: "✅"
 			},
@@ -52,13 +95,6 @@ const resources = [
 				type: "PDF Guide",
 				download: "/resources/geo-best-practices.pdf",
 				icon: "📖"
-			},
-			{
-				title: "SEO vs AEO vs GEO: Complete Comparison Guide",
-				description: "Comprehensive comparison of SEO, AEO, and GEO strategies. Learn when to use each approach and how they work together for complete search visibility.",
-				type: "PDF Guide",
-				download: "/resources/seo-aeo-geo-comparison-guide.pdf",
-				icon: "📊"
 			}
 		]
 	},
@@ -89,42 +125,50 @@ const resources = [
 		]
 	},
 	{
-		category: "Guides & eBooks",
+		category: "Hiring Canadian Talent Resources",
+		description: "Complete guides, strategies, and tools for U.S. companies hiring Canadian employees and consultants",
 		items: [
 			{
 				title: "Why Outsource to Canada?",
 				description: "Discover why U.S. companies outsource to Canada: cost savings of 10-40%, skilled tech talent, time zone alignment, cultural compatibility, and legal advantages.",
-				type: "Guide",
+				type: "Comprehensive Guide",
 				download: "/resources/why-outsource-to-canada",
 				icon: "🇨🇦"
 			},
 			{
 				title: "How Does the Hiring Model Work?",
 				description: "Learn how the Employer of Record (EOR) hiring model works for U.S. companies hiring Canadian talent. Understand the process, benefits, and how you maintain control.",
-				type: "Guide",
+				type: "How-To Guide",
 				download: "/resources/how-does-hiring-model-work",
 				icon: "⚙️"
 			},
 			{
 				title: "Complete Guide to Hiring in Canada for U.S. Companies",
-				description: "Comprehensive 50-page guide covering entity formation, EOR services, compliance requirements, and best practices for U.S. companies hiring Canadian talent.",
-				type: "PDF Guide",
-				download: "#",
+				description: "Comprehensive guide covering entity formation, EOR services, compliance requirements, and best practices for U.S. companies hiring Canadian talent.",
+				type: "Guide",
+				download: "/how-us-companies-hire-canada",
 				icon: "📘"
 			},
 			{
 				title: "Canadian Payroll Rules for U.S. Employers",
 				description: "Detailed guide to Canadian payroll deductions, tax requirements, remittance deadlines, and compliance obligations.",
 				type: "PDF Guide",
-				download: "#",
+				download: "/how-us-companies-hire-canada/canadian-payroll-guide",
 				icon: "💰"
 			},
 			{
 				title: "EOR vs PEO vs Contractor Model Comparison",
 				description: "Side-by-side comparison of employment models, including costs, compliance, and when to use each approach.",
-				type: "PDF Guide",
-				download: "#",
+				type: "Comparison Guide",
+				download: "/comparisons/eor-vs-contractor",
 				icon: "📊"
+			},
+			{
+				title: "EOR vs Canadian Entity: Which is Right for You?",
+				description: "Compare Employer of Record services with forming your own Canadian entity. Learn about costs, timelines, compliance, and when each approach makes sense.",
+				type: "Comparison Guide",
+				download: "/comparisons/eor-vs-canadian-entity",
+				icon: "⚖️"
 			}
 		]
 	},
@@ -232,7 +276,7 @@ const resources = [
 			<div class="container">
 				<div class="resources-hero-content">
 					<h1>Resource Hub</h1>
-					<p class="resources-hero-subtitle">Expert resources, guides, and tools to help U.S. companies successfully hire and manage Canadian talent. Download free guides, checklists, templates, and more.</p>
+					<p class="resources-hero-subtitle">Expert resources, guides, and strategies for Search Optimization (SEO, AEO, GEO) and Hiring Canadian Talent. Comprehensive guides to help you succeed in AI-powered search and cross-border hiring.</p>
 				</div>
 			</div>
 		</section>
@@ -242,6 +286,7 @@ const resources = [
 				{resources.map((category) => (
 					<div class="resource-category">
 						<h2 class="category-title">{category.category}</h2>
+						{category.description && <p class="category-description">{category.description}</p>}
 						<div class="resources-grid">
 							{category.items.map((resource) => (
 								<div class="resource-card">
@@ -269,11 +314,12 @@ const resources = [
 		<section class="resources-cta section">
 			<div class="container">
 				<div class="cta-content">
-					<h2>Need Help with Your Canadian Hiring Strategy?</h2>
-					<p>Our team of experts can help you navigate Canadian employment law, set up compliant payroll, and ensure full compliance with all regulations.</p>
+					<h2>Need Expert Help?</h2>
+					<p>Our team specializes in Search Optimization (SEO, AEO, GEO) and Canadian Talent Hiring. We can help you optimize for AI-powered search or set up compliant Canadian hiring.</p>
 					<div class="cta-buttons">
 						<a href="/contact" class="btn btn-primary">Schedule a Consultation</a>
-						<a href="/eor" class="btn btn-secondary">Learn About EOR Services</a>
+						<a href="/aeo" class="btn btn-secondary">Learn About AEO</a>
+						<a href="/eor" class="btn btn-secondary">Learn About EOR</a>
 					</div>
 				</div>
 			</div>
@@ -339,10 +385,17 @@ const resources = [
 	.category-title {
 		font-size: 2rem;
 		color: var(--color-text);
-		margin-bottom: 2rem;
+		margin-bottom: 0.5rem;
 		font-weight: 600;
 		border-bottom: 2px solid var(--color-orange);
 		padding-bottom: 0.5rem;
+	}
+
+	.category-description {
+		font-size: 1.1rem;
+		color: var(--color-text-light);
+		margin-bottom: 2rem;
+		line-height: 1.6;
 	}
 
 	.resources-grid {
