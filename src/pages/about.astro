@@ -11,29 +11,6 @@ const stats = [
 	{ label: 'Followers', value: '400+ on LinkedIn' },
 ];
 
-const servicePillars = [
-	{
-		title: 'SEO for Modern Search',
-		description:
-			'Technical SEO, site rebuilds, and growth programs that keep your brand competitive on Google and traditional search surfaces.',
-	},
-	{
-		title: 'Answer Engine Optimization (AEO)',
-		description:
-			'Content architectures built so AI answer engines, voice assistants, and AI Overviews can source you as an authoritative result.',
-	},
-	{
-		title: 'Generative Engine Optimization (GEO)',
-		description:
-			'Long-form, semantically rich assets that help ChatGPT, Claude, and Perplexity cite your brand inside synthesized responses.',
-	},
-	{
-		title: 'Digital Advisory & Delivery',
-		description:
-			'Fractional CTO support, website development, and marketing enablement delivered with consulting rigor and transparent communication.',
-	},
-];
-
 const values = [
 	{
 		title: 'Integrity Above All',
@@ -111,9 +88,6 @@ const values = [
 
 		<section class="about-story section">
 			<div class="container">
-				<div class="story-visual">
-					<img src="/assets/WebsiteMarketing/About Us/AdobeStock_147062140.jpeg" alt="InfraDev team collaborating" loading="lazy" width="640" height="420" />
-				</div>
 				<div class="story-content">
 					<div>
 						<h2>Built for modern visibility</h2>
@@ -140,22 +114,28 @@ const values = [
 			</div>
 		</section>
 
-		<section class="about-pillars section">
+		<section class="about-team section">
 			<div class="container">
-				<div class="section-header">
-					<p class="eyebrow">What we deliver</p>
-					<h2>Multi-disciplinary service pillars</h2>
-					<p>
-						Engagements blend growth strategy, technical SEO, engineering, and AI-aligned content so every channel reinforces authority.
-					</p>
-				</div>
-				<div class="pillars-grid">
-					{servicePillars.map((pillar) => (
-						<div class="pillar-card">
-							<h3>{pillar.title}</h3>
-							<p>{pillar.description}</p>
-						</div>
-					))}
+				<div class="team-layout">
+					<div class="team-content">
+						<p class="eyebrow">People first</p>
+						<h2>A senior team that ships together</h2>
+						<p>
+							InfraDev is powered by strategists, engineers, analysts, and operators who have shipped complex digital programs side by side for years. 
+							We bring the same collaborative chemistry to every engagement—embedding with your stakeholders, aligning on outcomes, and staying hands-on through delivery.
+						</p>
+						<ul>
+							<li>Fractional CTOs, marketing strategists, and technical leads working as one unit.</li>
+							<li>Dedicated pods that blend SEO, AEO, GEO, analytics, and engineering expertise.</li>
+							<li>Weekly working sessions, transparent reporting, and direct access to decision makers.</li>
+						</ul>
+						<p>
+							The result: faster execution, fewer silos, and a leadership-caliber team that feels like a natural extension of yours.
+						</p>
+					</div>
+					<div class="team-photo">
+						<img src="/assets/WebsiteMarketing/About Us/AdobeStock_147062140.jpeg" alt="InfraDev Consulting team collaborating" loading="lazy" width="640" height="480" />
+					</div>
 				</div>
 			</div>
 		</section>
@@ -274,20 +254,6 @@ const values = [
 		align-items: start;
 	}
 
-	.story-visual {
-		margin-bottom: 2.5rem;
-		border-radius: 16px;
-		overflow: hidden;
-		box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
-	}
-
-	.story-visual img {
-		width: 100%;
-		height: auto;
-		display: block;
-		object-fit: cover;
-	}
-
 	.about-story h2 {
 		font-size: 2.2rem;
 		margin-bottom: 1rem;
@@ -349,14 +315,12 @@ const values = [
 		line-height: 1.7;
 	}
 
-	.pillars-grid,
 	.values-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		gap: 1.5rem;
 	}
 
-	.pillar-card,
 	.value-card {
 		background: #fff;
 		border-radius: 12px;
@@ -364,17 +328,61 @@ const values = [
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 	}
 
-	.pillar-card h3,
 	.value-card h3 {
 		font-size: 1.3rem;
 		margin-bottom: 0.75rem;
 		color: var(--color-orange);
 	}
 
-	.pillar-card p,
 	.value-card p {
 		color: var(--color-text-light);
 		line-height: 1.7;
+	}
+
+	.about-team .team-layout {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 2.5rem;
+		align-items: center;
+	}
+
+	.team-content ul {
+		list-style: none;
+		padding: 0;
+		margin: 1.5rem 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.team-content li {
+		position: relative;
+		padding-left: 1.5rem;
+		color: var(--color-text);
+	}
+
+	.team-content li::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0.6rem;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: var(--color-orange);
+	}
+
+	.team-photo {
+		border-radius: 16px;
+		overflow: hidden;
+		box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+	}
+
+	.team-photo img {
+		width: 100%;
+		height: auto;
+		display: block;
+		object-fit: cover;
 	}
 
 	.about-leadership {
