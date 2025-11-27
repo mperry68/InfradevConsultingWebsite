@@ -27,6 +27,7 @@ const pages = [
 	'/comparisons/eor-vs-canadian-entity',
 	'/comparisons/eor-vs-contractor',
 	'/comparisons/eor-canada-vs-uk',
+	'/comparisons/eor-canada-vs-mexico',
 	'/comparisons/canada-vs-us-hiring-costs',
 	'/comparisons/canada-vs-india-outsourcing-quality',
 	'/resources/why-outsource-to-canada',
@@ -41,6 +42,9 @@ const pages = [
 export const GET: APIRoute = async () => {
 	// Get all blog posts
 	const blogPosts = await getCollection('blog');
+	
+	// Get all case studies
+	const caseStudies = await getCollection('case-study');
 
 	// Generate sitemap entries for static pages
 	const staticPages = pages
@@ -48,8 +52,8 @@ export const GET: APIRoute = async () => {
 			(page) => `  <url>
     <loc>${siteUrl}${page}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>${page === '' ? 'weekly' : page === '/eor' || page === '/consulting-management' || page === '/blog' || page === '/brochure' || page === '/aeo' || page === '/geo' || page === '/how-us-companies-hire-canada' || page === '/about' ? 'weekly' : 'monthly'}</changefreq>
-    <priority>${page === '' ? '1.0' : page === '/eor' || page === '/consulting-management' ? '0.9' : page === '/blog' || page === '/resources' || page === '/brochure' || page === '/aeo' || page === '/geo' || page === '/how-us-companies-hire-canada' || page === '/about' ? '0.85' : '0.8'}</priority>
+    <changefreq>${page === '' ? 'weekly' : page === '/eor' || page === '/consulting-management' || page === '/blog' || page === '/brochure' || page === '/aeo' || page === '/geo' || page === '/how-us-companies-hire-canada' || page === '/about' || page === '/case-study' || page === '/portfolio' ? 'weekly' : 'monthly'}</changefreq>
+    <priority>${page === '' ? '1.0' : page === '/eor' || page === '/consulting-management' ? '0.9' : page === '/blog' || page === '/resources' || page === '/brochure' || page === '/aeo' || page === '/geo' || page === '/how-us-companies-hire-canada' || page === '/about' || page === '/case-study' || page === '/portfolio' ? '0.85' : '0.8'}</priority>
   </url>`
 		)
 		.join('\n');
@@ -66,10 +70,23 @@ export const GET: APIRoute = async () => {
 		)
 		.join('\n');
 
+	// Generate sitemap entries for case studies
+	const caseStudyEntries = caseStudies
+		.map(
+			(caseStudy) => `  <url>
+    <loc>${siteUrl}/case-study/${caseStudy.slug}</loc>
+    <lastmod>${caseStudy.data.pubDate.toISOString().split('T')[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`
+		)
+		.join('\n');
+
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${staticPages}
 ${blogEntries}
+${caseStudyEntries}
 </urlset>`;
 
 	return new Response(sitemap, {
