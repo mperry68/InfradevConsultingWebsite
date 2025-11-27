@@ -4,7 +4,7 @@
 			<div class="footer-section footer-brand">
 				<img src="/assets/WebsiteMarketing/Logo_Icon.svg" alt="InfraDev Consulting" class="footer-logo" />
 				<p class="footer-mission">
-					Integrity, transparency, and disciplined excellence in every engagement. Guided by clear communication, reliability, and a commitment to innovation. ISO-aligned practices across our processes ensure consistency, quality, and security—safeguarding client data and strengthening every solution we deliver.
+					Integrity, transparency, and disciplined excellence guide every engagement. We operate with clear communication, reliability, and a commitment to purposeful innovation. Our ISO-aligned practices ensure consistency, quality, and security, safeguarding client data and strengthening every solution we deliver.
 				</p>
 			</div>
 			<div class="footer-section footer-contact-block">
@@ -65,7 +65,13 @@
 			</div>
 		</div>
 		<div class="footer-bottom">
-			<p>&copy; {new Date().getFullYear()} InfraDev Consulting. All rights reserved.</p>
+			<p class="footer-copy">&copy; {new Date().getFullYear()} InfraDev Consulting. All rights reserved.</p>
+			<div class="footer-bottom-links">
+				<a href="/quality-policy">Quality Policy</a>
+				<a href="/environmental-policy">Environmental Policy</a>
+				<a href="/cookies-policy">Cookies Policy</a>
+				<a href="/privacy-policy">Privacy Policy</a>
+			</div>
 		</div>
 	</div>
 </footer>
@@ -187,14 +193,119 @@
 	.footer-bottom {
 		border-top: 1px solid #333;
 		padding-top: 1.5rem;
-		text-align: center;
 		color: #999;
+		font-size: 0.9rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 1rem;
+		align-items: center;
+	}
+
+	.footer-copy {
+		margin: 0;
+	}
+
+	.footer-bottom-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+
+	.footer-bottom-links a {
+		color: #bbb;
 		font-size: 0.9rem;
 	}
 
+	.footer-bottom-links a:hover {
+		color: var(--color-orange-light);
+	}
+
 	@media (max-width: 768px) {
+		.footer {
+			padding: 2.5rem 0 1.5rem;
+		}
+
 		.footer-content {
 			grid-template-columns: 1fr;
+			gap: 2.5rem;
+		}
+
+		.footer-brand {
+			text-align: center;
+		}
+
+		.footer-logo {
+			margin: 0 auto;
+		}
+
+		.footer-mission {
+			text-align: left;
+			font-size: 0.9rem;
+		}
+
+		.footer-contact-block {
+			text-align: center;
+		}
+
+		.footer-contact {
+			text-align: left;
+		}
+
+		.footer-social {
+			display: flex;
+			justify-content: center;
+			margin-top: 1rem;
+		}
+
+		.footer-bottom {
+			flex-direction: column;
+			text-align: center;
+			gap: 1.5rem;
+			padding-top: 2rem;
+		}
+
+		.footer-copy {
+			text-align: center;
+			width: 100%;
+		}
+
+		.footer-bottom-links {
+			justify-content: center;
+			gap: 1rem;
+			width: 100%;
+		}
+
+		.footer-bottom-links a {
+			font-size: 0.85rem;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.footer {
+			padding: 2rem 0 1rem;
+		}
+
+		.footer-content {
+			gap: 2rem;
+		}
+
+		.footer-section h3 {
+			font-size: 1.1rem;
+		}
+
+		.footer-mission {
+			font-size: 0.85rem;
+		}
+
+		.footer-bottom-links {
+			flex-direction: column;
+			gap: 0.75rem;
+		}
+
+		.footer-bottom-links a {
+			display: block;
+			text-align: center;
 		}
 	}
 </style>
