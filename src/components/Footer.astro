@@ -3,7 +3,14 @@
 		<div class="footer-content">
 			<div class="footer-section">
 				<img src="/assets/WebsiteMarketing/Logo/Logo.png" alt="InfraDev Consulting" class="footer-logo" />
-				<p class="tagline">We consult your business</p>
+				<a 
+					class="footer-linkedin" 
+					href="https://www.linkedin.com/company/infra-dev-consulting" 
+					target="_blank" 
+					rel="noopener noreferrer"
+				>
+					Follow InfraDev on LinkedIn
+				</a>
 			</div>
 			<div class="footer-section">
 				<h3>Services</h3>
@@ -68,9 +75,22 @@
 		margin-bottom: 0.5rem;
 	}
 
-	.tagline {
-		color: #ccc;
+	.footer-linkedin {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		color: #fff;
+		background: var(--color-orange);
+		padding: 0.6rem 1rem;
+		border-radius: 999px;
 		font-size: 0.9rem;
+		font-weight: 600;
+		transition: background 0.3s ease, transform 0.2s ease;
+	}
+
+	.footer-linkedin:hover {
+		background: var(--color-orange-light);
+		transform: translateY(-2px);
 	}
 
 	.footer-section ul {
