@@ -5,6 +5,7 @@ const siteUrl = 'https://infradevconsulting.com';
 
 const pages = [
 	'',
+	'/about',
 	'/eor',
 	'/consulting-management',
 	'/contact',
@@ -40,8 +41,8 @@ export const GET: APIRoute = async () => {
 			(page) => `  <url>
     <loc>${siteUrl}${page}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>${page === '' ? 'weekly' : page === '/eor' || page === '/consulting-management' || page === '/blog' || page === '/brochure' || page === '/aeo' || page === '/geo' || page === '/how-us-companies-hire-canada' ? 'weekly' : 'monthly'}</changefreq>
-    <priority>${page === '' ? '1.0' : page === '/eor' || page === '/consulting-management' ? '0.9' : page === '/blog' || page === '/resources' || page === '/brochure' || page === '/aeo' || page === '/geo' || page === '/how-us-companies-hire-canada' ? '0.85' : '0.8'}</priority>
+    <changefreq>${page === '' ? 'weekly' : page === '/eor' || page === '/consulting-management' || page === '/blog' || page === '/brochure' || page === '/aeo' || page === '/geo' || page === '/how-us-companies-hire-canada' || page === '/about' ? 'weekly' : 'monthly'}</changefreq>
+    <priority>${page === '' ? '1.0' : page === '/eor' || page === '/consulting-management' ? '0.9' : page === '/blog' || page === '/resources' || page === '/brochure' || page === '/aeo' || page === '/geo' || page === '/how-us-companies-hire-canada' || page === '/about' ? '0.85' : '0.8'}</priority>
   </url>`
 		)
 		.join('\n');

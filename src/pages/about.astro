@@ -1,0 +1,408 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CTA from '../components/CTA.astro';
+
+const stats = [
+	{ label: 'Founded', value: '2016' },
+	{ label: 'Headquarters', value: 'Beaconsfield, QC' },
+	{ label: 'Team Size', value: '11–50 specialists' },
+	{ label: 'Followers', value: '400+ on LinkedIn' },
+];
+
+const servicePillars = [
+	{
+		title: 'SEO for Modern Search',
+		description:
+			'Technical SEO, site rebuilds, and growth programs that keep your brand competitive on Google and traditional search surfaces.',
+	},
+	{
+		title: 'Answer Engine Optimization (AEO)',
+		description:
+			'Content architectures built so AI answer engines, voice assistants, and AI Overviews can source you as an authoritative result.',
+	},
+	{
+		title: 'Generative Engine Optimization (GEO)',
+		description:
+			'Long-form, semantically rich assets that help ChatGPT, Claude, and Perplexity cite your brand inside synthesized responses.',
+	},
+	{
+		title: 'Digital Advisory & Delivery',
+		description:
+			'Fractional CTO support, website development, and marketing enablement delivered with consulting rigor and transparent communication.',
+	},
+];
+
+const values = [
+	{
+		title: 'Strategic Clarity',
+		description:
+			'Every engagement starts with understanding your goals, constraints, and competitive pressures so we can prioritize the highest-impact levers.',
+	},
+	{
+		title: 'Technical Precision',
+		description:
+			'We pair seasoned engineers, analysts, and marketers who obsess over implementation details—schema, performance budgets, data quality, and signal coverage.',
+	},
+	{
+		title: 'Collaboration & Transparency',
+		description:
+			'You always know what we’re shipping, why it matters, and how it performs—weekly touchpoints, live dashboards, and shared documentation.',
+	},
+	{
+		title: 'Quality Without Compromise',
+		description:
+			'ISO-aligned delivery frameworks ensure every artifact is reviewed, tested, and measurable before it reaches production.',
+	},
+];
+---
+
+<Layout 
+	title="About InfraDev Consulting | Digital Advisory for the AI Era" 
+	description="Meet the InfraDev Consulting team—a forward-thinking digital advisory firm delivering SEO, AEO, GEO, and engineering solutions built for AI-driven discovery."
+	canonical="/about"
+>
+	<Header />
+	<main>
+		<section class="about-hero section">
+			<div class="container">
+				<p class="eyebrow">About InfraDev</p>
+				<h1>Digital advisory for the AI-driven era of discovery</h1>
+				<p class="lead">
+					InfraDev Consulting is a forward-thinking digital advisory firm specializing in modern visibility, intelligent optimization, and strategic online growth. 
+					We strengthen your presence across Google, ChatGPT, Perplexity, Bing AI, and every emerging discovery surface with refined SEO, AEO, and GEO programs that deliver measurable impact.
+				</p>
+			</div>
+		</section>
+
+		<section class="about-stats section">
+			<div class="container">
+				<div class="stats-grid">
+					{stats.map((stat) => (
+						<div class="stat-card">
+							<p class="stat-value">{stat.value}</p>
+							<p class="stat-label">{stat.label}</p>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<section class="about-story section">
+			<div class="container">
+				<div class="story-content">
+					<div>
+						<h2>Built for modern visibility</h2>
+						<p>
+							Founded in 2016 and headquartered in Beaconsfield, Quebec, InfraDev has grown into a boutique team of strategists, 
+							engineers, and marketers focused on intelligent optimization. We operate through a collaborative, transparent approach that prioritizes your goals,
+							challenges, and competitive realities before building tailored optimization frameworks and long-term digital roadmaps.
+						</p>
+						<p>
+							We navigate the full spectrum of search experiences—from traditional SEO surfaces to AI answer engines—so your brand can be discovered, cited, and trusted wherever decisions happen.
+							Each engagement blends strategic clarity with technical precision to unlock sustainable growth, improved visibility, and meaningful authority.
+						</p>
+					</div>
+					<div class="story-panel">
+						<h3>Where we focus</h3>
+						<ul>
+							<li>Advanced SEO programs & website rebuilds</li>
+							<li>Answer Engine & Generative Engine Optimization</li>
+							<li>AI-native content architectures & schema</li>
+							<li>Fractional CTO and digital transformation support</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-pillars section">
+			<div class="container">
+				<div class="section-header">
+					<p class="eyebrow">What we deliver</p>
+					<h2>Multi-disciplinary service pillars</h2>
+					<p>
+						Engagements blend growth strategy, technical SEO, engineering, and AI-aligned content so every channel reinforces authority.
+					</p>
+				</div>
+				<div class="pillars-grid">
+					{servicePillars.map((pillar) => (
+						<div class="pillar-card">
+							<h3>{pillar.title}</h3>
+							<p>{pillar.description}</p>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<section class="about-values section">
+			<div class="container">
+				<div class="section-header">
+					<p class="eyebrow">How we work</p>
+					<h2>Principles that guide every engagement</h2>
+				</div>
+				<div class="values-grid">
+					{values.map((value) => (
+						<div class="value-card">
+							<h3>{value.title}</h3>
+							<p>{value.description}</p>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<section class="about-leadership section">
+			<div class="container">
+				<div class="leadership-card">
+					<div>
+						<p class="eyebrow">Leadership</p>
+						<h2>Marc Perricone — Founder & Chief Technology Strategist</h2>
+						<p>
+							Marc leads InfraDev’s digital advisory practice, drawing on decades of experience across software engineering, product delivery,
+							and search optimization. He partners directly with founders, CMOs, and revenue teams to translate AI-era search shifts into
+							actionable, measurable roadmaps.
+						</p>
+					</div>
+					<div class="leadership-cta">
+						<p>Connect with Marc to discuss how InfraDev can accelerate your visibility.</p>
+						<a class="btn btn-primary" href="mailto:marc@infradevconsulting.com">Email Marc</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<CTA />
+	</main>
+	<Footer />
+</Layout>
+
+<style>
+	.about-hero {
+		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.08));
+		text-align: center;
+	}
+
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: var(--color-orange);
+		margin-bottom: 1rem;
+	}
+
+	.about-hero h1 {
+		font-size: clamp(2.5rem, 5vw, 3.5rem);
+		color: var(--color-text);
+		margin-bottom: 1.5rem;
+		line-height: 1.2;
+	}
+
+	.lead {
+		font-size: 1.2rem;
+		color: var(--color-text-light);
+		max-width: 820px;
+		margin: 0 auto;
+		line-height: 1.8;
+	}
+
+	.about-stats {
+		background: #fff;
+	}
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.stat-card {
+		background: var(--color-bg-light);
+		border-radius: 12px;
+		padding: 2rem 1.5rem;
+		text-align: center;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+	}
+
+	.stat-value {
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: var(--color-orange);
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		color: var(--color-text-light);
+		font-size: 0.95rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+
+	.about-story .story-content {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 2.5rem;
+		align-items: start;
+	}
+
+	.about-story h2 {
+		font-size: 2.2rem;
+		margin-bottom: 1rem;
+	}
+
+	.about-story p {
+		color: var(--color-text-light);
+		margin-bottom: 1.25rem;
+		line-height: 1.8;
+	}
+
+	.story-panel {
+		background: var(--color-bg-light);
+		padding: 2rem;
+		border-radius: 12px;
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+	}
+
+	.story-panel h3 {
+		margin-bottom: 1rem;
+		color: var(--color-orange);
+	}
+
+	.story-panel ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.story-panel li {
+		position: relative;
+		padding-left: 1.5rem;
+		color: var(--color-text);
+	}
+
+	.story-panel li::before {
+		content: '•';
+		position: absolute;
+		left: 0;
+		color: var(--color-orange);
+	}
+
+	.section-header {
+		text-align: center;
+		max-width: 720px;
+		margin: 0 auto 3rem;
+	}
+
+	.section-header h2 {
+		font-size: 2.3rem;
+		margin-bottom: 1rem;
+	}
+
+	.section-header p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.pillars-grid,
+	.values-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.pillar-card,
+	.value-card {
+		background: #fff;
+		border-radius: 12px;
+		padding: 2rem;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+	}
+
+	.pillar-card h3,
+	.value-card h3 {
+		font-size: 1.3rem;
+		margin-bottom: 0.75rem;
+		color: var(--color-orange);
+	}
+
+	.pillar-card p,
+	.value-card p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.about-leadership {
+		background: var(--color-bg-light);
+	}
+
+	.leadership-card {
+		background: #fff;
+		border-radius: 16px;
+		display: flex;
+		gap: 2rem;
+		padding: 2.5rem;
+		align-items: center;
+		box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+		flex-wrap: wrap;
+	}
+
+	.leadership-card h2 {
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+
+	.leadership-card p {
+		color: var(--color-text-light);
+		line-height: 1.7;
+	}
+
+	.leadership-cta {
+		max-width: 320px;
+		background: var(--color-bg-light);
+		padding: 1.5rem;
+		border-radius: 12px;
+		text-align: center;
+	}
+
+	.leadership-cta p {
+		margin-bottom: 1rem;
+		color: var(--color-text);
+	}
+
+	@media (max-width: 992px) {
+		.about-story .story-content {
+			grid-template-columns: 1fr;
+		}
+
+		.leadership-card {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.leadership-cta {
+			max-width: 100%;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.stats-grid {
+			grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+		}
+
+		.pillars-grid,
+		.values-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.lead {
+			font-size: 1.05rem;
+		}
+	}
+</style>
+
