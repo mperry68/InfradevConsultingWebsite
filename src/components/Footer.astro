@@ -8,8 +8,16 @@
 					href="https://www.linkedin.com/company/infra-dev-consulting" 
 					target="_blank" 
 					rel="noopener noreferrer"
+					aria-label="InfraDev LinkedIn"
 				>
-					Follow InfraDev on LinkedIn
+					<img 
+						src="/assets/WebsiteMarketing/linkedin-icon-logo-png-transparent-344267610.png" 
+						alt="LinkedIn" 
+						class="footer-linkedin-icon"
+						width="42"
+						height="42"
+						loading="lazy"
+					/>
 				</a>
 			</div>
 			<div class="footer-section">
@@ -78,19 +86,25 @@
 	.footer-linkedin {
 		display: inline-flex;
 		align-items: center;
-		gap: 0.5rem;
-		color: #fff;
-		background: var(--color-orange);
-		padding: 0.6rem 1rem;
-		border-radius: 999px;
-		font-size: 0.9rem;
-		font-weight: 600;
-		transition: background 0.3s ease, transform 0.2s ease;
+		justify-content: center;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.06);
+		transition: transform 0.2s ease, background 0.3s ease;
 	}
 
 	.footer-linkedin:hover {
-		background: var(--color-orange-light);
+		background: rgba(255, 255, 255, 0.12);
 		transform: translateY(-2px);
+	}
+
+	.footer-linkedin-icon {
+		width: 32px;
+		height: 32px;
+		display: block;
+		object-fit: contain;
+		filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
 	}
 
 	.footer-section ul {
