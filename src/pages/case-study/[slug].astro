@@ -79,8 +79,8 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 							<div class="results-grid">
 								{caseStudy.data.results.map((result) => (
 									<div class="result-item">
-										<div class="result-value">{result.value}</div>
 										<div class="result-metric">{result.metric}</div>
+										<div class="result-value">{result.value}</div>
 									</div>
 								))}
 							</div>
@@ -220,8 +220,8 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 	}
 
 	.case-study-post-header {
-		max-width: 800px;
-		margin: 0 auto 3rem;
+		max-width: 900px;
+		margin: 0 auto 4rem;
 		text-align: center;
 	}
 
@@ -250,25 +250,25 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 	}
 
 	.case-study-post-title {
-		font-size: 2.5rem;
+		font-size: 2.25rem;
 		color: var(--color-text);
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.75rem;
 		font-weight: 700;
-		line-height: 1.2;
+		line-height: 1.3;
 	}
 
 	.case-study-client {
 		font-size: 1rem;
 		color: var(--color-text-light);
 		font-style: italic;
-		margin-bottom: 1rem;
+		margin-bottom: 1.25rem;
 	}
 
 	.case-study-post-description {
-		font-size: 1.2rem;
+		font-size: 1.125rem;
 		color: var(--color-text-light);
 		line-height: 1.7;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 	}
 
 	.case-study-post-tags {
@@ -276,7 +276,7 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 		gap: 0.5rem;
 		flex-wrap: wrap;
 		justify-content: center;
-		margin-bottom: 2rem;
+		margin-bottom: 0;
 	}
 
 	.tag {
@@ -288,89 +288,101 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 	}
 
 	.case-study-results {
-		background: linear-gradient(135deg, rgba(255, 132, 39, 0.08), rgba(255, 150, 72, 0.12));
-		border-left: 4px solid var(--color-orange);
-		padding: 2rem;
-		border-radius: 8px;
-		margin: 2rem 0;
+		padding: 3rem 0;
+		margin: 3rem 0;
+		border-top: 1px solid rgba(0, 0, 0, 0.08);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 	}
 
 	.case-study-results h3 {
-		font-size: 1.5rem;
-		color: var(--color-text);
-		margin-bottom: 1.5rem;
+		font-size: 1.125rem;
+		color: var(--color-text-light);
+		margin-bottom: 2rem;
 		font-weight: 600;
 		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
 
 	.results-grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
-		gap: 1.5rem;
+		gap: 1.25rem;
+		max-width: 900px;
+		margin: 0 auto;
 	}
 
 	.result-item {
 		background: #fff;
-		border-radius: 10px;
-		padding: 2rem 1.5rem;
+		border-radius: 8px;
+		padding: 1.75rem 1.25rem;
 		text-align: center;
-		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-		transition: all 0.3s ease;
-		border: 1px solid rgba(255, 132, 39, 0.1);
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+		transition: all 0.2s ease;
+		border: 1px solid rgba(0, 0, 0, 0.06);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		min-height: 140px;
+		min-height: 130px;
 	}
 
 	.result-item:hover {
-		transform: translateY(-3px);
-		box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 		border-color: var(--color-orange);
 	}
 
-	.result-value {
-		font-size: 2.25rem;
-		font-weight: 700;
-		color: var(--color-orange);
-		margin-bottom: 0.75rem;
-		line-height: 1.2;
-	}
-
 	.result-metric {
-		font-size: 0.95rem;
+		font-size: 0.875rem;
 		color: var(--color-text);
 		font-weight: 500;
-		line-height: 1.4;
+		line-height: 1.5;
+		margin-bottom: 0.875rem;
+		letter-spacing: -0.01em;
+	}
+
+	.result-value {
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--color-orange);
+		line-height: 1.1;
+		letter-spacing: -0.02em;
 	}
 
 	.case-study-post-content {
 		max-width: 800px;
 		margin: 0 auto;
+		font-size: 1.0625rem;
 	}
 
 	.case-study-post-content :global(h2) {
-		font-size: 2rem;
+		font-size: 1.75rem;
 		color: var(--color-text);
-		margin-top: 3rem;
-		margin-bottom: 1rem;
-		font-weight: 600;
+		margin-top: 3.5rem;
+		margin-bottom: 1.25rem;
+		font-weight: 700;
 		line-height: 1.3;
+		letter-spacing: -0.01em;
+	}
+
+	.case-study-post-content :global(h2:first-of-type) {
+		margin-top: 0;
 	}
 
 	.case-study-post-content :global(h3) {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		color: var(--color-text);
-		margin-top: 2rem;
-		margin-bottom: 0.75rem;
+		margin-top: 2.5rem;
+		margin-bottom: 1rem;
 		font-weight: 600;
-		line-height: 1.3;
+		line-height: 1.4;
+		letter-spacing: -0.01em;
 	}
 
 	.case-study-post-content :global(p) {
-		font-size: 1.1rem;
+		font-size: 1.0625rem;
 		color: var(--color-text);
-		line-height: 1.8;
+		line-height: 1.75;
 		margin-bottom: 1.5rem;
 	}
 
@@ -381,9 +393,9 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 	}
 
 	.case-study-post-content :global(li) {
-		font-size: 1.1rem;
+		font-size: 1.0625rem;
 		color: var(--color-text);
-		line-height: 1.8;
+		line-height: 1.75;
 		margin-bottom: 0.5rem;
 	}
 
@@ -472,35 +484,57 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 
 	@media (max-width: 768px) {
 		.case-study-post-title {
-			font-size: 2rem;
+			font-size: 1.875rem;
 		}
 
 		.case-study-post-description {
-			font-size: 1.1rem;
+			font-size: 1.0625rem;
+		}
+
+		.case-study-results {
+			padding: 2rem 0;
+			margin: 2rem 0;
+		}
+
+		.case-study-results h3 {
+			font-size: 1rem;
+			margin-bottom: 1.5rem;
 		}
 
 		.case-study-post-content :global(h2) {
-			font-size: 1.75rem;
+			font-size: 1.5rem;
+			margin-top: 3rem;
 		}
 
 		.case-study-post-content :global(h3) {
-			font-size: 1.3rem;
+			font-size: 1.125rem;
+			margin-top: 2rem;
 		}
 
 		.case-study-post-content :global(p) {
 			font-size: 1rem;
 		}
 
+		.case-study-post-content :global(li) {
+			font-size: 1rem;
+		}
+
 		.results-grid {
 			grid-template-columns: 1fr;
+			gap: 1rem;
 		}
 
 		.result-item {
-			min-height: 120px;
+			min-height: 110px;
+			padding: 1.5rem 1.25rem;
+		}
+
+		.result-metric {
+			font-size: 0.8125rem;
 		}
 
 		.result-value {
-			font-size: 2rem;
+			font-size: 1.75rem;
 		}
 	}
 </style>
