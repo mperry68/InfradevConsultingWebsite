@@ -431,6 +431,55 @@ const pageUrl = `${siteUrl}/eor`;
 			</div>
 		</section>
 
+		<!-- Related Services Section -->
+		<section class="related-services section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Related Services</h2>
+					<p>Complete your Canadian hiring strategy with these complementary services</p>
+				</div>
+				<div class="related-grid">
+					<a href="/consulting-management" class="related-card">
+						<h3>Consulting Management</h3>
+						<p>Project-based consulting services with Canadian talent. Perfect for specific projects, technical expertise, or specialized consulting needs.</p>
+						<span class="related-link">Learn about Consulting Management →</span>
+					</a>
+					<a href="/resources/why-outsource-to-canada" class="related-card">
+						<h3>Why Outsource to Canada?</h3>
+						<p>Discover the benefits of Canadian outsourcing: cost savings, skilled talent, time zone alignment, and legal advantages.</p>
+						<span class="related-link">Read the guide →</span>
+					</a>
+					<a href="/resources/how-does-hiring-model-work" class="related-card">
+						<h3>How Does the Hiring Model Work?</h3>
+						<p>Learn step-by-step how the Employer of Record (EOR) model works for U.S. companies hiring Canadian talent.</p>
+						<span class="related-link">Learn more →</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Case Studies Section -->
+		<section class="related-work section">
+			<div class="container">
+				<div class="section-header">
+					<h2>See Our EOR Work</h2>
+					<p>Explore case studies and learn how we've helped U.S. companies hire Canadian talent</p>
+				</div>
+				<div class="related-grid">
+					<a href="/case-study" class="related-card">
+						<h3>Case Studies</h3>
+						<p>Real results from real clients. See how we've helped businesses successfully hire and manage Canadian employees.</p>
+						<span class="related-link">View case studies →</span>
+					</a>
+					<a href="/how-us-companies-hire-canada" class="related-card">
+						<h3>How U.S. Companies Hire in Canada</h3>
+						<p>Complete guide to the hiring process, payroll, compliance, and everything you need to know about cross-border hiring.</p>
+						<span class="related-link">Read the guide →</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
 		<!-- Call to Action -->
 		<section class="cta section">
 			<div class="container">
@@ -952,6 +1001,62 @@ const pageUrl = `${siteUrl}/eor`;
 
 	.resource-link-box a:hover {
 		text-decoration: underline;
+	}
+
+	.related-services,
+	.related-work {
+		background: var(--color-bg-light);
+	}
+
+	.related-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+
+	.related-card {
+		background: #fff;
+		border-radius: 10px;
+		padding: 2rem;
+		text-decoration: none;
+		color: inherit;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease;
+		display: flex;
+		flex-direction: column;
+		border: 2px solid transparent;
+	}
+
+	.related-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+		border-color: var(--color-orange);
+	}
+
+	.related-card h3 {
+		font-size: 1.5rem;
+		color: var(--color-text);
+		margin-bottom: 1rem;
+		font-weight: 600;
+	}
+
+	.related-card p {
+		color: var(--color-text-light);
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+		flex: 1;
+	}
+
+	.related-link {
+		color: var(--color-orange);
+		font-weight: 600;
+		display: inline-block;
+		transition: transform 0.3s ease;
+	}
+
+	.related-card:hover .related-link {
+		transform: translateX(5px);
 	}
 
 	.benefit-card--highlight p strong {
