@@ -75,12 +75,10 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 					)}
 					{caseStudy.data.results && caseStudy.data.results.length > 0 && (
 						<div class="case-study-results">
-							<h3>Key Results</h3>
 							<div class="results-grid">
 								{caseStudy.data.results.map((result) => (
 									<div class="result-item">
 										<div class="result-metric">{result.metric}</div>
-										<div class="result-value">{result.value}</div>
 									</div>
 								))}
 							</div>
@@ -294,16 +292,6 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 		border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 	}
 
-	.case-study-results h3 {
-		font-size: 1.125rem;
-		color: var(--color-text-light);
-		margin-bottom: 2rem;
-		font-weight: 600;
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-	}
-
 	.results-grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -323,7 +311,7 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		min-height: 130px;
+		min-height: 100px;
 	}
 
 	.result-item:hover {
@@ -333,20 +321,11 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 	}
 
 	.result-metric {
-		font-size: 0.875rem;
+		font-size: 1rem;
 		color: var(--color-text);
-		font-weight: 500;
-		line-height: 1.5;
-		margin-bottom: 0.875rem;
+		font-weight: 600;
+		line-height: 1.4;
 		letter-spacing: -0.01em;
-	}
-
-	.result-value {
-		font-size: 2rem;
-		font-weight: 700;
-		color: var(--color-orange);
-		line-height: 1.1;
-		letter-spacing: -0.02em;
 	}
 
 	.case-study-post-content {
@@ -496,11 +475,6 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 			margin: 2rem 0;
 		}
 
-		.case-study-results h3 {
-			font-size: 1rem;
-			margin-bottom: 1.5rem;
-		}
-
 		.case-study-post-content :global(h2) {
 			font-size: 1.5rem;
 			margin-top: 3rem;
@@ -525,16 +499,12 @@ const seoDescription = caseStudy.data.seoDescription || caseStudy.data.descripti
 		}
 
 		.result-item {
-			min-height: 110px;
+			min-height: 90px;
 			padding: 1.5rem 1.25rem;
 		}
 
 		.result-metric {
-			font-size: 0.8125rem;
-		}
-
-		.result-value {
-			font-size: 1.75rem;
+			font-size: 0.9375rem;
 		}
 	}
 </style>

@@ -11,16 +11,16 @@ seoDescription: "See how Mango Spraytan achieved 500% traffic growth and expande
 image: "/assets/portfolio/AD7x550.jpg"
 metricsImage: "/assets/portfolio/MangoMetrics.png"
 results:
-  - metric: "Increase in Organic Traffic"
-    value: "500%"
-  - metric: "Phone Calls & Bookings"
-    value: "Significant increase"
-  - metric: "Geographic Reach"
-    value: "Expanded city-wide"
-  - metric: "Reputation & Trust"
-    value: "Substantially improved"
-  - metric: "Crawler & AI Bot Activity"
-    value: "Significant influx"
+  - metric: "500% Increase in Organic Traffic"
+    value: ""
+  - metric: "Increase in Calls & Bookings"
+    value: ""
+  - metric: "Expanded City Reach"
+    value: ""
+  - metric: "Improved Online Reputation"
+    value: ""
+  - metric: "AI Indexing Influx"
+    value: ""
 ---
 
 ## Highlights
