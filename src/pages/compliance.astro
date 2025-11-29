@@ -46,6 +46,9 @@ const pageUrl = `${siteUrl}/compliance`;
 				</div>
 				<div class="resources-grid">
 					<div class="resource-card">
+						<div class="resource-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Quality_blue.svg" alt="Federal Government Resources" />
+						</div>
 						<h3>Federal Government Resources</h3>
 						<ul>
 							<li><a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency (CRA)</a> - Tax, payroll, and remittance requirements</li>
@@ -56,6 +59,9 @@ const pageUrl = `${siteUrl}/compliance`;
 						</ul>
 					</div>
 					<div class="resource-card">
+						<div class="resource-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Quality_blue.svg" alt="Provincial Employment Standards" />
+						</div>
 						<h3>Provincial Employment Standards</h3>
 						<ul>
 							<li><a href="https://www.ontario.ca/page/employment-standards-act" target="_blank" rel="noopener noreferrer">Ontario Employment Standards Act</a> - Ontario labour laws and requirements</li>
@@ -66,6 +72,9 @@ const pageUrl = `${siteUrl}/compliance`;
 						</ul>
 					</div>
 					<div class="resource-card">
+						<div class="resource-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Business_blue.svg" alt="U.S. Government Resources" />
+						</div>
 						<h3>U.S. Government Resources</h3>
 						<ul>
 							<li><a href="https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined" target="_blank" rel="noopener noreferrer">U.S. IRS - Independent Contractor Defined</a> - U.S. contractor classification rules</li>
@@ -85,6 +94,9 @@ const pageUrl = `${siteUrl}/compliance`;
 				</div>
 				<div class="details-grid">
 					<div class="detail-card">
+						<div class="detail-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Estimate_recolored.png" alt="Tax & Payroll Compliance" />
+						</div>
 						<h3>Tax & Payroll Compliance</h3>
 						<ul>
 							<li><strong>CPP Contributions:</strong> 5.95% of earnings up to $66,600 (2024 maximum), employer matches employee contributions</li>
@@ -96,6 +108,9 @@ const pageUrl = `${siteUrl}/compliance`;
 						<p class="source">Source: <a href="https://www.canada.ca/en/revenue-agency.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency</a></p>
 					</div>
 					<div class="detail-card">
+						<div class="detail-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Quality_blue.svg" alt="Employment Standards" />
+						</div>
 						<h3>Employment Standards</h3>
 						<ul>
 							<li><strong>Minimum Wage:</strong> Varies by province ($14-$16.55 CAD per hour in 2024)</li>
@@ -107,6 +122,9 @@ const pageUrl = `${siteUrl}/compliance`;
 						<p class="source">Source: <a href="https://www.canada.ca/en/employment-social-development/programs/employment-standards.html" target="_blank" rel="noopener noreferrer">Federal Employment Standards</a></p>
 					</div>
 					<div class="detail-card">
+						<div class="detail-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Healthcare_dualtone.png" alt="Workplace Safety" />
+						</div>
 						<h3>Workplace Safety</h3>
 						<ul>
 							<li><strong>Workers' Compensation:</strong> Required in all provinces, rates vary by industry and province</li>
@@ -118,6 +136,9 @@ const pageUrl = `${siteUrl}/compliance`;
 						<p class="source">Source: Provincial workers' compensation boards</p>
 					</div>
 					<div class="detail-card">
+						<div class="detail-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/discover.png" alt="Provincial Variations" />
+						</div>
 						<h3>Provincial Variations</h3>
 						<ul>
 							<li><strong>Ontario:</strong> 2 weeks vacation, 9 statutory holidays, 3 weeks after 5 years</li>
@@ -316,6 +337,19 @@ const pageUrl = `${siteUrl}/compliance`;
 		border-left: 4px solid var(--color-orange);
 	}
 
+	.resource-icon {
+		margin-bottom: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 70px;
+	}
+
+	.resource-icon img {
+		max-width: 70px;
+		height: auto;
+	}
+
 	.resource-card h3 {
 		font-size: 1.4rem;
 		color: var(--color-text);
@@ -375,6 +409,19 @@ const pageUrl = `${siteUrl}/compliance`;
 		padding: 2rem;
 		border-radius: 10px;
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	}
+
+	.detail-icon {
+		margin-bottom: 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 70px;
+	}
+
+	.detail-icon img {
+		max-width: 70px;
+		height: auto;
 	}
 
 	.detail-card h3 {
