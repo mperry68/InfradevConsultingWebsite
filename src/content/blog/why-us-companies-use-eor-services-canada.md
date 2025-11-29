@@ -2,7 +2,7 @@
 title: "Why U.S. Companies Use EOR Services for Canadian Employees"
 description: "Discover why thousands of U.S. companies choose Employer of Record services when hiring Canadian employees. Learn about cost savings, compliance benefits, and operational advantages."
 pubDate: 2024-01-20
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["EOR", "Employer of Record", "Canadian Employees", "U.S. Companies"]
 seoTitle: "Why U.S. Companies Use EOR Services for Canadian Employees | Benefits Explained"
 seoDescription: "Learn why U.S. companies choose EOR services for Canadian employees. Discover cost savings, compliance benefits, speed advantages, and why EOR beats entity formation for most businesses."
@@ -156,5 +156,5 @@ EOR services are ideal when:
 
 For most U.S. companies hiring Canadian talent, EOR services provide the optimal balance of speed, cost, compliance, and flexibility. They eliminate the complexity of entity formation while ensuring full legal compliance, allowing you to focus on what matters most: building your team and growing your business.
 
-Ready to explore EOR services for your Canadian hiring needs? [Contact InfraDev Consulting](/contact) to learn how we can help you hire Canadian talent in 48 hours with full compliance protection.
+Ready to explore EOR services for your Canadian hiring needs? [Contact InfraDev](/contact) to learn how we can help you hire Canadian talent in 48 hours with full compliance protection.
 

@@ -2,7 +2,7 @@
 title: "How to Optimize Your Content for ChatGPT and Claude: GEO Strategies"
 description: "Learn how to optimize your content for ChatGPT, Claude, and other generative AI systems. Discover GEO strategies to get your content cited and synthesized by AI platforms."
 pubDate: 2024-03-10
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["GEO", "ChatGPT", "Claude", "Generative AI"]
 seoTitle: "How to Optimize Content for ChatGPT and Claude: GEO Strategies 2024"
 seoDescription: "Discover how to optimize your content for ChatGPT, Claude, and other generative AI systems. Learn GEO strategies to get your content cited and synthesized by AI platforms."
@@ -198,5 +198,5 @@ Most businesses haven't optimized for ChatGPT and Claude yet. Early optimization
 
 ## Getting Started
 
-Ready to optimize your content for ChatGPT and Claude? [Contact InfraDev Consulting](/geo) to learn how our GEO services can help you get your content cited and synthesized by leading generative AI platforms.
+Ready to optimize your content for ChatGPT and Claude? [Contact InfraDev](/geo) to learn how our GEO services can help you get your content cited and synthesized by leading generative AI platforms.
 

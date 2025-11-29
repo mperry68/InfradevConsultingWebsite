@@ -2,7 +2,7 @@
 title: "How to Hire Canadian Talent Without a Canadian Entity"
 description: "Learn how U.S. companies can hire Canadian software developers, engineers, and tech professionals without forming a Canadian corporation. Complete guide to EOR services and cross-border hiring."
 pubDate: 2024-01-15
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["EOR", "Hiring in Canada", "Canadian Talent", "Cross-Border Hiring"]
 seoTitle: "How to Hire Canadian Talent Without a Canadian Entity | Complete Guide"
 seoDescription: "Discover how U.S. companies can hire Canadian talent without forming a Canadian entity. Learn about Employer of Record (EOR) services, compliance requirements, and the fastest way to onboard Canadian employees."
@@ -117,7 +117,7 @@ For most U.S. companies, especially those in tech and software development, EOR 
 
 ## Getting Started
 
-Ready to hire Canadian talent without the complexity of entity formation? InfraDev Consulting provides comprehensive EOR services for U.S. companies, handling all Canadian employment compliance while you focus on growing your business.
+Ready to hire Canadian talent without the complexity of entity formation? InfraDev provides comprehensive EOR services for U.S. companies, handling all Canadian employment compliance while you focus on growing your business.
 
 [Contact us today](/contact) to discuss your Canadian hiring needs and learn how we can help you onboard talent in 48 hours.
 

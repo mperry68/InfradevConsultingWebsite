@@ -2,7 +2,7 @@
 title: "The True Cost Savings of Hiring Canadian Developers"
 description: "Comprehensive cost analysis comparing U.S. vs. Canadian developer salaries. Learn about real cost savings, quality considerations, and total cost of employment calculations."
 pubDate: 2024-02-10
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["Cost Savings", "Canadian Developers", "Salary Comparison", "Hiring Costs"]
 seoTitle: "Cost Savings: Hiring Canadian Developers vs U.S. Developers"
 seoDescription: "Discover the true cost savings of hiring Canadian developers. Compare salaries, employment costs, and total cost of employment between U.S. and Canadian tech talent."
@@ -315,5 +315,5 @@ Typical EOR service fees:
 
 The cost savings of hiring Canadian developers are real and significant. Combined with high quality, cultural alignment, and time zone compatibility, Canadian talent offers an excellent value proposition for U.S. companies.
 
-Ready to explore cost savings with Canadian developers? [Contact InfraDev Consulting](/contact) to get a personalized cost analysis for your hiring needs.
+Ready to explore cost savings with Canadian developers? [Contact InfraDev](/contact) to get a personalized cost analysis for your hiring needs.
 

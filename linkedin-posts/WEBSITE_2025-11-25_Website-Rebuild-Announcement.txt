@@ -1,6 +1,6 @@
 We've completely rebuilt our website, and I'm excited to share what's new.
 
-After months of work, InfraDev Consulting now has a modern, comprehensive website that better reflects who we are and what we do.
+After months of work, InfraDev now has a modern, comprehensive website that better reflects who we are and what we do.
 
 What's new:
 
@@ -23,5 +23,5 @@ Check it out: https://infradevconsulting.com
 
 What do you think? I'd love your feedback.
 
-#WebsiteRedesign #DigitalTransformation #AISearch #SEO #InfraDevConsulting
+#WebsiteRedesign #DigitalTransformation #AISearch #SEO #InfraDev
 

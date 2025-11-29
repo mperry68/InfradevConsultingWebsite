@@ -2,7 +2,7 @@
 title: "How to Optimize for Google AI Overviews: Complete Guide"
 description: "Learn how to optimize your content for Google AI Overviews. Discover strategies to get your content selected as a source for Google's AI-generated answer summaries."
 pubDate: 2024-02-20
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["AEO", "Google AI Overviews", "AI Search", "SEO"]
 seoTitle: "How to Optimize for Google AI Overviews: Complete Guide 2024"
 seoDescription: "Discover how to optimize your content for Google AI Overviews. Learn strategies to get your website selected as a source for Google's AI-generated answer summaries."
@@ -155,5 +155,5 @@ Most businesses haven't optimized for Google AI Overviews yet. Early optimizatio
 
 ## Getting Started
 
-Ready to optimize your content for Google AI Overviews? [Contact InfraDev Consulting](/aeo) to learn how our AEO services can help you get selected as a source for Google's AI-generated answers.
+Ready to optimize your content for Google AI Overviews? [Contact InfraDev](/aeo) to learn how our AEO services can help you get selected as a source for Google's AI-generated answers.
 

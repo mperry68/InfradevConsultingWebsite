@@ -290,5 +290,5 @@ By understanding and implementing GEO, you position your business to succeed in 
 
 ---
 
-**Ready to optimize your content for generative AI systems?** Contact InfraDev Consulting to learn how our GEO services can help your business become part of the AI knowledge base.
+**Ready to optimize your content for generative AI systems?** Contact InfraDev to learn how our GEO services can help your business become part of the AI knowledge base.
 

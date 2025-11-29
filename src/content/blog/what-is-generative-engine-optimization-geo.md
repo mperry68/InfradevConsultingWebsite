@@ -2,7 +2,7 @@
 title: "What is Generative Engine Optimization (GEO)? Complete Guide for 2024"
 description: "Learn what Generative Engine Optimization (GEO) is and why it matters for modern SEO. Discover how to optimize your content for ChatGPT, Claude, Gemini, and other generative AI systems."
 pubDate: 2024-03-05
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["GEO", "Generative Engine Optimization", "AI Search", "ChatGPT"]
 seoTitle: "What is Generative Engine Optimization (GEO)? Complete Guide 2024"
 seoDescription: "Discover what Generative Engine Optimization (GEO) is and how it differs from SEO and AEO. Learn how to optimize your content for generative AI systems like ChatGPT and Claude."
@@ -187,5 +187,5 @@ Companies that optimize for generative AI now will have a significant advantage 
 
 ## Getting Started
 
-Ready to optimize your content for generative AI systems? [Contact InfraDev Consulting](/geo) to learn how our GEO services can help you capture AI-driven visibility and establish authority in the age of generative AI search.
+Ready to optimize your content for generative AI systems? [Contact InfraDev](/geo) to learn how our GEO services can help you capture AI-driven visibility and establish authority in the age of generative AI search.
 

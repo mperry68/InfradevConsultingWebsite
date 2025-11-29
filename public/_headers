@@ -1,5 +1,5 @@
 /*
-  # Security Headers for InfraDev Consulting
+  # Security Headers for InfraDev
   
   # Force HTTPS and HSTS
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload

@@ -2,7 +2,7 @@
 title: "Mango Spraytan Local SEO Success: 500% Traffic Increase & Expanded Reach"
 description: "How we helped Mango Spraytan, a luxury spa and spray tan business, achieve a 500% increase in organic traffic and expand their customer base across the city through comprehensive local SEO, AEO, and GEO optimization."
 pubDate: 2024-12-15
-author: "InfraDev Consulting"
+author: "InfraDev"
 category: "Local SEO"
 client: "Mango Spraytan"
 tags: ["SEO", "AEO", "GEO", "Local SEO", "Spa", "Wellness", "Search Optimization"]
@@ -165,4 +165,4 @@ The success of this project demonstrates that businesses don't have to choose be
 
 ---
 
-**Ready to achieve similar results for your business?** Contact InfraDev Consulting to learn how our comprehensive local SEO, AEO, and GEO services can help your business achieve remarkable growth and expanded reach.
+**Ready to achieve similar results for your business?** Contact InfraDev to learn how our comprehensive local SEO, AEO, and GEO services can help your business achieve remarkable growth and expanded reach.

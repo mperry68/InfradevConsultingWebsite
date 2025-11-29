@@ -2,7 +2,7 @@
 title: "What is Answer Engine Optimization (AEO)? Complete Guide for 2024"
 description: "Learn what Answer Engine Optimization (AEO) is and why it matters for modern SEO. Discover how to optimize your content for AI-powered answer engines like Google AI Overviews, Perplexity, and ChatGPT."
 pubDate: 2024-02-15
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["AEO", "Answer Engine Optimization", "AI Search", "SEO"]
 seoTitle: "What is Answer Engine Optimization (AEO)? Complete Guide 2024"
 seoDescription: "Discover what Answer Engine Optimization (AEO) is and how it differs from traditional SEO. Learn how to optimize your content for AI-powered answer engines and voice assistants."
@@ -82,5 +82,5 @@ As AI search continues to grow, AEO becomes increasingly important. Traditional 
 
 ## Getting Started with AEO
 
-Ready to optimize your content for AI-powered answer engines? [Contact InfraDev Consulting](/contact) to learn how our AEO services can help you capture AI-driven visibility and traffic.
+Ready to optimize your content for AI-powered answer engines? [Contact InfraDev](/contact) to learn how our AEO services can help you capture AI-driven visibility and traffic.
 

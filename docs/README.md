@@ -1,4 +1,4 @@
-# InfraDev Consulting - Documentation
+# InfraDev - Documentation
 
 This folder contains all project documentation, guides, and reference materials.
 

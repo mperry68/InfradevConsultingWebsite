@@ -2,7 +2,7 @@
 title: "Voice Search Optimization: AEO Strategy for Voice Assistants"
 description: "Learn how to optimize your content for voice search and voice assistants. Discover AEO strategies for Siri, Google Assistant, Alexa, and other voice-activated search systems."
 pubDate: 2024-02-25
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["AEO", "Voice Search", "Voice Assistants", "AI Search"]
 seoTitle: "Voice Search Optimization: AEO Strategy for Voice Assistants 2024"
 seoDescription: "Discover how to optimize your content for voice search and voice assistants. Learn AEO strategies for Siri, Google Assistant, Alexa, and voice-activated search systems."
@@ -177,5 +177,5 @@ Companies that optimize for voice search now will have a significant advantage a
 
 ## Getting Started
 
-Ready to optimize your content for voice search? [Contact InfraDev Consulting](/aeo) to learn how our AEO services can help you capture voice search traffic and visibility.
+Ready to optimize your content for voice search? [Contact InfraDev](/aeo) to learn how our AEO services can help you capture voice search traffic and visibility.
 

@@ -2,7 +2,7 @@
 title: "Canada vs U.S. Payroll: What Every Employer Needs to Know"
 description: "Comprehensive guide to Canadian payroll rules for U.S. companies. Learn about tax deductions, employment insurance, pension contributions, and key differences from U.S. payroll."
 pubDate: 2024-01-25
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["Payroll", "Canadian Payroll", "Tax Compliance", "Employment Law"]
 seoTitle: "Canada vs U.S. Payroll: Complete Guide for U.S. Employers"
 seoDescription: "Understand Canadian payroll rules for U.S. companies. Learn about tax deductions, EI, CPP, provincial differences, and how Canadian payroll differs from U.S. payroll systems."
@@ -238,5 +238,5 @@ Navigating Canadian payroll requires expertise in:
 
 For U.S. companies hiring Canadian employees, working with an EOR provider or Canadian payroll specialist is highly recommended to ensure compliance and avoid costly penalties.
 
-Ready to simplify your Canadian payroll? [Contact InfraDev Consulting](/eor) to learn how our EOR services handle all Canadian payroll compliance for your team.
+Ready to simplify your Canadian payroll? [Contact InfraDev](/eor) to learn how our EOR services handle all Canadian payroll compliance for your team.
 

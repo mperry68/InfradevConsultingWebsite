@@ -210,5 +210,5 @@ By understanding and implementing AEO, you position your business to succeed in 
 
 ---
 
-**Ready to optimize your content for AI-powered answer engines?** Contact InfraDev Consulting to learn how our AEO services can help your business capture visibility in the age of AI search.
+**Ready to optimize your content for AI-powered answer engines?** Contact InfraDev to learn how our AEO services can help your business capture visibility in the age of AI search.
 

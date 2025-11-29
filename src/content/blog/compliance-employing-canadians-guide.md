@@ -2,7 +2,7 @@
 title: "Compliance When Employing Canadians: Complete Guide for U.S. Companies"
 description: "Essential compliance guide for U.S. companies employing Canadian workers. Learn about employment standards, tax requirements, labor laws, and how to avoid costly violations."
 pubDate: 2024-02-01
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["Compliance", "Employment Law", "Canadian Employment", "Labor Law"]
 seoTitle: "Compliance Guide: Employing Canadians for U.S. Companies"
 seoDescription: "Complete compliance guide for U.S. companies employing Canadians. Learn about employment standards, tax requirements, provincial labor laws, and how to ensure full legal compliance."
@@ -272,5 +272,5 @@ Ensuring compliance when employing Canadians requires expertise in:
 
 For most U.S. companies, working with an EOR provider is the most efficient and cost-effective way to ensure full compliance while focusing on your core business.
 
-Ready to ensure full compliance for your Canadian employees? [Contact InfraDev Consulting](/eor) to learn how our EOR services handle all compliance requirements for your team.
+Ready to ensure full compliance for your Canadian employees? [Contact InfraDev](/eor) to learn how our EOR services handle all compliance requirements for your team.
 

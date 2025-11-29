@@ -2,7 +2,7 @@
 title: "AI Agents and GEO: Optimizing for Autonomous AI Systems"
 description: "Learn how to optimize your content for AI agents and autonomous systems. Discover GEO strategies for making your content discoverable and usable by AI agents that search and synthesize information."
 pubDate: 2024-03-15
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["GEO", "AI Agents", "Autonomous Systems", "Generative AI"]
 seoTitle: "AI Agents and GEO: Optimizing for Autonomous AI Systems 2024"
 seoDescription: "Discover how to optimize your content for AI agents and autonomous systems. Learn GEO strategies for making your content discoverable by AI agents that search and synthesize information."
@@ -198,5 +198,5 @@ Companies that optimize for AI agents now will have a significant advantage as t
 
 ## Getting Started
 
-Ready to optimize your content for AI agents? [Contact InfraDev Consulting](/geo) to learn how our GEO services can help you make your content discoverable and usable by AI agents and autonomous systems.
+Ready to optimize your content for AI agents? [Contact InfraDev](/geo) to learn how our GEO services can help you make your content discoverable and usable by AI agents and autonomous systems.
 

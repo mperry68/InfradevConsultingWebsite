@@ -50,7 +50,7 @@ Open your web browser and go to:
 http://localhost:4321
 ```
 
-You should see your InfraDev Consulting website!
+You should see your InfraDev website!
 
 ### 4. Test the Pages
 

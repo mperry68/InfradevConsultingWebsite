@@ -2,7 +2,7 @@
 title: "GEO, SEO, and AEO: Building a Complete Search Optimization Strategy"
 description: "Learn how to combine GEO, SEO, and AEO for comprehensive search visibility. Discover how these three optimization strategies work together to capture all types of search traffic."
 pubDate: 2024-03-20
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["GEO", "SEO", "AEO", "Search Optimization"]
 seoTitle: "GEO, SEO, and AEO: Complete Search Optimization Strategy 2024"
 seoDescription: "Discover how to combine GEO, SEO, and AEO for comprehensive search visibility. Learn how these three optimization strategies work together to capture all search traffic."
@@ -256,5 +256,5 @@ Companies that implement all three strategies now will be best positioned for fu
 
 ## Getting Started
 
-Ready to build a complete search optimization strategy? [Contact InfraDev Consulting](/contact) to learn how we can help you implement SEO, AEO, and GEO strategies for comprehensive search visibility.
+Ready to build a complete search optimization strategy? [Contact InfraDev](/contact) to learn how we can help you implement SEO, AEO, and GEO strategies for comprehensive search visibility.
 

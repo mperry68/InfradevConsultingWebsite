@@ -1,6 +1,6 @@
 # Security Measures
 
-This document outlines the security measures implemented on the InfraDev Consulting website.
+This document outlines the security measures implemented on the InfraDev website.
 
 ## Implemented Security Features
 

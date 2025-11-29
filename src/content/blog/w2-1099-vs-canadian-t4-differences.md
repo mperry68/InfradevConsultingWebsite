@@ -2,7 +2,7 @@
 title: "Differences Between W-2, 1099, and Canadian T4: Complete Comparison"
 description: "Understand the key differences between U.S. tax forms (W-2, 1099) and Canadian T4 forms. Learn about employment classification, tax implications, and compliance requirements."
 pubDate: 2024-02-05
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["Tax Forms", "W-2", "1099", "T4", "Employment Classification"]
 seoTitle: "W-2 vs 1099 vs Canadian T4: Key Differences Explained"
 seoDescription: "Compare U.S. tax forms (W-2, 1099) with Canadian T4 forms. Learn about employment classification differences, tax implications, and compliance requirements for cross-border employment."
@@ -265,5 +265,5 @@ Navigating the differences between U.S. and Canadian tax forms requires understa
 
 For U.S. companies hiring Canadian workers, working with an EOR provider ensures proper classification, correct forms, and full compliance with both U.S. and Canadian requirements.
 
-Ready to ensure proper classification and compliance for your Canadian workers? [Contact InfraDev Consulting](/eor) to learn how our EOR services handle all tax forms and compliance requirements.
+Ready to ensure proper classification and compliance for your Canadian workers? [Contact InfraDev](/eor) to learn how our EOR services handle all tax forms and compliance requirements.
 

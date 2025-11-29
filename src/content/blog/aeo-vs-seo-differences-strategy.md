@@ -2,7 +2,7 @@
 title: "AEO vs SEO: Key Differences and Why You Need Both"
 description: "Understand the differences between Answer Engine Optimization (AEO) and Search Engine Optimization (SEO). Learn why you need both strategies for comprehensive search visibility."
 pubDate: 2024-03-01
-author: "InfraDev Consulting"
+author: "InfraDev"
 tags: ["AEO", "SEO", "Answer Engine Optimization", "Search Optimization"]
 seoTitle: "AEO vs SEO: Key Differences and Why You Need Both in 2024"
 seoDescription: "Discover the key differences between AEO and SEO. Learn why you need both Answer Engine Optimization and Search Engine Optimization for comprehensive search visibility."
@@ -164,5 +164,5 @@ Companies that use both SEO and AEO will have the most comprehensive search visi
 
 ## Getting Started
 
-Ready to implement both SEO and AEO strategies? [Contact InfraDev Consulting](/contact) to learn how we can help you optimize for both traditional search and AI-powered answer engines.
+Ready to implement both SEO and AEO strategies? [Contact InfraDev](/contact) to learn how we can help you optimize for both traditional search and AI-powered answer engines.
 

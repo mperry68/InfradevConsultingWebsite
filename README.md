@@ -1,4 +1,4 @@
-# InfraDev Consulting Website
+# InfraDev Website
 
 A modern, fast, and responsive website built with Astro and optimized for Cloudflare Pages. Specializing in Search Optimization (SEO, AEO, GEO) and Canadian Talent Hiring (EOR) services.
 
@@ -80,5 +80,5 @@ This site is optimized for Cloudflare Pages. See [docs/DEPLOYMENT.md](./docs/DEP
 
 ## 📄 License
 
-© 2024 InfraDev Consulting. All rights reserved.
+© 2024 InfraDev. All rights reserved.
 
