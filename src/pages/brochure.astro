@@ -73,6 +73,9 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 				</div>
 				<div class="services-grid">
 					<div class="service-card">
+						<div class="service-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Business_blue.svg" alt="Organic Optimization" />
+						</div>
 						<h3>Organic Optimization</h3>
 						<ul>
 							<li>Manage focus keywords with 2–3% density</li>
@@ -83,6 +86,9 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 						</ul>
 					</div>
 					<div class="service-card">
+						<div class="service-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Software_dualtone.png" alt="Technical SEO & UX" />
+						</div>
 						<h3>Technical SEO & UX</h3>
 						<ul>
 							<li>Fix broken links, remove low-quality backlinks</li>
@@ -93,6 +99,9 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 						</ul>
 					</div>
 					<div class="service-card">
+						<div class="service-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/build.png" alt="Performance & Mobile" />
+						</div>
 						<h3>Performance & Mobile</h3>
 						<ul>
 							<li>Site speed review with ~2 second target</li>
@@ -103,6 +112,9 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 						</ul>
 					</div>
 					<div class="service-card">
+						<div class="service-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Quality_blue.svg" alt="Content & Authority" />
+						</div>
 						<h3>Content & Authority</h3>
 						<ul>
 							<li>Two new blogs created every month</li>
@@ -113,6 +125,9 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 						</ul>
 					</div>
 					<div class="service-card">
+						<div class="service-icon">
+							<img src="/assets/WebsiteMarketing/InfraDev Assets/Estimate_recolored.png" alt="Analytics & Reporting" />
+						</div>
 						<h3>Analytics & Reporting</h3>
 						<ul>
 							<li>Google Analytics & Search Console setup</li>
@@ -659,6 +674,19 @@ const brochureUrl = '/assets/WebsiteMarketing/Brochure One Page/InfraDevCorpBroc
 		display: flex;
 		flex-direction: column;
 		gap: 1.25rem;
+	}
+
+	.service-icon {
+		margin-bottom: 1.25rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 80px;
+	}
+
+	.service-icon img {
+		max-width: 80px;
+		height: auto;
 	}
 
 	.service-card h3 {
