@@ -256,9 +256,8 @@ const {
 		detectLocation().then(country => {
 			const currency = country === 'CA' ? 'CAD' : 'USD';
 			applyCurrency(currency);
-		}).catch(error => {
+		}).catch(() => {
 			// Fallback to USD on any error
-			console.warn('[GeoPricing] Currency detection failed, defaulting to USD');
 			applyCurrency('USD');
 		});
 		}
