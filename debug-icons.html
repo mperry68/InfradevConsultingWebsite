@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Icon Path Debugging</title>
+</head>
+<body>
+    <h1>Icon Path Debugging</h1>
+    <h2>Test Image Paths:</h2>
+    
+    <h3>URL Encoded Space (%20):</h3>
+    <img src="/assets/WebsiteMarketing/InfraDev%20Assets/discover.png" alt="Test 1" style="width: 100px; border: 2px solid red;" onerror="console.error('FAILED: /assets/WebsiteMarketing/InfraDev%20Assets/discover.png')" onload="console.log('SUCCESS: /assets/WebsiteMarketing/InfraDev%20Assets/discover.png')" />
+    <p>Path: /assets/WebsiteMarketing/InfraDev%20Assets/discover.png</p>
+    
+    <h3>Plus Sign Encoding (+):</h3>
+    <img src="/assets/WebsiteMarketing/InfraDev+Assets/discover.png" alt="Test 2" style="width: 100px; border: 2px solid blue;" onerror="console.error('FAILED: /assets/WebsiteMarketing/InfraDev+Assets/discover.png')" onload="console.log('SUCCESS: /assets/WebsiteMarketing/InfraDev+Assets/discover.png')" />
+    <p>Path: /assets/WebsiteMarketing/InfraDev+Assets/discover.png</p>
+    
+    <h3>Direct Test (if accessible):</h3>
+    <p>Check browser console for success/failure messages</p>
+    
+    <script>
+        console.log('=== Icon Path Debugging ===');
+        console.log('Current URL:', window.location.href);
+        console.log('Base path:', window.location.origin);
+        
+        // Test if file exists
+        fetch('/assets/WebsiteMarketing/InfraDev%20Assets/discover.png')
+            .then(response => {
+                console.log('Fetch test - Status:', response.status);
+                console.log('Fetch test - URL:', response.url);
+                if (response.ok) {
+                    console.log('✅ File exists at URL-encoded path');
+                } else {
+                    console.log('❌ File NOT found at URL-encoded path');
+                }
+            })
+            .catch(error => {
+                console.error('❌ Fetch error:', error);
+            });
+    </script>
+</body>
+</html>
+
