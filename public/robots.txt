@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://infradevconsulting.com/sitemap.xml
+# Disallow admin and private areas (if any)
+Disallow: /api/
+Disallow: /_astro/
 
+# Sitemap location
+Sitemap: https://infradevconsulting.com/sitemap.xml
