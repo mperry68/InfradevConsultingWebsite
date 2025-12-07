@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import GeoPricing from '../components/GeoPricing.astro';
 
 const siteUrl = Astro.site?.href || Astro.url.origin;
 const pageUrl = `${siteUrl}/geo`;
@@ -329,28 +328,18 @@ const pageUrl = `${siteUrl}/geo`;
 			</div>
 		</section>
 
-		<!-- Pricing Section -->
-		<section class="pricing section">
+		<!-- Free Website Redesign Promo Section -->
+		<section class="promo section">
 			<div class="container">
 				<div class="section-header">
-					<h2>Transparent Pricing</h2>
-					<p>Simple, straightforward pricing with no hidden fees</p>
+					<h2>Free Website Redesign Promo</h2>
+					<p>Transform your online presence with a professional website redesign</p>
 				</div>
-				<div class="pricing-content">
-					<div class="pricing-card">
-						<h3>Generative Engine Optimization (GEO)</h3>
-						<div class="pricing-amount">
-							<GeoPricing usdPrice={899} cadPrice={1099} showCurrencyToggle={false} />
-						</div>
-						<div class="bundle-offer">
-							<h4>Complete Search Optimization Bundle</h4>
-							<p>Get all three services SEO + AEO + GEO for maximum visibility:</p>
-							<div class="bundle-price">
-								<GeoPricing usdPrice={2499} cadPrice={2999} showCurrencyToggle={false} />
-							</div>
-							<p class="bundle-savings">Save <span class="geo-percentage-inline" data-usd-percent="8" data-cad-percent="10">8%</span> compared to individual services</p>
-							<a href="/contact" class="btn btn-primary">Get Complete Bundle</a>
-						</div>
+				<div class="promo-content">
+					<div class="promo-card">
+						<h3>Limited Time Offer</h3>
+						<p>Get a complete website redesign absolutely free when you sign up for our services. This is your chance to give your business a modern, professional online presence that converts visitors into customers.</p>
+						<a href="https://digitalrelevance.io/en/pricing" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Claim Offer</a>
 					</div>
 				</div>
 			</div>
@@ -1152,118 +1141,39 @@ const pageUrl = `${siteUrl}/geo`;
 		text-decoration: underline;
 	}
 
-	.pricing {
+	.promo {
 		background: var(--color-bg-light);
 	}
 
-	.pricing-content {
+	.promo-content {
 		max-width: 800px;
 		margin: 0 auto;
 	}
 
-	.pricing-card {
-		background: #fff;
+	.promo-card {
+		background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(51, 133, 214, 0.15));
 		border-radius: 12px;
 		padding: 3rem;
 		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 		text-align: center;
+		border: 2px solid var(--color-orange);
 	}
 
-	.pricing-card h3 {
+	.promo-card h3 {
 		font-size: 1.8rem;
 		color: var(--color-text);
-		margin-bottom: 2rem;
-		font-weight: 700;
-	}
-
-	.pricing-amount {
-		display: flex;
-		align-items: baseline;
-		justify-content: center;
-		gap: 0.5rem;
-		margin-bottom: 2rem;
-		flex-wrap: wrap;
-	}
-
-	.pricing-amount .geo-pricing {
-		display: inline-flex;
-		flex-direction: row;
-		align-items: baseline;
-		gap: 0.5rem;
-	}
-
-	.pricing-amount .geo-pricing .currency-toggle {
-		display: none;
-	}
-
-	.pricing-amount .price-formatted {
-		font-size: 3rem;
-		font-weight: 700;
-		color: var(--color-orange);
-	}
-
-	.bundle-offer {
-		margin-top: 2rem;
-		padding-top: 2rem;
-		border-top: 2px solid var(--color-orange);
-		background: linear-gradient(135deg, rgba(0, 102, 204, 0.05), rgba(51, 133, 214, 0.08));
-		padding: 2rem;
-		border-radius: 10px;
-	}
-
-	.bundle-offer h4 {
-		font-size: 1.5rem;
-		color: var(--color-text);
-		margin-bottom: 1rem;
-		font-weight: 600;
-	}
-
-	.bundle-offer > p {
-		color: var(--color-text-light);
 		margin-bottom: 1.5rem;
-		font-size: 1.05rem;
-	}
-
-	.bundle-price {
-		display: flex;
-		align-items: baseline;
-		justify-content: center;
-		gap: 0.5rem;
-		margin: 1.5rem 0;
-		flex-wrap: wrap;
-	}
-
-	.bundle-price .geo-pricing {
-		display: inline-flex;
-		flex-direction: row;
-		align-items: baseline;
-		gap: 0.5rem;
-	}
-
-	.bundle-price .geo-pricing .currency-toggle {
-		display: none;
-	}
-
-	.bundle-price .price-formatted {
-		font-size: 2.5rem;
 		font-weight: 700;
-		color: var(--color-orange);
 	}
 
-	.bundle-savings {
-		color: var(--color-text);
+	.promo-card p {
+		color: var(--color-text-light);
 		font-size: 1.1rem;
-		margin: 1rem 0 1.5rem;
-		font-weight: 500;
+		line-height: 1.6;
+		margin-bottom: 2rem;
 	}
 
-	.bundle-savings .geo-price-inline,
-	.bundle-savings .geo-percentage-inline {
-		color: var(--color-orange);
-		font-weight: 700;
-	}
-
-	.bundle-offer .btn {
+	.promo-card .btn {
 		margin-top: 1rem;
 	}
 
@@ -1313,16 +1223,16 @@ const pageUrl = `${siteUrl}/geo`;
 			font-size: 1.1rem;
 		}
 
-		.pricing-card {
+		.promo-card {
 			padding: 2rem 1.5rem;
 		}
 
-		.pricing-amount .price-formatted {
-			font-size: 2.5rem;
+		.promo-card h3 {
+			font-size: 1.5rem;
 		}
 
-		.bundle-price .price-formatted {
-			font-size: 2rem;
+		.promo-card p {
+			font-size: 1rem;
 		}
 	}
 </style>

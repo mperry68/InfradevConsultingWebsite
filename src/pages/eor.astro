@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import GeoPricing from '../components/GeoPricing.astro';
 
 const siteUrl = Astro.site?.href || Astro.url.origin;
 const pageUrl = `${siteUrl}/eor`;
@@ -188,31 +187,18 @@ const pageUrl = `${siteUrl}/eor`;
 			</div>
 		</section>
 
-		<!-- Pricing Section -->
-		<section class="pricing section">
+		<!-- Free Website Redesign Promo Section -->
+		<section class="promo section">
 			<div class="container">
 				<div class="section-header">
-					<h2>Transparent Pricing</h2>
-					<p>Simple, straightforward pricing with no hidden fees</p>
+					<h2>Free Website Redesign Promo</h2>
+					<p>Transform your online presence with a professional website redesign</p>
 				</div>
-				<div class="pricing-content">
-					<div class="pricing-card">
-						<h3>What's Included</h3>
-						<ul class="pricing-list">
-							<li>✓ Gross salary of employee</li>
-							<li>✓ Employer contributions (CPP, EI, QPP, QPIP)</li>
-							<li>✓ Starting from <span class="geo-price-inline" data-usd-price="499" data-cad-price="675">$499</span>/month per employee - EOR service fee</li>
-							<li>✓ <span class="geo-price-inline" data-usd-price="29" data-cad-price="39">$29</span>/month per employee - Payroll processing fee</li>
-							<li>✓ All payroll processing</li>
-							<li>✓ Tax remittances and compliance</li>
-							<li>✓ HR support and documentation</li>
-						</ul>
-						<div class="currency-selector">
-							<GeoPricing usdPrice={499} cadPrice={675} showCurrencyToggle={true} />
-						</div>
-						<div class="pricing-note">
-							<p><strong>Note:</strong> Pricing varies based on employee salary and specific requirements. Contact us for a customized quote.</p>
-						</div>
+				<div class="promo-content">
+					<div class="promo-card">
+						<h3>Limited Time Offer</h3>
+						<p>Get a complete website redesign absolutely free when you sign up for our services. This is your chance to give your business a modern, professional online presence that converts visitors into customers.</p>
+						<a href="https://digitalrelevance.io/en/pricing" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Claim Offer</a>
 					</div>
 				</div>
 			</div>
@@ -1161,70 +1147,40 @@ const pageUrl = `${siteUrl}/eor`;
 		margin-top: 2rem;
 	}
 
-	.pricing {
+	.promo {
 		background: var(--color-bg-light);
 	}
 
-	.pricing-content {
-		max-width: 700px;
+	.promo-content {
+		max-width: 800px;
 		margin: 0 auto;
 	}
 
-	.pricing-card {
-		background: #fff;
+	.promo-card {
+		background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(51, 133, 214, 0.15));
+		border-radius: 12px;
 		padding: 3rem;
-		border-radius: 10px;
-		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		border: 2px solid var(--color-orange);
 	}
 
-	.pricing-card h3 {
+	.promo-card h3 {
 		font-size: 1.8rem;
 		color: var(--color-text);
 		margin-bottom: 1.5rem;
-		font-weight: 600;
-		text-align: center;
+		font-weight: 700;
 	}
 
-	.pricing-list {
-		list-style: none;
+	.promo-card p {
+		color: var(--color-text-light);
+		font-size: 1.1rem;
+		line-height: 1.6;
 		margin-bottom: 2rem;
 	}
 
-	.pricing-list li {
-		padding: 0.75rem 0;
-		color: var(--color-text);
-		font-size: 1.1rem;
-		border-bottom: 1px solid #e0e0e0;
-	}
-
-	.pricing-list li:last-child {
-		border-bottom: none;
-	}
-
-	.currency-selector {
-		margin-top: 1.5rem;
-		padding-top: 1.5rem;
-		border-top: 1px solid #e0e0e0;
-		display: flex;
-		justify-content: center;
-	}
-
-	.geo-price-inline {
-		font-weight: 600;
-		color: var(--color-orange);
-	}
-
-	.pricing-note {
-		background: var(--color-bg-light);
-		padding: 1.5rem;
-		border-radius: 5px;
-		margin-top: 2rem;
-	}
-
-	.pricing-note p {
-		color: var(--color-text-light);
-		line-height: 1.6;
-		margin: 0;
+	.promo-card .btn {
+		margin-top: 1rem;
 	}
 
 	.authority {
@@ -1604,7 +1560,7 @@ const pageUrl = `${siteUrl}/eor`;
 			max-width: 100%;
 		}
 
-		.pricing-card {
+		.promo-card {
 			padding: 2rem;
 		}
 
